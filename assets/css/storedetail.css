@@ -1259,11 +1259,11 @@
     background-size: cover;
   }
   .p-storedetail__price-image-left {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg01_sp.webp");
     background-position: left center;
   }
   .p-storedetail__price-image-right {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg02_sp.webp");
     background-position: 35% center;
   }
   /* ── CTA Section ── */
@@ -1727,11 +1727,11 @@
     background-size: cover;
   }
   .p-storedetail__price-image-left {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg01_sp.webp");
     background-position: 75% center;
   }
   .p-storedetail__price-image-right {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/storedetail/img_storedetail_price_titleImg02_sp.webp");
     background-position: 35% center;
   }
   .p-storedetail__price-image-left h4,
