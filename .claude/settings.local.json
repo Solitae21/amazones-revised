@@ -56,7 +56,12 @@
       "Bash(mv \"Amazonesブランディングサイトコーディング引継ぎ内容.md\" docs/)",
       "Bash(mv \"リンク未設定箇所まとめ.md\" docs/)",
       "Bash(rmdir plans:*)",
-      "Bash(ls *.md)"
+      "Bash(ls *.md)",
+      "Bash(sed 's/.*base64,//')",
+      "Bash(node -e \"try { require\\('sharp'\\); console.log\\('sharp available'\\); } catch\\(e\\) { console.log\\('sharp not available'\\); }\")",
+      "Bash(pip show:*)",
+      "Bash(node -e ':*)",
+      "Bash(xargs -I{} grep -r -l --include='*.html' --include='*.scss' --include='*.css' --include='*.js' -E '{}' .)"
     ]
   }
 }
