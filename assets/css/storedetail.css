@@ -420,7 +420,7 @@
   width: 87.5rem;
   height: 37.5rem;
   overflow: hidden;
-  background-image: url("../img/common/img_gym06.png");
+  background-image: url("../img/common/img_gym06.webp");
   background-size: cover;
   background-position: 10% 60%;
   position: relative;
@@ -438,7 +438,7 @@
   width: 87.5rem;
   height: 37.5rem;
   overflow: hidden;
-  background-image: url("../img/common/img_gym07.png");
+  background-image: url("../img/common/img_gym07.webp");
   background-size: cover;
   background-position: 10% 60%;
   position: relative;
@@ -448,7 +448,7 @@
   width: 87.5rem;
   height: 37.5rem;
   overflow: hidden;
-  background-image: url("../img/common/img_gym_people04.png");
+  background-image: url("../img/common/img_gym_people04.webp");
   background-size: cover;
   background-position: 50% 30%;
   position: relative;
@@ -492,7 +492,7 @@
   padding: 3rem 0;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/common/img_gym05.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/common/img_gym05.webp");
   background-size: cover;
   background-position: center;
   position: relative;
