@@ -1,0 +1,2027 @@
+/* ========================================
+   開始: セクションタイトル
+   ======================================== */
+
+/* トピックヘッダー */
+.p-storedetail__topic-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--base-black);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 5;
+}
+
+.p-storedetail__topic-header p {
+  font-size: var(--fs-md);
+  font-weight: 500;
+}
+
+.p-storedetail__topic-header h2 {
+  font-size: var(--fs-display);
+  line-height: 7.5rem;
+  font-weight: 400;
+}
+
+.p-storedetail__topic-break {
+  display: inline;
+}
+
+/* 選ばれる理由タイトル */
+.p-storedetail__whychooseus-title {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+  padding-bottom: 4.375rem;
+}
+
+.p-storedetail__whychooseus-title-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.875rem;
+}
+
+.p-storedetail__whychooseus-title-meta > svg {
+  width: 67px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.p-storedetail__whychooseus-title-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.p-storedetail__whychooseus-title-heading {
+  font-size: var(--fs-lg);
+}
+
+.p-storedetail__whychooseus-title-desc,
+.p-storedetail__whychooseus-title-desc--sp {
+  font-size: var(--fs-base);
+  font-weight: 500;
+}
+
+/* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-storedetail__thumb-grid          { gap: 1rem; }
+.p-storedetail__facilities-card     { flex: unset; }
+.p-storedetail__price-subtitle      { font-size: var(--fs-lg); }
+.p-storedetail__plan-text           { font-size: var(--fs-base); font-weight: 500; }
+.p-storedetail__tier-card-body      { padding-top: 15px; padding-bottom: 15px; }
+.p-storedetail__section-no-pb       { padding-bottom: 0; }
+.p-storedetail__divider             { height: 1px; }
+.p-storedetail__content-row         { position: relative; }
+.p-storedetail__content-row--end    { justify-content: flex-end; position: relative; }
+.p-storedetail__voice-col           { gap: 5px; }
+.p-storedetail__review-wrap         { padding-bottom: 26px; }
+.p-storedetail__google-blue         { color: #6186ec !important; }
+.p-storedetail__google-red          { color: #cd523f !important; }
+.p-storedetail__google-yellow       { color: #eabe43 !important; }
+.p-storedetail__google-green        { color: #63a45d !important; }
+.p-storedetail__hidden              { display: none; }
+.p-storedetail__faq-stack           { padding-top: 50px; padding-bottom: 50px; }
+.p-storedetail__faq-section-header  { gap: 26px; margin-top: 50px; margin-bottom: 50px; }
+.p-storedetail__scroll-top-icon     { transform: scaleX(-1) rotate(-90deg); }
+.p-storedetail__price-header        { display: flex; align-items: center; gap: 70px; padding-bottom: 100px; }
+
+@media screen and (max-width: 767px) {
+  .p-storedetail__whychooseus-title-desc--sp {
+    margin-bottom: 2.5rem;
+    line-height: 2;
+  }
+}
+
+/* リンク */
+
+.p-storedetail__links-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 3rem;
+  cursor: pointer;
+  margin-bottom: 7rem;
+}
+
+.p-storedetail__links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: var(--fs-sm2);
+  color: var(--text-black1);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.p-storedetail__links-item:hover {
+  color: var(--base-lightBlue);
+}
+
+.p-storedetail__links-divider {
+  display: none;
+  border: none;
+  border-top: 1px solid var(--base-borderLight);
+  margin: 0;
+  width: 100%;
+}
+
+/* ── サービススライダーラッパー ── */
+.p-service__slider-wrapper {
+  position: relative;
+}
+
+.p-service__nav {
+  display: none;
+}
+
+.p-storedetail__opening-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.p-storedetail__opening-header {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--base-lightBlue);
+}
+
+.p-storedetail__opening-header p {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.p-storedetail__opening-header span {
+  font-size: var(--fs-xl);
+  color: var(--text-lightBlue);
+  font-weight: 500;
+}
+
+.p-storedetail__opening-jump {
+  display: inline-flex;
+}
+
+.p-storedetail__facility-tile {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--base-grayBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 紹介リボン */
+.p-storedetail__introduction-ribbon {
+  position: absolute;
+  top: 14%;
+  right: -6%;
+  width: 60%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none; /* 装飾用 — クリックをブロックしてはならない */
+}
+
+/* 紹介人物 */
+.p-storedetail__introduction-people {
+  position: absolute;
+  display: flex;
+  gap: 2.5rem;
+  /* transform: translateY(-50%); */
+  right: 3%;
+  bottom: -110%;
+  z-index: 0;
+  pointer-events: none; /* 装飾用 — クリックをブロックしてはならない */
+}
+
+.p-storedetail__introduction-people-img {
+  width: auto;
+  object-fit: contain;
+}
+.p-storedetail__introduction-people-img--01 {
+  height: 359px;
+}
+.p-storedetail__introduction-people-img--02 {
+  height: 320px;
+}
+
+/* グレーコンテナ */
+
+.p-storedetail__gray-container {
+  width: 100%;
+  height: 3.75rem;
+  background-color: var(--base-grayBlue);
+  padding: 0 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.p-storedetail__cutout {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: auto;
+}
+
+/* マップ */
+
+.p-storedetail__map {
+  flex: 1;
+  min-width: 280px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-height: 240px;
+}
+.p-storedetail__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  border: none;
+  display: block;
+}
+
+/* 設備 */
+.p-storedetail__introduction-facilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.p-storedetail__introduction-facility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 7rem;
+}
+
+.p-storedetail__introduction-facility-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-storedetail__introduction-facility p {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--text-black1);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* セクションタイトル終了 */
+
+/* ========================================
+   START: Price Table
+   ======================================== */
+
+/* 料金画像 */
+.p-storedetail__price-image-container {
+  display: flex;
+  height: 33.75rem;
+  margin-bottom: 7rem;
+}
+
+.p-storedetail__price-image-container p {
+  line-height: 2;
+}
+
+.p-storedetail__price-image-left,
+.p-storedetail__price-image-right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.4;
+}
+
+.p-storedetail__price-image-left {
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg01.png");
+}
+
+.p-storedetail__price-image-right {
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
+}
+
+/* 選ばれる理由 */
+.p-storedetail__whychooseus-text-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 61rem;
+  bottom: 10%;
+  left: 49%;
+}
+
+.p-storedetail__whychooseus-text-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 61rem;
+  bottom: 10%;
+  right: 49%;
+}
+
+.p-storedetail__reason-img01 {
+  width: 87.5rem;
+  height: 37.5rem;
+  overflow: hidden;
+  background-image: url("../img/common/img_gym06.png");
+  background-size: cover;
+  background-position: 10% 60%;
+  position: relative;
+}
+
+.p-storedetail__reason-img01 img {
+  position: absolute;
+  width: 50rem;
+  height: 37.5rem;
+  left: 7rem;
+  bottom: -2rem;
+}
+
+.p-storedetail__reason-img02 {
+  width: 87.5rem;
+  height: 37.5rem;
+  overflow: hidden;
+  background-image: url("../img/common/img_gym07.png");
+  background-size: cover;
+  background-position: 10% 60%;
+  position: relative;
+}
+
+.p-storedetail__reason-img03 {
+  width: 87.5rem;
+  height: 37.5rem;
+  overflow: hidden;
+  background-image: url("../img/common/img_gym_people04.png");
+  background-size: cover;
+  background-position: 50% 30%;
+  position: relative;
+}
+
+.p-storedetail__reason-ribbon01 {
+  position: absolute;
+  top: -15%;
+  left: 60%;
+  /* width: 82vw; */
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.p-storedetail__reason-ribbon02 {
+  position: absolute;
+  /* top: 0%; */
+  bottom: -70%;
+  /* left: -10%; */
+  /* width: 82vw; */
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.p-storedetail__reason-ribbon01--sp {
+  display: none;
+}
+
+/* 料金表終了 */
+
+/* ========================================
+   START: CTA
+   ======================================== */
+
+.p-storedetail__cta-container {
+  height: 47.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/common/img_gym05.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.p-storedetail__cta-ribbon {
+  position: absolute;
+  top: 9%;
+  left: -3%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+
+/* CTAコンテンツ */
+.p-storedetail__cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 2;
+  padding-top: 10rem;
+}
+
+.p-storedetail__cta-heading {
+  font-size: var(--fs-5xl);
+  color: var(--base-lightBlue);
+  font-weight: 800;
+  text-align: center;
+  text-shadow:
+    -4px -4px 0 var(--base-black),
+    4px -4px 0 var(--base-black),
+    -4px 4px 0 var(--base-black),
+    4px 4px 0 var(--base-black),
+    0 -4px 0 var(--base-black),
+    0 4px 0 var(--base-black),
+    -4px 0 0 var(--base-black),
+    4px 0 0 var(--base-black);
+}
+
+.p-storedetail__cta-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.p-storedetail__cta-stats-left {
+  font-size: var(--fs-3xl);
+  font-weight: bold;
+  color: var(--text-white);
+  text-align: end;
+  line-height: 1.6;
+  text-shadow:
+    -4px -4px 0 var(--base-black),
+    4px -4px 0 var(--base-black),
+    -4px 4px 0 var(--base-black),
+    4px 4px 0 var(--base-black),
+    0 -4px 0 var(--base-black),
+    0 4px 0 var(--base-black),
+    -4px 0 0 var(--base-black),
+    4px 0 0 var(--base-black);
+}
+
+.p-storedetail__cta-stats-number {
+  font-size: 14rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+  text-shadow:
+    -6px -6px 0 var(--text-black1),
+    6px -6px 0 var(--text-black1),
+    -6px 6px 0 var(--text-black1),
+    6px 6px 0 var(--text-black1),
+    0 -6px 0 var(--text-black1),
+    0 6px 0 var(--text-black1),
+    -6px 0 0 var(--text-black1),
+    6px 0 0 var(--text-black1);
+}
+
+.p-storedetail__cta-stats-number span {
+  font-size: var(--fs-7xl);
+}
+
+.p-storedetail__cta-note {
+  width: 100%;
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  background-color: var(--base-lightBlue);
+  padding: 0.7rem 1rem;
+  text-shadow: none;
+  margin-top: 1rem;
+}
+
+.p-storedetail__cta-note-mobile {
+  display: none;
+}
+
+.p-storedetail__cta-people {
+  position: absolute;
+  bottom: -25rem;
+  display: flex;
+  gap: 30rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.p-storedetail__cta-person01 {
+  width: auto;
+  height: 70rem;
+  object-fit: contain;
+  transform: translate(-6rem, 10rem);
+}
+
+.p-storedetail__cta-person02 {
+  width: auto;
+  height: 40rem;
+  object-fit: contain;
+  /* transform: translateY(0rem); */
+}
+
+.p-storedetail__cta-btn {
+  position: absolute;
+  bottom: -1.5rem;
+  padding: 1rem 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 無料体験スピーク */
+.p-storedetail__freetrial-speak-container01 {
+  position: absolute;
+  right: 5%;
+  top: -2rem;
+  z-index: 5;
+}
+
+.p-storedetail-freetrial_spanLightBlue {
+  color: var(--base-lightBlue);
+  text-decoration: underline;
+}
+
+.p-storedetail-freetrial__span--red {
+  color: var(--text-red);
+}
+
+/* FAQ（よくある質問） */
+.p-storedetail__faq-ribbon {
+  position: absolute;
+  top: -5%;
+  right: -10%;
+  width: 82vw;
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* CTA終了 */
+
+/* ========================================
+   START: Slider / Gallery
+   ======================================== */
+
+/* Googleレビュー */
+.reviews-widget {
+  background: white;
+  border-radius: 16px;
+  padding: 1.8rem 2rem 1.5rem;
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* ヘッダー */
+.reviews-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--base-borderLightGray);
+}
+
+.business-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #1a6b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.business-info h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--base-navy);
+  line-height: 1.4;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.rating-number {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--base-navy);
+}
+
+.stars {
+  color: #fbbc04;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+}
+
+.review-count {
+  font-size: 0.73rem;
+  color: #999;
+  margin-top: 0.2rem;
+}
+
+.google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.38rem 0.95rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.55rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.google-badge:hover {
+  background: #1557b0;
+}
+
+/* カルーセル */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  flex: 1;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  min-width: calc(33.333% - 0.67rem);
+  flex-shrink: 0;
+}
+
+.reviewer-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ddd;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewer-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.reviewer-name {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--base-navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-date {
+  font-size: 0.72rem;
+  color: #aaa;
+  margin-top: 0.1rem;
+}
+
+.g-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.card-stars {
+  color: #fbbc04;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-text {
+  font-size: 0.8rem;
+  color: var(--base-mediumText);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ナビ */
+.nav-btn {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--base-mediumText);
+  transition: all 0.2s;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+  background: #f0f0f0;
+}
+.nav-btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+/* ドット */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 1.1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+  border: none;
+}
+
+.dot.active {
+  background: #3bb8b8;
+  transform: scale(1.2);
+}
+
+.wp-gr .wp-google-text {
+  white-space: normal !important;
+}
+
+/* 予約セクション */
+.p-storedetail-reservation_flow__section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Photo Gallery – Missing responsive utility classes
+   (Tailwind-style lg:/md: breakpoint variants)
+   ═══════════════════════════════════════════════════════ */
+
+/* 全幅ブリードセクション: mx-[calc(50%-50vw)] */
+.mx-\[calc\(50\%-50vw\)\] {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* ── フォトギャラリースライダー ── */
+.p-storedetail__slider {
+  overflow: hidden;
+  background: transparent;
+  aspect-ratio: 3 / 2; /* lock the container to 3:2 */
+  margin-left: 0; /* reset .swiper margin:auto so flex stretch works on mobile */
+  margin-right: 0;
+}
+
+/* Swiper初期化前に、全10スライドの積み重ねを防止 */
+.p-storedetail__slider:not(.swiper-initialized) .swiper-slide:not(:first-child) {
+  display: none;
+}
+
+.p-storedetail__slider-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* サムネイルグリッド — 行が親要素いっぱいに伸びるのを防止 */
+.slider-thumbs .grid {
+  align-content: start;
+}
+
+.slider-thumbs .js-thumb-button {
+  aspect-ratio: 3 / 2;
+}
+
+.slider-thumbs__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── .container fallback (no definition in global.css) ── */
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* スライダー / ギャラリー終了 */
+
+/* ========================================
+   START: Review
+   ======================================== */
+
+/* DR AMAZONESセクション */
+
+/* ブロック */
+.p-storedetail__dr-amazones {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(to bottom, var(--base-bgLinearTop) 0%, #fdfdfd 100%);
+}
+
+/* 全幅写真 */
+.p-storedetail__dr-amazones-pic {
+  width: 100%;
+  display: block;
+}
+
+/* コンテンツパネル — デスクトップで画像上に絶対配置 */
+.p-storedetail__dr-amazones-content {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--base-white);
+  padding: 60px 77px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 装飾三角形 — コンテンツパネルの右上角 */
+.p-storedetail__dr-amazones-triangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 内部フレックスラッパー（タイトルブロック＋本文ブロック） */
+.p-storedetail__dr-amazones-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ヘッダー: サブタイトルラベル＋クリニックロゴ */
+.p-storedetail__dr-amazones-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* クリニックロゴ画像 */
+.p-storedetail__dr-amazones-label {
+  /* sized by its natural dimensions; overridden on small screens */
+}
+
+/* 本文: 見出し＋説明テキスト */
+.p-storedetail__dr-amazones-body {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* CTAボタン */
+.p-storedetail__dr-amazones-btn {
+  margin-top: 40px;
+}
+
+/* レビュー終了 */
+
+/* ========================================
+   START: Utility Overrides
+   ======================================== */
+
+/* STOREDETAIL — BEM ELEMENT CLASSES
+   (utility classes converted to explicit BEM rules) */
+
+/* 矢印反転 — インラインstyle="transform:scaleX(-1)"を置換 */
+.p-storedetail__arrow-flip {
+  transform: scaleX(-1);
+}
+
+/* ── Service container & card content (base desktop styles) ── */
+.c-service__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem; /* gap-30px */
+  padding: 2.5rem 1rem; /* py-40 px-16 */
+}
+
+/* ── Opening section ── */
+.p-storedetail__opening-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-storedetail__opening-row {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.p-storedetail__opening-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+/* ── Service Section — base styles (mirrors top.css for page independence) ── */
+.c-service__wrapper {
+  width: 100%;
+  max-width: 640px;
+  background-color: var(--base-white);
+  z-index: 2;
+  overflow: hidden;
+}
+.c-service__img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.c-service__wrapper2 {
+  margin-top: -90px;
+  background-color: var(--base-gray);
+}
+.c-service__wrapper3 {
+  margin-top: -180px;
+}
+
+/* ── Service section ── */
+.p-storedetail__service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding-top: 120px;
+}
+
+.p-storedetail__service-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  max-width: 90rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+/* ── Introduction section ── */
+.p-storedetail__intro-section {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+}
+
+.p-storedetail__intro-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  z-index: 10;
+  position: relative;
+}
+
+.p-storedetail__intro-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.p-storedetail__intro-text-row {
+  display: flex;
+  gap: 1.875rem;
+  position: relative;
+}
+
+.p-storedetail__intro-text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.p-storedetail__intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+/* ── Photo gallery bleed ── */
+.p-storedetail__gallery-bleed {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-bottom: 3rem;
+}
+
+.p-storedetail__gallery-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* ── Dr. Amazones text elements ── */
+.p-storedetail__dr-label {
+  font-size: var(--fs-md);
+  font-weight: 500;
+}
+
+.p-storedetail__dr-heading {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: 2;
+}
+
+.p-storedetail__dr-text {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* ── Store info meta rows ── */
+.p-storedetail__meta-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.p-storedetail__meta-label {
+  font-size: var(--fs-base);
+  color: var(--text-lightBlue);
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.p-storedetail__meta-text {
+  font-weight: 500;
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+.p-storedetail__meta-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ユーティリティオーバーライド終了 */
+
+/* ========================================
+   MEDIA: max-width 1024px
+   ======================================== */
+@media (max-width: 1024px) {
+  /* Topic headers */
+  .p-storedetail__topic-header h2,
+  .p-storedetail__topic-header h3 {
+    font-size: 3.5rem;
+  }
+
+  /* Links nav */
+  .p-storedetail__links-nav {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  /* CTA section */
+  .p-storedetail__cta-container {
+    height: auto;
+    min-height: 30rem;
+  }
+  .p-storedetail__cta-stats-number {
+    font-size: 8rem;
+  }
+
+  /* Why Choose Us — reduce panel width */
+  .p-storedetail__whychooseus-text-left,
+  .p-storedetail__whychooseus-text-right {
+    width: 70vw;
+  }
+
+  /* Reason images */
+  .p-storedetail__reason-img01,
+  .p-storedetail__reason-img02,
+  .p-storedetail__reason-img03 {
+    width: 100%;
+    height: 25rem;
+  }
+
+  /* ── Price Images ── */
+  .p-storedetail__price-image-container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail__price-image-left,
+  .p-storedetail__price-image-right {
+    height: auto;
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+    background-size: cover;
+  }
+
+  .p-storedetail__price-image-left {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-position: left center;
+  }
+
+  .p-storedetail__price-image-right {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-position: 35% center;
+  }
+
+  /* ── CTA Section ── */
+  .p-storedetail__cta-container {
+    height: auto;
+    min-height: 30svh;
+    padding: 4rem 1.5rem 22rem;
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .p-storedetail__cta-ribbon {
+    z-index: 0;
+    top: 5%;
+    left: -90%;
+    width: 200%;
+    height: auto;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .p-storedetail__cta-ribbon svg {
+    width: 100%;
+    height: auto;
+  }
+  .p-storedetail__cta-content {
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  .p-storedetail__cta-heading {
+    font-size: var(--fs-xl2);
+  }
+  .p-storedetail__cta-stats-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .p-storedetail__cta-stats {
+    align-items: center;
+  }
+  .p-storedetail__cta-stats-number {
+    font-size: 9rem;
+    line-height: 1;
+  }
+  .p-storedetail__cta-stats-number span {
+    font-size: var(--fs-5xl);
+  }
+  .p-storedetail__cta-stats-left {
+    display: flex;
+    font-size: var(--fs-lg2);
+    text-align: center;
+  }
+  .p-storedetail__cta-note {
+    display: none;
+  }
+  .p-storedetail__cta-note-mobile {
+    display: block;
+    font-size: var(--fs-base);
+    color: white;
+    text-align: center;
+    background-color: var(--base-lightBlue);
+    padding: 1rem 1.75rem;
+    width: max-content;
+  }
+  .p-storedetail__cta-people {
+    display: flex;
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .p-storedetail__cta-person01 {
+    display: block;
+    height: 40rem;
+    transform: translate(1rem, 13rem);
+  }
+  .p-storedetail__cta-person02 {
+    display: block;
+    height: 25rem;
+    transform: translateX(-1rem);
+  }
+  .p-storedetail__cta-btn {
+    width: fit-content;
+    white-space: nowrap;
+    bottom: -1.5rem;
+  }
+
+  /* Dr. Amazones — constrain at tablet too */
+  .c-dr-amazones__container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .c-dr-amazones__container > img:first-child {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .c-dr-amazones__section {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Service section — slider layout (same as mobile) */
+  .p-service__slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  .c-service__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-right: 0;
+    transition: transform 0.4s ease;
+  }
+  .c-service__wrapper,
+  .c-service__wrapper2,
+  .c-service__wrapper3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content {
+    flex: 1;
+  }
+  .c-service__img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  .p-service__nav {
+    display: flex;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .p-service__nav--prev {
+    left: 0.75rem;
+  }
+  .p-service__nav--next {
+    right: 0.75rem;
+  }
+
+  /* Show people figure as centered block on tablet */
+  .p-storedetail__introduction-people {
+    display: flex;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .p-storedetail__introduction-people-img--01 {
+    height: 280px;
+  }
+  .p-storedetail__introduction-people-img--02 {
+    height: 250px;
+  }
+
+  .p-storedetail__introduction-ribbon {
+    position: absolute;
+    top: 14%;
+    right: -6%;
+    width: 100%;
+  }
+
+  /* Stack text + figure vertically on tablet */
+  .p-storedetail__intro-text-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ── Opening Block: stack text + jump image ── */
+  .p-storedetail__opening-content > .p-storedetail__opening-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-storedetail__opening-header p,
+  .p-storedetail__opening-header span {
+    font-size: var(--fs-base);
+  }
+
+  .p-storedetail__opening-header span {
+    display: block;
+  }
+
+  .p-storedetail__opening-jump {
+    display: flex;
+    justify-content: center;
+  }
+  .p-storedetail__opening-jump img {
+    max-height: 16rem;
+    width: auto;
+  }
+
+  /* ── Tablet responsive overrides ── */
+  .p-storedetail__service-section {
+    gap: 2rem;
+  }
+
+  /* ── Dr. Amazones tablet layout ── */
+  .p-storedetail__dr-amazones {
+    flex-direction: column;
+  }
+
+  .p-storedetail__dr-amazones-pic {
+    width: 100vw;
+  }
+
+  .p-storedetail__dr-amazones-content {
+    position: relative;
+    top: auto;
+    transform: none;
+    align-self: flex-end;
+    width: 95%;
+    padding: 30px;
+  }
+
+  .p-storedetail__dr-amazones-inner {
+    gap: 20px;
+  }
+
+  .p-storedetail__dr-amazones-body {
+    gap: 20px;
+  }
+
+  .p-storedetail__dr-amazones-header .fs-18 {
+    font-size: var(--fs-base);
+  }
+
+  .p-storedetail__dr-amazones-label {
+    width: 295px;
+    height: auto;
+  }
+
+  .p-storedetail__dr-amazones-triangle {
+    width: 120px;
+    height: auto;
+  }
+
+  .p-storedetail__dr-amazones-btn {
+    display: none;
+  }
+}
+
+/* ========================================
+   MEDIA: min-width 768px
+   ======================================== */
+@media (min-width: 768px) {
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+  .p-storedetail__gallery-bleed {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* ========================================
+   MEDIA: min-width 1024px
+   ======================================== */
+@media (min-width: 1024px) {
+  /* Switch flex column → row */
+  .lg\:flex-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  /* 2/3 width for main slider */
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+    flex-shrink: 0;
+  }
+  /* 1/3 width for thumbnail grid */
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+    flex-shrink: 0;
+  }
+  /* ── lg:self-start utility (missing from global.css) ── */
+  .lg\:self-start {
+    align-self: flex-start;
+  }
+  .p-storedetail__gallery-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ========================================
+   MEDIA: max-width 767px
+   ======================================== */
+@media (max-width: 767px) {
+  /* ── Links Navigation ── */
+  .p-storedetail__links-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail__links-item {
+    flex: 0 0 auto;
+  }
+  .p-storedetail__links-divider {
+    display: block;
+  }
+
+  /* ── Topic Headers ── */
+  .p-storedetail__topic-break {
+    display: block;
+  }
+  .p-storedetail__topic-header h2,
+  .p-storedetail__topic-header h3 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .p-storedetail__topic-header p {
+    font-size: 0.9rem;
+  }
+
+  /* ── Price title: stack header + icon row vertically ── */
+  .p-storedetail__price-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .p-storedetail__price-header > .c-section__sub-text {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .p-storedetail__price-header-svg {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .p-storedetail__price-header-title {
+    font-size: var(--fs-base);
+  }
+  .p-storedetail__price-header-desc {
+    font-size: var(--fs-sm);
+  }
+
+  /* ── Why Choose Us title: stack header + icon row vertically ── */
+  .p-storedetail__whychooseus-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .p-storedetail__whychooseus-title-meta {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .p-storedetail__whychooseus-title-meta > svg {
+    flex-shrink: 0;
+    width: 90px;
+    height: 75px;
+  }
+
+  .p-storedetail__whychooseus-title-desc {
+    font-size: var(--fs-sm);
+  }
+
+  /* ── Introduction Section ── */
+  .p-storedetail__introduction-ribbon {
+    position: absolute;
+    top: 22%;
+    right: -20%;
+    width: 150%;
+  }
+  /* Show people figure as centered block on mobile */
+  .p-storedetail__introduction-people {
+    display: flex;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    gap: 1.2rem;
+  }
+  .p-storedetail__introduction-people-img--01 {
+    height: 16rem;
+  }
+  .p-storedetail__introduction-people-img--02 {
+    height: 16rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Stack text + figure vertically on mobile */
+  .p-storedetail__intro-text-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Facilities — 3-col grid on mobile */
+  .p-storedetail__introduction-facilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+  }
+  .p-storedetail__introduction-facility {
+    width: 100%;
+    align-items: center;
+  }
+
+  .p-storedetail__introduction-facility p {
+    font-size: var(--fs-sm);
+  }
+
+  .p-storedetail__introduction-facility-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .p-storedetail__facility-tile {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* ── Gray Container (store info bar) ── */
+  .p-storedetail__gray-container {
+    height: auto;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .p-storedetail__gray-container h3 {
+    font-size: var(--fs-base);
+  }
+  .p-storedetail__cutout {
+    height: 100%;
+    width: auto;
+  }
+
+  /* ── Map Row: stack card + map vertically ── */
+  .p-storedetail__gray-container + .c-flex-gap-30 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-storedetail__map {
+    height: 15rem;
+  }
+
+  /* ── Store Card: stack info rows + hide arrow ── */
+  .p-storelist_card .c-flex-gap-3 {
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .p-storelist_card-header-inner img {
+    display: none;
+  }
+
+  /* ── Price Images ── */
+  .p-storedetail__price-image-container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail__price-image-left,
+  .p-storedetail__price-image-right {
+    height: auto;
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+    background-size: cover;
+  }
+
+  .p-storedetail__price-image-left {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-position: 75% center;
+  }
+
+  .p-storedetail__price-image-right {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-position: 35% center;
+  }
+
+  .p-storedetail__price-image-left h4,
+  .p-storedetail__price-image-right h4 {
+    font-size: var(--fs-lg); /* 20px — down from 30px */
+  }
+  .p-storedetail__price-image-left > p,
+  .p-storedetail__price-image-right > p {
+    font-size: var(--fs-sm); /* 14px — down from 16px */
+  }
+  .p-storedetail__price-image-left > div,
+  .p-storedetail__price-image-right > div {
+    font-size: var(--fs-2xs); /* 13px — down from 16px */
+  }
+
+  /* ── Why Choose Us ── */
+  div:has(> .p-storedetail__whychooseus-text-left),
+  div:has(> .p-storedetail__whychooseus-text-right) {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+  .p-storedetail__whychooseus-text-left,
+  .p-storedetail__whychooseus-text-right {
+    position: static;
+    width: 95%;
+    margin-top: -2rem;
+    padding: 0rem 1.5rem 1rem 2rem;
+    box-sizing: border-box;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .p-storedetail__whychooseus-text-left {
+    align-self: flex-end;
+  }
+
+  .p-storedetail__reason-img01,
+  .p-storedetail__reason-img02,
+  .p-storedetail__reason-img03 {
+    width: 100%;
+    height: 18rem;
+  }
+  .p-storedetail__reason-img01 img {
+    width: auto;
+    height: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .p-storedetail__reason-ribbon01,
+  .p-storedetail__reason-ribbon02 {
+    display: none;
+  }
+
+  .p-storedetail__whychooseus-title {
+    position: relative;
+  }
+  .p-storedetail__reason-ribbon01--sp {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16rem;
+    z-index: 0;
+    pointer-events: none;
+    width: 80vw;
+  }
+  .p-storedetail__whychooseus-title
+    > *:not(.p-storedetail__reason-ribbon01--sp) {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── Free Trial ── */
+  .p-storedetail__freetrial-speak-container01 {
+    /* display: none; */
+    right: 5%;
+    top: 0rem;
+    z-index: 5;
+  }
+
+  .p-reservation-speak__person--01 {
+    width: auto;
+    height: 12rem;
+  }
+
+  /* ── FAQ ── */
+  .p-storedetail__faq-ribbon {
+    display: none;
+  }
+
+  /* ── Photo Gallery Slider ── */
+  /* Hide the Swiper slider on mobile — show static grid instead */
+  .p-storedetail__slider {
+    display: none;
+  }
+
+  /* Thumbnail section becomes the primary gallery */
+  .slider-thumbs {
+    width: 100%;
+  }
+
+  /* Restore grid layout (undo horizontal scroll override) */
+  .slider-thumbs .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    overflow-x: visible;
+    padding: 0;
+  }
+
+  /* Hero display element — spans full width */
+  .mobile-hero {
+    grid-column: 1 / -1;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+  .mobile-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Reset fixed thumbnail sizes — let images fill grid cells */
+  .slider-thumbs .js-thumb-button,
+  .slider-thumbs__cell {
+    flex: unset;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .slider-thumbs__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: unset;
+  }
+
+  /* ── Dr. Amazones Section ── */
+  /* On desktop the text block is position:absolute over the image.
+     On mobile we stack them and let the image fill the width. */
+  .c-dr-amazones__container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  /* The raw <img> in this container has no class — target it directly */
+  .c-dr-amazones__container > img:first-child {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+  }
+  /* Pull the absolutely-positioned text block back into flow */
+  .c-dr-amazones__section {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .c-dr-amazones__section .triangle-icon {
+    display: none;
+  }
+
+  /* ── Service Section — mobile slider ── */
+  .p-service__slider-wrapper {
+    overflow: hidden;
+  }
+  .c-service__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-right: 0;
+    transition: transform 0.4s ease;
+  }
+  .c-service__wrapper,
+  .c-service__wrapper2,
+  .c-service__wrapper3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content {
+    flex: 1;
+  }
+  .c-service__img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  .p-service__nav {
+    display: flex;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .p-service__nav--prev {
+    left: 0.75rem;
+  }
+  .p-service__nav--next {
+    right: 0.75rem;
+  }
+  .p-storedetail__service-header h2 {
+    font-size: var(--fs-6xl);
+  }
+
+  /* ── Mobile responsive overrides ── */
+  .p-storedetail__intro-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .p-storedetail-reservation_flow__section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .p-storedetail__intro-inner {
+    gap: 1.5rem;
+  }
+
+  .p-storedetail__meta-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* ── Dr. Amazones adds image scale transform on mobile ── */
+  .p-storedetail__dr-amazones-pic {
+    transform: scale(1.4);
+    object-position: 0 -20px;
+    margin-top: 40px;
+  }
+
+  /* ── whychooseus-title-desc--sp ── */
+  .p-storedetail__whychooseus-title-desc--sp {
+    margin-bottom: 2.5rem;
+    line-height: 2;
+  }
+}
+
+/* ========================================
+   MEDIA: max-width 640px
+   ======================================== */
+@media (max-width: 640px) {
+  .review-card {
+    min-width: 100%;
+  }
+}
+.p-storedetail__cta-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

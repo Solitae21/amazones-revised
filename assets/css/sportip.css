@@ -1,0 +1,767 @@
+@charset "UTF-8";
+/* ========================================
+   開始: バナー
+   ======================================== */
+.p-sportip__banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.p-sportip__banner-logo {
+  /* position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 15%;
+  height: 15%;
+  overflow: hidden;
+  z-index: 15; */
+  width: 265px;
+  margin-bottom: 20px;
+}
+
+/* テキストコンテンツ */
+.p-sportip__banner-content {
+  position: absolute;
+  top: 50%;
+  left: 5.75rem;
+  transform: translateY(-50%);
+  z-index: 15;
+}
+
+.p-sportip__banner-title {
+  font-size: var(--fs-4xl);
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.375rem;
+  font-weight: 400;
+}
+
+/* sportipページ用パンくずリストスタイル */
+.p-sportip__breadcrumb {
+  bottom: 4%;
+  left: 5%;
+  z-index: 15;
+}
+
+/* 左フレーム画像位置 */
+.c-hero-slider__frames__clip1 .c-clip-img {
+  object-position: right top; /* 0%=left edge, 100%=right edge */
+  width: 105%; /* keep left% and extra width% equal to avoid gaps */
+  left: auto;
+  right: 30%;
+}
+
+/* 右フレーム画像位置 */
+.c-hero-slider__frames__clip2 .c-clip-img {
+  left: 10%;
+  /* right: auto; */
+  object-position: left center; /* 0%=left edge, 100%=right edge */
+  width: 125%; /* keep left% and extra width% equal to avoid gaps */
+}
+
+/* バナー終了 */
+/* ========================================
+   開始: セクションタイトル
+   ======================================== */
+.p-sportip__title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.p-sportip__subtitle {
+  font-size: var(--fs-md);
+  font-weight: 500;
+}
+
+.p-sportip__title {
+  font-size: 6.259rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* セクションタイトル終了 */
+/* ========================================
+   開始: テキストコンテナ / カード
+   ======================================== */
+.p-sportip__section--white {
+  padding-bottom: 100px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_white_pattern.webp");
+  background-size: cover;
+  background-position: 0% -170%;
+}
+
+.p-sportip__content {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+/* 画像コンテナ */
+.p-sportip__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 38rem;
+  max-width: 63rem;
+}
+
+/* テキストコンテナ */
+.p-sportip__text-container,
+.p-sportip__text-container--02 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 3.5rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 62.5rem;
+  top: 25%;
+  right: 0%;
+}
+
+.p-sportip__text-container--02 {
+  top: 25%;
+  left: 0%;
+}
+
+.p-sportip__img-pattern {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-sportip__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.p-sportip__text-block p {
+  font-size: var(--fs-base);
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.p-sportip__text-block span {
+  font-weight: 500;
+  color: var(--text-lightBlue);
+}
+
+/* SPORTIPリンク */
+.p-sportip__links-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+  cursor: pointer;
+  margin-bottom: 10rem;
+}
+
+.p-sportip__links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: var(--fs-sm2);
+  color: var(--text-black1);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.p-sportip__links-item:hover {
+  color: var(--base-lightBlue);
+}
+
+/* テキストコンテナ / カード終了 */
+/* ========================================
+   開始: ポイントステップ
+   ======================================== */
+/* YouTube */
+.p-sportip__youtube-wrap {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.p-sportip__youtube {
+  position: relative;
+  width: 55rem;
+  height: 31rem;
+  background-color: #1a1a1a;
+  overflow: hidden;
+}
+
+.p-sportip__youtube iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ポイントステップ終了 */
+/* ========================================
+   開始: 姿勢 / 機能ブロック
+   ======================================== */
+.p-sportip__section--lightblue {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.p-sportip__phone {
+  position: relative;
+}
+
+.p-sportip__phone img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  height: 33.333vw;
+  width: auto;
+}
+
+.p-sportip__phone-video {
+  position: absolute;
+  top: 2%;
+  left: 5.5%;
+  width: 90%;
+  height: 95.5%;
+  object-fit: fill;
+  z-index: 100;
+  border-radius: 1.5625vw;
+  background-color: var(--base-lightBlue);
+}
+
+.p-sportip__ribbon--02 {
+  position: absolute;
+  top: 25%;
+  right: -50%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+/* モバイルスマートフォン複製 — デスクトップでは非表示 */
+.p-sportip__phone--mobile {
+  display: none;
+}
+
+.p-sportip__diagnosis-block {
+  background-color: white;
+  width: 100%;
+  padding: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  z-index: 10;
+  max-width: 55rem;
+}
+
+/* 02 */
+.p-sportip__speak-container--02 {
+  position: absolute;
+  bottom: 0rem;
+  left: 2rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-sportip__speak-image--02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-sportip__speak-bubble--02 {
+  position: absolute;
+  top: -3rem;
+  right: 9rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-sportip__speak-person--02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 03 */
+.p-sportip__speak-container--03 {
+  position: absolute;
+  bottom: 0rem;
+  right: 3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-sportip__speak-image--03 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-sportip__speak-bubble--03 {
+  position: absolute;
+  top: -4rem;
+  right: -6rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-sportip__speak-person--03 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-sportip__mobile-divider {
+  height: 1px;
+  margin-bottom: 50px;
+}
+
+.p-sportip__point-header-row {
+  gap: 40px;
+}
+
+.p-sportip__section-subtitle {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.p-sportip__point-heading {
+  padding-bottom: 8px;
+  line-height: 2rem;
+}
+
+.p-sportip__content-row {
+  position: relative;
+}
+
+.p-sportip__section-number {
+  padding-bottom: 8px;
+  font-size: 5.625rem;
+}
+
+.p-sportip__diagnosis-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.p-sportip__divider {
+  height: 1px;
+}
+
+.p-sportip__label {
+  width: 5rem;
+}
+
+.p-sportip__content-row--end {
+  position: relative;
+  justify-content: flex-end;
+}
+
+.p-sportip__content-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.p-sportip__content-row--spaced {
+  position: relative;
+  margin-top: 100px;
+}
+
+.p-sportip__flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-sportip__scroll-top-icon {
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+/* 姿勢 / 機能ブロック終了 */
+/* ========================================
+   メディア: max-width 1024px
+   ======================================== */
+@media (max-width: 1024px) {
+  /* ========================================
+     開始: バナー
+     ======================================== */
+  .p-sportip__banner-content {
+    left: 3rem;
+  }
+  /* 左フレーム画像 — 水平方向のobject-position、垂直方向のtransform */
+  .c-hero-slider__frames__clip1 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    left: 0;
+  }
+  /* 右フレーム画像 */
+  .c-hero-slider__frames__clip2 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    right: 0;
+    left: 0;
+  }
+  .p-sportip__banner-title {
+    font-size: var(--fs-2xl);
+  }
+  /* バナー終了 */
+  /* ========================================
+     開始: セクションタイトル
+     ======================================== */
+  .p-sportip__title {
+    font-size: var(--fs-8xl);
+  }
+  /* セクションタイトル終了 */
+  /* ========================================
+     開始: テキストコンテナ / カード
+     ======================================== */
+  .p-sportip__text-container,
+  .p-sportip__text-container--02 {
+    width: 55vw;
+    padding: 2.5rem;
+  }
+  /* テキストコンテナ / カード終了 */
+  /* ========================================
+     開始: 姿勢 / 機能ブロック
+     ======================================== */
+  .p-sportip__phone img {
+    height: 28vw;
+  }
+  /* 姿勢 / 機能ブロック終了 */
+  /* ========================================
+     開始: ポイントステップ
+     ======================================== */
+  .p-sportip__youtube {
+    width: 100%;
+    height: 28rem;
+  }
+  /* スピークパーソン — 縮小 */
+  .p-sportip__speak-person--02,
+  .p-sportip__speak-person--03 {
+    height: 18rem;
+  }
+  /* ポイントステップ終了 */
+}
+/* ========================================
+   メディア: max-width 767px
+   ======================================== */
+@media (max-width: 767px) {
+  /* ========================================
+     開始: バナー
+     ======================================== */
+  .p-sportip__banner-content {
+    top: 20%;
+    left: 1.25rem;
+  }
+  .p-sportip__banner-title {
+    font-size: var(--fs-lg);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+  .p-sportip__banner-logo {
+    /* top: 50%;
+    left: auto;
+    right: 15%;
+    width: auto;
+    height: 10%; */
+    display: none;
+  }
+  .p-sportip__breadcrumb {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 3%;
+  }
+  /* ── BANNER SP IMAGE POSITIONING ── */
+  .c-hero-slider__frames__clip1 .c-clip-img {
+    object-position: center center;
+  }
+  .c-hero-slider__frames__clip2 .c-clip-img {
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-position: 55% center;
+    transform: scale(1) translateY(30%);
+  }
+  /* バナー終了 */
+  /* ========================================
+     開始: セクションタイトル
+     ======================================== */
+  .p-sportip__title {
+    font-size: var(--fs-5xl);
+    line-height: 1.2;
+  }
+  .p-sportip__subtitle {
+    font-size: var(--fs-sm);
+  }
+  .p-sportip__title-container {
+    margin-bottom: 0;
+  }
+  /* セクションタイトル終了 */
+  /* ========================================
+     開始: テキストコンテナ / カード
+     ======================================== */
+  /* ── 03 SECTION — white background on mobile ── */
+  .p-sportip__section--03 {
+    background-image: url("../img/common/bg_white_pattern.webp");
+    background-size: cover;
+    background-position: 0% -170%;
+  }
+  /* ── LINKS NAV ── */
+  .p-sportip__links-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    justify-content: flex-start;
+  }
+  .p-sportip__links-nav a {
+    width: fit-content;
+  }
+  .p-sportip__links-item {
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+  /* ── POINT TITLE SECTION ── */
+  .p-sportip__content .c-section__header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  /* Subtitle text + icon row — keep side-by-side */
+  .p-sportip__content .c-flex-gap-3 {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+    line-height: 2;
+  }
+  .p-sportip__content-title {
+    font-size: var(--fs-base);
+  }
+  /* ── CONTENT ITEM 01 & 03 (text container on right) ── */
+  /* Make the outer .relative flex-col on mobile */
+  div:has(> .p-sportip__text-container) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* Images — full width */
+  .p-sportip__img--with-text {
+    width: 100%;
+    max-width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Un-position the overlay text panel */
+  .p-sportip__text-container {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    top: auto;
+    right: auto;
+    overflow: hidden;
+  }
+  /* ── CONTENT ITEM 02 (text container on left) ── */
+  div:has(> .p-sportip__text-container--02) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .p-sportip__img--with-text-02 {
+    width: 100%;
+    max-width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .p-sportip__text-container--02 {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    top: auto;
+    left: auto;
+    overflow: hidden;
+  }
+  /* ── TEXT CONTAINER INTERNALS ── */
+  /* Scale down pattern cutout */
+  .p-sportip__img-pattern {
+    height: 10%;
+    width: auto;
+  }
+  /* Number + icon + label row — stack on mobile */
+  .p-sportip__text-container .c-section__header-row--md-gap,
+  .p-sportip__text-container--02 .c-section__header-row--md-gap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  /* Large number heading */
+  .p-sportip__text-container .p-sportip__section-number,
+  .p-sportip__text-container--02 .p-sportip__section-number {
+    font-size: 3.5rem;
+  }
+  /* Section label heading */
+  .p-sportip__text-container h4,
+  .p-sportip__text-container--02 h4 {
+    font-size: var(--fs-lg);
+  }
+  /* Bullet rows */
+  .p-sportip__text-block {
+    gap: 0.75rem;
+  }
+  .p-sportip__text-block p {
+    font-size: var(--fs-sm);
+    line-height: 1.7;
+  }
+  /* mb-100 and mt-100 — reduce on mobile */
+  .w-100.flex.mb-100,
+  .w-100.flex.justify-end.mb-100 {
+    margin-bottom: 2rem;
+  }
+  .mt-100 {
+    margin-top: 2.5rem;
+  }
+  /* テキストコンテナ / カード終了 */
+  /* ========================================
+     開始: ポイントステップ
+     ======================================== */
+  /* ── YOUTUBE ── */
+  .p-sportip__youtube-wrap {
+    margin-top: 1.5rem;
+  }
+  .p-sportip__youtube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  /* ── DESCRIPTION SECTIONS ── */
+  .c-maxWidth.c-maxWidth--content h2 {
+    font-size: var(--fs-md);
+    line-height: 1.6;
+  }
+  /* ポイントステップ終了 */
+  /* ========================================
+     開始: 姿勢 / 機能ブロック
+     ======================================== */
+  /* ── PHONE + TEXT BLOCK SECTION ── */
+  .c-maxWidth {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* Ribbon — reposition behind phone on mobile */
+  .p-sportip__ribbon--02 {
+    position: absolute;
+    top: 5%;
+    left: -74%;
+    right: auto;
+    z-index: 0;
+  }
+  /* White text block — tighter padding on mobile */
+  .p-sportip__diagnosis-block {
+    max-width: 100%;
+    padding: 1rem 0.75rem;
+    gap: 1rem;
+  }
+  .p-sportip__diagnosis-block h2 {
+    font-size: var(--fs-base);
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  /* デスクトップスマートフォン — モバイルでは非表示 */
+  .p-sportip__phone--desktop {
+    display: none;
+  }
+  /* モバイルスマートフォン — 表示＆中央揃え */
+  .p-sportip__phone--mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .p-sportip__phone img {
+    height: 85vw;
+    max-height: 520px;
+  }
+  .p-sportip__phone-video {
+    border-radius: 4vw;
+    width: 45%;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* ── SPEAK PERSONS ── */
+  .p-sportip__speak-container--02 {
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: 7rem;
+  }
+  .p-sportip__speak-container--03 {
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    right: 7rem;
+  }
+  .p-sportip__speak-person--02,
+  .p-sportip__speak-person--03 {
+    height: 12rem;
+  }
+  .p-sportip__speak-bubble--02 {
+    height: 5rem;
+    top: -2rem;
+    right: 5rem;
+  }
+  .p-sportip__speak-bubble--03 {
+    height: 5rem;
+    top: -2.5rem;
+    right: -6rem;
+  }
+  /* 姿勢 / 機能ブロック終了 */
+}

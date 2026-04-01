@@ -1,0 +1,130 @@
+/* ============================================
+    HOVER /SCROLL ANIMATIONS
+   ============================================ */
+/* ============================================
+   1. SCROLL ANIMATIONS
+   ============================================ */
+.c-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.c-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.c-reveal--left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.c-reveal--left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.c-reveal--right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.c-reveal--right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.c-reveal--scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.c-reveal--scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+/* ============================================
+   2. SCROLL ANIMATIONS
+   ============================================ */
+.c-hover-text-underline {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.c-hover-text-underline::before,
+.c-hover-text-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: var(--base-lightBlue);
+}
+
+.c-hover-text-underline:hover::before,
+.c-hover-text-underline:hover::after {
+  right: 0;
+}
+.banner-a-link:hover {
+  color: var(--base-lightBlue);
+  transition: all 0.3s ease-in-out;
+}
+/* ============================================
+   3. JUMP ANIMATIONS
+   ============================================ */
+.c-animation-jump {
+  display: block;
+  transform-origin: center bottom;
+}
+
+.c-animation-jump.is-jump-once {
+  animation: p-storedetail-jump 1.8s ease-in-out 1;
+}
+
+@keyframes p-storedetail-jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-0.875rem);
+  }
+  35% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.4375rem);
+  }
+  65% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-animation-jump,
+  .c-animation-jump.is-jump-once {
+    animation: none;
+  }
+}
+/* ============================================
+   3. END OF HOVER /SCROLL JUMP ANIMATIONS
+   ============================================ */

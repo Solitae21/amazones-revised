@@ -1,0 +1,59 @@
+/* ============================================
+     GLOBAL UTILITYS FOR HEADER, ANNOUNCEMENT ENDNOTE FOOTER SECTION TEXTSLIDER
+   ============================================ */
+
+/* ============================================
+     END GLOBAL UTILITYS FOR HEADER, ANNOUNCEMENT ENDNOTE FOOTER SECTION TEXTSLIDER
+   ============================================ */
+
+/* Cookie通知 */
+.c-cookie-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: row; /* flex-row */
+  align-items: center; /* items-center */
+  gap: 15px; /* gap-15px */
+  padding-top: 15px; /* py-15 */
+  padding-bottom: 15px; /* py-15 */
+  padding-left: 120px; /* px-120 */
+  padding-right: 120px; /* px-120 */
+  background-color: var(--base-black); /* bg-base-black1 */
+  opacity: 0;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.c-cookie-notice.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.c-cookie-notice.hide {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.c-cookie-notice .l-footer__btn {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  background-color: var(--base-white);
+  color: var(--base-black);
+  border-radius: 5px;
+  font-weight: 550;
+  padding: 5px 10px;
+}
+
+.c-cookie-notice .l-footer__btn:hover {
+  opacity: 0.75;
+}
+.c-cookie-notice__sub {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: none;
+}

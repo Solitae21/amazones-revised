@@ -1,0 +1,27 @@
+/* ============================================
+     SECTION HEADER TEXT
+============================================ */
+.c-section-header__wrapper {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 18px; /* gap-18px */
+}
+@media screen and (max-width: 767px) {
+  .c-section-header__wrapper {
+    gap: 10px;
+    z-index: 10;
+    position: relative;
+  }
+  .section-sub-text {
+    font-size: var(--fs-base);
+    z-index: 10;
+  }
+  .c-section-header__text {
+    font-size: var(--fs-6xl);
+    z-index: 10;
+    position: relative;
+  }
+}
+/* ============================================
+     END OF SECTION HEADER TEXT RESPONSIVE
+============================================ */

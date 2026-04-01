@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <base href="/amazones-test/">
+    <meta
+      name="description"
+      content="女性専用24時間ジムAmazones（アマゾネス）への各種お問い合わせはこちらからお願いいたします。"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      お問い合わせフォーム | Amazones（アマゾネス） |
+      初心者向け女性専用24時間ジム
+    </title>
+    <!-- グローバルCSS -->
+    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <!-- お問い合わせCSS -->
+    <link href="assets/css/contact.css" rel="stylesheet" type="text/css">
+
+    <!-- スクリプト -->
+    <script src="assets/js/common.js" defer></script>
+    <script src="assets/js/global.js" defer></script>
+  </head>
+
+  <body>
+    <!--ヘッダー-->
+    <header class="l-header">
+      <div
+        class="l-header-wrapper"
+      >
+        <div class="l-header__brand">
+          <a href="./">
+            <img
+              src="assets/img/common/icon_logo.svg"
+              alt="アマゾネス"
+              width="159.97px"
+              height="62.77px"
+              class="amazones-header-logo"
+            >
+          </a>
+          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+            WOMEN ONLY24h GYM
+          </p>
+        </div>
+
+        <div class="l-header__actions">
+          <a
+            href="storelist/"
+            class="l-header__btn"
+          >
+            <div
+              class="icon-wrapper"
+            >
+              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+            </div>
+            <div class="l-header__btn__content">
+              <div class="l-header__btn__text">
+                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
+                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+              </div>
+              <img
+                src="assets/img/common/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              >
+            </div>
+          </a>
+
+          <a
+            href="reservation/"
+            class="l-header__btn l-header__btn--reservation"
+          >
+            <div
+              class="icon-wrapper"
+            >
+              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+            </div>
+            <div class="l-header__btn__content">
+              <div class="l-header__btn__text">
+                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                  24時間WEB予約可能
+                </p>
+                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                  体験予約はこちら
+                </p>
+              </div>
+              <img
+                src="assets/img/common/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              >
+            </div>
+          </a>
+        </div>
+
+        <!--フローティングヘッダーメニュー-->
+        <div
+          id="header-floating-menu"
+          class="l-header-floating-menu"
+        >
+          <div
+            id="floating-menu-btn"
+            class="l-header-floating-menu__btn"
+          >
+            <img
+              src="assets/img/common/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            >
+            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+
+            <button type="button" class="l-header__hamburger" aria-label="メニュー">
+              <span class="mh-bar l-header__hamburger-bar"></span>
+              <span class="mh-bar l-header__hamburger-bar"></span>
+              <span class="mh-bar l-header__hamburger-bar"></span>
+            </button>
+        <div class="l-header-floating-menu__close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
+            <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
+          </svg>
+          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+        </div>
+          </div>
+
+          <div
+            id="floating-menu-content"
+            class="l-header-floating-menu__content u-cursor-pointer"
+          >
+            <p
+              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+            >
+              ©2026 Wellness Land Co., Ltd.
+            </p>
+          </div>
+
+        <div id="nav-menu-popup" class="l-nav-menu-popup">
+          <div class="l-nav-menu-popup__columns">
+
+            <!-- 会社について -->
+            <div class="l-nav-menu-popup__section">
+              <div class="l-footer__page-link">
+                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                <div class="l-footer__link-line"></div>
+              </div>
+              <div class="l-nav-menu-popup__links">
+                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
+                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
+                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
+                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
+                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
+                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
+                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
+                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
+                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+              </div>
+            </div>
+
+            <!-- サービス + 採用情報 -->
+            <div class="l-nav-menu-popup__group">
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
+                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
+                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                </div>
+              </div>
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 他店舗 + SNS -->
+            <div class="l-nav-menu-popup__group">
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                </div>
+              </div>
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 下部行 -->
+          <div class="l-nav-menu-popup__bottom" style="gap: 20px">
+            <div class="l-nav-menu-popup__bottom-btns">
+              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              </a>
+              <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+              </a>
+            </div>
+            <div class="l-nav-menu-popup__bottom-links">
+              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
+              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
+              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
+              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+            </div>
+          </div>
+        </div>
+</div>
+
+        <!--モバイルヘッダー-->
+        <div class="l-mobile-header-overlay">
+          <nav class="l-sp-nav__main">
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
+                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Recruitment</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="https://recruit.amazones.fit/" target="_blank" class="l-sp-nav__link">採用情報</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Other Shops</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="https://hqf.osaka/" target="_blank" class="l-sp-nav__link">完全個室PRIVATE GYM Highness</a></li>
+                <li><a href="https://hercules.amazones.fit/" target="_blank" class="l-sp-nav__link">24時間ジム Amazones &amp; Herculest</a></li>
+                <li><a href="https://shop.amazones.fit/" target="_blank" class="l-sp-nav__link">AMAZONES ONLINE SHOP</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">SNS</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-sp-nav__link sp-nav-link--icon"><img src="assets/img/common/icon_youtube.svg" class="l-sp-nav__sns-icon" alt="">Amazones｜公式YouTube</a></li>
+                <li><a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-sp-nav__link sp-nav-link--icon"><img src="assets/img/common/icon_instragram.svg" class="l-sp-nav__sns-icon" alt="">Amazones｜公式Instagram</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="l-sp-nav__sub">
+            <div class="l-sp-nav__btns">
+              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              </a>
+              <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+              </a>
+            </div>
+            <ul class="l-sp-nav__utility">
+              <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
+              <li><a href="sitemap/">サイトマップ</a></li>
+              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="#">個人情報保護方針</a></li>
+              <li><a href="#">WEBサイトのご利用に当たって</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ヘッダー-->
+
+    <!--メインコンテンツ-->
+    <main>
+      <!-- バナー -->
+      <section class="c-banner-section">
+        <div class="p-banner">
+          <div class="p-banner-inner">
+            <img
+              src="assets/img/common/img_gym02.webp"
+              alt="予約バナー"
+              class="p-banner-img"
+            >
+
+            <div class="p-banner-overlay"></div>
+          </div>
+
+          <!-- バナーテキスト -->
+          <div class="p-banner-content">
+            <h1 class="p-banner-title u-font-zen u-text-white">お問い合わせ</h1>
+            <p class="p-banner-subtitle u-font-outfit">Contact</p>
+            <!-- パンくずリスト -->
+            <nav class="c-breadcrumb p-breadcrumb">
+              <a href="./" class="c-breadcrumb-home">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17 17"
+                  width="17"
+                  height="17"
+                >
+                  <path
+                    id="シェイプ894"
+                    fill="#81d7cf"
+                    d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
+                  >
+                </svg>
+              </a>
+              <span class="c-breadcrumb-separator">&#x203A;</span>
+              <a href="#" class="u-text-white u-fs-14 banner-a-link"
+                >お問い合わせ</a
+              >
+            </nav>
+          </div>
+        </div>
+        <!-- リボン装飾01 -->
+        <img
+          src="assets/img/common/img_ribbon_banner.svg"
+          alt="リボン装飾"
+          class="ribbon-banner c-clip-grow-right"
+        >
+      </section>
+
+      <!-- お問い合わせ -->
+      <section class="p-contact__page u-relative">
+        <div class="p-contact__wrapper">
+          <div class = 'p-contact__header'>
+            <hgroup class="c-section-header__wrapper">
+              <p class="c-reveal section-sub-text u-fs-18 u-fw-500 u-text-black1">
+                お問い合わせフォーム
+              </p>
+              <h2
+                class="c-reveal c-section-header__text u-fs-100 u-lh-normal u-font-outfit u-text-black1 u-fw-400"
+              >
+                Contact Form
+              </h2>
+            </hgroup>
+            <div class="c-reveal u-mt-60 u-md-mt-20">
+              <p class="fw-50 u-fs-16 u-lh-200">
+                下記のフォームに必要事項をご入力のうえ、入力内容を確認し送信してください。
+              </p>
+              <p class="fw-50 u-fs-16 u-lh-200">
+                お問い合わせの内容によりメール以外の方法でご連絡させていただく場合や、お返事できかねる場合がございます。予めご了承ください。
+              </p>
+            </div>
+          </div>
+
+          <div class = 'p-contact__sticker'>
+            <img src="assets/img/contact/img_contact_sticker.webp" width = '277px' height = 'auto' class = 'p-contact__sticker-pic'>
+            <img src="assets/img/contact/img_contact_speech.svg" width  = "170px" height = 'auto' class = 'p-contact__speech c-speech-bubble'>
+          </div>
+          <form class="c-reveal--scale p-contact__card" novalidate>
+            <!-- 氏名 -->
+            <fieldset class="p-contact__field">
+              <div class="p-contact__field-inner">
+                <legend class="p-contact__label-wrap">
+                  <label class="p-contact__label" for="name">氏名</label>
+                  <mark class="p-contact__badge p-contact__badge--required"
+                    >必須</mark
+                  >
+                </legend>
+                <div class="p-contact__control">
+                  <input
+                    class="p-contact__input"
+                    id="name"
+                    type="text"
+                    placeholder="例：山田太郎"
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- フリガナ -->
+            <fieldset class="p-contact__field">
+              <div class="p-contact__field-inner">
+                <legend class="p-contact__label-wrap">
+                  <label class="p-contact__label" for="furigana"
+                    >フリガナ</label
+                  >
+                </legend>
+                <div class="p-contact__control">
+                  <input
+                    class="p-contact__input"
+                    id="furigana"
+                    type="text"
+                    placeholder="例：ヤマダタロウ"
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- お電話番号 -->
+            <fieldset class="p-contact__field">
+              <div class="p-contact__field-inner">
+                <legend class="p-contact__label-wrap">
+                  <label class="p-contact__label" for="tel">お電話番号</label>
+                </legend>
+                <div class="p-contact__control">
+                  <input
+                    class="p-contact__input"
+                    id="tel"
+                    type="tel"
+                    placeholder="例：03-4321-5678"
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- メールアドレス -->
+            <fieldset class="p-contact__field">
+               <div class="p-contact__field-inner">
+                 <legend class="p-contact__label-wrap">
+                <label class="p-contact__label" for="email"
+                  >メールアドレス</label
+                >
+                <mark class="p-contact__badge p-contact__badge--required"
+                  >必須</mark
+                >
+              </legend>
+              <div class="p-contact__control">
+                <input
+                  class="p-contact__input"
+                  id="email"
+                  type="email"
+                  placeholder="例：contact@company.jp"
+                >
+              </div>
+               </div>
+
+            </fieldset>
+
+            <!-- 確認用メールアドレス -->
+            <fieldset class="p-contact__field">
+                <div class="p-contact__field-inner">
+                  <legend class="p-contact__label-wrap">
+                <label class="p-contact__label" for="email-confirm"
+                  >確認用メールアドレス</label
+                >
+                <mark class="p-contact__badge p-contact__badge--required"
+                  >必須</mark
+                >
+              </legend>
+              <div class="p-contact__control">
+                <input
+                  class="p-contact__input"
+                  id="email-confirm"
+                  type="email"
+                  placeholder="例：contact@company.jp"
+                >
+              </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- 二住所 – 郵便番号 -->
+            <fieldset class="p-contact__field">
+               <div class="p-contact__field-inner">
+                 <legend class="p-contact__label-wrap">
+                <label class="p-contact__label" for="postal">二住所</label>
+                <label
+                  class="p-contact__sub-label p-prefecture__postal"
+                  for="postal"
+
+                  >郵便番号</label
+                >
+              </legend>
+              <div class="p-contact__control">
+                <div class="p-contact__postal-row">
+                  <abbr class="p-contact__postal-prefix" title="郵便番号"
+                    >〒</abbr
+                  >
+                  <input
+                    class="p-contact__input p-contact__input--postal"
+                    id="postal"
+                    type="text"
+                  >
+                  <button type="button" class="p-contact__btn-confirm c-btn--light-blue" type="button">
+                    住所自動入力
+                  </button>
+                </div>
+              </div>
+
+               </div>
+
+            </fieldset>
+
+            <!-- 都道府県 -->
+            <fieldset class="p-contact__field">
+               <div class="p-contact__field-inner">
+                 <legend class="p-contact__label-wrap p-contact__sub-label-wrap">
+                <label class="p-contact__sub-label" for="prefecture"
+                  >都道府県</label
+                >
+              </legend>
+              <div class="p-contact__control">
+                <input class="p-contact__input" id="prefecture" type="text" >
+              </div>
+               </div>
+
+            </fieldset>
+
+            <!-- 市町村 -->
+            <fieldset class="p-contact__field">
+              <div class="p-contact__field-inner">
+                 <legend class="p-contact__label-wrap p-contact__sub-label-wrap">
+                <label class="p-contact__sub-label" for="city">市町村</label>
+              </legend>
+              <div class="p-contact__control">
+                <input class="p-contact__input" id="city" type="text" >
+              </div>
+
+              </div>
+
+            </fieldset>
+
+            <!-- 番地・建物名 -->
+            <fieldset class="p-contact__field">
+               <div class="p-contact__field-inner">
+
+                <legend class="p-contact__label-wrap p-contact__sub-label-wrap">
+                <label class="p-contact__sub-label" for="address"
+                  >番地・建物名</label
+                >
+              </legend>
+              <div class="p-contact__control">
+                <input class="p-contact__input" id="address" type="text" >
+              </div>
+               </div>
+
+            </fieldset>
+
+            <!-- お問い合わせの種類 -->
+            <fieldset class="p-contact__field">
+               <div class="p-contact__field-inner">
+
+                <legend class="p-contact__label-wrap">
+                <label class="p-contact__label" for="inquiry-type"
+                  >お問い合わせの種類</label
+                >
+                <mark class="p-contact__badge p-contact__badge--required"
+                  >必須</mark
+                >
+              </legend>
+              <div class="p-contact__control">
+                <div class="p-contact__select-wrap">
+                  <select class="p-contact__select" id="inquiry-type">
+                    <option value="">
+                      お問い合わせの種類を選択してください
+                    </option>
+                    <option value="general">一般的なお問い合わせ</option>
+                    <option value="support">サポート</option>
+                    <option value="sales">営業</option>
+                    <option value="other">その他</option>
+                  </select>
+                </div>
+              </div>
+               </div>
+
+            </fieldset>
+
+            <!-- お問い合わせ内容 -->
+            <fieldset class="p-contact__field">
+              <legend class="p-contact__label-wrap">
+                <label class="p-contact__label" for="inquiry-body"
+                  >お問い合わせ内容</label
+                >
+                <mark class="p-contact__badge p-contact__badge--optional"
+                  >任意</mark
+                >
+              </legend>
+              <div class="p-contact__control">
+                <textarea
+                  class="p-contact__textarea"
+                  id="inquiry-body"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <!-- チェックボックス -->
+            <div class="p-contact__checkbox-row">
+              <input class="p-contact__checkbox" type="checkbox" id="privacy" >
+              <label class="p-contact__checkbox-label" for="privacy">
+                <a href="#">個人情報の取り扱いについて</a>に同意します
+              </label>
+            </div>
+
+            <!-- 注意事項 -->
+            <p class="p-contact__notice">
+              必須項目をすべて入力の上、個人情報保護方針にチェックをしてください。
+            </p>
+
+            <!-- 送信ボタン -->
+            <a href="#" class="c-btn--light-blue l-footer__blue-btn u-mx-auto">
+                <p class="u-text-white u-fs-16 u-font-outfit">入力内容を確認する</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--/メインコンテンツ-->
+<!--フッター-->
+<footer class="l-footer">
+  <section class="l-footer__main-container">
+
+    <!-- 上部: ブランド + ナビ -->
+    <section class="l-footer__top">
+
+      <!-- ブランド -->
+      <aside class="l-footer__brand">
+        <figure class="l-footer__brand-logo">
+          <a href="./">
+            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+            <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
+            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+          </a>
+        </figure>
+
+        <nav class="l-footer__cta-links" aria-label="クイックリンク">
+          <a href="contact/" class="c-btn--light-blue">
+            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+            <img src="assets/img/common/icon_arrow.svg" alt="">
+          </a>
+          <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
+            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <img src="assets/img/common/icon_videos.svg" alt="">
+          </a>
+        </nav>
+      </aside>
+
+      <!-- ナビカラム -->
+      <section class="l-footer__nav-columns">
+
+        <!-- 会社について -->
+        <nav class="l-footer__nav-section" aria-label="About Us">
+         <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+  </button>
+          <ul class="l-footer__nav-list">
+            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
+            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
+            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
+            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
+            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
+            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
+            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
+            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
+            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+          </ul>
+        </nav>
+
+        <!-- サービス + 採用情報 グループカラム -->
+        <section class="l-footer__nav-group">
+
+          <!-- サービス -->
+          <nav class="l-footer__nav-section" aria-label="Service">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+            <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
+              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
+              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+            </ul>
+          </nav>
+
+          <!-- 採用情報 -->
+          <nav class="l-footer__nav-section" aria-label="Recruitment">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li>
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  採用情報
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
+
+        <!-- 他店舗 + SNS グループカラム -->
+        <section class="l-footer__nav-group">
+
+          <!-- 他店舗 -->
+          <nav class="l-footer__nav-section" aria-label="Other Shops">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li>
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  完全個室PRIVATE GYM Highness
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+              <li>
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  24時間ジム Amazones &amp; Herculest
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+              <li>
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  AMAZONES ONLINE SHOP
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- SNS -->
+          <nav class="l-footer__nav-section" aria-label="SNS">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li>
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
+                  Amazones｜公式YouTube
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
+                  Amazones｜公式Instagram
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
+
+      </section>
+    </section>
+
+    <!-- 下部: 法的リンク + スクロールアップ -->
+    <section class="l-footer__bottom">
+      <ul class="l-footer__legal-links">
+        <li>
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+            運営会社について
+            <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+          </a>
+        </li>
+        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
+        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
+        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
+        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+      </ul>
+
+      <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
+        <img src="assets/img/common/icon_arrow.svg" alt="" style="transform: scaleX(-1) rotate(-90deg)">
+      </button>
+    </section>
+
+  </section>
+
+
+    <aside class="c-cookie-notice">
+      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+        の使用を承諾したものとみなされます。</p>
+      <div class="c-cookie-notice__buttons">
+        <button type="button" class="l-footer__btn">OK</button>
+        <button type="button" class="l-footer__btn">プライバシーポリシー</button>
+      </div>
+      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+    </aside>
+</footer>
+<!--/フッター-->
+
+  </body>
+</html>

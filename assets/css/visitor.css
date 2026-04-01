@@ -1,0 +1,645 @@
+@charset "UTF-8";
+/* ========================================
+   開始: セクションタイトル
+   ======================================== */
+.p-visitor__section--white {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_white_pattern.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.p-visitor__content {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.p-visitor__title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.p-visitor__subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__title {
+  font-size: 6.259rem;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--font-outfit);
+}
+
+/* セクションタイトル終了 */
+/* ========================================
+   開始: キャンペーンブロック
+   ======================================== */
+.p-visitor__campaign-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__campaign-header {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--base-lightBlue);
+}
+
+.p-visitor__campaign-header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.p-visitor__campaign-header span {
+  font-size: 1.25rem;
+  color: var(--text-lightBlue);
+  font-weight: 500;
+}
+
+/* キャンペーン行 */
+.p-visitor__campaign-row {
+  display: flex;
+  gap: 30px;
+}
+
+/* キャンペーン説明 */
+.p-visitor__campaign-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+  font-family: var(--font-zen);
+}
+
+/* キャンペーン画像 — デスクトップサイズ */
+.p-visitor__campaign-img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* キャンペーンブロック終了 */
+/* ========================================
+   開始: 概要 / カード
+   ======================================== */
+.p-visitor__section--lightblue {
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.p-visitor__about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* 概要ボックス */
+.p-visitor__about-card,
+.p-visitor__about-card--alt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  background-color: white;
+  flex: 1 1 0%;
+}
+
+.p-visitor__about-card--alt {
+  min-height: 18rem;
+  justify-content: start;
+  font-weight: 500;
+}
+
+.p-visitor__about-card span,
+.p-visitor__about-card--alt span {
+  color: var(--text-lightBlue);
+}
+
+.p-visitor__about-card-body,
+.p-visitor__about-card-body--alt {
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__about-card-body p {
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__about-card-body--alt p {
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__about-header,
+.p-visitor__about-header--red {
+  width: 15rem;
+  background-color: var(--base-lightBlue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.p-visitor__about-header h4,
+.p-visitor__about-header--red h4 {
+  font-family: var(--font-zen);
+}
+
+.p-visitor__about-header--red {
+  background-color: var(--base-red);
+  gap: 0.5rem;
+}
+
+/* 概要グループ */
+.p-visitor__about-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* 概要グループ */
+.p-visitor__about-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* 概要行 */
+.p-visitor__about-row {
+  display: flex;
+  gap: 50px;
+}
+
+/* 概要代替見出し */
+.p-visitor__about-alt-heading {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 12px 0;
+  line-height: 2;
+}
+
+.p-visitor__about-alt-heading h2 {
+  font-family: var(--font-zen);
+  color: var(--text-lightBlue);
+}
+
+/* チェックリスト開始 */
+.p-visitor__checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.p-visitor__checklist-item {
+  color: var(--base-darkText);
+  line-height: 1.6;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__checklist-item span {
+  color: var(--text-lightBlue);
+}
+
+/* チェックリスト終了 */
+/* スピークパーソン */
+/* 左 */
+.p-visitor__speak-container--left {
+  position: absolute;
+  bottom: 0rem;
+  left: 0.5rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-visitor__speak-image--left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-visitor__speak-bubble--left {
+  position: absolute;
+  top: -3rem;
+  right: 7rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-visitor__speak-person--left {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 右 */
+.p-visitor__speak-container--right {
+  position: absolute;
+  bottom: 0rem;
+  right: -3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-visitor__speak-image--right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-visitor__speak-bubble--right {
+  position: absolute;
+  top: -5rem;
+  right: -4rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-visitor__speak-person--right {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 概要 / カード終了 */
+/* ========================================
+   開始: ご利用方法ステップ
+   ======================================== */
+.p-visitor__howto-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/common/img_gym03.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ご利用方法セクションの白テキスト */
+.p-visitor__howto-section .p-visitor__title-container,
+.p-visitor__howto-section .p-visitor__subtitle,
+.p-visitor__howto-section .p-visitor__title {
+  color: white;
+}
+
+/* ご利用方法コンテンツ（旧py-100） */
+.p-visitor__howto-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ご利用方法コンテンツ本文 */
+.p-visitor__howto-content-body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.p-visitor__glassy-bg {
+  background-color: rgba(42, 42, 42, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 1rem;
+}
+
+.p-visitor__howto-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border: 1px solid rgba(129, 216, 208, 0.4);
+}
+
+.p-visitor__howto-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 2.5rem;
+}
+
+.p-visitor__howto-divider {
+  width: 1px;
+  height: 15rem;
+  background-color: rgba(238, 240, 243, 0.5);
+  align-self: center;
+}
+
+.p-visitor__howto-step-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.05em;
+  font-family: var(--font-outfit);
+}
+
+.p-visitor__howto-step-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--text-lightBlue);
+  letter-spacing: 0.05em;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__howto-step-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  line-height: 2.5rem;
+  /* max-width: 18rem; */
+  text-align: justify;
+  font-family: var(--font-zen);
+}
+
+/* ご利用方法ステップ終了 */
+/* ========================================
+   開始: CTA
+   ======================================== */
+/* FAQコンテンツ（旧py-100） */
+.p-visitor__faq-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* FAQリスト */
+.p-visitor__faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.p-visitor__faq-ribbon {
+  position: absolute;
+  top: -5%;
+  right: -10%;
+  width: 82vw;
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* CTA終了 */
+/* ========================================
+   開始: ユーティリティオーバーライド
+   ======================================== */
+.l-footer__page-link h3 {
+  margin: 0;
+}
+
+/* ユーティリティオーバーライド終了 */
+/* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-visitor__scroll-top-icon {
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+/* ========================================
+   メディア: max-width 1024px
+   ======================================== */
+@media (max-width: 1024px) {
+  /* 開始: セクションタイトル */
+  .p-visitor__title {
+    font-size: 4rem;
+  }
+  /* セクションタイトル終了 */
+  /* 開始: キャンペーンブロック */
+  .p-visitor__campaign-row {
+    flex-direction: column;
+  }
+  .p-visitor__campaign-img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .p-visitor__content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  /* キャンペーンブロック終了 */
+  /* 開始: 概要 / カード */
+  .p-visitor__about {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .p-visitor__about-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .p-visitor__about-header,
+  .p-visitor__about-header--red {
+    width: 100%;
+  }
+  .p-visitor__about-card-body,
+  .p-visitor__about-card-body--alt {
+    padding: 1.5rem;
+  }
+  .p-visitor__about-groups {
+    gap: 3rem;
+  }
+  .p-visitor__about-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* スピークパーソン — タブレット/モバイルで下部に再配置 */
+  .p-visitor__speak-container--left {
+    bottom: -1.5rem;
+    left: 5rem;
+  }
+  .p-visitor__speak-container--right {
+    bottom: -1.5rem;
+    right: 5rem;
+  }
+  .p-visitor__speak-person--left,
+  .p-visitor__speak-person--right {
+    height: 18rem;
+  }
+  .p-visitor__speak-bubble--left {
+    right: 5rem;
+    top: -1rem;
+    width: 5rem;
+    height: auto;
+  }
+  .p-visitor__speak-bubble--right {
+    right: -4rem;
+    top: -1rem;
+    width: 5rem;
+    height: auto;
+  }
+  .c-announcement {
+    padding-bottom: 14rem;
+  }
+  /* 概要 / カード終了 */
+  /* 開始: ご利用方法ステップ */
+  .p-visitor__howto-steps {
+    flex-direction: column;
+  }
+  .p-visitor__howto-divider {
+    width: 80%;
+    height: 1px;
+    align-self: center;
+  }
+  .p-visitor__howto-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .p-visitor__howto-content-body {
+    gap: 2rem;
+  }
+  /* ご利用方法ステップ終了 */
+  /* 開始: CTA */
+  .p-visitor__faq-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .p-visitor__faq-ribbon {
+    width: 90vw;
+    right: -5%;
+  }
+  /* CTA終了 */
+  /* 開始: バナー */
+  .p-banner-content {
+    left: 2.5rem;
+  }
+  .p-banner-title {
+    font-size: 1.875rem;
+  }
+  .p-banner-subtitle {
+    font-size: 1.125rem;
+  }
+  /* バナー終了 */
+}
+/* ========================================
+   メディア: max-width 767px
+   ======================================== */
+@media (max-width: 767px) {
+  /* 開始: バナー */
+  .p-banner-content {
+    left: 1.25rem;
+    gap: 0.5rem;
+  }
+  .p-banner-title {
+    font-size: 1.375rem;
+  }
+  .p-banner-subtitle {
+    font-size: 0.9375rem;
+  }
+  /* バナー終了 */
+  /* 開始: セクションタイトル */
+  .p-visitor__title {
+    font-size: 2.5rem;
+  }
+  .p-visitor__subtitle {
+    font-size: 1rem;
+  }
+  .p-visitor__content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .p-visitor__title-container {
+    margin-bottom: 1.5rem;
+  }
+  /* セクションタイトル終了 */
+  /* 開始: キャンペーンブロック */
+  .p-visitor__campaign-row {
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .p-visitor__campaign-img {
+    max-height: 260px;
+    object-fit: contain;
+  }
+  .p-visitor__campaign-header h2 {
+    font-size: 1.25rem;
+  }
+  /* キャンペーンブロック終了 */
+  /* 開始: 概要 / カード */
+  .p-visitor__about-card-body,
+  .p-visitor__about-card-body--alt {
+    padding: 1.25rem;
+  }
+  /* スピークパーソン — モバイルでサイズ微調整 */
+  .p-visitor__speak-person--left,
+  .p-visitor__speak-person--right {
+    height: 15rem;
+  }
+  /* 概要 / カード終了 */
+  /* 開始: ご利用方法ステップ */
+  .p-visitor__howto-step {
+    padding: 2rem 1.25rem;
+    gap: 1.5rem;
+  }
+  .p-visitor__howto-step-title {
+    font-size: 1.5rem;
+  }
+  .p-visitor__howto-step-desc {
+    line-height: 2rem;
+  }
+  .p-visitor__howto-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* ご利用方法ステップ終了 */
+  /* 開始: CTA */
+  .p-visitor__faq-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .p-visitor__faq {
+    padding: 4rem 0;
+  }
+  .p-visitor__faq-ribbon {
+    width: 100vw;
+    right: 0;
+    top: 0;
+  }
+  /* CTA終了 */
+}
+/* デスクトップ専用: サマリーカードの並び替え to 対象|期間 (row1), 内容|施設 (row2) */
+@media (min-width: 1025px) {
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(1) {
+    order: 1;
+  }
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(2) {
+    order: 3;
+  }
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(3) {
+    order: 2;
+  }
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(4) {
+    order: 4;
+  }
+}

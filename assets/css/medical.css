@@ -1,0 +1,1184 @@
+@charset "UTF-8";
+/* ========================================
+   開始: バナー
+   ======================================== */
+.p-medical__banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.p-medical__banner-logo--pc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.p-medical__break-text {
+  display: none;
+}
+
+.p-medical__banner-logo--sp {
+  display: none;
+}
+
+.p-medical__banner-heading {
+  font-size: var(--fs-4xl);
+  font-weight: 500;
+  line-height: 2em;
+}
+
+.p-medical__banner-logosub {
+  font-size: var(--fs-base);
+}
+
+.p-medical__banner-content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  z-index: 15;
+}
+
+.p-medical__breadcrumb {
+  bottom: 4%;
+  left: 5%;
+  z-index: 15;
+}
+
+/* バナー終了 */
+/* ========================================
+   開始: オンライン相談
+   ======================================== */
+.p-medical__online-consult-heading--lg {
+  display: block;
+}
+
+.p-medical__online-consult-heading--sp {
+  display: none;
+}
+
+.p-medical__diagonal-line {
+  width: 19px;
+  height: 28px;
+}
+
+.p-medical__online-consultation-banner {
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/medical/img_medical01.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* オンライン相談終了 */
+/* ========================================
+   開始: 特徴 / ステップ
+   ======================================== */
+.p-medical__section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--base-black);
+}
+
+.p-medical__section-header p {
+  font-size: var(--fs-md);
+  font-weight: 500;
+}
+
+.p-medical__section-header h2 {
+  font-size: var(--fs-display);
+  line-height: 7.5rem;
+  font-weight: 400;
+}
+
+.p-medical__steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding: 3.125rem 0;
+}
+
+.p-medical__step-row {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.p-medical__step-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  background-color: white;
+}
+
+.p-medical__step-card span {
+  color: var(--base-red);
+}
+
+.p-medical__step-card-body {
+  font-weight: 500;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  line-height: 2rem;
+}
+
+.p-medical__step-card-icon {
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--base-lightBlue);
+}
+
+.p-medical__step-card-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  gap: 1rem;
+}
+
+.p-medical__step-card-title h3 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--text-lightBlue);
+}
+
+.p-medical__step-card-title > p {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--text-black1);
+  line-height: 1.2;
+}
+
+/* ラインナップグリッド */
+.p-medical__lineup-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.p-medical__lineup-item {
+  width: calc(25% - 1.5rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.p-medical__lineup-item p {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+}
+
+.p-medical__lineup-icon {
+  width: 5rem;
+  height: 5rem;
+  min-width: 5rem;
+  background-color: var(--base-lightBlue);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-medical__howtouse-icn {
+  width: 35px;
+  height: 63px;
+}
+
+/* 特徴 / ステップ終了 */
+/* ========================================
+   開始: パートナー
+   ======================================== */
+.p-medical__partners-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.p-medical__partners-clinic {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: max-content;
+}
+
+.p-medical__partners-clinic h4 {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: var(--text-black1);
+  line-height: 2.5rem;
+}
+
+.p-medical__partners-clinic p {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--text-black1);
+  line-height: 1rem;
+}
+
+.p-medical__list-box {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* パートナー終了 */
+/* ========================================
+   開始: CTA
+   ======================================== */
+.p-medical__light-blue-container {
+  width: fit-content;
+  background-color: var(--base-lightBlue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.p-medical__faq-ribbon {
+  position: absolute;
+  top: -5%;
+  right: -10%;
+  width: 82vw;
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* CTA終了 */
+/* ========================================
+   開始: スピークパーソン
+   ======================================== */
+/* 01 */
+.p-medical__speak-container--01 {
+  position: absolute;
+  bottom: 0rem;
+  left: 4rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-medical__speak-image--01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-medical__speak-bubble--01 {
+  position: absolute;
+  top: -1rem;
+  left: -8rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-medical__speak-person--01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 02 */
+.p-medical__speak-container--02 {
+  position: absolute;
+  bottom: 0rem;
+  right: 4rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-medical__speak-image--02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-medical__speak-bubble--02 {
+  position: absolute;
+  top: -5%;
+  right: -10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-medical__speak-person--02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* スピークパーソン終了 */
+/* ========================================
+   開始: お客様の声
+   ======================================== */
+.p-medical__voice-grid {
+  display: flex;
+  align-items: flex-end;
+}
+
+.p-medical__voice-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+}
+
+.p-medical__voice-card:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.p-medical__voice-card:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+.p-medical__voice-card:nth-child(3) {
+  margin-bottom: 10rem;
+}
+
+.p-medical__voice-card:nth-child(1) .p-medical__voice-card-body {
+  background-color: white;
+}
+
+.p-medical__voice-card:nth-child(2) .p-medical__voice-card-body {
+  background-color: var(--base-gray);
+}
+
+.p-medical__voice-card:nth-child(3) .p-medical__voice-card-body {
+  background-color: white;
+}
+
+.p-medical__voice-card-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.p-medical__voice-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--base-borderLight);
+}
+
+.p-medical__voice-card-body {
+  position: relative;
+  padding: 3rem;
+}
+
+.p-medical__voice-watermark {
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  font-size: var(--fs-6xl);
+  font-weight: 400;
+  color: rgba(79, 79, 79, 0.15);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.p-medical__voice-badge {
+  display: inline-block;
+  background-color: var(--base-lightBlue);
+  color: white;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.p-medical__voice-card-body h3 {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--text-lightBlue);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.p-medical__voice-card-body > p {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--base-black);
+  position: relative;
+  z-index: 1;
+}
+
+/* お客様の声 — スライダーラッパー＆ナビボタン */
+.p-medical__voice-slider-wrapper {
+  position: relative;
+}
+
+.p-medical__voice-nav {
+  display: none; /* デスクトップ/タブレットでは非表示 */
+}
+
+/* お客様の声終了 */
+/* ========================================
+   メディア: max-width 1024px
+   ======================================== */
+@media (max-width: 1024px) {
+  /* ----------------------------------------
+     開始: バナー
+     ---------------------------------------- */
+  .p-medical__banner-content {
+    top: 28%;
+    left: 4%;
+    gap: 1rem;
+  }
+  .p-medical__banner-heading {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+  /* バナー終了 */
+  /* ----------------------------------------
+     開始: オンライン相談
+     ---------------------------------------- */
+  .p-medical__online-consultation-banner {
+    height: auto;
+    padding: 5rem 0;
+  }
+  .p-medical__online-consultation-banner h2 {
+    font-size: var(--fs-5xl);
+    line-height: 1.4;
+  }
+  /* オンライン相談終了 */
+  /* ----------------------------------------
+     開始: パートナー
+     ---------------------------------------- */
+  .p-medical__partners-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .p-medical__partners-logo-row {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-medical__partners-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .p-medical__partners-right {
+    width: 100%;
+  }
+  /* パートナー終了 */
+  /* ----------------------------------------
+     開始: 特徴 / ステップ
+     ---------------------------------------- */
+  .p-medical__engagement-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .p-medical__engagement-logo svg {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+  .p-medical__engagement-right {
+    width: 100%;
+  }
+  .p-medical__engagement-tagline {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .p-medical__steps-wrapper {
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .p-medical__step-row {
+    gap: 2rem;
+  }
+  /* ラインナップ — 3列 */
+  .p-medical__lineup-item {
+    width: calc(33.333% - 1.35rem);
+  }
+  /* 使い方 */
+  .p-medical__howtouse-icn {
+    width: auto;
+    height: 100px;
+  }
+  /* 特徴 / ステップ終了 */
+  /* ----------------------------------------
+     開始: お客様の声
+     ---------------------------------------- */
+  .p-medical__voice-card:nth-child(2) {
+    margin-bottom: 3rem;
+  }
+  .p-medical__voice-card:nth-child(3) {
+    margin-bottom: 6rem;
+  }
+  .p-medical__voice-card-body {
+    padding: 2rem;
+  }
+  /* お客様の声終了 */
+  /* ----------------------------------------
+     開始: CTA
+     ---------------------------------------- */
+  .p-medical__faq-ribbon {
+    right: -5%;
+    width: 90vw;
+  }
+  /* CTA終了 */
+  /* ----------------------------------------
+     開始: スピークパーソン
+     ---------------------------------------- */
+  .p-medical__speak-container--01 {
+    left: 1rem;
+  }
+  .p-medical__speak-container--02 {
+    right: 1rem;
+  }
+  .p-medical__speak-person--01,
+  .p-medical__speak-person--02 {
+    height: 18rem;
+  }
+  /* スピークパーソン終了 */
+}
+.p-medical__engagement-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.p-medical__partners-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+
+.p-medical__engagement-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.p-medical__lineup-header {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.p-medical__how-to-use-title {
+  display: flex;
+  align-items: center;
+  gap: 4.375rem;
+}
+
+.p-medical__voice-header {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding-bottom: 100px;
+}
+
+.p-medical__partners-right {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-medical__partners-row {
+  display: flex;
+  gap: 100px;
+}
+
+.p-medical__engagement-right {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.p-medical__engagement-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.p-medical__banner-heading-span {
+  display: inline;
+}
+
+/* ========================================
+   メディア: max-width 767px
+   ======================================== */
+@media (max-width: 767px) {
+  /* ----------------------------------------
+     開始: バナー
+     ---------------------------------------- */
+  .p-medical__banner-logo--pc {
+    display: none;
+  }
+  .p-medical__banner-logo--pc ~ h1 {
+    margin-top: 60px;
+  }
+  .p-medical__banner-heading-span {
+    display: block;
+  }
+  .p-medical__banner-logo--sp {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: max-content;
+    z-index: 15;
+  }
+  .p-medical__banner-heading {
+    font-size: var(--fs-xl);
+    line-height: 1.6;
+  }
+  .p-medical__break-text {
+    display: inline;
+  }
+  .p-medical__banner-logosub {
+    font-size: var(--fs-sm);
+  }
+  .p-medical__banner-content {
+    top: 15%;
+    left: 1.25rem;
+    gap: 0.75rem;
+  }
+  .p-medical__banner-logo-svg {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+  .p-medical__breadcrumb {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 3%;
+  }
+  /* バナー終了 */
+  /* ----------------------------------------
+     開始: 特徴 / ステップ
+     ---------------------------------------- */
+  .p-medical__section-header h2 {
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+  }
+  .p-medical__section-header p {
+    font-size: var(--fs-base);
+  }
+  .p-medical__engagement-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .p-medical__diagonal-line {
+    width: 30px;
+    height: 40px;
+  }
+  .p-medical__engagement-logo {
+    align-items: start;
+    width: 100%;
+  }
+  /* 内部divを反転: モバイルではロゴSVGがクリニック名の上に表示 */
+  .p-medical__engagement-logo > div {
+    flex-direction: column-reverse;
+    align-items: end;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .p-medical__engagement-logo-svg {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  /* 子要素を全幅に — ボタン修正 */
+  .p-medical__engagement-right {
+    width: 100%;
+    align-items: stretch;
+  }
+  .p-medical__engagement-right h2 {
+    font-size: var(--fs-2xl2);
+    text-align: left;
+  }
+  /* スラッシュがテキストの両側に維持; h4内部でテキスト折り返し */
+  .p-medical__engagement-tagline {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .p-medical__engagement-tagline svg {
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  .p-medical__engagement-tagline h4 {
+    flex: 1;
+    font-size: var(--fs-base);
+    text-align: center;
+    line-height: 1.6;
+  }
+  /* 使い方タイトル — 縦方向に積み重ね */
+  .p-medical__how-to-use-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .p-medical__how-to-use-title .mt-50 {
+    margin-top: 0;
+  }
+  /* ステップ — 縦方向に積み重ね、統一された間隔 */
+  .p-medical__steps-wrapper {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  .p-medical__step-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-medical__step-card-title h3 {
+    font-size: var(--fs-lg);
+  }
+  .p-medical__step-card-title > p {
+    font-size: var(--fs-md);
+  }
+  .p-medical__step-card-body {
+    padding: 1.25rem 1.5rem;
+    font-size: var(--fs-sm2);
+  }
+  /* ステップ6のインラインコード/入力行 */
+  .p-medical__step-card-body .bg-gray {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+  /* ラインナップ — 単列全幅リスト */
+  .p-medical__lineup-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .p-medical__lineup-header .mt-50 {
+    margin-top: 0;
+  }
+  .p-medical__lineup-grid {
+    gap: 0.625rem;
+    flex-direction: column;
+  }
+  .p-medical__lineup-item {
+    width: 100%;
+  }
+  .p-medical__lineup-item p {
+    font-size: var(--fs-sm2);
+  }
+  .p-medical__lineup-icon {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+  }
+  /* 特徴 / ステップ終了 */
+  /* ----------------------------------------
+     開始: オンライン相談
+     ---------------------------------------- */
+  .p-medical__online-consultation-banner {
+    height: 28rem;
+    padding: 0;
+    background-position: 68% center;
+  }
+  .p-medical__online-consult-heading--lg {
+    display: none;
+  }
+  .p-medical__online-consult-heading--sp {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .p-medical__online-consultation-banner .c-maxWidth {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+  }
+  .p-medical__online-consultation-banner .c-badge-white {
+    max-width: 62%;
+    padding: 0.625rem 0.875rem;
+  }
+  .p-medical__badge-text {
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+  }
+  .p-medical__online-consultation-banner h2 {
+    font-size: var(--fs-xl2);
+    line-height: 1.5;
+  }
+  .p-medical__online-consultation-banner .c-flex-col-gap-4 {
+    gap: 0.5rem;
+  }
+  /* オンライン相談終了 */
+  /* ----------------------------------------
+     開始: パートナー
+     ---------------------------------------- */
+  .p-medical__partners-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .p-medical__partners-logo-row {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-medical__partners-logo-row img[width="240px"] {
+    width: 220px;
+  }
+  .p-medical__partners-clinic {
+    align-items: center;
+  }
+  .p-medical__partners-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .p-medical__partners-list > div {
+    width: calc(33.333% - 0.75rem);
+    justify-content: flex-start;
+  }
+  .p-medical__list-box {
+    width: 5rem;
+    height: 5rem;
+  }
+  .p-medical__partners-right {
+    width: 100%;
+  }
+  .p-medical__partners-row .fs-36 {
+    font-size: var(--fs-xl);
+  }
+  .p-medical__partners-row .fs-30 {
+    font-size: var(--fs-lg);
+  }
+  /* パートナー終了 */
+  /* ----------------------------------------
+     開始: CTA
+     ---------------------------------------- */
+  .p-medical__light-blue-container p {
+    font-size: var(--fs-sm2);
+  }
+  .p-medical__faq-ribbon {
+    top: -2%;
+    right: -10%;
+    width: 120vw;
+  }
+  /* CTA終了 */
+  /* ----------------------------------------
+     開始: お客様の声
+     ---------------------------------------- */
+  /* お客様の声 — モバイルスライダー */
+  .p-medical__voice-slider-wrapper {
+    margin-top: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .p-medical__voice-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    transition: transform 0.4s ease;
+  }
+  .p-medical__voice-card:nth-child(1),
+  .p-medical__voice-card:nth-child(2),
+  .p-medical__voice-card:nth-child(3) {
+    margin-bottom: 0;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .p-medical__voice-card-body {
+    padding: 1.5rem 1.25rem;
+  }
+  .p-medical__voice-watermark {
+    font-size: var(--fs-4xl);
+  }
+  .p-medical__voice-card-body h3 {
+    font-size: var(--fs-base);
+  }
+  /* NAV BUTTONS — shown on mobile, overlaid on the image */
+  .p-medical__voice-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    /* 画像部分内で垂直中央揃え（約50vwの高さ） */
+    top: 25vw;
+    transform: translateY(-50%);
+  }
+  .p-medical__voice-nav--prev {
+    left: 0.75rem;
+  }
+  .p-medical__voice-nav--next {
+    right: 0.75rem;
+  }
+  .p-medical__voice-nav svg {
+    display: block;
+  }
+  /* お客様の声終了 */
+  /* ----------------------------------------
+     開始: スピークパーソン
+     ---------------------------------------- */
+  /* スピークパーソン — モバイルで表示、再配置 */
+  .p-medical__speak-container--01,
+  .p-medical__speak-container--02 {
+    display: block;
+  }
+  .p-medical__speak-container--01 {
+    bottom: -1rem;
+    left: 5rem;
+  }
+  .p-medical__speak-container--02 {
+    bottom: -1rem;
+    right: 5rem;
+  }
+  .p-medical__speak-person--01,
+  .p-medical__speak-person--02 {
+    height: 13rem;
+  }
+  .p-medical__speak-bubble--01 {
+    width: 6rem;
+    left: -6rem;
+    top: -2rem;
+  }
+  .p-medical__speak-bubble--02 {
+    width: 6rem;
+    right: -6rem;
+    top: -2rem;
+  }
+  /* スピークパーソン終了 */
+  /* ----------------------------------------
+     開始: ユーティリティオーバーライド
+     ---------------------------------------- */
+  /* グレー入力コードボックス — 1行目にコード、2行目に説明 */
+  .c-announcement__body .bg-gray {
+    flex-wrap: wrap;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    gap: 0.4rem 0.5rem;
+    align-items: center;
+  }
+  .p-medical__announcement-last-text {
+    flex: 0 0 100%;
+    white-space: normal;
+  }
+  .p-medical__announcement-desc {
+    font-size: var(--fs-2xs);
+    white-space: nowrap;
+  }
+  /* お知らせ — 左右パディング増加＋人物用の下部余白 */
+  .c-announcement {
+    width: calc(100% - 4rem);
+    padding: 2rem 1.75rem 14rem;
+  }
+  /* ユーティリティオーバーライド終了 */
+}
+/* ========================================
+   開始: インラインスタイル → BEMクラス
+   ======================================== */
+/* オンライン相談バナー — コンテンツラッパー */
+.p-medical__online-consult-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+
+/* パートナー — 左カラム */
+.p-medical__partners-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+/* パートナー — ロゴラベル */
+.p-medical__partners-logo-label {
+  position: absolute;
+  top: 0;
+  right: 0.8rem;
+}
+
+/* エンゲージメント — フレックスリセット */
+.p-medical__engagement-column {
+  flex: unset;
+  justify-content: unset;
+}
+
+/* 斜線装飾 — 反転 */
+.p-medical__diagonal-line--mirrored {
+  transform: scaleX(-1);
+}
+
+/* エンゲージメント — ラベル幅 */
+.p-medical__engagement-label {
+  width: 100%;
+}
+
+/* エンゲージメント — ラベルテキスト */
+.p-medical__engagement-label-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* サブ見出し */
+.p-medical__sub-heading {
+  font-size: var(--fs-lg);
+}
+
+/* サブ本文 */
+.p-medical__sub-body {
+  font-size: var(--fs-base);
+  font-weight: 500;
+}
+
+/* パートナー紹介テキスト */
+.p-medical__partners-intro {
+  margin-bottom: 50px;
+}
+
+/* お客様の声 — 区切り線 */
+.p-medical__voice-divider {
+  height: 1px;
+  margin-bottom: 1rem;
+}
+
+/* よくある質問リスト */
+.p-medical__faq-list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* LINEブランドカラー */
+.p-medical__line-brand {
+  color: var(--base-successGreen);
+}
+
+/* お知らせ — コンテンツスタック */
+.p-medical__announcement-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* お知らせ — LINE行 */
+.c-announcement__body {
+  align-items: center;
+  text-align: center;
+}
+
+.p-medical__announcement-line-row {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.p-medical__announcement-line-row > p {
+  white-space: nowrap;
+}
+
+/* お知らせ — 入力コードバー */
+.p-medical__line-bar {
+  background-color: var(--base-gray);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* お知らせ — バッジ */
+.p-medical__line-badge {
+  background-color: var(--base-white);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .p-medical__announcement-line-row {
+    gap: 0.4rem;
+  }
+  .p-medical__announcement-line-row > p {
+    font-size: var(--fs-xs);
+  }
+  .p-medical__announcement-line-row > svg {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+  }
+  .p-medical__announcement-line-row > img {
+    width: 52px;
+    height: 52px;
+    flex: 0 0 auto;
+  }
+}
+/* スクロールアップアイコン */
+.p-medical__scroll-up-icon {
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+/* ========================================
+   終了: インラインスタイル → BEMクラス
+   ======================================== */

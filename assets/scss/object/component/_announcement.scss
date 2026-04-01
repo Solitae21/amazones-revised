@@ -1,0 +1,93 @@
+/* ============================================
+    START ANNOUNCEMENT SECTION
+   ============================================ */
+.c-announcement__section {
+  background-image: url("../img/common/bg_camouflage01.webp");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 5% 0%;
+}
+
+.c-announcement {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 67.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-announcement__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.c-announcement__title-container h2 {
+  font-size: var(--fs-2xl2);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.c-announcement__title-container h2:nth-child(2) {
+  color: var(--text-lightBlue);
+  font-size: var(--fs-6xl);
+}
+
+.c-announcement__body {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.c-announcement__body span {
+  color: var(--base-lightBlue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c-announcement__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: var(--fs-lg);
+}
+
+/* お知らせセクション終了 */
+
+/* 白背景開始 */
+.c-section--white {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_white_pattern.webp");
+  background-size: cover;
+  background-position: 0% -170%;
+}
+
+/* 白背景終了 */
+
+/* ライトブルー背景開始 */
+.c-section--light-blue {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+}
+/* ============================================
+    END ANNOUNCEMENT SECTION
+   ============================================ */

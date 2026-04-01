@@ -1,0 +1,464 @@
+/* ============================================
+    HERO ANIMATION
+   ============================================ */
+
+.c-hero-slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: var(--base-darkGreen);
+  max-height: 850px;
+}
+
+.c-hero-slider__images {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.c-hero-slider__frames {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.c-clip-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.c-hero-slider__frames__clip1 {
+  background-image: none;
+  background-repeat: unset;
+  background-position: unset;
+  background-size: unset;
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 37% 100%);
+  animation: heroSlideTopLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.c-hero-slider__frames__clip2 {
+  background-image: none;
+  background-size: unset;
+  background-repeat: unset;
+  background-position: unset;
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 37% 100%);
+  animation: heroSlideBottomRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    forwards;
+  position: absolute;
+  right: 0px;
+  width: 100vw;
+  overflow: hidden;
+}
+.c-hero-slider__frames__clip1 .c-clip-img {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  object-position: -200px;
+  background-size: contain;
+}
+
+.c-hero-slider__frames__clip2 .c-clip-img {
+  width: 100%;
+  height: 100%;
+  object-position: 230px -50px;
+  position: absolute;
+  right: 0;
+}
+
+.c-hero-slider__ribbon {
+  position: absolute;
+  bottom: 0;
+  top: -15px;
+  left: 20px;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.c-hero-slider__title {
+  position: absolute;
+  top: 30%;
+  left: 105px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 15px; /* gap-15px */
+}
+
+@keyframes heroSlideTopLeft {
+  0% {
+    transform: translate(-80px, -80px);
+    clip-path: inset(0 100% 0 0);
+  }
+  40% {
+    clip-path: polygon(0 0, 43% 0, 57% 100%, 0% 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+    clip-path: polygon(0 0, 43% 0, 57% 100%, 0% 100%);
+  }
+}
+
+@keyframes heroSlideBottomRight {
+  0% {
+    opacity: 0;
+    transform: translate(80px, 80px);
+    clip-path: inset(0 0 0 100%);
+  }
+  40% {
+    clip-path: inset(0 0 0 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0%);
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  .c-hero-slider__frames__clip1 {
+    background-position: -200px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .c-clip-img {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+
+    background-size: cover;
+  }
+  .c-hero-slider__frames__clip1 .c-clip-img {
+    width: 100vw;
+    height: 100%;
+
+    object-position: 160%;
+    background-size: cover;
+  }
+
+  .c-hero-slider__images {
+    height: 100vh;
+  }
+
+  .c-hero-slider__title {
+    top: 80px;
+    left: 20px;
+  }
+
+  .c-hero-slider__frames__clip1 {
+    animation: heroSlideTopMobile 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+
+  .c-hero-slider__frames__clip2 {
+    animation: heroSlideBottomMobile 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+  }
+
+  @keyframes heroSlideTopMobile {
+    0% {
+      opacity: 0;
+      transform: translate(-80px, -40px);
+      clip-path: inset(0 100% 0 0);
+    }
+    40% {
+      clip-path: polygon(0 0, 100% 0, 100% 58%, 0 42%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+      clip-path: polygon(0 0, 100% 0, 100% 58%, 0 42%);
+    }
+  }
+
+  @keyframes heroSlideBottomMobile {
+    0% {
+      opacity: 0;
+      transform: translate(80px, 40px);
+      clip-path: inset(0 0 0 100%);
+    }
+    40% {
+      clip-path: polygon(0 42%, 100% 58%, 100% 100%, 0 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+      clip-path: polygon(0 42%, 100% 58%, 100% 100%, 0 100%);
+    }
+  }
+  .c-hero-slider__ribbon {
+    transform: scale(1.5);
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .c-hero-slider__frames__clip1 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    left: 0;
+  }
+
+  .c-hero-slider__frames__clip2 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    right: 0;
+    left: 0;
+  }
+
+  .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .c-hero-slider__ribbon {
+    /* top: 280px; */
+    left: -320px;
+    transform: scale(2);
+  }
+  .c-hero-slider__title h1 {
+    font-size: var(--fs-lg2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-hero-slider__frames__clip1 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    left: 0;
+  }
+  .c-hero-slider__frames__clip2 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    right: 0;
+    left: 0;
+  }
+  .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-hero-slider__ribbon {
+    top: 480px;
+    left: -220px;
+    transform: scale(2);
+  }
+}
+@media screen and (max-width: 500px) {
+  .c-hero-slider__ribbon {
+    top: 350px;
+    left: -240px;
+    transform: scale(2.4);
+  }
+  .c-hero-slider__frames__clip1 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    left: 0;
+  }
+
+  .c-hero-slider__frames__clip2 .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    right: 0;
+    left: 0;
+  }
+
+  .c-clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+@media screen and (max-width: 365px) {
+  /* .c-hero-slider {
+    height: 560px;
+  } */
+}
+/* ============================================
+    END HERO ANIMATION
+   ============================================ */
+/* ============================================
+    HERO ANIMATION v2
+   ============================================ */
+.c-hero-animate__banner {
+  overflow: hidden;
+  width: 100%;
+}
+.c-hero-animate {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--base-navy);
+  height: auto;
+}
+
+.c-hero-animate img {
+  width: 100vw;
+  display: block;
+}
+
+.c-hero-animate__panel {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  /*
+    translateZ(0) pre-promotes the element to its own GPU compositor layer
+    at paint time — BEFORE the animation starts. Without this, the browser
+    promotes it mid-animation which causes a visible hitch on first load.
+  */
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ── デスクトップ ── */
+.c-hero-animate__panel-left {
+  background: var(--base-greenAccent);
+  clip-path: polygon(48% 0, 0 0, 0 100%, 58% 100%);
+}
+.c-hero-animate__panel-right {
+  background: var(--base-greenAccent);
+  clip-path: polygon(100% 0, 48% 0, 58% 100%, 100% 100%);
+}
+
+.c-hero-animate.animate .c-hero-animate__panel-left {
+  animation: out-left 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+}
+.c-hero-animate.animate .c-hero-animate__panel-right {
+  animation: out-right 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+}
+
+@keyframes out-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  98% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(-10%, -110%, 0);
+    opacity: 0;
+  }
+}
+@keyframes out-right {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  98% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(10%, 110%, 0);
+    opacity: 0;
+  }
+}
+
+/* ── モバイル ── */
+@media screen and (max-width: 860px) {
+  .c-hero-slider__title h1 {
+    font-size: var(--fs-2xl);
+  }
+}
+@media screen and (max-width: 650px) {
+  .c-hero-animate__panel {
+    inset: 0;
+  }
+
+  .c-hero-animate__panel-left {
+    background: var(--base-greenAccent);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 62%, 0% 45%);
+    transform-origin: 0% 50%;
+  }
+  .c-hero-animate__panel-right {
+    background: var(--base-greenAccent);
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 0% 45%, 100% 55%);
+    transform-origin: 100% 50%;
+  }
+
+  .c-hero-animate.animate .c-hero-animate__panel-left {
+    animation: mobile-out-left 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+  }
+  .c-hero-animate.animate .c-hero-animate__panel-right {
+    animation: mobile-out-right 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes mobile-out-left {
+    0% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    98% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translate3d(-110%, -20%, 0);
+      opacity: 0;
+    }
+  }
+  @keyframes mobile-out-right {
+    0% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    98% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translate3d(110%, 20%, 0);
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .c-hero-slider__title h1 {
+    font-size: var(--fs-lg);
+  }
+}
+/* ============================================
+    END HERO ANIMATION v2
+   ============================================ */

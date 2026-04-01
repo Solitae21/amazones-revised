@@ -1,0 +1,459 @@
+/* ============================================
+     FOOTER SECTION
+============================================ */
+/* フローティングメニューを固定にしてデスクトップでユーザーに追従させる */
+.l-header-floating-menu {
+  position: fixed; /* 既にfixed — stickyではなくfixedを維持 */
+  right: 0;
+  top: 0;
+}
+
+/* ナビメニューポップアップ */
+.l-nav-menu-popup {
+  position: fixed;
+  right: 100px;
+  top: 104px;
+  width: auto;
+  min-width: 70rem;
+  max-width: calc(100vw - 100px);
+  height: calc(100vh - 104px);
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  overflow-y: auto;
+  padding: 60px 120px 50px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  z-index: 998;
+}
+
+.l-nav-menu-popup.active {
+  opacity: 1;
+  pointer-events: auto;
+  background-color: white;
+}
+.l-nav-menu-popup__columns {
+  display: flex;
+  flex-direction: row; /* flex-row */
+  justify-content: space-between; /* justify-between */
+  width: 100%; /* w-full */
+}
+.l-nav-menu-popup__column {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 30px; /* gap-30px */
+}
+.l-nav-menu-popup__group {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 60px; /* gap-60px */
+}
+.l-nav-menu-popup__section {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 30px; /* gap-30px */
+}
+.l-nav-menu-popup__links {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 25px; /* gap-25px */
+  align-items: flex-start; /* items-start */
+}
+.l-nav-menu-popup__bottom {
+  display: flex;
+  flex-direction: column; /* flex-col */
+  width: 100%; /* w-full */
+  gap: 30px; /* gap-30px */
+}
+.l-nav-menu-popup__bottom-btns {
+  display: flex;
+  flex-direction: row; /* flex-row */
+  gap: 20px; /* gap-20px */
+}
+.l-nav-menu-popup__bottom-links {
+  display: flex;
+  flex-direction: row; /* flex-row */
+  gap: 40px; /* gap-40px */
+  flex-wrap: wrap; /* flex-wrap */
+}
+
+/* floating-menu-closeを無効化（ハンバーガーアニメーションが代替） */
+.l-header-floating-menu__close {
+  display: none;
+}
+.l-header-floating-menu.active .l-header-floating-menu__close {
+  display: none;
+}
+
+@media screen and (min-width: 1091px) {
+  /* MENUアイコン＋テキストを非表示 — デスクトップではハンバーガーが代替 */
+  .l-header-floating-menu__btn .desktop-menu-icon,
+  .l-header-floating-menu__btn > p {
+    display: none;
+  }
+
+  /* ストリップが折りたたまれた時にボタンを垂直中央揃え */
+  .l-header-floating-menu:not(.active) {
+    justify-content: center;
+  }
+
+  /* デスクトップのフローティングボタン内にハンバーガーバーを表示 */
+  .l-header-floating-menu__btn .l-header__hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .l-header-floating-menu__btn .l-header__hamburger-bar {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+    transform-origin: center;
+  }
+
+  /* バーをホバー/アクティブ時にXにアニメーション */
+  .l-header-floating-menu.active .l-header__hamburger-bar:nth-child(1) {
+    transform: translateY(18px) rotate(45deg);
+  }
+  .l-header-floating-menu.active .l-header__hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .l-header-floating-menu.active .l-header__hamburger-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .l-nav-menu-popup {
+    display: none;
+  }
+  .l-header-floating-menu__close {
+    display: none;
+  }
+}
+
+/*==========================================
+  FOOTER SECTION  
+/*/
+.l-footer {
+  width: 100%;
+  background-image: url("../img/common/bg_footer.webp");
+  color: var(--base-black);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.l-footer__main-container {
+  padding: 80px 120px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* ── 上部行 ── */
+.l-footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+
+/* ── ブランドブロック ── */
+.l-footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.l-footer__brand-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.l-footer__brand-logo img {
+  width: 160px;
+  height: auto;
+}
+
+.l-footer__cta-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── ナビカラム ── */
+.l-footer__nav-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* ── 各ナビセクション ── */
+.l-footer__nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.l-footer__nav-section + .l-footer__nav-section {
+  margin-top: 0;
+}
+
+.l-footer__nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ── セクションヘッダー / アコーディオントリガー ── */
+.l-footer__page-link {
+  /* display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      cursor: default;
+      padding-bottom: 8px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--base-gray);
+}
+
+.l-footer__link-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--base-lightBlue);
+}
+
+.l-footer__page-link img {
+  width: 30px;
+  height: 5px;
+}
+.l-footer__page-link p {
+  color: var(--base-black);
+}
+/* ── ナビリンクリスト ── */
+.l-footer__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.l-footer__nav-list a,
+.l-footer__legal-links li a,
+.l-nav-menu-popup a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.l-footer__nav-list a:hover,
+.l-footer__legal-links li a:hover,
+.l-nav-menu-popup a:hover {
+  opacity: 0.7;
+}
+
+.l-footer__icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.l-footer__icon-link img {
+  width: 14px;
+  height: 14px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* ── 下部行 ── */
+.l-footer__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.l-footer__legal-links {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.l-scroll-up {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.l-footer__legal-links a {
+  text-decoration: none;
+}
+
+/* ── Cookie通知 ── */
+
+.l-footer__btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: var(--fs-2xs);
+  white-space: nowrap;
+}
+.l-footer__page-link .l-footer__page-link-arrow {
+  width: 30px;
+  height: 5px;
+}
+.l-footer__page-link__arrow-sign {
+  display: none;
+}
+
+/* ══════════════════════════════════════
+       MOBILE  ≤ 767px
+    ══════════════════════════════════════ */
+@media (max-width: 1050px) {
+  .l-footer__page-link img {
+    width: 20px;
+    height: auto;
+  }
+  .l-footer__page-link__arrow-icon {
+    display: none;
+  }
+  .l-footer__page-link__arrow-sign {
+    display: inline-flex;
+  }
+
+  .l-footer__page-link__sign-open {
+    display: inline-block;
+  }
+  .l-footer__page-link__sign-close {
+    display: none;
+  }
+
+  .l-footer__nav-section.open .l-footer__page-link__sign-open {
+    display: none;
+  }
+  .l-footer__nav-section.open .l-footer__page-link__sign-close {
+    display: inline-block;
+  }
+  .l-footer__nav-section.open .l-footer__page-link__sign-close {
+    display: inline-block;
+  }
+  .l-footer__brand {
+    align-items: center;
+    justify-content: center;
+  }
+  .l-footer__brand .c-btn--light-blue {
+    width: 100%;
+  }
+  .l-footer__main-container {
+    padding: 40px 20px 30px;
+    gap: 40px;
+  }
+
+  /* ブランド＋ナビを縦に積み重ね */
+  .l-footer__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* ナビカラムを単一の積み重ねリストに */
+  .l-footer__nav-columns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .l-footer__nav-group {
+    gap: 0;
+  }
+
+  /* 各セクションは独立したアコーディオンアイテム */
+  .l-footer__nav-section {
+    gap: 0;
+  }
+
+  /* アコーディオントリガー */
+  .l-footer__page-link {
+    cursor: pointer;
+    padding: 16px 0;
+    user-select: none;
+  }
+
+  /* 開いた時に矢印が回転 */
+  .l-footer__page-link-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .l-footer__nav-section.open .l-footer__page-link-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* 折りたたみコンテンツ */
+  .l-footer__nav-list {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.35s ease,
+      padding 0.3s ease;
+    padding-bottom: 0;
+  }
+
+  .l-footer__nav-section.open .l-footer__nav-list {
+    max-height: 600px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  /* 下部行の積み重ね */
+  .l-footer__bottom {
+    /* flex-direction: column;
+        align-items: flex-start;
+        gap: 20px; */
+    align-items: flex-end;
+  }
+
+  .l-footer__legal-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.l-nav-menu-popup .l-footer__blue-btn {
+  width: fit-content;
+}
+/* ============================================
+       END OF FOOTER SECTION
+============================================ */

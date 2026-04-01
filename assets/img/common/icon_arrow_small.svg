@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 8" width="23" height="8">
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #ffffff;stroke: #aedde3;paint-order:stroke fill markers;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4 } 
+	</style>
+	<path id="シェイプ 1" fill-rule="evenodd" class="s0" d="m11.01 7h10l-10-5z"/>
+	<path id="線 1" fill-rule="evenodd" class="s1" d="m1.01 6.97v-0.95h10v0.95z"/>
+</svg>

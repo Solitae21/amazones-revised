@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/lishinc/lishinc.xsrv.jp/htpasswd/amazones-test/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user

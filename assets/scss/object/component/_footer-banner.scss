@@ -1,0 +1,233 @@
+/* ============================================
+     FOOTER BANNER
+============================================ */
+.c-footer-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 16px;
+  background-image: url("../img/top/bg_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.c-footer-banner__container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 72px 16px 60px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 53px; /* gap-53px */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  position: relative; /* relative */
+}
+.c-footer-banner__sticker1 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+}
+.c-banner__speechbubble1 {
+  position: absolute;
+  top: -60px;
+  left: -93px;
+}
+.c-banner__sticker2 {
+  position: absolute;
+  top: 30px;
+  right: -40px;
+}
+.c-banner__speechbubble2 {
+  position: absolute;
+  top: -60px;
+  right: -63px;
+}
+/* ============================================
+     END OF FOOTER BANNER
+   ============================================ */
+
+/* ============================================
+    FOOTER BANNER W/ WPEECH BUBBLES
+   ============================================ */
+.c-footer-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 16px;
+  background-image: url("../img/top/bg_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.c-footer-banner__container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 72px 16px 60px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.c-footer-banner__sticker1 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+}
+.c-banner__speechbubble1 {
+  position: absolute;
+  top: -60px;
+  left: -93px;
+}
+.c-banner__sticker2 {
+  position: absolute;
+  top: 30px;
+  right: -40px;
+}
+.c-banner__speechbubble2 {
+  position: absolute;
+  top: -60px;
+  right: -63px;
+}
+/* ============================================
+     END OF FOOTER BANNER
+============================================ */
+
+/* ============================================
+    FOOTER BANNER W/ WPEECH BUBBLES
+   ============================================ */
+.c-footer-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 16px;
+  background-image: url("../img/top/bg_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.c-footer-banner__container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 72px 16px 60px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: visible;
+}
+.c-footer-banner__sticker1 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+}
+.c-banner__speechbubble1 {
+  position: absolute;
+  top: -60px;
+  left: -93px;
+}
+.c-banner__sticker2 {
+  position: absolute;
+  top: 30px;
+  right: -40px;
+}
+.c-banner__speechbubble2 {
+  position: absolute;
+  top: -60px;
+  right: -63px;
+}
+.c-footer-banner__link-icon {
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+.c-banner__stickers-row {
+  display: contents;
+}
+
+@media screen and (max-width: 1200px) {
+  .c-footer-banner__container h2 {
+    line-height: 200%;
+  }
+  .c-footer-banner__container a {
+    line-height: 180%;
+  }
+  .banner-sticker1,
+  .c-banner__sticker2 {
+    display: none;
+  }
+  .c-footer-banner__container {
+    width: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-footer-banner {
+    padding: 40px 16px;
+  }
+  .c-footer-banner__container {
+    width: 100%;
+    padding: 40px 26px 0 26px;
+    gap: 10px;
+  }
+  .c-footer-banner__container h2 {
+    font-size: var(--fs-xl);
+    text-align: center;
+  }
+  .c-footer-banner__heading-sub {
+    font-size: var(--fs-3xl);
+  }
+  .c-footer-banner__container a {
+    padding: 10px 35px 10px 20px;
+    margin-top: 10px;
+  }
+
+  .c-banner__stickers-row {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 10px;
+    z-index: 22;
+  }
+
+  .banner-sticker1,
+  .c-banner__sticker2 {
+    display: block !important;
+    position: relative;
+    top: 10px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+
+  .c-footer-banner__sticker1img:last-child {
+    width: 130px;
+    height: auto;
+    display: block !important;
+    margin-left: 25px;
+  }
+  .c-footer-banner__sticker1img:first-child {
+    position: absolute;
+    top: -45px;
+    left: -40px;
+    width: 90px;
+    height: auto;
+    display: block !important;
+  }
+
+  .c-banner__sticker2 img:last-child {
+    width: 170px;
+    height: auto;
+    display: block;
+  }
+  .c-banner__sticker2 img:first-child {
+    position: absolute;
+    top: -50px;
+    right: -5px;
+    width: 93px;
+    height: auto;
+    display: block !important;
+  }
+}
+/* ============================================
+    END FOOTER BANNER W/ WPEECH BUBBLES
+   ============================================ */

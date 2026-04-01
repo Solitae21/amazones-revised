@@ -1,0 +1,38 @@
+// ============================================
+//  Amazones グローバルスタイルシート
+//  全ページ共通のスタイル（Foundation + Utility + Component + Layout + Responsive）
+// ============================================
+
+// Foundation
+@import "foundation/variables";
+@import "foundation/reset";
+
+// Object - Utility
+@import "object/utility/color";
+@import "object/utility/typography";
+@import "object/utility/display";
+@import "object/utility/layout";
+@import "object/utility/font-size";
+@import "object/utility/space";
+@import "object/utility/column";
+@import "object/utility/responsive";
+
+// Object - Component / Layout（元の順序を維持）
+@import "object/component/btn";
+@import "object/component/animation";
+@import "object/component/speech-bubble";
+@import "object/component/ribbon";
+@import "layout/container";
+@import "object/component/slider";
+@import "object/component/banner";
+@import "object/component/section";
+@import "layout/header";
+@import "layout/footer";
+@import "object/component/footer-banner";
+@import "object/component/hero";
+@import "object/component/announcement";
+@import "object/component/endnote";
+@import "object/component/cookie";
+
+// グローバル（レスポンシブスタイル）
+@import "global-responsive";

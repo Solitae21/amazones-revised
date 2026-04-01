@@ -1,0 +1,32 @@
+/* ============================================
+     RIBBONS
+============================================ */
+.c-grow-wrapper-right.c-hero-ribbon {
+  width: 100vw;
+  overflow: hidden;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+.c-hero-ribbon {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  z-index: 2;
+  width: 100vw;
+}
+.c-clip-grow-right.is-in-view {
+  animation: clipRevealRight 2s ease-out forwards;
+}
+
+@keyframes clipRevealRight {
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+/* ============================================
+     END OF RIBBONS
+============================================ */

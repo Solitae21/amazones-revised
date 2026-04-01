@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+   <base href="/amazones-test/">
+    <meta
+      name="description"
+      content="女性専用24時間ジムAmazones（アマゾネス）の月会費のお支払い方法や、日割り計算などを掲載しています。"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      お支払いについて | 料金案内 | Amazones（アマゾネス） |
+      初心者向け女性専用24時間ジム
+    </title>
+    <!-- グローバルCSS -->
+    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+
+    <!--お支払いCSS-->
+    <link href="assets/css/payment.css" rel="stylesheet" type="text/css">
+
+    <!-- スクリプト -->
+    <script src="assets/js/common.js" defer></script>
+    <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/payment.js" defer></script>
+  </head>
+
+  <body>
+   <!--ヘッダー-->
+    <header class="l-header">
+      <div class="l-header-wrapper">
+        <div class="l-header__brand">
+          <a href="./">
+            <img
+              src="assets/img/common/icon_logo.svg"
+              alt="アマゾネス"
+              width="159.97px"
+              height="62.77px"
+              class="amazones-header-logo"
+            >
+          </a>
+          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14">アマゾネス</a>
+          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">WOMEN ONLY24h GYM</p>
+        </div>
+
+        <div class="l-header__actions">
+          <a
+            href="storelist/"
+            class="l-header__btn"
+          >
+            <div
+              class="icon-wrapper"
+            >
+              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+            </div>
+            <div class="l-header__btn__content">
+              <div class="l-header__btn__text">
+                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
+                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+              </div>
+              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="arrow-img">
+            </div>
+          </a>
+
+          <a
+            href="reservation/"
+            class="l-header__btn l-header__btn--reservation"
+          >
+            <div
+              class="icon-wrapper"
+            >
+              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+            </div>
+            <div class="l-header__btn__content">
+              <div class="l-header__btn__text">
+                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                  24時間WEB予約可能
+                </p>
+                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                  体験予約はこちら
+                </p>
+              </div>
+              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="arrow-img">
+            </div>
+          </a>
+        </div>
+
+       <!--フローティングヘッダーメニュー-->
+        <div
+          id="header-floating-menu"
+          class="l-header-floating-menu"
+        >
+        <div
+          id="floating-menu-btn"
+          class="l-header-floating-menu__btn"
+        >
+          <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="desktop-menu-icon">
+          <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+
+          <button type="button" class="l-header__hamburger" aria-label="メニュー">
+            <span class="mh-bar l-header__hamburger-bar"></span>
+            <span class="mh-bar l-header__hamburger-bar"></span>
+            <span class="mh-bar l-header__hamburger-bar"></span>
+          </button>
+        <div class="l-header-floating-menu__close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+        </div>
+        </div>
+
+          <div
+            id="floating-menu-content"
+            class="l-header-floating-menu__content u-cursor-pointer"
+          >
+            <p class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500">
+              ©2026 Wellness Land Co., Ltd.
+            </p>
+          </div>
+
+        <div id="nav-menu-popup" class="l-nav-menu-popup">
+          <div class="l-nav-menu-popup__columns">
+
+            <!-- 会社について -->
+            <div class="l-nav-menu-popup__section">
+              <div class="l-footer__page-link">
+                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                <div class="l-footer__link-line"></div>
+              </div>
+              <div class="l-nav-menu-popup__links">
+                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
+                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
+                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
+                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
+                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
+                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
+                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
+                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
+                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+              </div>
+            </div>
+
+            <!-- サービス + 採用情報 -->
+            <div class="l-nav-menu-popup__group">
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
+                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
+                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                </div>
+              </div>
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 他店舗 + SNS -->
+            <div class="l-nav-menu-popup__group">
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                </div>
+              </div>
+              <div class="l-nav-menu-popup__section">
+                <div class="l-footer__page-link">
+                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <img src="assets/img/common/icon_arrow_blue.svg" alt="">
+                  <div class="l-footer__link-line"></div>
+                </div>
+                <div class="l-nav-menu-popup__links">
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 下部行 -->
+          <div class="l-nav-menu-popup__bottom l-nav-menu-popup__bottom--gap">
+            <div class="l-nav-menu-popup__bottom-btns">
+              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              </a>
+              <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+              </a>
+            </div>
+            <div class="l-nav-menu-popup__bottom-links">
+              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
+              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
+              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
+              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+        <!--モバイルヘッダー-->
+        <div class="l-mobile-header-overlay">
+          <nav class="l-sp-nav__main">
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
+                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Recruitment</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="https://recruit.amazones.fit/" target="_blank" class="l-sp-nav__link">採用情報</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Other Shops</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="https://hqf.osaka/" target="_blank" class="l-sp-nav__link">完全個室PRIVATE GYM Highness</a></li>
+                <li><a href="https://hercules.amazones.fit/" target="_blank" class="l-sp-nav__link">24時間ジム Amazones &amp; Herculest</a></li>
+                <li><a href="https://shop.amazones.fit/" target="_blank" class="l-sp-nav__link">AMAZONES ONLINE SHOP</a></li>
+              </ul>
+            </div>
+            <div class="l-sp-nav__section">
+              <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">SNS</span><span class="l-sp-nav__plus">＋</span></button>
+              <ul class="l-sp-nav__list">
+                <li><a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-sp-nav__link sp-nav-link--icon"><img src="assets/img/common/icon_youtube.svg" class="l-sp-nav__sns-icon" alt="">Amazones｜公式YouTube</a></li>
+                <li><a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-sp-nav__link sp-nav-link--icon"><img src="assets/img/common/icon_instragram.svg" class="l-sp-nav__sns-icon" alt="">Amazones｜公式Instagram</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="l-sp-nav__sub">
+            <div class="l-sp-nav__btns">
+              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              </a>
+              <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
+                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+              </a>
+            </div>
+            <ul class="l-sp-nav__utility">
+              <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
+              <li><a href="sitemap/">サイトマップ</a></li>
+              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="#">個人情報保護方針</a></li>
+              <li><a href="#">WEBサイトのご利用に当たって</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ヘッダー-->
+
+    <!--メインコンテンツ-->
+    <main>
+      <!-- バナー -->
+      <section class="c-banner-section">
+        <div class="p-banner">
+          <div class="p-banner-inner">
+            <img
+              src="assets/img/common/img_gym02.webp"
+              alt="予約バナー"
+              class="p-banner-img"
+            >
+
+            <div class="p-banner-overlay"></div>
+          </div>
+
+          <!-- バナーテキスト -->
+          <div class="p-banner-content">
+            <h1 class="p-banner-title u-font-zen u-text-white c-reveal">お支払いについて</h1>
+            <p class="p-banner-subtitle u-font-outfit c-reveal">Payment</p>
+            <!-- パンくずリスト -->
+            <nav class="c-breadcrumb p-breadcrumb c-reveal">
+              <a href="./" class="c-breadcrumb-home">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17 17"
+                  width="17"
+                  height="17"
+                >
+                  <path
+                    id="シェイプ894"
+                    fill="#81d7cf"
+                    d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
+                  />
+                </svg>
+              </a>
+              <span class="c-breadcrumb-separator">&#x203A;</span>
+              <a href="/price" class="u-text-white u-fs-14 banner-a-link">料金案内</a>
+              <span class="c-breadcrumb-separator">&#x203A;</span>
+              <a href="#payment-section" class="u-text-white u-fs-14 banner-a-link"
+                >お支払いについて</a
+              >
+            </nav>
+          </div>
+        </div>
+        <!-- リボン装飾01-->
+        <img
+          src="assets/img/common/img_ribbon_banner.svg"
+          alt="リボン装飾"
+          class="ribbon-banner c-clip-grow-right"
+        >
+      </section>
+
+      <!-- お支払いコンテンツ -->
+      <section class="p-payment__section--white" id="payment-section">
+        <!-- リンク -->
+        <nav class="p-payment__links-nav c-maxWidth">
+          <ul class="p-payment__links-list">
+            <li>
+              <a href="#payment-method">
+                <div class="p-payment__links-item">
+                  <span>お支払い方法</span>
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 13 8"
+                    width="13"
+                    height="8"
+                  >
+                    <path
+                      id="長方形 6 のコピー 6"
+                      fill="#81d8d0"
+                      d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#credit-card">
+                <div class="p-payment__links-item">
+                  <span>クレジットカード決済について</span>
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 13 8"
+                    width="13"
+                    height="8"
+                  >
+                    <path
+                      id="長方形 6 のコピー 6"
+                      fill="#81d8d0"
+                      d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#bank-transfer">
+                <div class="p-payment__links-item">
+                  <span>口座振替について</span>
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 13 8"
+                    width="13"
+                    height="8"
+                  >
+                    <path
+                      id="長方形 6 のコピー 6"
+                      fill="#81d8d0"
+                      d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#cash-payment">
+                <div class="p-payment__links-item">
+                  <span>店頭現金決済について</span>
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 13 8"
+                    width="13"
+                    height="8"
+                  >
+                    <path
+                      id="長方形 6 のコピー 6"
+                      fill="#81d8d0"
+                      d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#prorated">
+                <div class="p-payment__links-item">
+                  <span>日割り計算について</span>
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 13 8"
+                    width="13"
+                    height="8"
+                  >
+                    <path
+                      id="長方形 6 のコピー 6"
+                      fill="#81d8d0"
+                      d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- コンテンツ -->
+        <div id="payment-method" class="p-payment__content c-maxWidth">
+          <!-- タイトル -->
+          <div class="p-payment__title-container">
+            <h2 class="p-payment__subtitle u-font-zen c-reveal">お支払方法</h2>
+            <p class="p-payment__title u-font-outfit c-reveal">Payment</p>
+          </div>
+          <!-- テキストコンテナ -->
+          <div class="p-payment__text-container c-reveal--scale">
+            <!-- フローティング人物01 -->
+            <div class="p-payment__speak-container--01">
+              <div class="p-payment__speak-image--01">
+                <img
+                  src="assets/img/payment/img_payment_speak_bubble01.svg"
+                  alt="お客様の声 人物画像"
+                  class="p-payment__speak-bubble--01 c-speech-bubble"
+                >
+                <img
+                  src="assets/img/payment/img_payment_speak_person01.webp"
+                  alt="お客様の声 人物画像"
+                  class="p-payment__speak-person--01"
+                >
+              </div>
+            </div>
+            <!-- テキストブロック1 -->
+            <div class="p-payment__text-block c-reveal--scale">
+              <p class="u-font-zen">
+                お支払い方法は、クレジットカードと口座振替からお選びいただけます。
+              </p>
+              <ul class="p-payment__list-reset">
+                <li class="u-font-zen">
+                  <span>● クレジットカードの場合｜</span
+                  >クレジットカード（VISA・MasterCard・JCB・American
+                  Express・Diners
+                  Club）、もしくはデビットカードをご用意ください。
+                </li>
+              </ul>
+            </div>
+            <!-- 決済ロゴ -->
+            <ul class="c-flex-gap-3 p-payment__list-sm-gap">
+              <li>
+                <img
+                  src="assets/img/common/img_visa_logo.svg"
+                  alt="Visa"
+                  class="p-payment__card-logo"
+                >
+              </li>
+              <li>
+                <img
+                  src="assets/img/common/img_mastercard_logo.svg"
+                  alt="Mastercard"
+                  class="p-payment__card-logo"
+                >
+              </li>
+              <li>
+                <img
+                  src="assets/img/common/img_jcb_logo.svg"
+                  alt="JCB"
+                  class="p-payment__card-logo"
+                >
+              </li>
+              <li>
+                <img
+                  src="assets/img/common/img_amex_logo.svg"
+                  alt="アメリカン・エキスプレス"
+                  class="p-payment__card-logo"
+                >
+              </li>
+              <li>
+                <img
+                  src="assets/img/common/img_dinersclub_logo.svg"
+                  alt="ダイナースクラブ"
+                  class="p-payment__card-logo"
+                >
+              </li>
+            </ul>
+
+            <!-- テキストブロック2 -->
+            <div class="p-payment__text-block c-reveal--scale">
+              <ul class="p-payment__list-reset">
+                <li class="u-font-zen">
+                  <span>● 口座振替の場合｜</span
+                  >会費引落口座の銀行情報をお持ちください。
+                </li>
+              </ul>
+              <p class="u-font-zen">
+                なお、一部ご利用になれない金融機関・キャッシュカードがございます。詳細は各店舗のスタッフへお確かめください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 水色背景セクション1-->
+      <section id="credit-card" class="p-payment__section--lightblue">
+        <div class="p-payment__about c-maxWidth">
+          <div class="p-payment__about-card c-reveal--scale">
+            <div class="u-flex">
+              <div class="p-payment__about-card-icon">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 41 28"
+                  width="41"
+                  height="28"
+                >
+                  <path
+                    id="シェイプ 550"
+                    fill-rule="evenodd"
+                    fill="#fbfdfd"
+                    d="m37.61 27.12h-34.22c-0.76 0-1.48-0.3-2.03-0.84-0.55-0.55-0.84-1.27-0.84-2.03v-20.5c0-0.76 0.29-1.48 0.84-2.03 0.55-0.54 1.27-0.84 2.03-0.84h34.26 0.04 0.03l0.36 0.04c0.6 0.1 1.14 0.37 1.56 0.8q0.33 0.33 0.55 0.76l0.01 0.02q0.02 0.05 0.04 0.1l0.04 0.1 0.1 0.27 0.05 0.19 0.04 0.26 0.01 0.26v0.07 20.5c0 0.76-0.29 1.48-0.84 2.03-0.55 0.54-1.27 0.84-2.03 0.84zm-35.45-14.49v11.62q0 0.51 0.36 0.87 0.36 0.36 0.87 0.36h34.22q0.51 0 0.87-0.36 0.36-0.37 0.36-0.87v-11.62zm31.56 11.04h-6.3c-0.46 0-0.88-0.18-1.2-0.5-0.32-0.32-0.5-0.75-0.5-1.2v-3.21c0-0.45 0.18-0.88 0.5-1.2 0.32-0.32 0.74-0.5 1.2-0.5h6.3c0.45 0 0.88 0.18 1.2 0.5 0.32 0.32 0.49 0.75 0.49 1.2v3.21c0 0.45-0.17 0.88-0.49 1.2-0.32 0.32-0.75 0.5-1.2 0.5zm-6.3-4.97q-0.03 0.01-0.04 0.02-0.02 0.01-0.02 0.04v3.21q0 0.02 0.02 0.03 0.01 0.02 0.04 0.02h6.3q0.03 0 0.04-0.01 0.01-0.02 0.01-0.04v-3.21q0-0.03-0.01-0.04-0.02-0.01-0.04-0.02zm-25.25-7.71h36.68v-3.32h-36.68zm0-4.96h36.68v-2.37l-0.04-0.22-0.07-0.21-0.1-0.16-0.17-0.21q-0.29-0.27-0.68-0.33l-0.17-0.01h-34.22q-0.51 0-0.87 0.36-0.36 0.36-0.36 0.87z"
+                  />
+                </svg>
+              </div>
+              <div class="p-payment__about-card-title">
+                <h3 class="u-font-zen c-reveal">クレジットカード決済について</h3>
+              </div>
+            </div>
+            <div class="p-payment__about-card-body c-reveal--scale">
+              <div>
+                <p class="u-font-zen">
+                  クレジットカードをご登録いただけましたら、契約期間中は継続してクレジット支払いで毎月の決済が可能となります。
+                </p>
+                <p class="u-font-zen">
+                  なお、デビットやチャージ式クレジットの場合は残高にご注意いただき、毎月20日の決済前にご確認いただくようお願いします。
+                </p>
+                <p class="u-font-zen">
+                  また、有効期限切れなどで決済不可になった場合は、オンラインから使用可能なクレジットカードへ変更をしていただくようお願いいたします。
+                </p>
+                <p class="u-font-zen">
+                  クレジットカードの変更完了報告をしていただくことにより、決済することが可能です。
+                </p>
+              </div>
+              <figure class="p-payment__about-figure">
+                <img
+                  src="assets/img/payment/img_payment_about01.svg"
+                  alt="お支払いについて画像1"
+                >
+                <figcaption class="c-flex-col-gap-4">
+                  <div class="p-payment__about-subheader">
+                    <h4 class="u-font-zen">お支払い例</h4>
+                  </div>
+                  <div class="u-font-zen p-payment__about-caption">
+                    <p class="u-text-red">
+                      ※ 9月15日ご契約、ご入会日を10月1日に指定された場合
+                    </p>
+                    <p>
+                      10月分の月会費、11月分の月会費はご契約いただいた当日（※9月15日）が決済日になります。
+                    </p>
+                    <p>
+                      また12月分の月会費は、11月20日に決済されます。（以降は毎月20日が次月分決済日）
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 白セクション1 -->
+      <section id="bank-transfer" class="p-payment__section--white">
+        <div class="p-payment__about c-maxWidth">
+          <div class="p-payment__about-card c-reveal--scale">
+            <div class="u-flex">
+              <div class="p-payment__about-card-icon">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 45 43"
+                  width="45"
+                  height="43"
+                >
+                  <path
+                    id="シェイプ 549"
+                    fill-rule="evenodd"
+                    fill="white"
+                    d="m25.25 40.42h-22.71c-0.41 0-0.75-0.33-0.75-0.74v-2.4c0-0.41 0.34-0.75 0.75-0.75h1.48v-1.65c0-0.41 0.33-0.75 0.74-0.75h0.85l0.53-18.63h-0.34c-0.41 0-0.75-0.34-0.75-0.75v-1.65h-2.02q-0.43 0-0.78-0.27-0.33-0.27-0.44-0.69-0.09-0.4 0.07-0.78l0.02-0.04q0.18-0.39 0.57-0.59l17.87-8.96q0.33-0.16 0.67 0l17.86 8.96q0.4 0.21 0.58 0.59l0.03 0.07q0.14 0.37 0.05 0.75-0.1 0.41-0.44 0.69-0.35 0.27-0.78 0.27h-2.02v1.65c0 0.41-0.34 0.75-0.75 0.75h-0.33l0.14 5.17c0.01 0.41-0.31 0.75-0.72 0.76q-0.31 0.01-0.53-0.2-0.22-0.21-0.24-0.52l-0.14-5.21h-2.08l-0.16 5.7c-0.01 0.41-0.36 0.74-0.77 0.73-0.41-0.01-0.73-0.36-0.72-0.77l0.16-5.66h-2.95l0.22 7.87c0.01 0.41-0.31 0.76-0.72 0.77q-0.31 0-0.54-0.21-0.22-0.21-0.23-0.52l-0.22-7.91h-2.08l-0.52 18.68c0.29 0.1 0.49 0.38 0.49 0.7 0 0.41-0.34 0.75-0.75 0.75h-17.34v0.9h18.19c0.41 0 0.75 0.34 0.75 0.75 0 0.41-0.34 0.74-0.75 0.74h-20.41v0.91h21.96c0.42 0 0.75 0.34 0.75 0.75 0 0.41-0.33 0.74-0.75 0.74zm-5.53-6.29h1.9l0.52-18.63h-2.94zm-4.62 0h3.12l-0.52-18.63h-2.08zm-3.39 0h1.91l0.52-18.64h-2.95zm-4.61 0h3.12l-0.52-18.63h-2.08zm-0.56-20.13h28.25v-0.9h-28.25zm-2.5-2.4h33.25l-16.62-8.34zm30.13 30.07c-2.51 0-4.86-0.98-6.64-2.75-1.77-1.77-2.75-4.13-2.75-6.63 0-2.51 0.98-4.86 2.75-6.64 1.78-1.77 4.13-2.74 6.64-2.74 2.51 0 4.87 0.97 6.64 2.74 1.77 1.78 2.75 4.13 2.75 6.64 0 2.5-0.98 4.86-2.75 6.63-1.77 1.77-4.13 2.75-6.64 2.75zm0-17.27c-2.11 0-4.09 0.82-5.58 2.31-1.49 1.49-2.31 3.47-2.31 5.58 0 2.11 0.82 4.09 2.31 5.58 1.49 1.49 3.47 2.31 5.58 2.31 2.11 0 4.09-0.82 5.58-2.31 1.49-1.49 2.31-3.47 2.31-5.58 0-2.11-0.82-4.09-2.31-5.58-1.49-1.49-3.47-2.31-5.58-2.31zm-1.31 12.15q-0.32 0-0.56-0.25l-3.39-3.78c-0.28-0.31-0.25-0.78 0.05-1.06q0.23-0.2 0.54-0.19 0.31 0.02 0.51 0.25l2.84 3.15 5.47-6.38q0.2-0.23 0.5-0.26 0.31-0.02 0.55 0.18 0.23 0.2 0.26 0.51 0.02 0.3-0.18 0.54l-6 7q-0.04 0.05-0.09 0.1-0.23 0.19-0.5 0.19z"
+                  />
+                </svg>
+              </div>
+              <div class="p-payment__about-card-title">
+                <h3 class="u-font-zen c-reveal">口座振替について</h3>
+              </div>
+            </div>
+            <div class="p-payment__about-card-body c-reveal--scale">
+              <div>
+                <p class="u-font-zen">
+                  店頭にて口座振替用紙に氏名・住所・銀行情報の記入、およびご捺印していただく必要がございます。
+                </p>
+                <p class="u-font-zen">
+                  また、口座振替の反映完了までお日にちが掛かるため、2か月目までの会費をお支払い（現金、または店舗によりクレジット決済・電子マネー）いただく必要がございます。
+                </p>
+                <p class="u-font-zen">
+                  なお、引き落としはご入会3か月目の月会費から開始され、ご契約した2か月目の27日（以降は毎月27日が引き落し日）が最初の引き落としとなります。
+                </p>
+              </div>
+              <figure class="p-payment__about-figure">
+                <img
+                  src="assets/img/payment/img_payment_about02.svg"
+                  alt="お支払いについて画像2"
+                >
+                <figcaption class="c-flex-col-gap-4">
+                  <div class="p-payment__about-subheader">
+                    <h4 class="u-font-zen">お支払い例</h4>
+                  </div>
+                  <div class="u-font-zen p-payment__about-caption">
+                    <p class="u-text-red">
+                      ※ 9月15日ご契約、ご入会日を10月1日に指定された場合
+                    </p>
+                    <p>
+                      10月分の月会費、11月分の月会費を事前お支払い（現金、または店舗によりクレジット決済、電子マネー利用可能）ください。
+                    </p>
+                    <p>
+                      11月27日に初回の引き落とし（12月分月会費）となります。
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 水色背景セクション2-->
+      <section id="cash-payment" class="p-payment__section--lightblue">
+        <div class="p-payment__about c-maxWidth">
+          <div class="p-payment__about-card c-reveal--scale">
+            <div class="u-flex">
+              <div class="p-payment__about-card-icon">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 52 32"
+                  width="52"
+                  height="32"
+                >
+                  <path
+                    id="シェイプ 550"
+                    fill-rule="evenodd"
+                    fill="#fdfefe"
+                    d="m51 2.67v26.66c0 0.5-0.33 0.84-0.83 0.84h-48.34c-0.5 0-0.83-0.34-0.83-0.84v-26.66c0-0.5 0.33-0.84 0.83-0.84h48.34c0.5 0 0.83 0.34 0.83 0.84zm-1.67 0.83h-46.66v25h46.66zm-45 16.67v-8.34c0-0.5 0.34-0.83 0.84-0.83 2.75 0 5-2.25 5-5 0-0.5 0.33-0.83 0.83-0.83h30c0.5 0 0.83 0.33 0.83 0.83 0 2.75 2.25 5 5 5 0.5 0 0.84 0.33 0.84 0.83v8.34c0 0.5-0.34 0.83-0.84 0.83-2.75 0-5 2.25-5 5 0 0.5-0.33 0.83-0.83 0.83h-30c-0.5 0-0.83-0.33-0.83-0.83 0-2.75-2.25-5-5-5-0.5 0-0.84-0.33-0.84-0.83zm1.67-0.84c3 0.34 5.33 2.75 5.75 5.75h28.42c0.33-3 2.75-5.33 5.75-5.75v-6.75c-3-0.33-5.34-2.75-5.75-5.75h-28.42c-0.33 3-2.75 5.34-5.75 5.75zm12.5-3.33c0-4.17 3.33-7.5 7.5-7.5 4.17 0 7.5 3.33 7.5 7.5 0 4.17-3.33 7.5-7.5 7.5-4.17 0-7.5-3.33-7.5-7.5zm1.67 0c0 3.25 2.58 5.83 5.83 5.83 3.25 0 5.83-2.58 5.83-5.83 0-3.25-2.58-5.83-5.83-5.83-3.25 0-5.83 2.58-5.83 5.83zm15-0.83h3.33v1.66h-3.33zm-21.67 0h3.33v1.67h-3.33z"
+                  />
+                </svg>
+              </div>
+              <div class="p-payment__about-card-title">
+                <h3 class="u-font-zen c-reveal">店頭現金決済について</h3>
+              </div>
+            </div>
+            <div class="p-payment__about-card-body c-reveal--scale">
+              <div>
+                <p class="u-font-zen">
+                  店頭で月会費やご入会金、備品などを現金でお支払い可能です。
+                </p>
+                <p class="u-font-zen">
+                  ただし、各店舗により現金の取り扱い方が異なります。詳細は各店舗のスタッフへお尋ねください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 白セクション2 -->
+      <section id="prorated" class="p-payment__section--white">
+        <div class="p-payment__about c-maxWidth">
+          <div class="p-payment__about-card c-reveal--scale">
+            <div class="u-flex">
+              <div class="p-payment__about-card-icon">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 39 39"
+                  width="39"
+                  height="39"
+                >
+                  <path
+                    id="シェイプ 550"
+                    fill-rule="evenodd"
+                    fill="white"
+                    d="m4.3 37.5c-1.55 0-2.8-1.25-2.8-2.8v-27.57c0-1.55 1.25-2.81 2.8-2.81h2.85v-1.79c0-0.57 0.47-1.03 1.04-1.03 0.57 0 1.04 0.46 1.04 1.03v1.79h20.54v-1.79c0-0.57 0.47-1.03 1.04-1.03 0.57 0 1.04 0.46 1.04 1.03v1.79h2.85c1.55 0 2.8 1.26 2.8 2.81v27.57c0 1.55-1.25 2.8-2.8 2.8zm-0.73-2.8c0 0.4 0.33 0.73 0.73 0.73h30.4c0.4 0 0.73-0.33 0.73-0.73v-21.23h-31.86zm0.73-28.3c-0.4 0-0.73 0.33-0.73 0.73v4.26h31.86v-4.26c0-0.4-0.33-0.73-0.73-0.73h-2.85v1.79c0 0.57-0.47 1.04-1.04 1.04-0.57 0-1.04-0.47-1.04-1.04v-1.79h-20.54v1.79c0 0.57-0.47 1.04-1.04 1.04-0.58 0-1.04-0.47-1.04-1.04v-1.79zm13.78 24.03q-0.31 0-0.57-0.17l-4.24-2.83q-0.36-0.24-0.44-0.66-0.08-0.42 0.15-0.78c0.19-0.29 0.52-0.46 0.86-0.46q0.32 0 0.58 0.17l3.35 2.24 6.5-10.4c0.19-0.31 0.52-0.49 0.89-0.49q0.29 0 0.54 0.16 0.36 0.23 0.46 0.64 0.1 0.42-0.13 0.78l-7.07 11.32c-0.14 0.23-0.38 0.4-0.66 0.46q-0.11 0.02-0.22 0.02z"
+                  />
+                </svg>
+              </div>
+              <div class="p-payment__about-card-title">
+                <h3 class="u-font-zen c-reveal">日割り計算について</h3>
+              </div>
+            </div>
+            <div class="p-payment__about-card-body c-reveal--scale">
+              <div>
+                <p class="u-font-zen">
+                  初月の日割り計算はご指定いただいたご入会日から起算されます。
+                </p>
+              </div>
+              <figure class="p-payment__about-figure">
+                <img
+                  src="assets/img/payment/img_payment_about03.svg"
+                  alt="お支払いについて画像3"
+                >
+                <figcaption class="c-flex-col-gap-4">
+                  <div class="p-payment__about-subheader">
+                    <h4 class="u-font-zen">日割り例</h4>
+                  </div>
+                  <div class="u-font-zen">
+                    <p class="u-text-red">
+                      ※ 10月2日ご契約、ご入会日を10月15日に指定された場合
+                    </p>
+                    <p>
+                      ［10月15日から10月31日までの日数］×［日割り月会費］となります。
+                    </p>
+                    <p>
+                      10月2日に初月会費（10月15日～末日までの日割り）＋11月分の月会費が決済されます。
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- お知らせ -->
+      <section class="c-announcement__section">
+        <!-- コンテンツ -->
+        <div class="c-announcement c-maxWidth">
+          <div class="c-announcement__title-container c-reveal">
+            <h2 class="u-font-zen">まずはお気軽に無料体験・見学へ</h2>
+            <h2 class="u-font-outfit">GO!</h2>
+          </div>
+          <div class="c-announcement__body c-reveal">
+            <p class="u-font-zen">
+              女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。
+            </p>
+            <p class="u-font-zen">
+              トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
+            </p>
+          </div>
+          <a href="/reservation">
+          <button type="button" class="c-btn--light-blue">
+            <span class="c-announcement__btn u-cursor-pointer">
+              <img
+                src="assets/img/common/icon_24_white.svg"
+                alt="24時間アイコン（白）"
+                class="icon-hover-lightblue"
+              >
+              無料体験・見学予約はこちら
+              <svg
+                width="20"
+                height="5"
+                viewBox="0 0 20 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 4.9713V4.01685H9.99195V4.9713H0Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.92773 5.00108H19.9195L9.92773 0V5.00108Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </button>
+          </a>
+          <!-- モバイルのみ: ボタン下の人物表示（デスクトップでは非表示） -->
+          <div class="p-payment__speak-mobile">
+            <div class="p-payment__speak-mobile-item">
+              <img
+                src="assets/img/payment/img_payment_speak_bubble02.svg"
+                alt="吹き出し"
+                class="p-payment__speak-bubble-mobile c-speech-bubble"
+              >
+              <img
+                src="assets/img/payment/img_payment_speak_person02.webp"
+                alt="お客様の声 人物"
+                class="p-payment__speak-person-mobile"
+              >
+            </div>
+            <div class="p-payment__speak-mobile-item">
+              <img
+                src="assets/img/payment/img_payment_speak_bubble03.svg"
+                alt="吹き出し"
+                class="p-payment__speak-bubble-mobile p-payment__speak-bubble-mobile--right c-speech-bubble"
+              >
+              <img
+                src="assets/img/payment/img_payment_speak_person03.webp"
+                alt="お客様の声 人物"
+                class="p-payment__speak-person-mobile"
+              >
+            </div>
+          </div>
+          <!-- フローティング人物02 -->
+          <div class="p-payment__speak-container--02">
+            <div class="p-payment__speak-image--02">
+              <img
+                src="assets/img/payment/img_payment_speak_bubble02.svg"
+                alt="お客様の声 人物画像"
+                class="p-payment__speak-bubble--02 c-speech-bubble"
+              >
+              <img
+                src="assets/img/payment/img_payment_speak_person02.webp"
+                alt="お客様の声 人物画像"
+                class="p-payment__speak-person--02"
+              >
+            </div>
+          </div>
+          <!-- フローティング人物03 -->
+          <div class="p-payment__speak-container--03">
+            <div class="p-payment__speak-image--03">
+              <img
+                src="assets/img/payment/img_payment_speak_bubble03.svg"
+                alt="お客様の声 人物画像"
+                class="p-payment__speak-bubble--03 c-speech-bubble"
+              >
+              <img
+                src="assets/img/payment/img_payment_speak_person03.webp"
+                alt="お客様の声 人物画像"
+                class="p-payment__speak-person--03"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--トップテキストスライダー-->
+      <section>
+        <div class="c-text-slider">
+          <div class="slide-track">
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+            <div class="slide">
+              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+                For a free trial or tour enquiry, please here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 備考 -->
+      <section class="c-end-note__section">
+        <div class="c-end-note c-maxWidth">
+          <!-- 行1 -->
+          <div class="c-end-note__row">
+            <!-- カード1 -->
+            <div class="c-end-note__card c-reveal--scale">
+              <div class="c-end-note__card-header">
+                <div class="c-end-note__card-icon">
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 53 51"
+                    width="53"
+                    height="51"
+                  >
+                    <path
+                      id="シェイプ 1093"
+                      fill-rule="evenodd"
+                      fill="white"
+                      d="m52.28 46.74c0.05 0.44-0.23 0.86-0.66 0.97-2.19 0.54-4.5 0.35-6.57-0.55-10.86 8.1-26.92 0.68-27.85-12.86-1.03-10.58 8.42-20.03 18.97-18.98 3.33 0.27 6.51 1.49 9.18 3.51 7.74 5.87 9.27 16.93 3.41 24.69 1.93 2.27 2.64 2.36 2.64 2.36 0.46 0.04 0.83 0.4 0.88 0.86zm-3.63-0.61q-0.64-0.62-1.47-1.61c-0.47-0.56-0.48-1.37-0.03-1.94 2.41-3.11 3.58-7 3.27-10.93-1-13.28-17.42-19.4-26.8-9.92-9.58 9.48-3.28 26.16 10.19 26.91 3.8 0.22 7.56-0.95 10.57-3.29 0.3-0.24 0.72-0.27 1.05-0.07 1 0.51 2.1 0.8 3.22 0.85zm-34.03-12.7c0.5 0.11 0.81 0.61 0.7 1.11-0.11 0.5-0.61 0.81-1.11 0.7-2.33-0.52-4.53-1.52-6.46-2.93-2.07 0.9-4.38 1.1-6.57 0.55-0.41-0.1-0.71-0.47-0.71-0.9 0-0.51 0.42-0.93 0.93-0.93 0 0 0.7-0.09 2.64-2.35-2.6-3.44-3.85-7.72-3.52-12.01 1.78-18.91 27.61-22.31 34.14-4.47 0.16 0.47-0.09 0.99-0.56 1.16-0.48 0.18-1.01-0.07-1.19-0.55-0.56-1.61-1.38-3.11-2.43-4.46-5.34-6.87-15.23-8.1-22.09-2.75-6.85 5.35-8.08 15.26-2.74 22.14 1.09 1.31-0.81 2.78-1.51 3.56 1.15-0.06 2.28-0.36 3.31-0.91 0.32-0.15 0.69-0.11 0.97 0.11 1.82 1.43 3.94 2.43 6.2 2.93zm21.96-0.49c-0.54 0.19-0.9 0.7-0.92 1.27v1.99c-0.01 0.5-0.41 0.9-0.91 0.91-0.51 0.01-0.93-0.39-0.94-0.91v-1.99c0.01-1.34 0.85-2.53 2.1-3 1.25-0.48 2.07-1.68 2.07-3.02-0.01-1.8-1.46-3.25-3.25-3.25-1.79 0-3.24 1.45-3.24 3.25 0 0.51-0.41 0.93-0.92 0.93-0.51 0-0.93-0.42-0.93-0.93q0-0.51 0.11-1.01c0.58-2.78 3.3-4.56 6.07-3.98 4.87 1.01 5.4 7.98 0.76 9.74zm-1.83 6.36c0.51 0 0.93 0.41 0.93 0.93 0 0.51-0.42 0.92-0.93 0.92-0.5-0.01-0.89-0.41-0.91-0.9-0.01-0.52 0.4-0.94 0.91-0.95q0 0 0 0zm-7.43-25.89c0 0.51-0.41 0.92-0.92 0.92h-18.52c-0.51 0-0.92-0.41-0.92-0.92 0-0.52 0.41-0.93 0.92-0.93 0 0 18.52 0 18.52 0 0.51 0 0.92 0.41 0.92 0.93q0 0 0 0zm-9.02 6.49c0.49 0.01 0.9 0.41 0.9 0.91 0.01 0.51-0.39 0.94-0.9 0.95h-10.42c-0.49-0.02-0.89-0.41-0.9-0.91-0.02-0.51 0.39-0.94 0.9-0.95z"
+                    />
+                  </svg>
+                </div>
+                <div class="c-end-note__card-header">
+                  <h3 class="u-font-zen">よくあるご質問</h3>
+                  <a href="/amazones-test/faq" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  </a>
+                </div>
+              </div>
+              <div class="c-end-note__card-body">
+                <p class="u-font-zen">
+                  よくあるお問い合わせ内容をまとめて掲載しております。
+                </p>
+                <p class="u-font-zen">
+                  掲載のないご質問につきましては、<span>お問い合わせフォーム</span>からご質問ください。
+                </p>
+              </div>
+            </div>
+            <!-- カード2 -->
+            <div class="c-end-note__card c-reveal--scale">
+              <div class="c-end-note__card-header">
+                <div class="c-end-note__card-icon">
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 42 53"
+                    width="42"
+                    height="53"
+                  >
+                    <path
+                      id="シェイプ 1094"
+                      fill-rule="evenodd"
+                      fill="white"
+                      d="m6.66 14.64c0-0.46 0.37-0.83 0.82-0.83h20.03c0.45 0 0.82 0.37 0.82 0.83 0 0.45-0.37 0.82-0.82 0.82h-20.03c-0.45 0-0.82-0.37-0.82-0.82zm0 4.82c0-0.46 0.37-0.82 0.82-0.82h20.03c0.45 0 0.82 0.36 0.82 0.82 0 0.45-0.37 0.82-0.82 0.82h-20.03c-0.45 0-0.82-0.37-0.82-0.82zm0 4.82c0-0.46 0.37-0.82 0.82-0.82h20.03c0.45 0 0.82 0.36 0.82 0.82 0 0.45-0.37 0.82-0.82 0.82h-20.03c-0.45 0-0.82-0.37-0.82-0.82zm0 4.82c0-0.46 0.37-0.82 0.82-0.82h20.03c0.45 0 0.82 0.36 0.82 0.82 0 0.45-0.37 0.82-0.82 0.82h-20.03c-0.45 0-0.82-0.37-0.82-0.82zm13.38 4.82c0 0.45-0.37 0.82-0.82 0.82h-11.74c-0.45 0-0.82-0.37-0.82-0.82 0-0.45 0.37-0.82 0.82-0.82h11.74c0.45 0 0.82 0.37 0.82 0.82zm-7.67 4.82c0 0.45-0.37 0.82-0.83 0.82h-4.06c-0.45 0-0.82-0.37-0.82-0.82 0-0.45 0.37-0.82 0.82-0.82h4.06c0.46 0 0.83 0.37 0.83 0.82zm27.64 2.94c0 2.61-1.02 5.06-2.86 6.9-1.84 1.84-4.29 2.85-6.89 2.85-2.61 0-5.06-1.01-6.9-2.85q-1.35-1.36-2.08-3.08h-18.47c-0.45 0-0.82-0.36-0.82-0.82v-38.03c0-0.46 0.37-0.83 0.82-0.83h6.78v-1.04c0-0.45 0.37-0.82 0.82-0.82h3.82c0.37-1.45 1.69-2.54 3.26-2.54 1.57 0 2.89 1.09 3.26 2.54h3.82q0 0 0 0 0.34 0 0.58 0.24 0.24 0.24 0.24 0.58v1.04h6.78c0.46 0 0.83 0.37 0.83 0.83v25.67c1.55 0.46 2.97 1.29 4.15 2.47 1.84 1.84 2.86 4.29 2.86 6.89zm-28.78-36.07v0.96q0.01 0.03 0.01 0.08 0 0.04-0.01 0.07v1.02h12.52v-2.14l-3.72 0.01q0 0 0 0-0.34-0.01-0.58-0.24-0.24-0.25-0.24-0.59c0-0.94-0.77-1.71-1.72-1.71-0.94 0-1.71 0.77-1.71 1.71 0 0.46-0.37 0.83-0.83 0.83zm9.52 38.25q-0.25-1.06-0.25-2.18c0-2.6 1.02-5.05 2.86-6.89 1.84-1.84 4.29-2.85 6.89-2.85q0.56 0 1.1 0.06v-24.53h-5.96v1.09c0 0.46-0.37 0.82-0.82 0.82h-14.16c-0.45 0-0.82-0.36-0.82-0.82v-1.09h-5.95v36.39zm17.61-2.18c0-3.86-2.72-7.1-6.34-7.91q-0.02 0-0.03 0-0.84-0.19-1.74-0.19c-4.47 0-8.1 3.64-8.1 8.1 0 4.47 3.63 8.11 8.1 8.11 4.47 0 8.11-3.64 8.11-8.11zm-4.38-2.8c0.33 0.33 0.33 0.85 0 1.17l-4.44 4.44q-0.24 0.23-0.58 0.24 0 0 0 0-0.34-0.01-0.58-0.24l-1.86-1.86c-0.32-0.33-0.32-0.85 0-1.17 0.33-0.32 0.85-0.32 1.17 0l1.27 1.28 3.86-3.86c0.32-0.32 0.84-0.32 1.16 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="c-end-note__card-header">
+                  <h3 class="u-font-zen">ご利用規約</h3>
+                  <a href="/amazones-test/rules" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  </a>
+                </div>
+              </div>
+              <div class="c-end-note__card-body">
+                <p class="u-font-zen">
+                  女性専用24時間ジム
+                  Amazones（アマゾネス）として運営する、スポーツクラブの利用に関し適用されるご利用規約です。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 行2 -->
+          <div class="c-end-note__row">
+            <!-- カード3 -->
+            <div class="c-end-note__card c-reveal--scale">
+              <div class="c-end-note__card-header">
+                <div class="c-end-note__card-icon">
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 41 28"
+                    width="41"
+                    height="28"
+                  >
+                    <path
+                      id="シェイプ 1093"
+                      fill="white"
+                      d="m40.49 1.81q0-0.01 0-0.02-0.01-0.04-0.01-0.07-0.01-0.02-0.01-0.03 0-0.03-0.01-0.05-0.01-0.02-0.01-0.04-0.01-0.02-0.01-0.03-0.01-0.03-0.02-0.06-0.01-0.01-0.01-0.02-0.02-0.03-0.04-0.07 0-0.01-0.01-0.02-0.02-0.03-0.04-0.06 0 0 0 0-0.01-0.01-0.02-0.03-0.01-0.02-0.03-0.04-0.02-0.02-0.04-0.04-0.01-0.02-0.03-0.03-0.02-0.02-0.04-0.04-0.01-0.01-0.03-0.02-0.02-0.02-0.04-0.04-0.02-0.01-0.03-0.02-0.02-0.01-0.05-0.03-0.02-0.01-0.04-0.02-0.02-0.01-0.04-0.02-0.02-0.01-0.04-0.02-0.02-0.01-0.04-0.01-0.02-0.01-0.05-0.02-0.02 0-0.04-0.01-0.02-0.01-0.05-0.01-0.02 0-0.05-0.01-0.02 0-0.04 0-0.03-0.01-0.06-0.01-0.02 0-0.03 0h-0.02q0 0 0 0h-38.04q0 0 0 0-0.03 0-0.06 0-0.02 0.01-0.04 0.01-0.02 0-0.04 0-0.16 0.03-0.31 0.1 0 0-0.01 0.01-0.01 0.01-0.03 0.02-0.12 0.07-0.22 0.18-0.02 0.02-0.03 0.04-0.01 0.01-0.02 0.02-0.02 0.03-0.04 0.05 0 0.01-0.01 0.01 0 0.01-0.01 0.02-0.02 0.03-0.03 0.06-0.01 0.01-0.02 0.03-0.01 0.03-0.02 0.05-0.01 0.02-0.02 0.04 0 0.03-0.01 0.05-0.01 0.03-0.01 0.05-0.01 0.02-0.01 0.04-0.01 0.03-0.01 0.06-0.01 0.02-0.01 0.04 0 0.03 0 0.06 0 0.01 0 0.03v0.01q0 0 0 0v24.21c0 0.54 0.43 0.97 0.96 0.97h38.06c0.53 0 0.96-0.43 0.96-0.97v-24.22q0-0.01 0-0.01 0-0.03 0-0.07zm-4.05 1.04l-15.39 10.69-16.34-10.69zm-34 22.3v-21.48l18.1 11.84q0.25 0.16 0.53 0.16 0.3 0 0.55-0.17l16.94-11.77v21.42z"
+                    />
+                  </svg>
+                </div>
+                <div class="c-end-note__card-header">
+                  <h3 class="u-font-zen">お問い合わせ</h3>
+                  <a href="/amazones-test/contact" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  </a>
+                </div>
+              </div>
+              <div class="c-end-note__card-body">
+                <p class="u-font-zen">
+                  ご予約方法や変更・キャンセルについてなど、ご不明点はお気軽にお尋ねください。
+                </p>
+              </div>
+            </div>
+            <!-- カード4 -->
+            <div class="c-end-note__card c-reveal--scale">
+              <div class="c-end-note__card-header">
+                <div class="c-end-note__card-icon">
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 38 43"
+                    width="38"
+                    height="43"
+                  >
+                    <path
+                      id="シェイプ 1365"
+                      fill="white"
+                      d="m18.91 1.25h0.05c2.48 0.01 4.8 0.97 6.54 2.69 1.74 1.72 2.69 4 2.68 6.42-0.03 4.96-4.19 9-9.27 9h-0.06c-5.09-0.02-9.23-4.08-9.21-9.11 0.03-4.96 4.18-9 9.27-9m-0.02 15.84c0.01 0 0.05 0 0.05 0 3.83-0.03 6.93-3.09 6.9-6.83-0.02-3.72-3.14-6.74-6.99-6.74q0 0 0 0c-3.81 0.02-6.9 3.06-6.9 6.78 0 0 0 0.05 0 0.05 0.03 3.72 3.14 6.74 6.94 6.74m2.22 3.66c8.37 0.04 15.16 6.71 15.15 14.89v4.49q-0.01 0.46-0.34 0.8-0.34 0.32-0.81 0.33h-32.51q-0.48-0.01-0.82-0.33-0.33-0.34-0.33-0.8v-4.49c-0.01-8.17 6.78-14.85 15.14-14.89h4.52m-17.1 18.24h29.69c0.14 0 0.26-0.11 0.26-0.25v-3.1c0.01-6.93-5.76-12.59-12.85-12.62h-4.52c-7.09 0.03-12.85 5.69-12.84 12.62v3.1c0 0.14 0.12 0.25 0.26 0.25"
+                    />
+                  </svg>
+                </div>
+                <div class="c-end-note__card-header">
+                  <h3 class="u-font-zen">マイページ</h3>
+                    <a href="/amazones-test/reservation" target="_blank" rel="noreferrer">
+                  <div class="c-btn-icon--light-blue">
+                    <svg
+                      version="1.2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        id="シェイプ 1359"
+                        fill-rule="evenodd"
+                        fill="white"
+                        d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
+                      />
+                    </svg>
+                  </div>
+                  </a>
+                </div>
+              </div>
+              <div class="c-end-note__card-body">
+                <p class="u-font-zen">
+                  パーソナルトレーニングはこちらのページからご予約ください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--/メインコンテンツ-->
+<!--フッター-->
+<footer class="l-footer">
+  <section class="l-footer__main-container">
+
+    <!-- 上部: ブランド + ナビ -->
+    <section class="l-footer__top">
+
+      <!-- ブランド -->
+      <aside class="l-footer__brand">
+        <figure class="l-footer__brand-logo">
+          <a href="./">
+            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+            <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
+            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+          </a>
+        </figure>
+
+        <nav class="l-footer__cta-links" aria-label="クイックリンク">
+          <a href="contact/" class="c-btn--light-blue">
+            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+            <img src="assets/img/common/icon_arrow.svg" alt="">
+          </a>
+          <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
+            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <img src="assets/img/common/icon_videos.svg" alt="">
+          </a>
+        </nav>
+      </aside>
+
+      <!-- ナビカラム -->
+      <section class="l-footer__nav-columns">
+
+        <!-- 会社について -->
+        <nav class="l-footer__nav-section" aria-label="About Us">
+         <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+  </button>
+          <ul class="l-footer__nav-list">
+            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
+            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
+            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
+            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
+            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
+            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
+            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
+            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
+            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+          </ul>
+        </nav>
+
+        <!-- サービス + 採用情報 グループカラム -->
+        <section class="l-footer__nav-group">
+
+          <!-- サービス -->
+          <nav class="l-footer__nav-section" aria-label="Service">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+            <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
+              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
+              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+            </ul>
+          </nav>
+
+          <!-- 採用情報 -->
+          <nav class="l-footer__nav-section" aria-label="Recruitment">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li>
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  採用情報
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
+
+        <!-- 他店舗 + SNS グループカラム -->
+        <section class="l-footer__nav-group">
+
+          <!-- 他店舗 -->
+          <nav class="l-footer__nav-section" aria-label="Other Shops">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li>
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  完全個室PRIVATE GYM Highness
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+              <li>
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  24時間ジム Amazones &amp; Herculest
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+              <li>
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  AMAZONES ONLINE SHOP
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- SNS -->
+          <nav class="l-footer__nav-section" aria-label="SNS">
+            <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
+              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
+    <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
+      <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
+      <img src="assets/img/common/icon_toggle_off.svg" class="l-footer__page-link__sign-close">
+    </span>
+    <span class="l-footer__link-line"></span>
+            </button>
+            <ul class="l-footer__nav-list">
+              <li>
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
+                  Amazones｜公式YouTube
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                  <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
+                  Amazones｜公式Instagram
+                  <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
+
+      </section>
+    </section>
+
+    <!-- 下部: 法的リンク + スクロールアップ -->
+    <section class="l-footer__bottom">
+      <ul class="l-footer__legal-links">
+        <li>
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+            運営会社について
+            <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
+          </a>
+        </li>
+        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
+        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
+        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
+        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+      </ul>
+
+      <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
+        <img src="assets/img/common/icon_arrow.svg" alt="" style="transform: scaleX(-1) rotate(-90deg)">
+      </button>
+    </section>
+
+  </section>
+
+
+    <aside class="c-cookie-notice">
+      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+        の使用を承諾したものとみなされます。</p>
+      <div class="c-cookie-notice__buttons">
+        <button type="button" class="l-footer__btn">OK</button>
+        <button type="button" class="l-footer__btn">プライバシーポリシー</button>
+      </div>
+      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+    </aside>
+</footer>
+<!--/フッター-->
+
+  </body>
+</html>

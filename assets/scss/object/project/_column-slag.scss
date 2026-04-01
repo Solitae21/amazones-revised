@@ -1,0 +1,346 @@
+.p-column-slag {
+  width: 100%;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/top/bg_column.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-column-info{
+    width:100%;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:50px 20px;
+  background-color:var(--base-white)
+}
+.p-column-info__wrapper{
+    width:100%;
+    max-width:1200px;
+
+}
+.p-column-slag__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.p-column-slag__wrapper h2 {
+  width: 100%;
+  border-bottom: 1px solid var(--base-white);
+  padding-bottom: 34px;
+}
+.p-column-slag__heading-icon {
+  margin-right: 15px;
+} /* ================================
+       p-toc（再利用可能コンポーネント）
+       ================================ */
+.p-toc {
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid #c8ebe9;
+  background: #ffffff;
+}
+
+.p-toc__header {
+  background: var(--base-lightBlue);
+  padding: 12px 20px;
+  text-align: center;
+  width:fit-content;
+  min-width:240px;
+}
+
+.p-toc__title {
+  font-size: var(--fs-sm2);
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+ 
+}
+
+.p-toc__body {
+  padding: 40px 40px 60px;
+}
+
+.p-toc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── トップレベル項目 ── */
+.p-toc__item {
+  border-bottom: 1px solid #e8f8f7;
+}
+
+.p-toc__item:last-child {
+  border-bottom: none;
+}
+
+.p-toc__link {
+  display: flex;
+  align-items: baseline;
+  padding: 11px 0;
+  text-decoration: underline;
+  color: var(--base-darkText);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: 1.6;
+  transition: color 0.2s;
+}
+
+.p-toc__link:hover {
+  color: var(--base-lightBlue);
+}
+
+.p-toc__num {
+  font-size: var(--fs-base);
+  color: var(--base-lightBlue);
+  font-weight: 500;
+  min-width: 18px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.p-toc__num,
+.p-toc__subnum {
+  text-decoration: none;
+}
+.p-toc__text {
+  flex: 1;
+}
+
+/* ── サブ項目（3-1, 3-2 など） ── */
+.p-toc__sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.p-toc__subitem {
+  border-top: 1px solid #e8f8f7;
+}
+
+.p-toc__sublink {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 0 10px 0;
+  color: var(--base-darkText);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: 1.6;
+  transition: color 0.2s;
+}
+.p-toc__link,
+.p-toc__sublink {
+  text-decoration: none;
+}
+
+.p-toc__text,
+.p-toc__subtext {
+  text-decoration: underline;
+}
+.p-toc__sublink:hover {
+  color: var(--base-lightBlue);
+}
+
+.p-toc__subnum {
+  font-size: var(--fs-base);
+  color: var(--base-lightBlue);
+  font-weight: 500;
+  min-width: 36px;
+  flex-shrink: 0;
+}
+
+.p-toc__subtext {
+  flex: 1;
+}
+.p-article-body__heading {
+  font-size: var(--fs-sm2);
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #8fa3b1;
+  padding: 14px 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+}
+
+.p-column-info__highlited-text {
+  position: relative;
+  z-index: 1;
+}
+.p-column-info__highlited-text {
+  background: linear-gradient(to top, var(--base-lightBlue) 50%, transparent 50%);
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  position: relative;
+  z-index: 1;
+}
+
+.p-column-info__highlited-text::after {
+  display: none;
+}
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+.p-article-boxy__content1 p,
+.p-article-boxy__content2 p{
+    width:100%;
+    max-width:499px
+}
+
+
+.p-article-body__content-gray p{
+    width:100%;
+}
+
+.p-article-body__content-gray{
+    background-color:var(--base-gray);
+    padding:20px;
+    width:100%;
+}
+.p-article-body__content3 ul li,
+.p-article-body__content-blue-item{
+    list-style-position: inside;
+}
+.p-article-body__content3 ul li::marker,
+.p-article-body__content-blue-item::marker{
+    color:var(--base-black);
+    font-size:8px;
+
+}
+.p-article-body__content-blue {
+    padding:20px;
+    width:100%;
+    border:1px solid var(--base-lightBlue);
+    background-color:#E6FAF8;
+}
+.p-recommended__btn{
+    width:fit-content;
+    padding-left:18px;
+    padding-right:18px;
+}
+.c-nav-divider {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: var(--base-lightBlue);
+}
+
+/* ================================
+   レスポンシブ — 767px以下
+   ================================ */
+@media screen and (max-width: 767px) {
+    .p-column-slag__article-img{
+        width:100%;
+    }
+    .p-article-boxy__content1 img{
+        width:100%;
+    }
+
+  /* ── p-column-slag ── */
+  .p-column-slag {
+    padding: 50px 16px;
+  }
+
+  .p-column-slag__wrapper {
+    gap: 30px;
+  }
+
+  .p-column-slag__wrapper h2 {
+    font-size: var(--fs-sm);
+    padding-bottom: 20px;
+  }
+
+  /* ── p-toc ── */
+  .p-toc {
+    max-width: 100%;
+  }
+
+  .p-toc__header {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .p-toc__body {
+    padding: 20px 16px 30px;
+  }
+
+  .p-toc__link,
+  .p-toc__sublink {
+    font-size: var(--fs-sm);
+  }
+
+  .p-toc__num,
+  .p-toc__subnum {
+    font-size: var(--fs-sm);
+  }
+
+  .p-toc__subnum {
+    min-width: 28px;
+  }
+
+  /* ── p-column-info ── */
+  .p-column-info {
+    padding: 30px 16px;
+  }
+
+  .p-article-body__heading {
+    font-size: var(--fs-sm);
+    padding: 12px 14px;
+  }
+
+  /* モバイルでのハイライト疑似要素修正 */
+  .p-column-info__highlited-text::after {
+    width: 100%;
+  }
+
+  /* コンテンツブロック */
+  .p-article-boxy__content1 p,
+  .p-article-boxy__content2 p {
+    max-width: 100%;
+  }
+
+  .p-article-body__content-gray,
+  .p-article-body__content-blue {
+    padding: 16px;
+  }
+
+  
+  .c-nav-divider {
+    height: 30px;
+  }
+
+  /* ── p-recommended btn ── */
+  /* .p-recommended__btn {
+    width: 100%;
+    justify-content: center;
+  } */
+
+  /* フォントサイズ全般縮小 */
+  .c-recommended__btn{
+    gap:20px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .p-toc__body {
+    padding: 20px 20px 24px;
+  }
+  .p-toc__link,
+  .p-toc__sublink {
+    font-size: var(--fs-base);
+  }
+}

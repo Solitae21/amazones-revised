@@ -1,0 +1,134 @@
+/* ============================================
+   BUTTONS
+   ============================================ */
+.l-header__btn:hover,
+.l-header__sp-btn:hover {
+  opacity: 0.7;
+}
+.l-header__btn:hover .arrow-img,
+.l-header__sp-btn:hover .arrow-img {
+  transform: translateX(8px);
+}
+
+.c-btn--green-wrapper {
+  background-color: var(--base-lightBlue);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.c-btn--green-wrapper:hover {
+  background-color: var(--base-white);
+  border: 1px solid var(--base-lightBlue);
+}
+.c-btn--green-wrapper:hover img {
+  filter: brightness(0) saturate(100%) invert(83%) sepia(97%) saturate(209%)
+    hue-rotate(94deg) brightness(91%) contrast(85%);
+}
+.c-btn--light-blue {
+  background-color: var(--base-lightBlue);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+  padding: 16px 35px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.c-btn--light-blue:hover,
+.c-btn--red:hover {
+  opacity: 0.7;
+}
+
+.c-btn--light-blue img,
+.c-btn--red img,
+.c-announcement__btn svg {
+  transition: all 0.3s ease-in-out;
+}
+.c-btn--light-blue:hover img:last-child,
+.c-btn--red:hover img:last-child,
+.c-announcement__btn:hover svg:last-child {
+  transform: translateX(8px);
+}
+.c-btn--light-blue.p-recommended__btn:hover img {
+  margin-right: 8px;
+}
+
+.c-btn--light-blue02 {
+  background-color: var(--base-lightBlue);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: var(--fs-base);
+}
+
+.c-btn--light-blue02:hover,
+.c-btn-icon--light-blue:hover {
+  background-color: var(--base-white);
+  border: 1px solid var(--base-lightBlue);
+}
+
+.c-btn--light-blue02:hover {
+  color: var(--text-lightBlue);
+}
+.c-btn--light-blue02:hover img,
+.c-btn-icon--light-blue:hover svg {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
+    hue-rotate(96deg) brightness(92%) contrast(82%);
+}
+
+/* アイコンボタン矢印ライトブルー開始 */
+.c-btn-icon--light-blue {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  background-color: var(--base-lightBlue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.c-btn--red {
+  background-color: var(--base-lightPink);
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  width: fit-content;
+  gap: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  .c-btn--light-blue {
+    font-size: var(--fs-base);
+  }
+}
+
+/* ============================================
+   END OF BUTTONS
+   ============================================ */

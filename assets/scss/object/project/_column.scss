@@ -1,0 +1,38 @@
+.p-column__sticker{
+    position:absolute;
+    top:-50px;
+    right:100px;
+}
+.p-column__speech{
+    position:absolute;
+    top:0px;
+    left:-130px;
+    z-index:1;
+}
+
+@media screen and (max-width:1200px){
+    .p-column__sticker{
+        transform:scale(0.8);
+        right:0px;
+        top:-30px;
+    }
+}
+@media screen and (max-width:900px){
+    .p-column__sticker{
+        transform:scale(0.8);
+        right:0px;
+        top:-120px;
+    }
+}
+@media screen and (max-width:767px){
+     .p-column__sticker{
+        transform:scale(0.8);
+        right:0px;
+        top:40px;
+    }
+}
+@media screen and (max-width:500px){
+    .p-column__sticker{
+        display:none;
+    }
+}
