@@ -85,10 +85,6 @@
   font-weight: 500;
 }
 
-.p-storedetail__section-header-row {
-  gap: 50px;
-}
-
 .p-storedetail__tier-card-body {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -382,11 +378,11 @@
 }
 
 .p-storedetail__price-image-left {
-  background-image: url("../img/storedetail/img_storedetail_price_titleImg01.png");
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg01.webp");
 }
 
 .p-storedetail__price-image-right {
-  background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg02.webp");
 }
 
 /* 選ばれる理由 */

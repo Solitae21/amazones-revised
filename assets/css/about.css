@@ -179,7 +179,7 @@
    ================================ */
 @media screen and (max-width: 767px) {
   .p-space {
-    background-image: url("../img/about/bg_space_sp.jpg");
+    background-image: url("../img/about/bg_space_sp.webp");
   }
   .p-attraction__page {
     margin-top: 0px;

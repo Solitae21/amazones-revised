@@ -9,7 +9,7 @@ const slideContent = [
     h1: "科学的アプローチで実現する <span class='block'>最適なトレーニング環境</span>",
     p: "AI姿勢診断・改善",
     href: "sportip/index.html",
-    img: "assets/img/common/img_sportip_logo.png"
+    img: "assets/img/common/img_sportip_logo.webp"
   },
   {
     h1: "女性トレーナーが <span class='block'>貴方を全力でサポート</span>Amazonesの ",
@@ -21,7 +21,7 @@ const slideContent = [
     h1: "ダイエット効<span>果を最大化する</span><span class='block'>オンライン診療サービス</span>",
     p: "ドクターアマゾネス",
     href: "medical/index.html",
-    img: "assets/img/common/img_drAmazones_logo.png"
+    img: "assets/img/common/img_drAmazones_logo.webp"
   },
   {
     h1: "諦めるのはまだ早い<span class='block'>いつ始めても遅くない！ム</span><span class='block'>無料体験・見学を予約する</span>",

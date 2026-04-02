@@ -277,17 +277,11 @@
 /* ========================================
    開始: ユーティリティオーバーライド
    ======================================== */
-/* デスクトップ表示/非表示デフォルト */
-.p-price__title-row--desktop {
+/* タイトル行（PC: 横並び / SP: 縦積み） */
+.p-price__title-row {
   display: flex;
-}
-
-.p-price__title-row--mobile {
-  display: none;
-}
-
-.p-price__speak-image.p-price__speak-image--mobile {
-  display: none;
+  align-items: center;
+  gap: 50px;
 }
 
 /* ジャンプする人々 */
@@ -426,10 +420,6 @@
 /* ========================================
    Inline style removals — BEM classes
    ======================================== */
-.p-price__section-header-row {
-  gap: 50px;
-}
-
 .p-price__tier-card-body {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -556,29 +546,24 @@
   /* ----------------------------------------
      開始: ユーティリティオーバーライド
      ---------------------------------------- */
-  /* デスクトップ/モバイル切り替え */
-  .p-price__title-row--desktop {
-    display: none;
-  }
-  .p-price__title-row--mobile {
-    display: flex;
+  /* タイトル行: SP 縦積み */
+  .p-price__title-row {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
-  .p-price__speak-image--desktop {
-    display: none;
-  }
-  .p-price__speak-image.p-price__speak-image--mobile {
+  .p-price__speak-image {
     display: flex;
     margin-top: 5rem;
     width: 100%;
     justify-content: center;
+    flex: none;
   }
-  .p-price__speak-image.p-price__speak-image--mobile .p-price__speak-person--01 {
+  .p-price__speak-image .p-price__speak-person--01 {
     height: 12rem;
   }
-  .p-price__speak-image.p-price__speak-image--mobile .p-price__speak-bubble--01 {
+  .p-price__speak-image .p-price__speak-bubble--01 {
     width: 7rem;
     height: auto;
     top: -6rem;

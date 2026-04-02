@@ -259,9 +259,9 @@
   z-index: 1;
 }
 
-/* モバイルスマートフォン複製 — デスクトップでは非表示 */
-.p-sportip__phone--mobile {
-  display: none;
+/* スマートフォン: PC = order で後方配置 / SP = 通常フロー */
+.p-sportip__phone {
+  order: 2;
 }
 
 .p-sportip__diagnosis-block {
@@ -713,17 +713,14 @@
     justify-content: space-between;
     align-items: baseline;
   }
-  /* デスクトップスマートフォン — モバイルでは非表示 */
-  .p-sportip__phone--desktop {
-    display: none;
-  }
-  /* モバイルスマートフォン — 表示＆中央揃え */
-  .p-sportip__phone--mobile {
+  /* スマートフォン: SP = 通常フロー、中央揃え */
+  .p-sportip__phone {
     display: flex;
     justify-content: center;
     width: 100%;
     position: relative;
     z-index: 1;
+    order: 0;
   }
   .p-sportip__phone img {
     height: 85vw;
