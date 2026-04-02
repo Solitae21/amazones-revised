@@ -21,7 +21,7 @@ const slideContent = [
     h1: "ダイエット効<span>果を最大化する</span><span class='block'>オンライン診療サービス</span>",
     p: "ドクターアマゾネス",
     href: "medical/index.html",
-    img: "assets/img/common/img_drAmazones_logo.webp"
+    img: "assets/img/common/img_drAmazones_logo.svg"
   },
   {
     h1: "諦めるのはまだ早い<span class='block'>いつ始めても遅くない！ム</span><span class='block'>無料体験・見学を予約する</span>",
