@@ -61,7 +61,11 @@
       "Bash(node -e \"try { require\\('sharp'\\); console.log\\('sharp available'\\); } catch\\(e\\) { console.log\\('sharp not available'\\); }\")",
       "Bash(pip show:*)",
       "Bash(node -e ':*)",
-      "Bash(xargs -I{} grep -r -l --include='*.html' --include='*.scss' --include='*.css' --include='*.js' -E '{}' .)"
+      "Bash(xargs -I{} grep -r -l --include='*.html' --include='*.scss' --include='*.css' --include='*.js' -E '{}' .)",
+      "Bash(find \"D:/Part Time/amazones/amazones-proj2/assets\" -name \"*.svg\" -type f -exec ls -lh {} \\\\;)",
+      "Bash(find . -name \"*.svg\" -exec grep -l \"<image\" {} \\\\;)",
+      "Bash(find . -name \"*.svg\" -exec grep -l \"data:image\" {} \\\\;)",
+      "Bash(find . -name \"*.svg\" -exec grep -l 'xlink:href=' {} \\\\;)"
     ]
   }
 }
