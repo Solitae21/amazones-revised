@@ -176,14 +176,6 @@
     top: 350px;
     left: 0px;
   }
-  .p-top__hero-tyusyaku {
-    color: var(--text-white);
-    font-size: 12px;
-    font-weight: 400;
-    width: 100%;
-    text-align: right;
-    margin-bottom: -15px;
-  }
 }
 @media screen and (max-width: 600px) {
   .p-top__carousel-container {

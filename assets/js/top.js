@@ -85,13 +85,13 @@ function showSlides() {
       h1Content = h1Content.replace(/<span(.*?)>/g, "<span class='block'>");
     }
 
-    if (current.h3) {
-  h3.textContent = current.h3;
-  h3.style.display = "block";
-} else {
-  h3.textContent = "";
-  h3.style.display = "none";
-}
+    if (current.h3 && !isMobile) {
+      h3.textContent = current.h3;
+      h3.style.display = "block";
+    } else {
+      h3.textContent = "";
+      h3.style.display = "none";
+    }
 
     h1.innerHTML = h1Content;
     p.textContent = current.p;
