@@ -304,7 +304,25 @@
   padding: 0 0 16px;
 }
 .l-sp-nav__section {
-  border-bottom: 1px solid var(--base-borderLightGray);
+  position: relative;
+}
+.l-sp-nav__section::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 0;
+  height: 1px;
+  background-color: var(--base-gray);
+}
+.l-sp-nav__section::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--base-lightBlue);
 }
 .l-sp-nav__head {
   width: 100%;
