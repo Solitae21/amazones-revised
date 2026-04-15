@@ -85,7 +85,7 @@ function showSlides() {
       h1Content = h1Content.replace(/<span(.*?)>/g, "<span class='block'>");
     }
 
-    if (current.h3 && !isMobile) {
+    if (current.h3) {
       h3.textContent = current.h3;
       h3.style.display = "block";
     } else {
@@ -97,7 +97,8 @@ function showSlides() {
     p.textContent = current.p;
     a.href = current.href;
 
-    if (current.img && !isMobile) {
+    const showImg = current.img && (current.h3 ? isMobile : !isMobile);
+    if (showImg) {
       img.src = current.img;
       img.style.display = "block";
     } else {

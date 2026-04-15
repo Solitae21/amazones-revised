@@ -168,6 +168,33 @@
     top: 350px;
     left: 0px;
   }
+  .p-top__hero-text {
+    position: relative;
+  }
+  .hero-slider-img {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 70px;
+    object-fit: contain;
+    object-position: center;
+    margin: 0;
+  }
+  .p-top__hero-tyusyaku {
+    position: absolute;
+    top: 364px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-white);
+    font-size: 14px;
+    font-weight: 400;
+    width: auto;
+    text-align: end;
+    white-space: nowrap;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
