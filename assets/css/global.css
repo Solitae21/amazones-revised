@@ -648,6 +648,17 @@ span {
   color: var(--lightBlue);
 }
 
+.l-sp-nav__external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.l-sp-nav__external-link img {
+  width: 14px;
+  height: 14px;
+}
+
 .l-header__hamburger {
   display: none;
 }
