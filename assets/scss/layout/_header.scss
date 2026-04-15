@@ -258,7 +258,7 @@
   top: 98px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 98px);
   background: #ffffff;
   z-index: 2;
   overflow-y: auto;
@@ -428,6 +428,18 @@
   align-items: center;
   justify-content: center;
 }
+.l-sp-nav__header-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+.l-sp-nav__header-btns .l-header__btn {
+  width: 280px;
+  max-width: 100%;
+  min-width: 0;
+}
 .l-sp-nav__btn {
   display: flex;
   align-items: center;
@@ -575,6 +587,7 @@
   }
   .l-mobile-header-overlay {
     top: 50px;
+    height: calc(100vh - 50px);
   }
   .amazones-header-logo {
     width: 70px;
