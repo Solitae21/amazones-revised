@@ -1,38 +1,113 @@
 
-// 前/次ナビゲーション付きモバイルカルーセル
+// 前/次ナビゲーション付きモバイルカルーセル（シームレスループ + 自動再生）
 function initMobileCarousel(config) {
   var track = document.querySelector(config.trackSelector);
   var btnPrev = document.querySelector(config.prevSelector);
   var btnNext = document.querySelector(config.nextSelector);
   if (!track || !btnPrev || !btnNext) return;
 
-  var cards = track.querySelectorAll(config.cardSelector);
-  var total = cards.length;
-  var current = 0;
+  var originalCards = Array.from(track.querySelectorAll(config.cardSelector));
+  var total = originalCards.length;
+  if (total === 0) return;
+
   var breakpoint = config.breakpoint || 767;
+  var AUTO_INTERVAL = config.autoInterval || 3000;
+  var autoTimer = null;
+  var isTransitioning = false;
+  var initialized = false;
+
+  // 両端にクローンを追加してシームレスループ
+  function applyCardSize(card) {
+    card.style.flex = '0 0 100%';
+    card.style.width = '100%';
+  }
+  function cloneCard(card) {
+    var clone = card.cloneNode(true);
+    clone.classList.add('carousel-clone');
+    applyCardSize(clone);
+    return clone;
+  }
+  originalCards.forEach(applyCardSize);
+  originalCards.forEach(function (card) {
+    track.appendChild(cloneCard(card));
+  });
+  var firstOriginal = originalCards[0];
+  originalCards.forEach(function (card) {
+    track.insertBefore(cloneCard(card), firstOriginal);
+  });
+
+  var trackIndex = total;
 
   function isMobile() {
     return window.innerWidth <= breakpoint;
   }
 
-  function goTo(index) {
-    if (!isMobile()) return;
-    current = (index + total) % total;
-    track.style.transform = 'translateX(-' + current * 100 + '%)';
+  function applyTransform(animate) {
+    track.style.transition = animate ? 'transform 0.4s ease' : 'none';
+    track.style.transform = 'translateX(-' + trackIndex * 100 + '%)';
   }
 
-  btnPrev.addEventListener('click', function () {
-    goTo(current - 1);
+  function goTo(index) {
+    if (!isMobile() || isTransitioning) return;
+    trackIndex = index;
+    isTransitioning = true;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        applyTransform(true);
+      });
+    });
+    resetAutoPlay();
+  }
+
+  function goNext() { goTo(trackIndex + 1); }
+  function goPrev() { goTo(trackIndex - 1); }
+
+  track.addEventListener('transitionend', function (e) {
+    if (e.target !== track) return;
+    isTransitioning = false;
+    if (trackIndex >= total * 2) {
+      trackIndex -= total;
+      applyTransform(false);
+    } else if (trackIndex < total) {
+      trackIndex += total;
+      applyTransform(false);
+    }
   });
 
-  btnNext.addEventListener('click', function () {
-    goTo(current + 1);
-  });
+  function startAutoPlay() {
+    if (!isMobile()) return;
+    stopAutoPlay();
+    autoTimer = setInterval(goNext, AUTO_INTERVAL);
+  }
+  function stopAutoPlay() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  }
+  function resetAutoPlay() { startAutoPlay(); }
+
+  btnPrev.addEventListener('click', goPrev);
+  btnNext.addEventListener('click', goNext);
+
+  function activateMobile() {
+    trackIndex = total;
+    applyTransform(false);
+    startAutoPlay();
+    initialized = true;
+  }
+
+  function deactivateMobile() {
+    stopAutoPlay();
+    track.style.transition = '';
+    track.style.transform = '';
+    initialized = false;
+  }
+
+  if (isMobile()) activateMobile();
 
   window.addEventListener('resize', function () {
-    if (!isMobile()) {
-      track.style.transform = '';
-      current = 0;
+    if (isMobile()) {
+      if (!initialized) activateMobile();
+    } else if (initialized) {
+      deactivateMobile();
     }
   });
 }
