@@ -536,11 +536,11 @@ span {
 
 .l-sp-nav__plus::before {
   width: 16px;
-  height: 2px;
+  height: 1px;
 }
 
 .l-sp-nav__plus::after {
-  width: 2px;
+  width: 1px;
   height: 16px;
 }
 
@@ -1230,7 +1230,7 @@ span {
     width: 100%;
   }
   .l-footer__nav-group {
-    gap: 0;
+    gap: 10px;
   }
   /* 各セクションは独立したアコーディオンアイテム */
   .l-footer__nav-section {
