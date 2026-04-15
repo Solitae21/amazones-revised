@@ -343,12 +343,19 @@ function initSliders() {
     if (totalOriginal === 0) return;
 
     /* ──────────────────────────────────────────
-       4. 全スライドを複製して追加
+       4. 全スライドを両端に複製（シームレスな双方向ループ）
     ────────────────────────────────────────── */
     originalSlides.forEach(function (slide) {
       var clone = slide.cloneNode(true);
       clone.classList.add("slider-clone");
       track.appendChild(clone);
+    });
+
+    var firstOriginal = originalSlides[0];
+    originalSlides.forEach(function (slide) {
+      var clone = slide.cloneNode(true);
+      clone.classList.add("slider-clone");
+      track.insertBefore(clone, firstOriginal);
     });
 
     var allSlideItems = Array.from(track.children);
@@ -358,8 +365,8 @@ function initSliders() {
        5. 状態
     ────────────────────────────────────────── */
     var currentIndex = 0;
-    var trackIndex = 0;
-    var AUTO_INTERVAL = 20000;
+    var trackIndex = totalOriginal;
+    var AUTO_INTERVAL = 3000;
     var autoTimer = null;
     var isTransitioning = false;
 
@@ -432,18 +439,12 @@ function initSliders() {
       if (e.target !== track) return;
       isTransitioning = false;
 
-      if (trackIndex >= totalOriginal) {
-        trackIndex = trackIndex - totalOriginal;
-        currentIndex = trackIndex;
+      if (trackIndex >= totalOriginal * 2) {
+        trackIndex -= totalOriginal;
         moveTrack(getTargetX(trackIndex), false);
-        updateDots();
-      }
-
-      if (trackIndex < 0) {
-        trackIndex = totalOriginal + trackIndex;
-        currentIndex = trackIndex;
+      } else if (trackIndex < totalOriginal) {
+        trackIndex += totalOriginal;
         moveTrack(getTargetX(trackIndex), false);
-        updateDots();
       }
     });
 
@@ -452,8 +453,8 @@ function initSliders() {
     ────────────────────────────────────────── */
     function goTo(index) {
       if (isTransitioning) return;
-      trackIndex = index;
       currentIndex = ((index % totalOriginal) + totalOriginal) % totalOriginal;
+      trackIndex = totalOriginal + currentIndex;
       isTransitioning = true;
 
       requestAnimationFrame(function () {
@@ -469,7 +470,7 @@ function initSliders() {
     function goNext() {
       if (isTransitioning) return;
       trackIndex++;
-      currentIndex = trackIndex % totalOriginal;
+      currentIndex = ((trackIndex % totalOriginal) + totalOriginal) % totalOriginal;
       isTransitioning = true;
 
       requestAnimationFrame(function () {
@@ -484,30 +485,15 @@ function initSliders() {
 
     function goPrev() {
       if (isTransitioning) return;
+      trackIndex--;
+      currentIndex = ((trackIndex % totalOriginal) + totalOriginal) % totalOriginal;
+      isTransitioning = true;
 
-      if (trackIndex <= 0) {
-        trackIndex = totalOriginal;
-        moveTrack(getTargetX(trackIndex), false);
-        track.offsetHeight; // リフロー強制
-
-        trackIndex = totalOriginal - 1;
-        currentIndex = trackIndex % totalOriginal;
-        isTransitioning = true;
-
+      requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           moveTrack(getTargetX(trackIndex), true);
         });
-      } else {
-        trackIndex--;
-        currentIndex = trackIndex % totalOriginal;
-        isTransitioning = true;
-
-        requestAnimationFrame(function () {
-          requestAnimationFrame(function () {
-            moveTrack(getTargetX(trackIndex), true);
-          });
-        });
-      }
+      });
 
       updateDots();
       resetAutoPlay();
@@ -647,7 +633,7 @@ function initSliders() {
        15. 初期化
     ────────────────────────────────────────── */
     buildDots();
-    moveTrack(0, false);
+    moveTrack(getTargetX(trackIndex), false);
     startAutoPlay();
 
 
