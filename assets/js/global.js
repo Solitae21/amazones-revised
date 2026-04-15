@@ -124,11 +124,13 @@ const isMobile = () => window.innerWidth <= 1091;
 
 function showMenu() {
   if (isMobile()) return;
+  if (menuDismissed) return;
   headerFloatingMenu.classList.add("active");
   if (navPopup) navPopup.classList.add("active");
 }
 
 let menuPinned = false;
+let menuDismissed = false;
 
 function hideMenu() {
   if (menuPinned) return;
@@ -138,12 +140,14 @@ function hideMenu() {
 
 function toggleMenu() {
   if (isMobile()) return;
-  if (menuPinned) {
+  if (headerFloatingMenu.classList.contains("active")) {
     menuPinned = false;
+    menuDismissed = true;
     headerFloatingMenu.classList.remove("active");
     if (navPopup) navPopup.classList.remove("active");
   } else {
     menuPinned = true;
+    menuDismissed = false;
     showMenu();
   }
 }
@@ -161,6 +165,7 @@ floatingBtnContent.addEventListener("mouseleave", function (e) {
       (navPopup && (navPopup === rel || navPopup.contains(rel))))
   )
     return;
+  menuDismissed = false;
   hideMenu();
 });
 
@@ -173,6 +178,7 @@ headerFloatingMenu.addEventListener("mouseleave", function (e) {
     !floatingBtnContent.contains(rel) &&
     !floatingBtn.contains(rel)
   ) {
+    menuDismissed = false;
     hideMenu();
   }
 });
@@ -181,6 +187,7 @@ if (navPopup) {
   navPopup.addEventListener("mouseleave", function (e) {
     const rel = e.relatedTarget;
     if (rel && headerFloatingMenu.contains(rel)) return;
+    menuDismissed = false;
     hideMenu();
   });
 }
