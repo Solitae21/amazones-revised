@@ -16,10 +16,6 @@
   --header-height: 73px;
 }
 
-html {
-  font-family: kozuka-gothic-pr6n, sans-serif;
-}
-
 body {
   word-break: break-word;
   overflow-wrap: break-word;
@@ -9656,7 +9652,7 @@ body .c-policy-content > ol > li > dl {
   }
 }
 .bg-continuation {
-  background-image: url(../img/storelist/bg_continuation_sp.webp);
+  background-image: url(../img/storelist/bg_continuation_sp.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% center;
@@ -9664,7 +9660,7 @@ body .c-policy-content > ol > li > dl {
 
 @media (min-width: 768px) {
   .bg-continuation {
-    background-image: url(../img/storelist/bg_continuation.webp);
+    background-image: url(../img/storelist/bg_continuation.png);
     background-position: center;
   }
 }

@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-   <base href="/amazones-test/">
+    <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）のAI姿勢診断・改善を紹介しています。"
@@ -12,15 +12,13 @@
       AI姿勢診断・改善 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
 
     <!--Sportip CSS-->
-    <link href="assets/css/sportip.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/sportip.css?v=20260408" rel="stylesheet" type="text/css">
 
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
-    <script src="assets/js/sportip.js" defer></script>
     <script src="https://highness.hacomono.jp/js/widget.js" defer></script>
   </head>
 
@@ -29,7 +27,7 @@
     <header class="l-header">
       <div class="l-header-wrapper">
         <div class="l-header__brand">
-          <a href="./">
+          <a href="index.html">
             <img
               src="assets/img/common/icon_logo.svg"
               alt="アマゾネス"
@@ -38,48 +36,48 @@
               class="amazones-header-logo"
             >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+          <a href="index.html" class="l-header__brand-text"
             >アマゾネス</a
           >
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+          <p class="l-header__brand-tagline">
             WOMEN ONLY24h GYM
           </p>
         </div>
 
         <div class="l-header__actions">
-          <a href="storelist/" class="l-header__btn">
+          <a href="storelist/index.html" class="l-header__btn">
             <div class="icon-wrapper">
-              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+              <img src="assets/img/common/icon_search.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
           </a>
 
-          <a href="reservation/" class="l-header__btn l-header__btn--reservation">
+          <a href="reservation/index.html" class="l-header__btn l-header__btn--reservation">
             <div class="icon-wrapper">
-              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+              <img src="assets/img/common/icon_24.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
@@ -91,10 +89,10 @@
           <div id="floating-menu-btn" class="l-header-floating-menu__btn">
             <img
               src="assets/img/common/icon_menu.svg"
-              alt="アイコン"
+              alt=""
               class="desktop-menu-icon"
             >
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -128,7 +126,7 @@
                   stroke-linecap="round"
                 >
               </svg>
-              <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+              <p class="l-header-floating-menu__close-label">CLOSE</p>
             </div>
           </div>
 
@@ -137,20 +135,18 @@
             class="l-header-floating-menu__content u-cursor-pointer"
           >
             <p
-              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+              class="text-vertical menu-vertical-text l-header-floating-menu__copyright"
             >
               ©2026 Wellness Land Co., Ltd.
             </p>
           </div>
           <div id="scroll-down-text" class="scroll-down-text">
-            <p
-              class="u-font-outfit u-fs-12 u-text-white u-ls-10 u-fw-500 text-vertical u-text-blue-hover"
-            >
+            <p>
               SCROLL DOWN
             </p>
             <img
               src="assets/img/common/icon_scroll_arrow.svg"
-              alt="アイコン"
+              alt=""
               class="u-ml-4 img-blue"
             >
           </div>
@@ -160,30 +156,30 @@
               <!-- 会社について -->
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                  <p>About Us</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                  <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                  <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                  <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                  <a href="reservation/" class="u-fw-500 u-fs-15"
+                  <a href="index.html">トップページ</a>
+                  <a href="information/index.html">お知らせ</a>
+                  <a href="column/index.html">ゾネスタイムズ</a>
+                  <a href="storelist/index.html">店舗一覧</a>
+                  <a href="reservation/index.html"
                     >無料体験・見学予約</a
                   >
-                  <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue"
+                  <a href="reservation#reservation-flow" class="l-nav-menu-popup__link--highlight"
                     >ご予約から無料体験・見学までの流れ</a
                   >
-                  <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                  <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue"
+                  <a href="price/index.html">料金案内</a>
+                  <a href="admission/index.html" class="l-nav-menu-popup__link--highlight"
                     >入会手続きのご案内</a
                   >
-                  <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue"
+                  <a href="payment/index.html" class="l-nav-menu-popup__link--highlight"
                     >お支払いについて</a
                   >
-                  <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                  <a href="member/" class="u-fw-500 u-fs-15"
+                  <a href="faq/index.html">よくあるご質問</a>
+                  <a href="member/index.html"
                     >会員様からいただいた声</a
                   >
                 </div>
@@ -193,30 +189,30 @@
               <div class="l-nav-menu-popup__group">
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                    <p>Service</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                    <a href="personal/" class="u-fw-500 u-fs-15"
+                    <a href="about/index.html">女性専用24時間ジム</a>
+                    <a href="personal/index.html"
                       >Amazonesのパーソナルトレーニング</a
                     >
-                    <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                    <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                    <a href="medical/index.html">Dr.Amazones</a>
+                    <a href="sportip/index.html">AI姿勢診断・改善</a>
                   </div>
                 </div>
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                    <p>Recruitment</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報
+                    <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報
                       <img
                         src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン"
+                        alt=""
                     ></a>
                   </div>
                 </div>
@@ -226,55 +222,55 @@
               <div class="l-nav-menu-popup__group">
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                    <p>Other Shops</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"
+                    <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link"
                       >完全個室PRIVATE GYM Highness
                       <img
                         src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン"
+                        alt=""
                     ></a>
-                    <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"
+                    <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link"
                       >24時間ジム Amazones &amp; Herculest
                       <img
                         src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン"
+                        alt=""
                     ></a>
-                    <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"
+                    <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link"
                       >AMAZONES ONLINE SHOP
                       <img
                         src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン"
+                        alt=""
                     ></a>
                   </div>
                 </div>
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                    <p>Sns</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"
+                    <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"
                       ><img
                         src="assets/img/common/icon_youtube.svg"
                         alt=""
                         class="u-mr-5" >Amazones｜公式YouTube
                       <img
                         src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン"
+                        alt=""
                     ></a>
-                    <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"
+                    <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"
                       ><img
                         src="assets/img/common/icon_instragram.svg"
                         alt=""
                         class="u-mr-5" >Amazones｜公式Instagram
                       <img
                         src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン"
+                        alt=""
                     ></a>
                   </div>
                 </div>
@@ -284,26 +280,26 @@
             <!-- 下部行 -->
             <div class="l-nav-menu-popup__bottom l-nav-menu-popup__bottom--gap">
               <div class="l-nav-menu-popup__bottom-btns">
-                <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                  <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                  <p>お問い合わせ</p>
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
                 <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                  <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                  <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                  <p>マイページ</p>
+                  <img src="assets/img/common/icon_videos.svg" alt="">
                 </a>
               </div>
               <div class="l-nav-menu-popup__bottom-links">
-                <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14"
+                <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link"
                   >運営会社について
                   <img
                     src="assets/img/common/icon_recruitment.svg"
-                    alt="アイコン"
+                    alt=""
                 ></a>
-                <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-                <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-                <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-                <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+                <a href="sitemap/index.html">サイトマップ</a>
+                <a href="rules/index.html">ご利用規約</a>
+                <a href="#">個人情報保護方針</a>
+                <a href="#">WEBサイトのご利用に当たって</a>
               </div>
             </div>
           </div>
@@ -318,14 +314,14 @@
                 ><span class="l-sp-nav__plus">＋</span>
               </button>
               <ul class="l-sp-nav__list">
-                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
-                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="index.html" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/index.html" class="l-sp-nav__link">お知らせ</a></li>
                 <li>
-                  <a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a>
+                  <a href="column/index.html" class="l-sp-nav__link">ゾネスタイムズ</a>
                 </li>
-                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="storelist/index.html" class="l-sp-nav__link">店舗一覧</a></li>
                 <li>
-                  <a href="reservation/" class="l-sp-nav__link"
+                  <a href="reservation/index.html" class="l-sp-nav__link"
                     >無料体験・見学予約</a
                   >
                 </li>
@@ -334,18 +330,18 @@
                     >ご予約から無料体験・見学までの流れ</a
                   >
                 </li>
-                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="price/index.html" class="l-sp-nav__link">料金案内</a></li>
                 <li>
-                  <a href="admission/" class="l-sp-nav__link"
+                  <a href="admission/index.html" class="l-sp-nav__link"
                     >入会手続きのご案内</a
                   >
                 </li>
                 <li>
-                  <a href="payment/" class="l-sp-nav__link">お支払いについて</a>
+                  <a href="payment/index.html" class="l-sp-nav__link">お支払いについて</a>
                 </li>
-                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="faq/index.html" class="l-sp-nav__link">よくあるご質問</a></li>
                 <li>
-                  <a href="member/" class="l-sp-nav__link"
+                  <a href="member/index.html" class="l-sp-nav__link"
                     >会員様からいただいた声</a
                   >
                 </li>
@@ -358,15 +354,15 @@
               </button>
               <ul class="l-sp-nav__list">
                 <li>
-                  <a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a>
+                  <a href="about/index.html" class="l-sp-nav__link">女性専用24時間ジム</a>
                 </li>
                 <li>
-                  <a href="personal/" class="l-sp-nav__link"
+                  <a href="personal/index.html" class="l-sp-nav__link"
                     >Amazonesのパーソナルトレーニング</a
                   >
                 </li>
-                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
-                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+                <li><a href="medical/index.html" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
@@ -428,19 +424,19 @@
           </nav>
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <ul class="l-sp-nav__utility">
               <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
-              <li><a href="sitemap/">サイトマップ</a></li>
-              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="sitemap/index.html">サイトマップ</a></li>
+              <li><a href="rules/index.html">ご利用規約</a></li>
               <li><a href="#">個人情報保護方針</a></li>
               <li><a href="#">WEBサイトのご利用に当たって</a></li>
             </ul>
@@ -458,10 +454,10 @@
           <div class="c-hero-animate animate" id="c-hero-animate">
             <picture>
               <source
-                srcset="../assets/img/common/bg_hero2_sp.webp"
+                srcset="assets/img/common/bg_hero2_sp.png"
                 media="(max-width:650px)"
               >
-              <img src="assets/img/common/bg_hero2.webp" alt="">
+              <img src="assets/img/common/bg_hero2.png" alt="">
             </picture>
 
             <div class="c-hero-animate__panel c-hero-animate__panel-left"></div>
@@ -502,11 +498,11 @@
           <div class="c-hero-slider__title">
             <div class="c-flex-col-start-10">
               <img
-                src="assets/img/common/img_sportip_logo.webp"
+                src="assets/img/common/img_sportip_logo.png"
                 alt="Sportipロゴ"
                 class="p-sportip__banner-logo c-reveal"
               >
-              <h1 class="c-reveal u-font-zen u-fw-500 u-text-white u-fs-39 u-lh-150">
+              <h1 class="p-sportip__banner-title c-reveal">
                 <span class="u-block">科学的アプローチで実現する</span>
                 <span class="u-block">最適なトレーニング環境</span>
               </h1>
@@ -516,7 +512,7 @@
 
         <!-- パンくずリスト -->
         <nav class="c-breadcrumb p-sportip__breadcrumb c-reveal">
-          <a href="./" class="c-breadcrumb-home">
+          <a href="index.html" class="c-breadcrumb-home">
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -532,7 +528,7 @@
             </svg>
           </a>
           <span class="c-breadcrumb-separator">&#x203A;</span>
-          <span class="u-text-white u-fs-14">AI姿勢診断・改善</span>
+          <a href="sportip/" class="c-breadcrumb-link">AI姿勢診断・改善</a>
         </nav>
         <!-- リボン -->
         <div
@@ -568,60 +564,24 @@
       <!-- Sportipコンテンツ -->
       <section class="c-section--white">
         <!-- リンク -->
-        <nav class="p-sportip__links-nav c-maxWidth">
-          <a href="#sportip">
-            <div class="p-sportip__links-item">
-              <span>Sportip</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+        <nav class="c-page-nav p-sportip__nav c-maxWidth">
+          <a href="#sportip" class="c-page-nav__item">
+            <span>Sportip</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
-          <a href="#zone-stretch">
-            <div class="p-sportip__links-item">
-              <span>ゾネストレッチ</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+          <a href="#zone-stretch" class="c-page-nav__item">
+            <span>ゾネストレッチ</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
-          <a href="#geta-training">
-            <div class="p-sportip__links-item">
-              <span>一本歯下駄トレーニング</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+          <a href="#geta-training" class="c-page-nav__item">
+            <span>一本歯下駄トレーニング</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
         </nav>
 
@@ -634,11 +594,11 @@
         <div id="sportip" class="p-sportip__content c-maxWidth">
           <div class="c-section__header-row p-sportip__point-header-row">
             <!-- タイトル -->
-            <div class="p-sportip__title-container c-reveal">
-              <p class="p-sportip__subtitle u-font-zen">
+            <div class="c-section-title p-sportip__title-wrap c-reveal">
+              <p class="c-section-title__label p-sportip__subtitle">
                 あなたの姿勢改善に導く3つの柱
               </p>
-              <h2 class="p-sportip__title u-font-outfit">Point-03</h2>
+              <h2 class="c-section-title__text p-sportip__title">Point-03</h2>
             </div>
             <!-- サブ -->
             <div
@@ -667,7 +627,7 @@
                   d="m29.48 40.4c0.01-0.15 0.04-0.71 0.08-1.56l1.5 0.07c-0.04 0.87-0.07 1.43-0.08 1.59l-0.75-0.05zm1.65-3.1l-1.5-0.05q0.05-1.69 0.06-3.31l1.5 0.01q-0.01 1.64-0.06 3.35zm-1.45-4.96q-0.01-1.75-0.09-3.3l1.5-0.08q0.08 1.59 0.1 3.36zm-0.2-4.89q-0.1-1.23-0.23-2.3-0.06-0.48-0.14-0.94l1.48-0.24q0.08 0.48 0.15 0.98 0.14 1.11 0.24 2.39zm-0.67-4.78q-0.36-1.6-0.92-3.1l1.41-0.52q0.59 1.59 0.97 3.29zm-1.5-4.55q-0.67-1.49-1.52-2.83l1.27-0.81q0.91 1.43 1.62 3.03zm-2.4-4.12c-1.16-1.55-2.1-2.32-2.11-2.32l0.94-1.18c0.05 0.04 1.09 0.89 2.37 2.6z"
                 />
               </svg>
-              <h4 class="u-font-zen u-fw-600 u-fs-24 p-sportip__point-heading">
+              <h4 class="p-sportip__point-heading">
                 あなたの姿勢、今どんな状態ですか？
               </h4>
             </div>
@@ -693,7 +653,7 @@
             <!-- ヘッダー -->
             <div class="c-section__header-row c-section__header-row--md-gap">
               <h2
-                class="u-font-outfit u-fw-400 p-sportip__section-number"
+                class="p-sportip__section-number"
               >
                 01
               </h2>
@@ -751,10 +711,10 @@
                   </g>
                 </svg>
                 <div class="c-flex-col-gap-4">
-                  <p class="u-font-zen u-fw-600 u-fs-16">
+                  <p class="p-sportip__content-subtitle">
                     AI診断結果＋今後の運動方針
                   </p>
-                  <h4 class="u-fs-30 u-font-zen u-text-lightBlue p-sportip__content-title">Sportip</h4>
+                  <h4 class="p-sportip__content-title">Sportip</h4>
                 </div>
               </div>
             </div>
@@ -763,27 +723,27 @@
               <!-- 行1 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   専用アプリを使用し、正面・側面の写真をもとにAIが即時で姿勢をスコア化
                 </p>
               </div>
               <!-- 行2 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   骨格のゆがみや重心のズレ、筋力バランスを可視化
                 </p>
               </div>
               <!-- 行3 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">結果に応じた改善メニューも自動提案</p>
+                <p class="">結果に応じた改善メニューも自動提案</p>
               </div>
             </div>
           </div>
@@ -821,22 +781,22 @@
           >
             <!-- ヘッダー -->
             <h2>
-              無料体験でも試せる！<span class="u-text-lightBlue"
+              無料体験でも試せる！<span class="p-sportip__accent"
                 >「AI姿勢診断」</span
               >
             </h2>
             <!-- 区切り線 -->
             <div class="c-bg-lightBlue-full p-sportip__divider"></div>
             <!-- 本文 -->
-            <p class="u-font-zen u-text-lightBlue u-fw-600 u-lh-150">
+            <p class="p-sportip__diagnosis-lead">
               ● あなたのスマホでも診断結果をいつでも確認可能！
             </p>
             <!-- 項目1 -->
             <div class="c-flex-col-gap-4">
               <div class="c-label-lightBlue p-sportip__label">
-                <p class="u-font-zen">結果</p>
+                <p class="">結果</p>
               </div>
-              <p class="u-font-zen u-fw-500 u-lh-200">
+              <p class="p-sportip__diagnosis-text">
                 撮影した日の姿勢判定が点数や、総合評価などで結果として表示されます。
               </p>
             </div>
@@ -845,9 +805,9 @@
             <!-- 項目2 -->
             <div class="c-flex-col-gap-4">
               <div class="c-label-lightBlue p-sportip__label">
-                <p class="u-font-zen">未来</p>
+                <p class="">未来</p>
               </div>
-              <p class="u-font-zen u-fw-500 u-lh-200">
+              <p class="p-sportip__diagnosis-text">
                 判定結果をもとに筋肉が硬くなりやすい箇所や、衰えやすい箇所などを可視化した未来姿勢、またその結果に伴う症状予測が表示されます。
               </p>
             </div>
@@ -856,9 +816,9 @@
             <!-- 項目3 -->
             <div class="c-flex-col-gap-4">
               <div class="c-label-lightBlue p-sportip__label">
-                <p class="u-font-zen">対策</p>
+                <p class="">対策</p>
               </div>
-              <p class="u-font-zen u-fw-500 u-lh-200">
+              <p class="p-sportip__diagnosis-text">
                 判定結果をもとに姿勢改善に最適なトレーニングやストレッチが表示され、そのトレーニングやストレッチは動画で閲覧することが可能です。
               </p>
             </div>
@@ -894,7 +854,7 @@
             <!-- ヘッダー -->
             <div class="c-section__header-row c-section__header-row--md-gap">
               <h2
-                class="u-font-outfit u-fw-400 p-sportip__section-number"
+                class="p-sportip__section-number"
               >
                 02
               </h2>
@@ -913,10 +873,10 @@
                   />
                 </svg>
                 <div class="c-flex-col-gap-4">
-                  <p class="u-font-zen u-fw-600 u-fs-16">
+                  <p class="p-sportip__content-subtitle">
                     あなただけの専用ストレッチ
                   </p>
-                  <h4 class="u-fs-30 u-font-zen u-text-lightBlue p-sportip__content-title">ゾネストレッチ</h4>
+                  <h4 class="p-sportip__content-title">ゾネストレッチ</h4>
                 </div>
               </div>
             </div>
@@ -925,27 +885,27 @@
               <!-- 行1 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   新潟大学と共同開発されたストレッチプログラム
                 </p>
               </div>
               <!-- 行2 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   専用タオルを使用し、日常生活で固まりやすい筋肉を無理なく伸ばしていきます
                 </p>
               </div>
               <!-- 行3 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   AIが提案する“あなた専用”ストレッチ内容に沿って毎月アップデート
                 </p>
               </div>
@@ -960,17 +920,17 @@
           <!-- ヘッダー -->
           <h2>
             4分で出来るタオル（ZONES TOWEL）を使った新しい<span
-              class="u-text-lightBlue"
+              class="p-sportip__accent"
               >「ゾネストレッチ」</span
             >
           </h2>
           <!-- 区切り線 -->
           <div class="c-bg-lightBlue-full p-sportip__divider"></div>
           <!-- 本文 -->
-          <p class="u-font-zen u-fw-500 u-lh-100">
+          <p class="p-sportip__stretch-text">
             「肩こり・腰痛を解消したい！」「リモートワークで運動不足」「なんだか心も疲れてる…」そんなお疲れ気味のあなたにおすすめ！
           </p>
-          <p class="u-font-zen u-fw-500 u-lh-100">
+          <p class="p-sportip__stretch-text">
             タオル（ZONES
             TOWEL）があれば無理をせず誰でも筋肉を正しく動かせるようになるので、運動習慣のない人・きつい運動は続かないという人でも手軽に続けることができます。
           </p>
@@ -1000,7 +960,7 @@
 
       <!-- 03セクション -->
       <section
-        class="p-sportip__section--03 c-section--light-blue c-section--light-blue-padded-50"
+        class="p-sportip__section--03 c-section--white c-section--light-blue-padded-50"
       >
       
         <!-- 03 -->
@@ -1026,7 +986,7 @@
             <!-- ヘッダー -->
             <div class="c-section__header-row c-section__header-row--md-gap">
               <h2
-                class="u-font-outfit u-fw-400 p-sportip__section-number"
+                class="p-sportip__section-number"
               >
                 03
               </h2>
@@ -1084,10 +1044,10 @@
                   </g>
                 </svg>
                 <div class="c-flex-col-gap-4">
-                  <p class="u-font-zen u-fw-600 u-fs-16">
+                  <p class="p-sportip__content-subtitle">
                     自然に姿勢がまっすぐに整う感覚を体感
                   </p>
-                  <h4 class="u-fs-30 u-font-zen u-text-lightBlue p-sportip__content-title">
+                  <h4 class="p-sportip__content-title">
                     一本歯下駄トレーニング
                   </h4>
                 </div>
@@ -1098,27 +1058,27 @@
               <!-- 行1 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   専用アプリを使用し、正面・側面の写真をもとにAIが即時で姿勢をスコア化
                 </p>
               </div>
               <!-- 行2 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">
+                <p class="">
                   骨格のゆがみや重心のズレ、筋力バランスを可視化
                 </p>
               </div>
               <!-- 行3 -->
               <div class="c-flex-gap-3">
                 <a href="#" class="c-btn--green-wrapper">
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
-                <p class="u-font-zen">結果に応じた改善メニューも自動提案</p>
+                <p class="">結果に応じた改善メニューも自動提案</p>
               </div>
             </div>
           </div>
@@ -1131,31 +1091,31 @@
           <!-- ヘッダー -->
           <h2>
             新感覚！日常で気軽に継続できる一本歯
-            <span class="u-text-lightBlue">「下駄トレーニング」</span>
+            <span class="p-sportip__accent">「下駄トレーニング」</span>
           </h2>
           <!-- 区切り線 -->
           <div class="c-bg-lightBlue-full p-sportip__divider"></div>
           <!-- 本文 -->
-          <p class="u-font-zen u-text-lightBlue u-fw-600">
+          <p class="p-sportip__geta-lead">
             ● 長時間でも履きやすいフィット形状
           </p>
-          <div class="u-lh-200 p-sportip__flex-col">
-            <p class="u-font-zen">
+          <div class="p-sportip__flex-col">
+            <p class="">
               まるで足指が吸い付くようなラウンド形状と、包み込まれるような安定感を備えた一本歯下駄は、これまでにない“新感覚”のフィット感を実現。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               長時間履いても疲れにくく、外反母趾や浮き指といった足の悩みの予防・改善にもつながる設計です。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               運動が苦手な方や、日常の中でトレーニングの時間が確保できない方でも、洗い物・歯磨き・掃除などの「ながら作業」の合間に取り入れることができ、例えばその場での足踏みや下駄を平行にして歩く動作をするだけで、足指から膝・腰まわりの筋肉に自然とアプローチできます。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               また、地面との接地面には滑りにくいゴム素材を使用しているため、フローリングの室内でも安心して使えます。座ったままでも足踏みを繰り返すことで腰まわりのインナーマッスルに働きかけられるため、ご年配の方や運動に不安のある方にもおすすめです。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               一本歯下駄は、京都の伝統技術と最新のエビデンスを融合させ、履くだけでトレーニングになるよう設計された他にはない一足です。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               「激しい運動は苦手だけど、体は整えたい」「運動を続けたいけれど、時間がない」そんな方にこそ試していただきたいです。安心で簡単な新習慣として、ぜひお役立てください。
             </p>
           </div>
@@ -1194,18 +1154,18 @@
         <!-- コンテンツ -->
         <div class="c-announcement c-maxWidth">
           <div class="c-announcement__title-container c-reveal">
-            <h2 class="u-font-zen">まずはお気軽に無料体験・見学へ</h2>
-            <h2 class="u-font-outfit">GO!</h2>
+            <h2 class="">まずはお気軽に無料体験・見学へ</h2>
+            <h2>GO!</h2>
           </div>
           <div class="c-announcement__body c-reveal">
-            <p class="u-font-zen">
+            <p class="">
               女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
             </p>
           </div>
-           <a href="/reservation">
+           <a href="reservation/index.html">
           <button type="button" class="c-btn--light-blue">
             <p class="c-announcement__btn u-cursor-pointer">
               <img
@@ -1241,7 +1201,7 @@
           <div class="p-sportip__speak-container--02">
             <div class="p-sportip__speak-image--02">
               <img
-                src="assets/img/payment/img_payment_speak_bubble02.webp"
+                src="assets/img/payment/img_payment_speak_bubble02.svg"
                 alt="お客様の声 人物画像"
                 class="p-sportip__speak-bubble--02 c-speech-bubble"
               >
@@ -1256,7 +1216,7 @@
           <div class="p-sportip__speak-container--03">
             <div class="p-sportip__speak-image--03">
               <img
-                src="assets/img/payment/img_payment_speak_bubble03.webp"
+                src="assets/img/payment/img_payment_speak_bubble03.svg"
                 alt="お客様の声 人物画像"
                 class="p-sportip__speak-bubble--03 c-speech-bubble"
               >
@@ -1275,72 +1235,72 @@
         <div class="c-text-slider">
           <div class="slide-track">
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
@@ -1359,20 +1319,20 @@
       <!-- ブランド -->
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
-          <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+          <a href="index.html">
+            <p class="l-footer__brand-name">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
-          <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+          <a href="contact/index.html" class="c-btn--light-blue">
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -1384,7 +1344,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1393,17 +1353,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="information/index.html">お知らせ</a></li>
+            <li><a href="column/index.html">ゾネスタイムズ</a></li>
+            <li><a href="storelist/index.html">店舗一覧</a></li>
+            <li><a href="reservation/index.html">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="l-footer__nav-link--highlight">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/index.html">料金案内</a></li>
+            <li><a href="admission/index.html" class="l-footer__nav-link--highlight">入会手続きのご案内</a></li>
+            <li><a href="payment/index.html" class="l-footer__nav-link--highlight">お支払いについて</a></li>
+            <li><a href="faq/index.html">よくあるご質問</a></li>
+            <li><a href="member/index.html">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -1413,7 +1373,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1422,17 +1382,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/index.html">女性専用24時間ジム</a></li>
+              <li><a href="personal/index.html">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/index.html">Dr.Amazones</a></li>
+              <li><a href="sportip/index.html">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1442,7 +1402,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1458,7 +1418,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1468,19 +1428,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1491,7 +1451,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1501,14 +1461,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -1526,15 +1486,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/index.html">サイトマップ</a></li>
+        <li><a href="rules/index.html">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -1546,22 +1506,22 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->
 
     <div id="scroll-down-mobile" class="scroll-down-mobile">
-      <p class="u-font-outfit u-fs-12 u-ls-10 u-fw-500 text-vertical">SCROLL DOWN</p>
+      <p>SCROLL DOWN</p>
       <img
         src="assets/img/common/icon_scroll_arrow.svg"
-        alt="アイコン"
+        alt=""
         class="u-ml-4"
       >
     </div>

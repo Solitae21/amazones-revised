@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-   <base href="/amazones-test/">
+   <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）にお問い合わせの中で、よくあるご質問を掲載しています。"
@@ -12,10 +12,9 @@
       よくあるご質問 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
     <link href="assets/css/faq.css" rel="stylesheet" type="text/css">
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
     <script src="assets/js/family.js" defer></script>
   </head>
@@ -26,7 +25,7 @@
         class="l-header-wrapper"
       >
         <div class="l-header__brand">
-          <a href="./">
+          <a href="index.html">
             <img
               src="assets/img/common/icon_logo.svg"
               alt="アマゾネス"
@@ -35,58 +34,58 @@
               class="amazones-header-logo"
             >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+          <a href="index.html" class="l-header__brand-text"
             >アマゾネス</a
           >
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+          <p class="l-header__brand-tagline">
             WOMEN ONLY24h GYM
           </p>
         </div>
 
         <div class="l-header__actions">
           <a
-            href="storelist/"
+            href="storelist/index.html"
             class="l-header__btn"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+              <img src="assets/img/common/icon_search.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
           </a>
 
           <a
-            href="reservation/"
+            href="reservation/index.html"
             class="l-header__btn l-header__btn--reservation"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+              <img src="assets/img/common/icon_24.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
@@ -104,10 +103,10 @@
           >
             <img
               src="assets/img/common/icon_menu.svg"
-              alt="アイコン"
+              alt=""
               class="desktop-menu-icon"
             >
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -119,7 +118,7 @@
             <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
             <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
           </svg>
-          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+          <p class="l-header-floating-menu__close-label">CLOSE</p>
         </div>
           </div>
 
@@ -128,7 +127,7 @@
             class="l-header-floating-menu__content u-cursor-pointer"
           >
             <p
-              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+              class="text-vertical menu-vertical-text l-header-floating-menu__copyright"
             >
               ©2026 Wellness Land Co., Ltd.
             </p>
@@ -140,22 +139,22 @@
             <!-- 会社について -->
             <div class="l-nav-menu-popup__section">
               <div class="l-footer__page-link">
-                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <p>About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                 <div class="l-footer__link-line"></div>
               </div>
               <div class="l-nav-menu-popup__links">
-                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
-                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
-                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
-                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
-                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+                <a href="index.html">トップページ</a>
+                <a href="information/index.html">お知らせ</a>
+                <a href="column/index.html">ゾネスタイムズ</a>
+                <a href="storelist/index.html">店舗一覧</a>
+                <a href="reservation/index.html">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="l-nav-menu-popup__link--highlight">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/index.html">料金案内</a>
+                <a href="admission/index.html" class="l-nav-menu-popup__link--highlight">入会手続きのご案内</a>
+                <a href="payment/index.html" class="l-nav-menu-popup__link--highlight">お支払いについて</a>
+                <a href="faq/index.html">よくあるご質問</a>
+                <a href="member/index.html">会員様からいただいた声</a>
               </div>
             </div>
 
@@ -163,25 +162,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <p>Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
-                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                  <a href="about/index.html">女性専用24時間ジム</a>
+                  <a href="personal/index.html">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/index.html">Dr.Amazones</a>
+                  <a href="sportip/index.html">AI姿勢診断・改善</a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <p>Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -190,25 +189,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <p>Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <p>Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -218,21 +217,21 @@
           <!-- 下部行 -->
           <div class="l-nav-menu-popup__bottom" style="gap: 20px">
             <div class="l-nav-menu-popup__bottom-btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <div class="l-nav-menu-popup__bottom-links">
-              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+              <a href="sitemap/index.html">サイトマップ</a>
+              <a href="rules/index.html">ご利用規約</a>
+              <a href="#">個人情報保護方針</a>
+              <a href="#">WEBサイトのご利用に当たって</a>
             </div>
           </div>
         </div>
@@ -244,26 +243,26 @@
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
-                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
-                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
-                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
-                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="index.html" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/index.html" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/index.html" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/index.html" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/index.html" class="l-sp-nav__link">無料体験・見学予約</a></li>
                 <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
-                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
-                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
-                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
-                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
-                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+                <li><a href="price/index.html" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/index.html" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/index.html" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/index.html" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/index.html" class="l-sp-nav__link">会員様からいただいた声</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
-                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
-                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
-                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+                <li><a href="about/index.html" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/index.html" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/index.html" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
@@ -290,19 +289,19 @@
           </nav>
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <ul class="l-sp-nav__utility">
               <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
-              <li><a href="sitemap/">サイトマップ</a></li>
-              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="sitemap/index.html">サイトマップ</a></li>
+              <li><a href="rules/index.html">ご利用規約</a></li>
               <li><a href="#">個人情報保護方針</a></li>
               <li><a href="#">WEBサイトのご利用に当たって</a></li>
             </ul>
@@ -320,7 +319,7 @@
           <div class="p-banner-inner">
             <img
               src="assets/img/common/img_gym02.webp"
-              alt="予約バナー"
+              alt=""
               class="p-banner-img"
             >
 
@@ -329,11 +328,11 @@
 
           <!-- バナーテキスト -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title u-font-zen u-text-white">よくあるご質問</h1>
-            <p class="p-banner-subtitle u-font-outfit u-mt-18">Faq</p>
+            <h1 class="p-banner-title">よくあるご質問</h1>
+            <p class="p-banner-subtitle u-mt-18">Faq</p>
             <!-- パンくずリスト -->
             <nav class="c-breadcrumb p-breadcrumb">
-              <a href="./" class="c-breadcrumb-home">
+              <a href="index.html" class="c-breadcrumb-home">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -349,7 +348,7 @@
                 </svg>
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="/amazones-test/faq" class="u-text-white u-fs-14 banner-a-link"
+              <a href="faq/index.html" class="c-breadcrumb-link"
                 >よくあるご質問</a
               >
             </nav>
@@ -358,7 +357,7 @@
         <!-- リボン装飾01 -->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
-          alt="リボン装飾"
+          alt=""
           class="ribbon-banner c-clip-grow-right"
         >
       </section>
@@ -366,7 +365,7 @@
       <section class="p-faq__main__content">
         <div class="p-faq__nav">
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-初めての方へ" class="u-fs-14 u-fw-500 banner-a-link"
+            <a href="#faq-初めての方へ"
               >初めての方へ</a
             >
             <svg
@@ -384,7 +383,7 @@
             </svg>
           </div>
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-施設について" class="u-fs-14 u-fw-500 banner-a-link"
+            <a href="#faq-施設について"
               >施設について</a
             >
             <svg
@@ -402,7 +401,7 @@
             </svg>
           </div>
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-ご入会について" class="u-fs-14 u-fw-500 banner-a-link"
+            <a href="#faq-ご入会について"
               >ご入会について</a
             >
             <svg
@@ -420,7 +419,7 @@
             </svg>
           </div>
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-ご予約について" class="u-fs-14 u-fw-500 banner-a-link"
+            <a href="#faq-ご予約について"
               >ご予約について</a
             >
             <svg
@@ -440,7 +439,6 @@
           <div class="c-faq__accordion-header" style="gap: 10px">
             <a
               href="#faq-料金・プランについて"
-              class="u-fs-14 u-fw-500 banner-a-link"
               >料金・プランについて</a
             >
             <svg
@@ -460,7 +458,6 @@
           <div class="c-faq__accordion-header" style="gap: 10px">
             <a
               href="#faq-お手続き（休会・退会・変更）について"
-              class="u-fs-14 u-fw-500 banner-a-link"
               >お手続き（休会/退会/変更）について</a
             >
             <svg
@@ -478,7 +475,7 @@
             </svg>
           </div>
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-お支払いについて" class="u-fs-14 u-fw-500 banner-a-link"
+            <a href="#faq-お支払いについて"
               >お支払いについて</a
             >
             <svg
@@ -496,7 +493,7 @@
             </svg>
           </div>
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-採用について" class="u-fs-14 u-fw-500 banner-a-link"
+            <a href="#faq-採用について"
               >採用について</a
             >
             <svg
@@ -514,7 +511,7 @@
             </svg>
           </div>
           <div class="c-faq__accordion-header" style="gap: 10px">
-            <a href="#faq-その他" class="u-fs-14 u-fw-500 banner-a-link">その他</a>
+            <a href="#faq-その他">その他</a>
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -544,7 +541,7 @@
                   alt="よくあるご質問（一般）"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">よくあるご質問（一般）</h2>
+                <h2 class="">よくあるご質問（一般）</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -560,7 +557,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         Amazonesではどのようなサービスを提供しているのでしょうか？
                       </p>
                     </div>
@@ -577,7 +574,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         Amazonesでは「女性が輝く未来をつくりたい」をスローガンに、フィットネスを通じて健康で喜びに満ちた未来をつくるお手伝いをするとともに、「また行きたい」「家に帰る前に行きたくなる」サードプレイスと思っていただける空間と時間を提供しております。
                       </p>
                     </div>
@@ -597,7 +594,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">ジムの見学や体験はできますか？</p>
+                      <p>ジムの見学や体験はできますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -612,10 +609,10 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                       <p class="u-fw-500 u-fs-16 u-lh-210">
+                       <p>
                         Amazonesでは全店舗で常時、無料体験・見学を実施しております。<br>
                         無料体験・見学のご予約は
-                        <a href="reservation/"  class="u-text-link">こちらから</a>
+                        <a href="reservation/index.html"  class="u-text-link">こちらから</a>
                       </p>
 
                     </div>
@@ -635,7 +632,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         友達と体験・見学を受けたいです。一緒に受けることは可能ですか？
                       </p>
                     </div>
@@ -652,7 +649,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         一緒に受けていただくことは可能です。ご予約の際に店舗へお申し出ください。
                       </p>
                     </div>
@@ -672,7 +669,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         プログラムの予約方法を教えてください
                       </p>
                     </div>
@@ -689,7 +686,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target = "_blank" class = "text-link">マイページ</a
                         >の予約フォームから予約が可能です。
                       </p>
@@ -710,7 +707,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         ジムには何分前までに来店が必要ですか？
                       </p>
                     </div>
@@ -727,7 +724,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         5分前を目途に来ていただければ、ご案内がスムーズです。
                       </p>
                     </div>
@@ -747,7 +744,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         初回体験時のレンタル品はありますか？
                       </p>
                     </div>
@@ -764,7 +761,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         初回体験のお客様には以下のアイテムを無料提供とレンタルしております。<br>・レンタルウェアセット（上下）・シューズ・タオル<br>・水素水・プロテイン<br>※靴下のレンタルは行っておりませんので、ご持参ください。
                       </p>
                     </div>
@@ -784,7 +781,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         ジムに通っている方の年齢層を教えてください
                       </p>
                     </div>
@@ -801,7 +798,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         10代～80代と幅広い年齢層の方にご利用いただいております。
                       </p>
                     </div>
@@ -823,7 +820,7 @@
                   alt="施設について"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">施設について</h2>
+                <h2 class="">施設について</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -839,7 +836,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         病気や怪我、妊娠中でもジムの利用は可能でしょうか？
                       </p>
                     </div>
@@ -856,7 +853,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         妊娠中の場合でも運動は推奨されておりますが、安定期に入るまでは不安な方も多いと思いますので、安定期に入るまでの間休会も受け付けており、以降有酸素運動などしていただくと健やかに妊娠中を過ごしていただけるかと思います。<br>病気や怪我も同様に休会（月¥2,200）が可能です。また、医師の判断により運動が止められている場合はご利用をご遠慮いただいております。
                       </p>
                     </div>
@@ -876,7 +873,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">館内に忘れ物をしました。</p>
+                      <p>館内に忘れ物をしました。</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -891,7 +888,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         忘れ物BOXまたは受付（カウンター内）で預かっております。<br>保管期間は1週間となっております。
                       </p>
                     </div>
@@ -911,7 +908,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">営業時間は何時ですか？</p>
+                      <p>営業時間は何時ですか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -926,7 +923,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         24時間年中無休ご利用いただけます。<br>ただし、スタッフアワーは(水)(日)以外の11:00～20:00となっております。
                       </p>
                     </div>
@@ -946,7 +943,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">駐車場はありますか？</p>
+                      <p>駐車場はありますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -961,9 +958,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         店舗によって異なります。詳しくは<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >店舗情報</a
                         >をご覧ください。
@@ -985,7 +982,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         施設を利用するにあたって注意点やルールはありますか？
                       </p>
                     </div>
@@ -1002,8 +999,8 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
-                        <a href="rules/" class="u-text-link">ご利用規約</a
+                      <p>
+                        <a href="rules/index.html" class="u-text-link">ご利用規約</a
                         >をご確認ください。
                       </p>
                     </div>
@@ -1023,7 +1020,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">シャワーはありますか？</p>
+                      <p>シャワーはありますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -1038,9 +1035,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         店舗によって異なります。詳しくは<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >店舗情報</a
                         >をご覧ください。
@@ -1062,7 +1059,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">どの時間帯が混みますか？</p>
+                      <p>どの時間帯が混みますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -1077,7 +1074,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         店舗により異なりますが、平日の18時以降が混み合うことが多いです。土日は、夜よりお昼間の方が利用者が多いです。
                       </p>
                     </div>
@@ -1097,7 +1094,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         水素水・プロテインを契約していないのですが、単発で購入することは可能ですか？
                       </p>
                     </div>
@@ -1114,7 +1111,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         基本的には200円で購入可能です。
                       </p>
                     </div>
@@ -1134,7 +1131,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         ロッカーは契約しなくても使えますか？
                       </p>
                     </div>
@@ -1151,7 +1148,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         空いているロッカーは皆様ご利用可能です。
                       </p>
                     </div>
@@ -1178,7 +1175,7 @@
                   alt="ご入会について"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">ご入会について</h2>
+                <h2 class="">ご入会について</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -1194,7 +1191,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">入会はオンラインでできますか</p>
+                      <p>入会はオンラインでできますか</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -1209,7 +1206,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         オンラインから入会は可能となっておりますが、別途店頭にて書類の記入が必要となりますので、店舗での入会をお勧めしております。
                       </p>
                     </div>
@@ -1229,7 +1226,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         入会手続きで必要なものを教えてください。
                       </p>
                     </div>
@@ -1246,7 +1243,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         ・顔写真付きの身分証明書<br>・学生会員希望の方は有効な学生証<br>・会費の支払い方法はクレジットカードか口座振替となっております。<br>※クレジットカード引落希望の方はクレジットカードをお持ちください。<br>※口座振替の場合は口座情報の分かるものをお持ちください。（口座振替の場合、2ヵ月分の会費を入会時に現金でお支払いいただきます）
                       </p>
                     </div>
@@ -1266,7 +1263,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         会員規則・利用規約などはありますか？
                       </p>
                     </div>
@@ -1283,8 +1280,8 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
-                        <a href="rules/" class="u-text-link">ご利用規約</a
+                      <p>
+                        <a href="rules/index.html" class="u-text-link">ご利用規約</a
                         >をご確認ください。
                       </p>
                     </div>
@@ -1304,7 +1301,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">未成年でも利用可能ですか？</p>
+                      <p>未成年でも利用可能ですか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -1319,7 +1316,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         可能となっております。18歳未満の方は入会時に保護者同意書の提出が必要です。
                       </p>
                     </div>
@@ -1341,7 +1338,7 @@
                   alt="ご予約について"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">ご予約について</h2>
+                <h2 class="">ご予約について</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -1357,7 +1354,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         体験・見学の予約はどこからできますか？
                       </p>
                     </div>
@@ -1374,8 +1371,8 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
-                        無料体験・見学のご予約は<a href="reservation/" class="u-text-link"
+                      <p>
+                        無料体験・見学のご予約は<a href="reservation/index.html" class="u-text-link"
                           >こちらから</a
                         >
                       </p>
@@ -1396,7 +1393,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         プログラムの予約はどこから取れますか？
                       </p>
                     </div>
@@ -1413,7 +1410,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="u-text-link">マイページ</a
                         >の予約フォームから予約が可能です。
                       </p>
@@ -1434,7 +1431,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         チケットの種類が3種類ありますがそれぞれどういったチケットですか？
                       </p>
                     </div>
@@ -1451,7 +1448,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         パーソナルチケット：パーソナルライト/パーソナル通い放題のプランに加入の方。<br>また、有料パーソナルチケットをご購入いただいた方。
                       </p>
                     </div>
@@ -1471,7 +1468,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         マイページから予約が取れません。
                       </p>
                     </div>
@@ -1488,7 +1485,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         本人確認がまだだった。<br>パーソナルプランじゃないのにパーソナルチケットで予約をとっていた場合
                         ＞
                         サポート・スタンダード・学生・シニアプランの場合は、無料サポートチケットを選択してください。
@@ -1510,7 +1507,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         予約のキャンセルや変更はできますか？
                       </p>
                     </div>
@@ -1527,7 +1524,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         キャンセル・変更は可能ですが、当日のキャンセルはチケット消化の対象となります。<br>また、当日中での時間変更は可能ですが、別日への変更は当日キャンセルと同様の扱いとなります。
                       </p>
                     </div>
@@ -1547,7 +1544,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">予約枠の制限はありますか？</p>
+                      <p>予約枠の制限はありますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -1562,7 +1559,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         1日でチケット2枚（1時間）まで使用可能です。
                       </p>
                     </div>
@@ -1582,7 +1579,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         残りのチケットの枚数を確認したい。
                       </p>
                     </div>
@@ -1599,7 +1596,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target="_blank" class = "text-link">マイページ</a
                         >より保有している予約権利の下「チケット」から確認が可能です。
                       </p>
@@ -1620,7 +1617,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         予約スケジュールはいつ公開されますか？
                       </p>
                     </div>
@@ -1637,7 +1634,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         毎月末頃に翌月のご予約を公開しております。
                       </p>
                     </div>
@@ -1657,7 +1654,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         初めてのジムで不安いっぱいです。大丈夫でしょうか？
                       </p>
                     </div>
@@ -1674,7 +1671,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         当ジムは入会者様へ無料サポート4回受けていただけるチケットを付与しております。<br>トレーナーが丁寧にサポートさせていただきます。初めての方がほとんどですので、安心してご来館くださいませ。
                       </p>
                     </div>
@@ -1694,7 +1691,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         ジムが休館になることはありますか？
                       </p>
                     </div>
@@ -1711,7 +1708,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         ございます。設備に不具合が発生し動作不能となった場合、または地震などの災害により一定時間の避難が必要となった場合は、休館とさせていただく可能性がございます。<br>状況に応じての対応、ご連絡をさせていただきます。
                       </p>
                     </div>
@@ -1731,7 +1728,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         パーソナル以外で自分でトレーニングに来る際も予約は必要ですか？回数制限はありますか？
                       </p>
                     </div>
@@ -1748,7 +1745,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         予約は不要で、回数制限もございません。24時間いつでもご利用いただけます。
                       </p>
                     </div>
@@ -1770,7 +1767,7 @@
                   alt="料金・プランについて"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">料金・プランについて</h2>
+                <h2 class="">料金・プランについて</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -1786,7 +1783,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         チケットの購入方法を教えてください。
                       </p>
                     </div>
@@ -1803,7 +1800,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target = "_blank" class="u-text-link">マイページ</a
                         >より「チケット購入」を押し、店舗選択。購入するチケットの種類を選び、クレジットカード入力いただくと購入可能です。
                       </p>
@@ -1824,7 +1821,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         購入チケットでの予約をキャンセルした場合、チケットの払い戻しはありますか？
                       </p>
                     </div>
@@ -1841,7 +1838,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         一度決済いただきましたら、基本払い戻しはございません。
                       </p>
                     </div>
@@ -1861,7 +1858,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         各種プラン料金を教えてください。
                       </p>
                     </div>
@@ -1878,8 +1875,8 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
-                        各種プランについては、<a href="storelist/">店舗情報</a
+                      <p>
+                        各種プランについては、<a href="storelist/index.html">店舗情報</a
                         >からご希望店舗の内容をご覧ください。
                       </p>
                     </div>
@@ -1899,7 +1896,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         プランはどのようなプランがありますか
                       </p>
                     </div>
@@ -1916,9 +1913,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         10種類のプランをご用意しております。詳しくは、<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >店舗情報</a
                         >からご希望店舗の内容をご覧ください。
@@ -1942,7 +1939,7 @@
                   alt="お手続き（休会/退会/復会）について"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">お手続き（休会/退会/復会）について</h2>
+                <h2 class="">お手続き（休会/退会/復会）について</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -1958,7 +1955,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         プラン変更方法を教えてください。
                       </p>
                     </div>
@@ -1975,7 +1972,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="u-text-link">マイページ</a
                         >より「契約管理」を選択し、「プランを変更」から変更手続きをお願いいたします。<br>または、各店舗公式LINEにてお申し出ください。
                       </p>
@@ -1996,7 +1993,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         途中でのプラン変更は可能ですか？
                       </p>
                     </div>
@@ -2013,7 +2010,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         在籍3か月目からプラン変更可能でございます。
                       </p>
                     </div>
@@ -2033,7 +2030,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         休会したいです。各種手続きの申請方法を教えてください。
                       </p>
                     </div>
@@ -2050,7 +2047,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="u-text-link">マイページ</a
                         >より「契約管理」を選択し、「プランを変更」から変更手続きをお願いいたします。<br>または、各店舗公式LINEにてお申し出ください。
                       </p>
@@ -2071,7 +2068,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         休会中です。再開したいのですが、各種変更手続きの申請方法を教えてください。
                       </p>
                     </div>
@@ -2088,7 +2085,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="u-text-link">マイページ</a
                         >より「契約管理」を選択し、「プランを変更」から変更手続きをお願いいたします。
                       </p>
@@ -2109,7 +2106,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         退会したいです。各種手続きを教えてください。
                       </p>
                     </div>
@@ -2126,7 +2123,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         退会手続きは店頭でのみ手続き可能となっております。店頭スタッフ、または各店公式LINEにてお声掛けください。<br>クレジットカード払いの方は毎月19日まで、口座振替の方は毎月9日までの申請となります。
                       </p>
                     </div>
@@ -2146,7 +2143,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         退会手続き後、いつまで通うことができますか？
                       </p>
                     </div>
@@ -2163,7 +2160,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         クレジットカード払いの方は毎月19日まで、口座振替の方は毎月9日までの申請となり、翌月末退会とし退会日までご利用可能です。
                       </p>
                     </div>
@@ -2183,7 +2180,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         在籍必須期間中ですが、退会したいです。
                       </p>
                     </div>
@@ -2200,7 +2197,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         同意書記載通り、残りの在籍必須期間分の会費全てお支払いいただく必要がございます。お支払い後、退会可能です。
                       </p>
                     </div>
@@ -2222,7 +2219,7 @@
                   alt="お支払いについて"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">お支払いについて</h2>
+                <h2 class="">お支払いについて</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -2238,7 +2235,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         月会費のお支払い方法を教えてください。
                       </p>
                     </div>
@@ -2255,7 +2252,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         お支払い方法は2種類ございます<br><span
                           class="u-text-lightBlue"
                           >【カード払い】</span
@@ -2281,7 +2278,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         月会費はいつ引き落としになりますか？
                       </p>
                     </div>
@@ -2298,7 +2295,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         お支払方法により引落し日が異なります。<br><span
                           class="u-text-lightBlue"
                           >【カード払いの場合】</span
@@ -2323,7 +2320,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         デビットカードやプリペイドカードでのお支払いはできますか？
                       </p>
                     </div>
@@ -2340,7 +2337,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         以下のカードブランドがプリントされたカードであれば、デビットカードやプリペイドカードのご利用も原則可能となっております。<br/>
                         VISA・Mastercard・JCB・American Express・Diners Club・Discover
                       </p>
@@ -2361,7 +2358,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         月会費の支払いに関して、クレジット明細はどのように記載されますか？
                       </p>
                     </div>
@@ -2378,8 +2375,8 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
-                        プラン種別と料金は<a href="price/" class="u-text-link"
+                      <p>
+                        プラン種別と料金は<a href="price/index.html" class="u-text-link"
                           >こちら</a
                         >でご確認ください。明細は各クレジット会社にお問い合わせください。
                       </p>
@@ -2400,7 +2397,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">領収書は発行できますか？</p>
+                      <p>領収書は発行できますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -2415,7 +2412,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         領収書は店頭にて手書きでの発行が可能でございます。店頭スタッフまでお声掛けください。
                       </p>
                     </div>
@@ -2435,7 +2432,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         決済完了後の払い戻しはできますか？
                       </p>
                     </div>
@@ -2452,7 +2449,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         決済後、契約完了後の払い戻しは受け付けておりません。あらかじめご了承ください。
                       </p>
                     </div>
@@ -2474,7 +2471,7 @@
                   alt="採用について"
                   class="p-faq__accordion-icon"
                 >
-                <h2 class="u-fw-700 u-fs-24">採用について</h2>
+                <h2 class="">採用について</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -2490,7 +2487,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         トレーナーは採用されていますか？
                       </p>
                     </div>
@@ -2507,9 +2504,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         随時トレーナーを募集しております。詳しくは<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >こちら</a
                         >をご確認ください。
@@ -2531,7 +2528,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         女性専用24時間ジムAmazonesで働いてみたいです。話だけでも聞くことは可能ですか？
                       </p>
                     </div>
@@ -2548,9 +2545,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         お話だけでも可能となっております。お問い合わせは<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >こちら</a
                         >からお願いいたします。
@@ -2572,7 +2569,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">アルバイトは募集していますか？</p>
+                      <p>アルバイトは募集していますか？</p>
                     </div>
                     <div class="i_box">
                       <i class="c-faq__accordion-toggle"></i>
@@ -2587,9 +2584,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         アルバイトも随時募集しております。お問い合わせは<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >こちら</a
                         >からお願いいたします。
@@ -2611,7 +2608,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         プランはどのようなプランがありますか
                       </p>
                     </div>
@@ -2628,9 +2625,9 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         10種類のプランをご用意しております。詳しくは、<a
-                          href="storelist/"
+                          href="storelist/index.html"
                           class="u-text-link"
                           >店舗情報</a
                         >からご希望店舗の内容をご覧ください。
@@ -2655,7 +2652,7 @@
             <div class="p-faq__page__item">
               <div class="c-faq__accordion-header" style="gap: 26px">
                 <img src="assets/img/faq/icon_faq_label9.svg" alt="その他" class="p-faq__accordion-icon">
-                <h2 class="u-fw-700 u-fs-24">その他</h2>
+                <h2 class="">その他</h2>
               </div>
               <div class="faq-container">
                 <div class="c-reveal c-faq__accordion">
@@ -2671,7 +2668,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         靴はどうすれば良いですか？どのような靴がおすすめですか？
                       </p>
                     </div>
@@ -2688,7 +2685,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         室内シューズ（スニーカー）であれば何でも構いません。
                       </p>
                     </div>
@@ -2708,7 +2705,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         筋肉痛がこなくなり、きちんと効いているか不安です。
                       </p>
                     </div>
@@ -2725,7 +2722,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         慣れてくると筋肉痛はマシになってきますので、効いていないわけではありません。<br>また、重量を上げたりフォームが奇麗になると慣れてからもくることがあります。
                       </p>
                     </div>
@@ -2745,7 +2742,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         「よくある質問」を読みましたが、解決しません。どうすれば良いですか？
                       </p>
                     </div>
@@ -2762,8 +2759,8 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
-                        その他のお問い合わせは、<a href="contact/" class="u-text-link"
+                      <p>
+                        その他のお問い合わせは、<a href="contact/index.html" class="u-text-link"
                           >お問い合わせフォーム</a
                         >かお電話にて承ります。<br>また、ジムにお越しの際にスタッフに直接お聞きいただくことも可能です。お気軽にお問い合わせください。
                       </p>
@@ -2784,7 +2781,7 @@
                         alt="Q"
                         class="c-faq__icon__q"
                       >
-                      <p class="u-fw-700 u-fs-16">
+                      <p>
                         月会費の安い店舗に入会して、月会費の高い店舗を継続利用して良いのですか？
                       </p>
                     </div>
@@ -2801,7 +2798,7 @@
                         alt="A"
                         class="c-faq__icon__a"
                       >
-                      <p class="u-fw-500 u-fs-16 u-lh-210">
+                      <p>
                         他店を利用されるにあたり、所属店舗より他の特定の店舗を主に利用していると所定の基準に基づき判断された場合は、文書での通知をもって所属店舗が自動的に変更になります。<br>その際、会員様自身でのお手続きは不要です。移籍の際には、移籍後の所属店舗において定められた会費等をお支払いいただきます。
                       </p>
                     </div>
@@ -2824,20 +2821,20 @@
       <!-- ブランド -->
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
-          <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+          <a href="index.html">
+            <p class="l-footer__brand-name">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
-          <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+          <a href="contact/index.html" class="c-btn--light-blue">
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -2849,7 +2846,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -2858,17 +2855,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="">トップページ</a></li>
+            <li><a href="information/index.html">お知らせ</a></li>
+            <li><a href="column/index.html">ゾネスタイムズ</a></li>
+            <li><a href="storelist/index.html">店舗一覧</a></li>
+            <li><a href="reservation/index.html">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="l-footer__nav-link--highlight">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/index.html">料金案内</a></li>
+            <li><a href="admission/index.html" class="l-footer__nav-link--highlight">入会手続きのご案内</a></li>
+            <li><a href="payment/index.html" class="l-footer__nav-link--highlight">お支払いについて</a></li>
+            <li><a href="faq/index.html">よくあるご質問</a></li>
+            <li><a href="member/index.html">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -2878,7 +2875,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -2887,17 +2884,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/index.html">女性専用24時間ジム</a></li>
+              <li><a href="personal/index.html">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/index.html">Dr.Amazones</a></li>
+              <li><a href="sportip/index.html">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -2907,7 +2904,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -2923,7 +2920,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -2933,19 +2930,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -2956,7 +2953,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -2966,14 +2963,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -2991,15 +2988,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/index.html">サイトマップ</a></li>
+        <li><a href="rules/index.html">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -3011,13 +3008,13 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->

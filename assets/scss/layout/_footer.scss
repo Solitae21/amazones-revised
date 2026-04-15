@@ -16,7 +16,7 @@
   width: auto;
   min-width: 70rem;
   max-width: calc(100vw - 100px);
-  height: calc(100vh - 104px);
+  height: calc(95vh - 104px);
   background-color: white;
   opacity: 0;
   pointer-events: none;
@@ -60,6 +60,7 @@
   flex-direction: column; /* flex-col */
   gap: 25px; /* gap-25px */
   align-items: flex-start; /* items-start */
+  font-size: 15px;
 }
 .l-nav-menu-popup__bottom {
   display: flex;
@@ -77,6 +78,7 @@
   flex-direction: row; /* flex-row */
   gap: 40px; /* gap-40px */
   flex-wrap: wrap; /* flex-wrap */
+  font-size: 14px;
 }
 
 /* floating-menu-closeを無効化（ハンバーガーアニメーションが代替） */
@@ -188,6 +190,13 @@
   width: 160px;
   height: auto;
 }
+.l-footer__brand-logo p {
+  font-family: var(--font-outfit);
+}
+
+.l-footer__brand-name {
+  text-align: right;
+}
 
 .l-footer__cta-links {
   display: flex;
@@ -248,6 +257,7 @@
   width: 50px;
   height: 2px;
   background: var(--base-lightBlue);
+  display:none;
 }
 
 .l-footer__page-link img {
@@ -256,6 +266,9 @@
 }
 .l-footer__page-link p {
   color: var(--base-black);
+  font-family: var(--font-outfit);
+  font-size: 18px;
+  font-weight: 500;
 }
 /* ── ナビリンクリスト ── */
 .l-footer__nav-list {
@@ -264,6 +277,7 @@
   flex-direction: column;
   gap: 25px;
   align-items: flex-start;
+  font-size: 15px;
 }
 
 .l-footer__nav-list a,
@@ -279,10 +293,16 @@
   opacity: 0.7;
 }
 
+.l-footer__nav-link--highlight,
+.l-nav-menu-popup__link--highlight {
+  color: var(--text-lightBlue);
+}
+
 .l-footer__icon-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  font-size: 15px;
 }
 
 .l-footer__icon-link img {
@@ -309,6 +329,7 @@
   gap: 65px;
   list-style: none;
   flex-wrap: wrap;
+  font-size: 15px;
 }
 .l-scroll-up {
   width: 50px;

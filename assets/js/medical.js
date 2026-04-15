@@ -1,4 +1,4 @@
-// お客様の声スライダー（モバイルのみ）— common.jsのinitMobileCarouselを使用
+// お客様の声スライダー（モバイルのみ）— global.jsのinitMobileCarouselを使用
 initMobileCarousel({
   trackSelector: '.p-medical__voice-grid',
   prevSelector: '.p-medical__voice-nav--prev',

@@ -101,6 +101,11 @@
   flex-direction: column; /* flex-col */
   gap: 15px; /* gap-15px */
 }
+.c-hero-slider__title h1 {
+  font-size: 2.4375rem;
+  color: var(--text-white);
+  line-height: 1.5;
+}
 
 @keyframes heroSlideTopLeft {
   0% {

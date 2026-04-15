@@ -52,8 +52,16 @@
 .c-cookie-notice .l-footer__btn:hover {
   opacity: 0.75;
 }
+.c-cookie-notice__text {
+  font-weight: 400;
+  font-size: var(--fs-sm);
+  color: var(--text-white);
+}
 .c-cookie-notice__sub {
   margin-top: 10px;
   margin-bottom: 5px;
   display: none;
+  font-family: var(--font-outfit);
+  font-size: var(--fs-xs);
+  color: var(--text-white);
 }

@@ -1,81 +1,54 @@
 /* ===========================================
-   FONT SIZE (px based)
+   FONT SIZE (rem based)
    =========================================== */
 .u-fs-12 {
-  font-size: 12px;
-}
-.u-fs-13 {
-  font-size: 13px;
+  font-size: 0.75rem;
 }
 .u-fs-14 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .u-fs-15 {
-  font-size: 15px;
-}
-.u-fs-16 {
-  font-size: 16px;
+  font-size: 0.9375rem;
 }
 .u-fs-18 {
-  font-size: 18px;
-}
-.u-fs-19 {
-  font-size: 19px;
+  font-size: 1.125rem;
 }
 .u-fs-20 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .u-fs-24 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .u-fs-25 {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .u-fs-30 {
-  font-size: 30px;
-}
-.u-fs-32 {
-  font-size: 32px;
+  font-size: 1.875rem;
 }
 .u-fs-36 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .u-fs-39 {
-  font-size: 39px;
+  font-size: 2.4375rem;
 }
 .u-fs-46 {
-  font-size: 46px;
+  font-size: 2.875rem;
 }
 .u-fs-48 {
-  font-size: 48px;
-}
-.u-fs-54 {
-  font-size: 54px;
+  font-size: 3rem;
 }
 .u-fs-60 {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 .u-fs-70 {
-  font-size: 70px;
-}
-.u-fs-100 {
-  font-size: 100px;
-}
-.u-fs-320 {
-  font-size: 320px;
+  font-size: 4.375rem;
 }
 
 /* ===========================================
    FONT WEIGHT
    =========================================== */
-.u-fw-300 {
-  font-weight: 300;
-}
 .u-fw-400 {
   font-weight: 400;
-}
-.u-fw-500 {
-  font-weight: 500;
 }
 .u-fw-600 {
   font-weight: 600;
@@ -91,35 +64,23 @@
    LINE HEIGHT (in em, using .05em step)
    =========================================== */
 .u-lh-100 {
-  line-height: 1em;
-}
-.u-lh-140 {
-  line-height: 1.4em;
+  line-height: 1;
 }
 .u-lh-150 {
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 .u-lh-160 {
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 .u-lh-180 {
-  line-height: 1.8em;
+  line-height: 1.8;
 }
 .u-lh-200 {
-  line-height: 2em;
+  line-height: 2;
 }
 .u-lh-210 {
-  line-height: 2.1em;
-}
-.u-lh-normal {
-  line-height: 100%;
+  line-height: 2.1;
 }
 /* ===========================================
    LETTER SPACING (in em, using .05em step)
    =========================================== */
-.u-ls-10 {
-  letter-spacing: 0.1em;
-}
-.u-ls-20 {
-  letter-spacing: 0.2em;
-}

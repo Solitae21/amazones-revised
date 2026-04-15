@@ -18,10 +18,6 @@
   --header-height: 73px;
 }
 
-html {
-  font-family: kozuka-gothic-pr6n, sans-serif;
-}
-
 body {
   word-break: break-word;
   overflow-wrap: break-word;
@@ -322,7 +318,7 @@ body {
 @media (min-width: 475px) {
   .l-stick-image-container header h2 {
     font-size: var(--fs-xl);
-    line-height: 2rem;
+    line-height: 1.333;
   }
 }
 
@@ -337,7 +333,7 @@ body {
   .l-stick-image-container header h2 {
     font-size: var(--fs-5xl);
     line-height: 1;
-    line-height: 4.375rem;
+    line-height: 1.458;
   }
 }
 
@@ -348,7 +344,7 @@ body {
 @media (min-width: 640px) {
   .l-stick-image-container header h2 {
     font-size: calc(100 / 375 * 23 * 1vw);
-    line-height: 70px;
+    line-height: 1.458;
   }
 }
 
@@ -362,7 +358,7 @@ body {
   margin-top: 2rem;
   padding-bottom: 1rem;
   font-size: var(--fs-sm);
-  line-height: 1.25rem;
+  line-height: 1.429;
   line-height: 2;
 }
 
@@ -375,7 +371,7 @@ body {
 @media (min-width: 1280px) {
   .l-stick-image-container .l-stick-image-text {
     font-size: var(--fs-base);
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 }
 
@@ -454,7 +450,7 @@ body {
 .breadcrumbs {
   list-style: none;
   display: flex;
-  font-size: 11px;
+  font-size: 0.6875rem;
   white-space: nowrap;
   overflow: hidden;
   overflow-x: auto;
@@ -474,7 +470,7 @@ body {
   text-decoration: none;
   position: relative;
   height: 30px;
-  line-height: 30px;
+  line-height: 1.875;
   padding: 0 10px 0 5px;
   text-align: center;
   margin-right: 23px;
@@ -1048,8 +1044,7 @@ body {
 @media (min-width: 1024px) {
   .c-btn {
     font-size: var(--fs-lg);
-    line-height: 1.75rem;
-    line-height: 27px;
+    line-height: 1.35;
   }
 }
 
@@ -1176,14 +1171,14 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   font-size: var(--fs-base);
-  line-height: 1.5rem;
+  line-height: 1.5;
   font-weight: 700;
 }
 
 @media (min-width: 1024px) {
   .c-card-title {
     font-size: var(--fs-md);
-    line-height: 2.25rem;
+    line-height: 2;
   }
 }
 
@@ -1318,7 +1313,7 @@ body {
   display: block;
   font-family: interstate, sans-serif;
   font-size: var(--fs-3xl);
-  line-height: 2.5rem;
+  line-height: 1.111;
   font-weight: 700;
 }
 
@@ -1339,7 +1334,7 @@ body {
   display: block;
   font-family: interstate, sans-serif;
   font-size: var(--fs-3xl);
-  line-height: 2.5rem;
+  line-height: 1.111;
   font-weight: 700;
 }
 
@@ -1356,13 +1351,13 @@ body {
   margin-top: 0.5rem;
   font-family: kozuka-gothic-pr6n, sans-serif;
   font-size: var(--fs-base);
-  line-height: 2.25rem;
+  line-height: 2.25;
 }
 
 @media (min-width: 768px) {
   .c-heading-secondary {
     font-size: var(--fs-lg);
-    line-height: 1.75rem;
+    line-height: 1.4;
   }
 }
 
@@ -1376,7 +1371,7 @@ body {
   display: block;
   font-family: interstate, sans-serif;
   font-size: var(--fs-3xl);
-  line-height: 2.5rem;
+  line-height: 1.111;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1780,13 +1775,13 @@ body {
 .c-heading-bg-square span {
   font-size: var(--fs-xl);
   padding: 2px 10px 0 10px;
-  line-height: 36px;
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
   .c-heading-bg-square span {
     font-size: var(--fs-3xl);
-    line-height: 50px;
+    line-height: 1.389;
   }
 }
 
@@ -1836,7 +1831,7 @@ body {
 .c-news-ticker-area-left h2 {
   font-size: var(--fs-xl);
   padding: 1rem 1.5rem 9rem 1rem;
-  line-height: 32px;
+  line-height: 1.333;
 }
 
 @media (min-width: 475px) {
@@ -2720,7 +2715,6 @@ body .c-policy-content > ol > li > dl {
   cursor: pointer;
   text-align: left;
   font-size: var(--fs-sm2);
-  line-height: 1.8;
   font-weight: bold;
   background-color: #fff;
   display: flex;
@@ -2774,7 +2768,6 @@ body .c-policy-content > ol > li > dl {
   transition: var(--transition-duration);
   padding: 0rem 2.5rem 0rem 5rem;
   background-color: #fff;
-  line-height: 1.8;
 }
 
 .is-active .c-faq-body {
@@ -3171,7 +3164,7 @@ body .c-policy-content > ol > li > dl {
   font-family: interstate, sans-serif;
 
   display: block;
-  font-size: 10px;
+  font-size: 0.625rem;
   width: 8em;
   height: 1rem;
 
@@ -3413,27 +3406,27 @@ body .c-policy-content > ol > li > dl {
 .c-feature-item-heading {
   font-family: mitimasu, sans-serif;
   font-size: var(--fs-md);
-  line-height: 1.75rem;
+  line-height: 1.556;
 }
 
 @media (min-width: 640px) {
   .c-feature-item-heading {
     font-size: var(--fs-2xl);
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 }
 
 @media (min-width: 1024px) {
   .c-feature-item-heading {
     font-size: var(--fs-xl);
-    line-height: 2rem;
+    line-height: 1.333;
   }
 }
 
 @media (min-width: 1280px) {
   .c-feature-item-heading {
     font-size: var(--fs-2xl);
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 }
 
@@ -3444,7 +3437,7 @@ body .c-policy-content > ol > li > dl {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: var(--fs-xs);
-  line-height: 1rem;
+  line-height: 1.333;
   --tw-text-opacity: 1;
   color: rgb(49 67 72 / var(--tw-text-opacity));
 }
@@ -3452,21 +3445,21 @@ body .c-policy-content > ol > li > dl {
 @media (min-width: 640px) {
   .c-feature-item-body {
     font-size: var(--fs-base);
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 }
 
 @media (min-width: 1024px) {
   .c-feature-item-body {
     font-size: var(--fs-sm);
-    line-height: 1.25rem;
+    line-height: 1.429;
   }
 }
 
 @media (min-width: 1280px) {
   .c-feature-item-body {
     font-size: var(--fs-base);
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 }
 
@@ -3565,7 +3558,7 @@ body .c-policy-content > ol > li > dl {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    line-height: 2.25rem;
+    line-height: 1.125;
     font-size: var(--fs-2xl2);
     font-weight: 700;
     text-transform: uppercase;
@@ -4027,7 +4020,7 @@ body .c-policy-content > ol > li > dl {
 
 .c-banner-reservation {
   font-size: var(--fs-md);
-  line-height: 1.75rem;
+  line-height: 1.556;
   width: 100%;
   bottom: calc(7% + 4 * (100vw - 375px) / 99);
 }
@@ -4035,7 +4028,7 @@ body .c-policy-content > ol > li > dl {
 @media (min-width: 475px) {
   .c-banner-reservation {
     font-size: var(--fs-lg);
-    line-height: 1.75rem;
+    line-height: 1.4;
     bottom: 9%;
   }
 }
@@ -4043,7 +4036,7 @@ body .c-policy-content > ol > li > dl {
 @media (min-width: 640px) {
   .c-banner-reservation {
     font-size: var(--fs-xl);
-    line-height: 2rem;
+    line-height: 1.333;
     bottom: 10%;
   }
 }
@@ -4058,7 +4051,7 @@ body .c-policy-content > ol > li > dl {
 @media (min-width: 1024px) {
   .c-banner-reservation {
     font-size: var(--fs-xl);
-    line-height: 2rem;
+    line-height: 1.333;
     bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
@@ -4162,13 +4155,13 @@ body .c-policy-content > ol > li > dl {
 
 .c-banner-reservation-text-foot span span {
   font-size: var(--fs-xl);
-  line-height: 2rem;
+  line-height: 1.333;
 }
 
 @media (min-width: 475px) {
   .c-banner-reservation-text-foot span span {
     font-size: var(--fs-2xl);
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 }
 
@@ -4542,7 +4535,7 @@ body .c-policy-content > ol > li > dl {
 
 .c-banner-2 .c-banner-link.c-banner-sentence p span {
   font-size: var(--fs-lg);
-  line-height: 1.75rem;
+  line-height: 1.4;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(95 206 216 / var(--tw-text-opacity));
@@ -4702,7 +4695,7 @@ body .c-policy-content > ol > li > dl {
   display: block;
   font-family: interstate, sans-serif;
   font-size: var(--fs-3xl);
-  line-height: 2.5rem;
+  line-height: 1.111;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -4870,14 +4863,14 @@ body .c-policy-content > ol > li > dl {
   text-align: center;
   font-family: mitimasu, sans-serif;
   font-size: var(--fs-lg);
-  line-height: 1.75rem;
+  line-height: 1.4;
   line-height: 1.5;
 }
 
 @media (min-width: 768px) {
   .c-choose-heading h2 {
     font-size: var(--fs-2xl);
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 }
 
@@ -4933,13 +4926,13 @@ body .c-policy-content > ol > li > dl {
 
 .c-choose-heading-reason {
   font-size: var(--fs-xl);
-  line-height: 2rem;
+  line-height: 1.333;
 }
 
 @media (min-width: 768px) {
   .c-choose-heading-reason {
     font-size: var(--fs-3xl);
-    line-height: 2.5rem;
+    line-height: 1.111;
   }
 }
 
@@ -4964,7 +4957,7 @@ body .c-policy-content > ol > li > dl {
 
 .c-choose-heading-reason span {
   font-size: var(--fs-2xl);
-  line-height: 2.25rem;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -5238,41 +5231,41 @@ body .c-policy-content > ol > li > dl {
 .c-choose-item-caption {
   font-family: interstate, sans-serif;
   font-size: var(--fs-2xl);
-  line-height: 2.25rem;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 .c-choose-item-no {
   font-size: var(--fs-6xl);
-  line-height: 1;
-  line-height: 2.25rem;
+  
+  line-height: 0.6;
 }
 
 .c-choose-item-heading {
   margin-top: 1rem;
   font-family: mitimasu, sans-serif;
   font-size: var(--fs-md);
-  line-height: 1.75rem;
+  line-height: 1.556;
 }
 
 @media (min-width: 640px) {
   .c-choose-item-heading {
     font-size: var(--fs-2xl);
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 }
 
 @media (min-width: 1024px) {
   .c-choose-item-heading {
     font-size: var(--fs-xl);
-    line-height: 2rem;
+    line-height: 1.333;
   }
 }
 
 @media (min-width: 1280px) {
   .c-choose-item-heading {
     font-size: var(--fs-2xl);
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 }
 
@@ -5286,7 +5279,7 @@ body .c-policy-content > ol > li > dl {
   margin-top: 1rem;
   width: 100%;
   font-size: var(--fs-xs);
-  line-height: 1rem;
+  line-height: 1.333;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -5294,26 +5287,26 @@ body .c-policy-content > ol > li > dl {
 @media (min-width: 640px) {
   .c-choose-item-body {
     font-size: var(--fs-base);
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 }
 
 @media (min-width: 1024px) {
   .c-choose-item-body {
     font-size: var(--fs-sm);
-    line-height: 1.25rem;
+    line-height: 1.429;
   }
 }
 
 @media (min-width: 1280px) {
   .c-choose-item-body {
     font-size: var(--fs-base);
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 }
 
 .c-choose-item-body {
-  line-height: 1.6875rem;
+  line-height: 1.6875;
 }
 
 @media (min-width: 640px) {
@@ -5354,13 +5347,13 @@ body .c-policy-content > ol > li > dl {
 
 .c-choose-lead-text-01 {
   font-size: var(--fs-xl);
-  line-height: 2rem;
+  line-height: 1.333;
 }
 
 @media (min-width: 640px) {
   .c-choose-lead-text-01 {
     font-size: var(--fs-3xl);
-    line-height: 2.5rem;
+    line-height: 1.111;
     font-size: calc(100 / 375 * 15.5 * 1vw);
   }
 }
@@ -5525,7 +5518,7 @@ body .c-policy-content > ol > li > dl {
   color: var(--intro-cyan);
   font-size: var(--fs-5xl);
   font-weight: bold;
-  line-height: 36px;
+  line-height: 0.75;
   font-family: "interstate";
   text-align: center;
   width: 100%;
@@ -5546,7 +5539,7 @@ body .c-policy-content > ol > li > dl {
 .c-stepped-item-title {
   font-size: var(--fs-lg);
   font-weight: bold;
-  line-height: 32px;
+  line-height: 1.6;
   text-align: center;
   margin-top: 2rem;
 }
@@ -6030,11 +6023,11 @@ body .c-policy-content > ol > li > dl {
 }
 
 .recruit-point-bg .c-stepped-item-title {
-  line-height: 30px;
+  line-height: 1.5;
 }
 
 .recruit-point-bg .c-stepped-item-text {
-  line-height: 30px;
+  line-height: 1.875;
 }
 
 @media (min-width: 1024px) {
@@ -6425,135 +6418,135 @@ body .c-policy-content > ol > li > dl {
 
 @media (min-width: 475px) {
   .front-choose-bg {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (min-width: 640px) {
   .front-choose-bg {
-    font-size: 70px;
+    font-size: 4.375rem;
     margin: -40px 0 24px -12px;
   }
 }
 
 @media (min-width: 768px) {
   .front-choose-bg {
-    font-size: 90px;
+    font-size: 5.625rem;
   }
 }
 
 @media (min-width: 1024px) {
   .front-choose-bg {
-    font-size: 110px;
+    font-size: 6.875rem;
     margin: -60px 0 20px -20px;
   }
 }
 
 @media (min-width: 1280px) {
   .front-choose-bg {
-    font-size: 150px;
+    font-size: 9.375rem;
     margin: -80px 0 20px -30px;
   }
 }
 
 @media (min-width: 1536px) {
   .front-choose-bg {
-    font-size: 180px;
+    font-size: 11.25rem;
     margin: -90px 0 20px -30px;
   }
 }
 
 .franchise-bg .c-bg-title {
   text-align: right;
-  font-size: 55px;
+  font-size: 3.4375rem;
 }
 
 @media (min-width: 475px) {
   .franchise-bg .c-bg-title {
-    font-size: 60px;
+    font-size: var(--fs-6xl);
   }
 }
 
 @media (min-width: 640px) {
   .franchise-bg .c-bg-title {
-    font-size: 80px;
+    font-size: var(--fs-9xl);
   }
 }
 
 @media (min-width: 768px) {
   .franchise-bg .c-bg-title {
-    font-size: 100px;
+    font-size: var(--fs-display);
   }
 }
 
 @media (min-width: 1024px) {
   .franchise-bg .c-bg-title {
-    font-size: 110px;
+    font-size: 6.875rem;
     margin: -60px 0 0 0;
   }
 }
 
 @media (min-width: 1280px) {
   .franchise-bg .c-bg-title {
-    font-size: 150px;
+    font-size: 9.375rem;
     margin: -185px 0 0 0;
   }
 }
 
 @media (min-width: 1536px) {
   .franchise-bg .c-bg-title {
-    font-size: 170px;
+    font-size: 10.625rem;
     margin: -190px 0 0 0;
   }
 }
 
 .bg-interview-01 .c-bg-title {
   text-align: right;
-  font-size: 55px;
+  font-size: 3.4375rem;
 }
 
 @media (min-width: 475px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 60px;
+    font-size: var(--fs-6xl);
   }
 }
 
 @media (min-width: 640px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 80px;
+    font-size: var(--fs-9xl);
   }
 }
 
 @media (min-width: 768px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 100px;
+    font-size: var(--fs-display);
   }
 }
 
 @media (min-width: 1024px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 110px;
+    font-size: 6.875rem;
     margin: -170px 0 0 0;
   }
 }
 
 @media (min-width: 1280px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 150px;
+    font-size: 9.375rem;
     margin: -185px 0 0 0;
   }
 }
 
 @media (min-width: 1536px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 170px;
+    font-size: 10.625rem;
     margin: -190px 0 0 0;
   }
 }
 
 @media (width > 1920px) {
   .bg-interview-01 .c-bg-title {
-    font-size: 200px;
+    font-size: 12.5rem;
     margin: -205px 0 0 0;
   }
 }
@@ -9747,7 +9740,7 @@ body .c-policy-content > ol > li > dl {
 
 .about-persistenceRate-right-middle-number {
   font-size: var(--fs-lg);
-  line-height: 32px;
+  line-height: 1.6;
   font-style: oblique;
   font-weight: bold;
 }
@@ -9755,30 +9748,30 @@ body .c-policy-content > ol > li > dl {
 @media (min-width: 1280px) {
   .about-persistenceRate-right-middle-number {
     font-size: var(--fs-4xl);
-    line-height: 36px;
+    line-height: 0.9;
   }
 }
 
 .about-persistenceRate-right-middle-number .integer {
-  font-size: 64px;
+  font-size: var(--fs-7xl);
   letter-spacing: -5px;
 }
 
 @media (min-width: 1280px) {
   .about-persistenceRate-right-middle-number .integer {
-    font-size: 112px;
+    font-size: 7rem;
     letter-spacing: -10px;
   }
 }
 
 .about-persistenceRate-right-middle-number .decimal {
-  font-size: 38px;
+  font-size: 2.375rem;
   margin: 0 0 0 -10px;
 }
 
 @media (min-width: 1280px) {
   .about-persistenceRate-right-middle-number .decimal {
-    font-size: 80px;
+    font-size: var(--fs-9xl);
     margin: 0 0 0 -25px;
   }
 }
@@ -9839,20 +9832,20 @@ body .c-policy-content > ol > li > dl {
 
 .about-obsession-head h2 {
   font-size: var(--fs-xl);
-  line-height: 30px;
+  line-height: 1.25;
 }
 
 @media (min-width: 640px) {
   .about-obsession-head h2 {
     font-size: var(--fs-2xl);
-    line-height: 60px;
+    line-height: 2;
   }
 }
 
 @media (min-width: 1024px) {
   .about-obsession-head h2 {
     font-size: var(--fs-5xl);
-    line-height: 70px;
+    line-height: 1.458;
   }
 }
 
@@ -10065,7 +10058,7 @@ body .c-policy-content > ol > li > dl {
 }
 
 .price-plan-item-text {
-  line-height: 30px;
+  line-height: 1.875;
 }
 
 @media screen and (max-width: 767.5px) {
@@ -10805,7 +10798,7 @@ body .c-policy-content > ol > li > dl {
 }
 
 .bg-continuation {
-  background-image: url(../img/storelist/bg_continuation_sp.webp);
+  background-image: url(../img/storelist/bg_continuation_sp.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% center;
@@ -10813,7 +10806,7 @@ body .c-policy-content > ol > li > dl {
 
 @media (min-width: 768px) {
   .bg-continuation {
-    background-image: url(../img/storelist/bg_continuation.webp);
+    background-image: url(../img/storelist/bg_continuation.png);
     background-position: center;
   }
 }
@@ -10874,13 +10867,13 @@ body .c-policy-content > ol > li > dl {
 
 .continuation-num {
   font-style: oblique;
-  line-height: 32px;
+  line-height: 2;
 }
 
 @media (min-width: 768px) {
   .continuation-num {
     font-size: var(--fs-4xl);
-    line-height: 50px;
+    line-height: 1.25;
   }
 }
 
@@ -10897,7 +10890,7 @@ body .c-policy-content > ol > li > dl {
 }
 
 .continuation-num .decimal {
-  font-size: 38px;
+  font-size: 2.375rem;
   margin: 0 0 0 -10px;
 }
 

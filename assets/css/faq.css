@@ -33,14 +33,19 @@
   padding-right: 20px;
 }
 
-.p-faq__page__item .fs-24 {
-  font-size: var(--fs-lg);
+.p-faq__page__item h2 {
+  font-weight: 700;
+  font-size: 24px;
   z-index: 2;
   line-height: 30px;
 }
 
 .p-faq__page__item .c-faq__accordion-header {
   gap: 15px;
+}
+
+.p-faq__nav a {
+  font-size: 14px;
 }
 
 .p-faq__page__item__container {

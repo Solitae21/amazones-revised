@@ -1,4 +1,4 @@
-// モーダル — common.jsのinitModalを使用
+// モーダル — global.jsのinitModalを使用
 var modalApple = initModal('ingredientsModalApple');
 var modalPeach = initModal('ingredientsModalPeach');
 var modalChocolate = initModal('ingredientsModalChocolate');
@@ -11,7 +11,7 @@ function closeIngredientsModalPeach() { modalPeach.close(); }
 function openIngredientsModalChocolate() { modalChocolate.open(); }
 function closeIngredientsModalChocolate() { modalChocolate.close(); }
 
-// ポイントカードカルーセル（モバイル）— common.jsのinitMobileCarouselを使用
+// ポイントカードカルーセル（モバイル）— global.jsのinitMobileCarouselを使用
 initMobileCarousel({
   trackSelector: '.p-protein__points-track',
   prevSelector: '.p-protein__points-nav--prev',

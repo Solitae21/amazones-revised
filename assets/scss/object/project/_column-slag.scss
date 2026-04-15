@@ -34,9 +34,19 @@
   width: 100%;
   border-bottom: 1px solid var(--base-white);
   padding-bottom: 34px;
+  font-family: var(--font-outfit);
+  line-height: 2;
 }
 .p-column-slag__heading-icon {
   margin-right: 15px;
+  color: var(--text-lightBlue);
+}
+.p-column-info__wrapper p,
+.p-column-info__wrapper li {
+  line-height: 2;
+}
+.c-recommended__btn p {
+  font-family: var(--font-outfit);
 } /* ================================
        p-toc（再利用可能コンポーネント）
        ================================ */
@@ -218,7 +228,7 @@ mark {
 .p-article-body__content3 ul li::marker,
 .p-article-body__content-blue-item::marker{
     color:var(--base-black);
-    font-size:8px;
+    font-size: 0.5rem;
 
 }
 .p-article-body__content-blue {

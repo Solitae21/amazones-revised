@@ -1,0 +1,36 @@
+/* ============================================
+   PAGE NAVIGATION — ページ内アンカーリンク
+   6ページ共通: price, payment, sportip, storelist, storedetail, reservation
+   ============================================ */
+.c-page-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.c-page-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: var(--fs-sm2);
+  color: var(--text-black1);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.c-page-nav__item:hover {
+  color: var(--base-lightBlue);
+}
+
+@media (max-width: 1024px) {
+  .c-page-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+}

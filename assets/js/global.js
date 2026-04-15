@@ -1,4 +1,71 @@
 
+// 前/次ナビゲーション付きモバイルカルーセル
+function initMobileCarousel(config) {
+  var track = document.querySelector(config.trackSelector);
+  var btnPrev = document.querySelector(config.prevSelector);
+  var btnNext = document.querySelector(config.nextSelector);
+  if (!track || !btnPrev || !btnNext) return;
+
+  var cards = track.querySelectorAll(config.cardSelector);
+  var total = cards.length;
+  var current = 0;
+  var breakpoint = config.breakpoint || 767;
+
+  function isMobile() {
+    return window.innerWidth <= breakpoint;
+  }
+
+  function goTo(index) {
+    if (!isMobile()) return;
+    current = (index + total) % total;
+    track.style.transform = 'translateX(-' + current * 100 + '%)';
+  }
+
+  btnPrev.addEventListener('click', function () {
+    goTo(current - 1);
+  });
+
+  btnNext.addEventListener('click', function () {
+    goTo(current + 1);
+  });
+
+  window.addEventListener('resize', function () {
+    if (!isMobile()) {
+      track.style.transform = '';
+      current = 0;
+    }
+  });
+}
+
+// オーバーレイクリックとEscキー対応の汎用モーダル開閉
+function initModal(modalId) {
+  var overlay = document.getElementById(modalId);
+  if (!overlay) return null;
+
+  function open() {
+    overlay.classList.add('is-open');
+    document.documentElement.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('is-open');
+    overlay.addEventListener('transitionend', function restore() {
+      document.documentElement.style.overflow = '';
+      overlay.removeEventListener('transitionend', restore);
+    });
+  }
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+  });
+
+  return { open: open, close: close };
+}
+
 // カスタムスムーズスクロール（ブラウザ設定に依存しない全ブラウザ対応）
 function smoothScrollTo(targetY, duration) {
   var startY = window.scrollY;
@@ -750,7 +817,9 @@ function playVid(ID) {
             ───────────────────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      const target = document.querySelector(this.getAttribute("href"));
+      var href = this.getAttribute("href");
+      if (!href || href === "#") return;
+      var target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -798,7 +867,7 @@ function playVid(ID) {
   openingJumpImages.forEach((image) => observer.observe(image));
 })();
 
-// お客様の声スライダー（モバイルのみ）— common.jsのinitMobileCarouselを使用
+// お客様の声スライダー（モバイルのみ）— initMobileCarousel
 initMobileCarousel({
   trackSelector: ".p-top__service-grid",
   prevSelector: ".p-top__service-nav--prev",

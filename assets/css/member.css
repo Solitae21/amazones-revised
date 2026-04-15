@@ -40,14 +40,38 @@
   right: 0px;
   top: 0px;
   padding: 8px 33px;
+  font-size: 14px;
+  color: var(--text-white);
 }
 
 .p-member-voice-name {
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--base-gray);
+  font-weight: 700;
+  color: var(--text-lightBlue);
 }
 
+.p-member-voice-body {
+  font-size: 15px;
+  line-height: 1.8em;
+}
+
+.p-member-section-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2em;
+}
+
+.p-member-section-desc {
+  line-height: 2em;
+}
+
+@media screen and (max-width: 767px) {
+  .p-member-section-title {
+    font-size: 20px;
+  }
+}
 .p-member-speech-bubble {
   position: absolute;
   top: -230px;

@@ -29,13 +29,21 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-.p-faq__page__item .fs-24 {
-  font-size: var(--fs-lg);
+.p-faq__page__item h2 {
+  font-weight: 700;
+  font-size: var(--fs-xl);
   z-index: 2;
-  line-height: 30px;
+  line-height: 1.25;
 }
 .p-faq__page__item .c-faq__accordion-header {
   gap: 15px;
+}
+.p-faq__nav a {
+  font-size: var(--fs-sm);
+}
+.p-faq__nav a:hover {
+  color: var(--base-lightBlue);
+  transition: all 0.3s ease-in-out;
 }
 
 .p-faq__page__item__container {

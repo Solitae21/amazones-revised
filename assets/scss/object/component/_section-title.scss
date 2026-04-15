@@ -1,0 +1,22 @@
+/* ============================================
+   SECTION TITLE — セクション見出し
+   5ページ共通: price, payment, sportip, visitor, reservation
+   ============================================ */
+.c-section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.c-section-title__label {
+  font-size: var(--fs-md);
+  font-weight: 500;
+}
+
+.c-section-title__text {
+  font-size: var(--fs-display);
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: var(--font-outfit);
+}

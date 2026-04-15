@@ -64,6 +64,50 @@
   top: 0px;
   left: 0px;
   min-width: 240px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.p-family__summary__desc {
+  line-height: 2em;
+}
+
+.p-family__conditions-list li {
+  line-height: 2em;
+}
+
+.p-family__conditions-num {
+  font-weight: 700;
+  color: var(--text-lightBlue);
+}
+
+.p-family__notes li {
+  font-size: 14px;
+}
+
+.p-family__case__item figcaption {
+  font-weight: 700;
+  line-height: 2em;
+  text-align: center;
+}
+
+.p-family__case__label {
+  font-size: 24px;
+  color: var(--text-lightBlue);
+  font-family: var(--font-outfit);
+  font-weight: 600;
+}
+
+.p-family__case__highlight {
+  color: var(--text-lightBlue);
+}
+
+.p-family__case__price {
+  color: var(--text-red);
+}
+
+.p-family__highlight {
+  color: var(--text-lightBlue);
 }
 
 .p-family__table__wrapper {

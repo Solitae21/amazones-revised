@@ -23,8 +23,15 @@
 }
 
 .p-personal-banner__title h1 {
-  line-height: 4rem;
+  line-height: 1.6;
   font-size: var(--fs-4xl);
+  font-weight: 500;
+}
+
+.p-personal-banner__heading {
+  color: var(--text-white);
+  font-size: var(--fs-4xl);
+  line-height: 1.5;
   font-weight: 500;
 }
 
@@ -56,6 +63,7 @@
 
 .p-personal-method {
   overflow: hidden;
+  background-image: url("../img/common/bg_white_pattern.webp");
 }
 
 .p-personal-method__container,
@@ -105,12 +113,18 @@
 
 .p-personal-section__header h2 {
   font-size: var(--fs-display);
-  line-height: 7.5rem;
+  line-height: 1.2;
   font-weight: 400;
+  font-family: var(--font-outfit);
 }
 
 .p-personal-section__topic-heading {
   font-size: var(--fs-lg);
+  line-height: 1.5;
+}
+
+.p-personal-section__topic-heading--accent {
+  color: var(--text-lightBlue);
 }
 
 .p-personal-section__topic-subtitle {
@@ -120,7 +134,7 @@
 
 .p-personal-section__topic-body p {
   font-size: 0.97rem;
-  line-height: 2rem;
+  line-height: 2.062;
   font-weight: 500;
 }
 
@@ -166,6 +180,14 @@
   gap: 1rem;
   align-items: center;
   flex: 1;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.p-personal-boxed-info__item:hover {
+  opacity: 0.7;
 }
 
 .p-personal-boxed-info__item p {
@@ -212,7 +234,7 @@
 
 .p-personal-program__white-box-header h3 {
   font-size: var(--fs-2xl);
-  line-height: 2.25rem;
+  line-height: 1.2;
   font-weight: 700;
   color: var(--base-black);
 }
@@ -306,7 +328,7 @@
 
 .p-personal-cta__text h2 {
   font-size: var(--fs-5xl);
-  line-height: 4.375rem;
+  line-height: 1.458;
   font-weight: 500;
 }
 
@@ -434,9 +456,10 @@
     top: 30%;
     left: 5%;
   }
-  .p-personal-banner__title h1 {
+  .p-personal-banner__title h1,
+  .p-personal-banner__heading {
     font-size: var(--fs-2xl2);
-    line-height: 3.25rem;
+    line-height: 1.625;
   }
   .p-personal-banner__breadcrumb {
     left: 5%;
@@ -467,7 +490,7 @@
   /* セクションヘッダータイトル */
   .p-personal-section__header h2 {
     font-size: var(--fs-8xl);
-    line-height: 5.5rem;
+    line-height: 1.222;
   }
   /* ケーススタディ: ヘッダー＋トピックアイコンを縦に積み重ね */
   .p-personal-case-study__header {
@@ -498,7 +521,7 @@
   }
   .p-personal-cta__text h2 {
     font-size: var(--fs-3xl);
-    line-height: 3.5rem;
+    line-height: 1.556;
   }
   .p-personal-cta__ribbon {
     left: -15%;
@@ -510,7 +533,7 @@
      ---------------------------------------- */
   .p-personal-program__white-box-header h3 {
     font-size: var(--fs-xl);
-    line-height: 2rem;
+    line-height: 1.333;
   }
   /* プログラムセクション終了 */
   /* ----------------------------------------
@@ -554,9 +577,10 @@
     top: 15%;
     left: 1.25rem;
   }
-  .p-personal-banner__title h1 {
+  .p-personal-banner__title h1,
+  .p-personal-banner__heading {
     font-size: var(--fs-lg2);
-    line-height: 2.5rem;
+    line-height: 1.818;
   }
   .p-personal-banner__breadcrumb {
     position: absolute;
@@ -599,7 +623,7 @@
   /* セクションヘッダー */
   .p-personal-section__header h2 {
     font-size: var(--fs-7xl);
-    line-height: 4.5rem;
+    line-height: 1.125;
   }
   .p-personal-section__header p {
     font-size: var(--fs-base);
@@ -621,6 +645,9 @@
   .p-personal-boxed-info__row {
     flex-direction: column;
     gap: 0.75rem;
+  }
+  .p-personal-boxed-info__item .c-btn--green-wrapper {
+    flex-shrink: 0;
   }
   .p-personal-boxed-info__item {
     flex: 1 1 100%;
@@ -657,7 +684,7 @@
   }
   .p-personal-cta__text h2 {
     font-size: var(--fs-lg2);
-    line-height: 2.25rem;
+    line-height: 1.636;
   }
   /* CTAリボン: 表示を維持、リスケール */
   .p-personal-cta__ribbon {
@@ -679,7 +706,7 @@
   }
   .p-personal-program__white-box-header h3 {
     font-size: var(--fs-lg);
-    line-height: 1.875rem;
+    line-height: 1.5;
   }
   .p-personal-program__container {
     margin-top: 2rem;

@@ -2,52 +2,16 @@
 /* ========================================
    開始: ナビゲーション / リンク
    ======================================== */
-.p-price__links-nav {
-  display: flex;
-  align-items: center;
-  padding-top: 3rem;
-  gap: 2rem;
-  cursor: pointer;
+.p-price__nav {
   margin-bottom: 10rem;
-}
-
-.p-price__links-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  font-size: var(--fs-sm2);
-  color: var(--text-black1);
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.p-price__links-item:hover {
-  color: var(--base-lightBlue);
 }
 
 /* ナビゲーション / リンク終了 */
 /* ========================================
    開始: セクションタイトル
    ======================================== */
-.p-price__title-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-.p-price__subtitle {
-  font-size: var(--fs-md);
-  font-weight: 500;
-}
-
-.p-price__title {
-  font-size: 6.259rem;
-  line-height: 1.3;
-  font-weight: 400;
+.p-price__title-desc {
+  line-height: 2;
 }
 
 .p-price__subheader {
@@ -138,8 +102,8 @@
 }
 
 .p-price__tier-crown img {
-  height: 41px;
-  width: auto;
+  width: 3rem;
+  height: auto;
 }
 
 .p-price__tier-subtitle {
@@ -215,7 +179,6 @@
   font-size: 0.84rem;
   font-weight: 500;
   color: var(--text-black1);
-  line-height: 1.8;
 }
 
 .p-price__tier-card-group {
@@ -253,23 +216,12 @@
   position: relative;
 }
 
-.p-price__item-row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--base-gray);
+.p-price__table th,
+.p-price__table td {
   padding: 1rem 0;
 }
 
-.p-price__text-block,
-.p-price__item-row p {
-  font-size: var(--fs-base);
-  line-height: 2rem;
-  font-weight: 500;
-}
-
-.p-price__text-block,
-.p-price__item-row span {
+.p-price__table span {
   font-weight: 500;
   color: var(--text-lightBlue);
 }
@@ -291,15 +243,14 @@
 
 /* ジャンプする人々 */
 .p-price__people-image {
-  position: relative;
-  top: -13rem;
-  right: -3rem;
+  position: absolute;
+  top: -10rem;
+  right: 0;
   z-index: 2;
   pointer-events: none;
   display: flex;
   align-items: flex-end;
   gap: 0;
-  margin-right: -5.8rem;
 }
 
 .p-price__people-image.c-animation-jump {
@@ -313,7 +264,7 @@
 
 .p-price__people-jump {
   width: auto;
-  height: 23rem;
+  height: 21rem;
   object-fit: contain;
 }
 
@@ -323,14 +274,14 @@
 }
 
 .p-price__people-jump--02 {
-  height: 21rem;
+  height: 19rem;
   margin-right: -2.5rem;
   z-index: 3;
 }
 
 .p-price__people-jump--03 {
-  height: 23rem;
-  margin-left: -4rem;
+  height: 21rem;
+  margin-left: -3.5rem;
   z-index: 2;
 }
 
@@ -442,10 +393,7 @@
      開始: ナビゲーション / リンク
      ---------------------------------------- */
   /* リンクナビ */
-  .p-price__links-nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 2rem;
+  .p-price__nav {
     margin-bottom: 3rem;
   }
   /* ナビゲーション / リンク終了 */
@@ -456,7 +404,7 @@
   .p-price__title {
     font-size: var(--fs-4xl);
   }
-  .p-price__title-container {
+  .p-price__title-wrap {
     margin-bottom: 1.5rem;
   }
   /* セクションタイトル終了 */
@@ -509,27 +457,20 @@
   .p-price__flex-list {
     flex-direction: column;
   }
-  /* 料金アイテム行: 名前＋spanを縦に積み重ね、利用可能なスペースに制約 */
-  .p-price__item-row__name {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 0;
+  /* 料金テーブル SP */
+  .p-price__table th,
+  .p-price__table td {
+    font-size: 0.85rem;
+    line-height: 1.765;
   }
-  /* 料金を右に固定 — 縮小・折り返しなし */
-  .p-price__item-row__value {
-    flex-shrink: 0;
+  .p-price__table td {
     white-space: nowrap;
     padding-left: 0.75rem;
   }
-  /* モバイル用フォントサイズ調整 */
-  .p-price__item-row p {
-    font-size: 0.85rem;
-    line-height: 1.5rem;
-  }
-  .p-price__item-row span {
+  .p-price__table span {
     font-size: var(--fs-xs);
-    line-height: 1.4rem;
+    line-height: 1.867;
+    display: block;
   }
   /* セクションパディング */
   .p-price__section--white.py-100 {

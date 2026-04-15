@@ -36,11 +36,32 @@
   right: 0px;
   top: 0px;
   padding: 8px 33px;
+  font-size: var(--fs-sm);
+  color: var(--text-white);
 }
 .p-member-voice-name {
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--base-gray);
+  font-weight: 700;
+  color: var(--text-lightBlue);
+}
+.p-member-voice-body {
+  font-size: var(--fs-sm2);
+}
+.p-member-section-title {
+  font-weight: 700;
+  font-size: var(--fs-xl);
+  line-height: 2;
+}
+.p-member-section-desc {
+  line-height: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .p-member-section-title {
+    font-size: var(--fs-lg);
+  }
 }
 
 .p-member-speech-bubble {

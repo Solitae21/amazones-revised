@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 72px 16px;
-  background-image: url("../img/top/bg_banner.webp");
+  background-image: url("../img/top/bg_banner.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17,99 +17,23 @@
   padding: 72px 16px 60px 16px;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  flex-direction: column; /* flex-col */
-  gap: 53px; /* gap-53px */
-  align-items: center; /* items-center */
-  justify-content: center; /* justify-center */
-  position: relative; /* relative */
-}
-.c-footer-banner__sticker1 {
-  position: absolute;
-  top: 45px;
-  left: 0px;
-}
-.c-banner__speechbubble1 {
-  position: absolute;
-  top: -60px;
-  left: -93px;
-}
-.c-banner__sticker2 {
-  position: absolute;
-  top: 30px;
-  right: -40px;
-}
-.c-banner__speechbubble2 {
-  position: absolute;
-  top: -60px;
-  right: -63px;
-}
-/* ============================================
-     END OF FOOTER BANNER
-   ============================================ */
-
-/* ============================================
-    FOOTER BANNER W/ WPEECH BUBBLES
-   ============================================ */
-.c-footer-banner {
-  width: 100%;
-  display: flex;
+  flex-direction: column;
+  gap: 53px;
   align-items: center;
   justify-content: center;
-  padding: 72px 16px;
-  background-image: url("../img/top/bg_banner.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.c-footer-banner__container {
-  width: 100%;
-  max-width: 1000px;
-  padding: 72px 16px 60px 16px;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-.c-footer-banner__sticker1 {
-  position: absolute;
-  top: 45px;
-  left: 0px;
-}
-.c-banner__speechbubble1 {
-  position: absolute;
-  top: -60px;
-  left: -93px;
-}
-.c-banner__sticker2 {
-  position: absolute;
-  top: 30px;
-  right: -40px;
-}
-.c-banner__speechbubble2 {
-  position: absolute;
-  top: -60px;
-  right: -63px;
-}
-/* ============================================
-     END OF FOOTER BANNER
-============================================ */
-
-/* ============================================
-    FOOTER BANNER W/ WPEECH BUBBLES
-   ============================================ */
-.c-footer-banner {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 72px 16px;
-  background-image: url("../img/top/bg_banner.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.c-footer-banner__container {
-  width: 100%;
-  max-width: 1000px;
-  padding: 72px 16px 60px 16px;
-  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
   overflow: visible;
 }
+.c-footer-banner__container h2 {
+  font-weight: 700;
+  font-size: var(--fs-2xl2);
+}
+.c-footer-banner__heading-accent {
+  font-size: var(--fs-6xl);
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  color: var(--text-lightBlue);
+}
 .c-footer-banner__sticker1 {
   position: absolute;
   top: 45px;
@@ -129,6 +53,10 @@
   position: absolute;
   top: -60px;
   right: -63px;
+}
+.c-footer-banner__btn {
+  margin-left: auto;
+  margin-right: auto;
 }
 .c-footer-banner__link-icon {
   margin-left: 10px;
@@ -141,10 +69,7 @@
 
 @media screen and (max-width: 1200px) {
   .c-footer-banner__container h2 {
-    line-height: 200%;
-  }
-  .c-footer-banner__container a {
-    line-height: 180%;
+    line-height: 2;
   }
   .banner-sticker1,
   .c-banner__sticker2 {
@@ -170,7 +95,7 @@
     font-size: var(--fs-xl);
     text-align: center;
   }
-  .c-footer-banner__heading-sub {
+  .c-footer-banner__heading-accent {
     font-size: var(--fs-3xl);
   }
   .c-footer-banner__container a {
@@ -229,5 +154,5 @@
   }
 }
 /* ============================================
-    END FOOTER BANNER W/ WPEECH BUBBLES
-   ============================================ */
+    END OF FOOTER BANNER
+============================================ */

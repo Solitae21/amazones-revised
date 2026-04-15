@@ -1,0 +1,114 @@
+// ========================================
+// Component: Other Details Banner
+// ========================================
+
+.c-other-details-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 16px;
+  background-image: url("../img/admission/bg_admission_otherDetails.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-other-details-banner-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.c-other-details-banner__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.c-other-details-banner-item {
+  background-color: var(--base-white);
+  padding-right: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.c-other-details-banner-item__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.c-other-details-banner-item__title {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+
+.c-other-details-banner-item__title-text {
+  font-weight: 700;
+  font-size: var(--fs-xl);
+}
+
+.c-other-details-banner-p {
+  padding-left: 40px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 1400px) {
+  .c-other-details-banner-item {
+    min-height: 260px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .c-other-details-banner-container {
+    flex-wrap: wrap;
+  }
+
+  .c-other-details-banner-item {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-other-details-banner {
+    padding: 50px 16px;
+  }
+
+  .c-other-details-banner-item {
+    gap: 15px;
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .c-other-details-banner-item__title-img {
+    width: 75px;
+  }
+
+  .c-other-details-banner-item__title {
+    gap: 15px;
+  }
+
+  .c-other-details-banner-item__title-text {
+    font-size: var(--fs-base);
+  }
+
+  .c-other-details-banner-p {
+    padding-left: 20px;
+  }
+
+  .c-other-details-banner__list,
+  .c-other-details-banner-container {
+    gap: 20px;
+  }
+}

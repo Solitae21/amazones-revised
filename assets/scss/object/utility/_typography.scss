@@ -8,22 +8,8 @@
   font-family: var(--font-zen);
 }
 
-.c-btn {
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
 .u-cursor-pointer {
   cursor: pointer;
-}
-.u-text-blue-hover:hover {
-  color: var(--base-lightBlue);
-  transition: all 0.3s ease-in-out;
-}
-.u-text-blue-hover:hover ~ .img-blue {
-  filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
-    hue-rotate(96deg) brightness(92%) contrast(82%);
 }
 .u-text-link {
   color: var(--text-lightBlue);

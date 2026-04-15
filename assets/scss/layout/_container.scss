@@ -26,6 +26,17 @@
   font-size: var(--fs-base);
   color: var(--text-lightBlue);
 }
+
+.c-breadcrumb-link {
+  color: var(--text-white);
+  font-size: var(--fs-sm);
+}
+
+.c-breadcrumb-link:hover {
+  color: var(--base-lightBlue);
+  transition: all 0.3s ease-in-out;
+}
+
 /* 予約ページ用パンくずリストスタイル */
 .p-breadcrumb {
   top: 140%;

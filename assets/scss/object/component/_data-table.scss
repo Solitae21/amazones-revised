@@ -1,0 +1,29 @@
+// ============================================
+//  c-data-table — 名前↔値ペアのデータテーブル共通スタイル
+//  price・protein 等で共通利用
+// ============================================
+
+.c-data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.c-data-table th,
+.c-data-table td {
+  font-size: var(--fs-base);
+  line-height: 2;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.c-data-table th {
+  text-align: left;
+}
+
+.c-data-table td {
+  text-align: right;
+}
+
+.c-data-table tr {
+  border-bottom: 1px solid var(--base-gray);
+}

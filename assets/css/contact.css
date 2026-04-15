@@ -27,6 +27,10 @@
   gap: 133px;
 }
 
+.p-contact__intro-text {
+  line-height: 2em;
+}
+
 .p-contact__field {
   display: flex;
   gap: 16px;

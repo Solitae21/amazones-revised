@@ -5,23 +5,19 @@
     display: block;
   }
   .u-md-fs-16 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .u-md-fs-20 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .u-md-fs-50 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .u-md-mt-20 {
     margin-top: 20px;
   }
   .u-md-mt-70 {
     margin-top: 70px;
-  }
-  #about-three-vehicles-section .u-img-wrapper img {
-    height: unset !important;
-    width: 100% !important;
   }
 }
 
@@ -69,10 +65,9 @@ a {
 .u-display-sp {
   display: none;
 }
-.u-display-desk {
+.u-display-pc {
   display: block;
 }
-
 /* ============================================
     END GENERAL UTILITIES
    ============================================ */

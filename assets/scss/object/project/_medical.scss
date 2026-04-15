@@ -27,7 +27,7 @@
 .p-medical__banner-heading {
   font-size: var(--fs-4xl);
   font-weight: 500;
-  line-height: 2em;
+  line-height: 2;
 }
 
 .p-medical__banner-logosub {
@@ -50,8 +50,83 @@
   left: 5%;
   z-index: 15;
 }
+.p-medical__breadcrumb span {
+  color: var(--text-white);
+  font-size: var(--fs-sm);
+}
 
 /* バナー終了 */
+
+/* ========================================
+   共通: タイポグラフィ吸収
+   ======================================== */
+.p-medical__engagement-label-text {
+  color: var(--text-white);
+  font-weight: 700;
+}
+.p-medical__engagement-title {
+  font-size: 2.875rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.p-medical__big-heading {
+  color: var(--text-white);
+  font-size: var(--fs-6xl);
+  line-height: 1.5;
+  font-weight: 700;
+}
+.p-medical__badge-text {
+  color: var(--text-lightBlue);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  line-height: 1;
+}
+.p-medical__partners-logo-label {
+  font-family: var(--font-outfit);
+  font-size: var(--fs-xs);
+}
+.p-medical__sub-heading {
+  line-height: 1.5;
+}
+.p-medical__line-brand {
+  font-family: var(--font-outfit);
+}
+.p-medical__content-title {
+  font-family: var(--font-outfit);
+}
+.p-medical__category-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+.p-medical__partners-intro {
+  line-height: 1.5;
+}
+.p-medical__partners-headline {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+}
+.p-medical__partners-subhead {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-lightBlue);
+}
+.p-medical__engagement-logo p {
+  font-weight: 600;
+}
+.p-medical__arrow {
+  font-size: var(--fs-lg);
+}
+.p-medical__partners-note {
+  font-size: var(--fs-sm);
+}
+.p-medical__step-desc {
+  font-weight: 600;
+}
+.p-medical__content-subtitle {
+  color: var(--text-lightBlue);
+  font-size: var(--fs-lg);
+}
 
 /* ========================================
    開始: オンライン相談
@@ -102,7 +177,7 @@
 
 .p-medical__section-header h2 {
   font-size: var(--fs-display);
-  line-height: 7.5rem;
+  line-height: 1.2;
   font-weight: 400;
 }
 
@@ -136,7 +211,7 @@
   font-weight: 500;
   padding: 1.5rem;
   box-sizing: border-box;
-  line-height: 2rem;
+  line-height: 2;
 }
 
 .p-medical__step-card-icon {
@@ -236,14 +311,14 @@
   font-size: var(--fs-3xl);
   font-weight: 700;
   color: var(--text-black1);
-  line-height: 2.5rem;
+  line-height: 1.111;
 }
 
 .p-medical__partners-clinic p {
   font-size: var(--fs-base);
   font-weight: 500;
   color: var(--text-black1);
-  line-height: 1rem;
+  line-height: 1;
 }
 
 .p-medical__list-box {
@@ -419,6 +494,7 @@
   line-height: 1;
   pointer-events: none;
   z-index: 0;
+  font-family: var(--font-outfit);
 }
 
 .p-medical__voice-badge {
@@ -436,7 +512,6 @@
 .p-medical__voice-card-body h3 {
   font-size: var(--fs-md);
   font-weight: 600;
-  line-height: 1.8;
   color: var(--text-lightBlue);
   margin-bottom: 1rem;
   position: relative;
@@ -446,7 +521,6 @@
 .p-medical__voice-card-body > p {
   font-size: var(--fs-base);
   font-weight: 500;
-  line-height: 1.8;
   color: var(--base-black);
   position: relative;
   z-index: 1;
@@ -686,7 +760,7 @@
      ---------------------------------------- */
   .p-medical__section-header h2 {
     font-size: 3.8rem;
-    line-height: 3.5rem;
+    line-height: 0.921;
   }
 
   .p-medical__section-header p {

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <base href="/amazones-test/">
+    <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）からのお知らせ一覧を掲載しています。"
@@ -12,7 +12,7 @@
       title｜お知らせ一覧 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
 
     <link
       href="assets/css/information.css"
@@ -21,7 +21,6 @@
     >
 
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
   </head>
   <body>
@@ -29,42 +28,42 @@
     <header class="l-header">
       <div class="l-header-wrapper">
         <div class="l-header__brand">
-          <a href="./">
+          <a href="index.html">
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス" width="159.97px" height="62.77px"
               class="amazones-header-logo" >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14">アマゾネス</a>
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">WOMEN ONLY24h GYM</p>
+          <a href="index.html" class="l-header__brand-text">アマゾネス</a>
+          <p class="l-header__brand-tagline">WOMEN ONLY24h GYM</p>
         </div>
 
         <div class="l-header__actions">
-          <a href="storelist/" class="l-header__btn">
+          <a href="storelist/index.html" class="l-header__btn">
             <div class="icon-wrapper">
-              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+              <img src="assets/img/common/icon_search.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
-              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="arrow-img">
+              <img src="assets/img/common/icon_arrow.svg" alt="" class="arrow-img">
             </div>
           </a>
 
-          <a href="reservation/" class="l-header__btn l-header__btn--reservation">
+          <a href="reservation/index.html" class="l-header__btn l-header__btn--reservation">
             <div class="icon-wrapper">
-              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+              <img src="assets/img/common/icon_24.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
-              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="arrow-img">
+              <img src="assets/img/common/icon_arrow.svg" alt="" class="arrow-img">
             </div>
           </a>
         </div>
@@ -72,8 +71,8 @@
         <!--フローティングヘッダーメニュー-->
         <div id="header-floating-menu" class="l-header-floating-menu">
           <div id="floating-menu-btn" class="l-header-floating-menu__btn">
-            <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="desktop-menu-icon">
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <img src="assets/img/common/icon_menu.svg" alt="" class="desktop-menu-icon">
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -85,20 +84,20 @@
                 <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round" >
                 <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round" >
               </svg>
-              <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+              <p class="l-header-floating-menu__close-label">CLOSE</p>
             </div>
           </div>
 
           <div id="floating-menu-content" class="l-header-floating-menu__content u-cursor-pointer">
-            <p class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500">
+            <p class="text-vertical menu-vertical-text l-header-floating-menu__copyright">
               ©2026 Wellness Land Co., Ltd.
             </p>
           </div>
           <div id="scroll-down-text" class="scroll-down-text">
-            <p class="u-font-outfit u-fs-12 u-text-white u-ls-10 u-fw-500 text-vertical u-text-blue-hover">
+            <p>
               SCROLL DOWN
             </p>
-            <img src="assets/img/common/icon_scroll_arrow.svg" alt="アイコン" class="u-ml-4 img-blue">
+            <img src="assets/img/common/icon_scroll_arrow.svg" alt="" class="u-ml-4 img-blue">
           </div>
 
           <div id="nav-menu-popup" class="l-nav-menu-popup">
@@ -107,22 +106,22 @@
               <!-- 会社について -->
               <div class="l-nav-menu-popup__column">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                  <p>About Us</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                  <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                  <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                  <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                  <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
-                  <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
-                  <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                  <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
-                  <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
-                  <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                  <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+                  <a href="index.html">トップページ</a>
+                  <a href="information/index.html">お知らせ</a>
+                  <a href="column/index.html">ゾネスタイムズ</a>
+                  <a href="storelist/index.html">店舗一覧</a>
+                  <a href="reservation/index.html">無料体験・見学予約</a>
+                  <a href="reservation#reservation-flow" class="l-nav-menu-popup__link--highlight">ご予約から無料体験・見学までの流れ</a>
+                  <a href="price/index.html">料金案内</a>
+                  <a href="admission/index.html" class="l-nav-menu-popup__link--highlight">入会手続きのご案内</a>
+                  <a href="payment/index.html" class="l-nav-menu-popup__link--highlight">お支払いについて</a>
+                  <a href="faq/index.html">よくあるご質問</a>
+                  <a href="member/index.html">会員様からいただいた声</a>
                 </div>
               </div>
 
@@ -130,26 +129,26 @@
               <div class="l-nav-menu-popup__group">
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                    <p>Service</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                    <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
-                    <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                    <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                    <a href="about/index.html">女性専用24時間ジム</a>
+                    <a href="personal/index.html">Amazonesのパーソナルトレーニング</a>
+                    <a href="medical/index.html">Dr.Amazones</a>
+                    <a href="sportip/index.html">AI姿勢診断・改善</a>
                   </div>
                 </div>
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                    <p>Recruitment</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img
-                        src="assets/img/common/icon_recruitment.svg" alt="アイコン" ></a>
+                    <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報 <img
+                        src="assets/img/common/icon_recruitment.svg" alt="" ></a>
                   </div>
                 </div>
               </div>
@@ -158,32 +157,32 @@
               <div class="l-nav-menu-popup__group">
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                    <p>Other Shops</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img
-                        src="assets/img/common/icon_recruitment.svg" alt="アイコン" ></a>
-                    <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img
-                        src="assets/img/common/icon_recruitment.svg" alt="アイコン" ></a>
-                    <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img
-                        src="assets/img/common/icon_recruitment.svg" alt="アイコン" ></a>
+                    <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">完全個室PRIVATE GYM Highness <img
+                        src="assets/img/common/icon_recruitment.svg" alt="" ></a>
+                    <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">24時間ジム Amazones &amp; Herculest <img
+                        src="assets/img/common/icon_recruitment.svg" alt="" ></a>
+                    <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">AMAZONES ONLINE SHOP <img
+                        src="assets/img/common/icon_recruitment.svg" alt="" ></a>
                   </div>
                 </div>
                 <div class="l-nav-menu-popup__section">
                   <div class="l-footer__page-link">
-                    <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                    <p>Sns</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                     <div class="l-footer__link-line"></div>
                   </div>
                   <div class="l-nav-menu-popup__links">
-                    <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt=""
+                    <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_youtube.svg" alt=""
                         class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン" ></a>
-                    <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg"
+                        alt="" ></a>
+                    <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_instragram.svg"
                         alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg"
-                        alt="アイコン" ></a>
+                        alt="" ></a>
                   </div>
                 </div>
               </div>
@@ -193,22 +192,22 @@
             <!-- 下部行 -->
             <div class="l-nav-menu-popup__bottom">
               <div class="l-nav-menu-popup__bottom-btns">
-                <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                  <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                  <p>お問い合わせ</p>
+                  <img src="assets/img/common/icon_arrow.svg" alt="">
                 </a>
                 <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                  <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                  <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                  <p>マイページ</p>
+                  <img src="assets/img/common/icon_videos.svg" alt="">
                 </a>
               </div>
               <div class="l-nav-menu-popup__bottom-links">
-                <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img
-                    src="assets/img/common/icon_recruitment.svg" alt="アイコン" ></a>
-                <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-                <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-                <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-                <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+                <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">運営会社について <img
+                    src="assets/img/common/icon_recruitment.svg" alt="" ></a>
+                <a href="sitemap/index.html">サイトマップ</a>
+                <a href="rules/index.html">ご利用規約</a>
+                <a href="#">個人情報保護方針</a>
+                <a href="#">WEBサイトのご利用に当たって</a>
               </div>
             </div>
           </div>
@@ -222,27 +221,27 @@
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span
                   class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
-                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
-                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
-                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
-                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="index.html" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/index.html" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/index.html" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/index.html" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/index.html" class="l-sp-nav__link">無料体験・見学予約</a></li>
                 <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
-                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
-                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
-                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
-                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
-                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+                <li><a href="price/index.html" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/index.html" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/index.html" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/index.html" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/index.html" class="l-sp-nav__link">会員様からいただいた声</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span
                   class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
-                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
-                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
-                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+                <li><a href="about/index.html" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/index.html" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/index.html" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
@@ -274,19 +273,19 @@
           </nav>
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <ul class="l-sp-nav__utility">
               <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
-              <li><a href="sitemap/">サイトマップ</a></li>
-              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="sitemap/index.html">サイトマップ</a></li>
+              <li><a href="rules/index.html">ご利用規約</a></li>
               <li><a href="#">個人情報保護方針</a></li>
               <li><a href="#">WEBサイトのご利用に当たって</a></li>
             </ul>
@@ -304,7 +303,7 @@
           <div class="p-banner-inner">
             <img
               src="assets/img/common/img_gym02.webp"
-              alt="予約バナー"
+              alt=""
               class="p-banner-img"
             >
 
@@ -313,11 +312,11 @@
 
           <!-- バナーテキスト -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title u-font-zen u-text-white">お知らせ</h1>
-            <p class="p-banner-subtitle u-font-outfit u-mt-18">Information</p>
+            <h1 class="p-banner-title">お知らせ</h1>
+            <p class="p-banner-subtitle u-mt-18">Information</p>
             <!-- パンくずリスト -->
             <nav class="c-breadcrumb p-breadcrumb">
-              <a href="./" class="c-breadcrumb-home">
+              <a href="index.html" class="c-breadcrumb-home">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -333,14 +332,14 @@
                 </svg>
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="#" class="u-text-white u-fs-14 banner-a-link">お知らせ</a>
+              <a href="#" class="c-breadcrumb-link">お知らせ</a>
             </nav>
           </div>
         </div>
         <!-- リボン装飾01 -->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
-          alt="リボン装飾"
+          alt=""
           class="ribbon-banner c-clip-grow-right"
         >
       </section>
@@ -355,15 +354,15 @@
           <div class="c-btn__nav c-reveal">
             <button type="button" class="c-btn__nav__item is-active">
               2026年
-              <img src="assets/img/common/icon_arrow_gray.svg" alt="アイコン">
+              <img src="assets/img/common/icon_arrow_gray.svg" alt="">
             </button>
             <button type="button" class="c-btn__nav__item">
               2025年
-              <img src="assets/img/common/icon_arrow_gray.svg" alt="アイコン">
+              <img src="assets/img/common/icon_arrow_gray.svg" alt="">
             </button>
             <button type="button" class="c-btn__nav__item">
               2024年
-              <img src="assets/img/common/icon_arrow_gray.svg" alt="アイコン">
+              <img src="assets/img/common/icon_arrow_gray.svg" alt="">
             </button>
 
           </div>
@@ -429,22 +428,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります
                   </p>
                 </a>
@@ -453,22 +452,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">プレスリリース</p>
+                    <p class="news-label">プレスリリース</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -477,22 +476,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -501,22 +500,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -525,22 +524,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -549,22 +548,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -573,22 +572,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -597,22 +596,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -621,22 +620,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -645,22 +644,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -669,22 +668,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -693,22 +692,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -717,22 +716,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
                   </p>
                 </a>
@@ -748,22 +747,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       こちらにお知らせタイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     こちらにお知らせタイトルが入ります
                   </p>
                 </a>
@@ -772,22 +771,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-01"
                       >2026.00.01</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       2つ目の新店舗情報タイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     2つ目の新店舗情報タイトルが入ります
                   </p>
                 </a>
@@ -796,22 +795,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-01"
                       >2026.00.01</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       2つ目の新店舗情報タイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     2つ目の新店舗情報タイトルが入ります
                   </p>
                 </a>
@@ -820,22 +819,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-01"
                       >2026.00.01</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       2つ目の新店舗情報タイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     2つ目の新店舗情報タイトルが入ります
                   </p>
                 </a>
@@ -844,22 +843,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-01"
                       >2026.00.01</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       2つ目の新店舗情報タイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     2つ目の新店舗情報タイトルが入ります
                   </p>
                 </a>
@@ -868,22 +867,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">新店舗情報</p>
+                    <p class="news-label">新店舗情報</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-01"
                       >2026.00.01</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       2つ目の新店舗情報タイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     2つ目の新店舗情報タイトルが入ります
                   </p>
                 </a>
@@ -899,22 +898,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">プレスリリース</p>
+                    <p class="news-label">プレスリリース</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       プレスリリースのお知らせが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     プレスリリースのお知らせが入ります
                   </p>
                 </a>
@@ -923,22 +922,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">プレスリリース</p>
+                    <p class="news-label">プレスリリース</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-05"
                       >2026.00.05</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       2つ目のプレスリリースタイトル
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     2つ目のプレスリリースタイトル
                   </p>
                 </a>
@@ -954,22 +953,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-00"
                       >2026.00.00</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       その他のお知らせタイトルが入ります
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     その他のお知らせタイトルが入ります
                   </p>
                 </a>
@@ -978,22 +977,22 @@
                   <div
                     class="c-news-info-container"
                   >
-                    <p class="u-fw-500 u-fs-14 news-label">その他のお知らせ</p>
+                    <p class="news-label">その他のお知らせ</p>
                     <time
-                      class="u-fs-16 u-fw-500 u-font-outfit u-text-lightBlue"
+                      class="c-news-info__date"
                       datetime="2026-00-10"
                       >2026.00.10</time
                     >
-                    <p class="c-panel-content-text-desk c-news-info__last-text u-fw-500 u-fs-16 u-ls-20">
+                    <p class="c-panel-content-text-desk c-news-info__last-text">
                       臨時休業のお知らせ
                     </p>
                   </div>
                   <img
                     src="assets/img/common/icon_arrow_blue.svg"
-                    alt="アイコン"
+                    alt=""
                     class="c-panel-content__arrow"
                   >
-                  <p class="c-panel-content-text-sp u-fw-500 u-fs-16 u-ls-20">
+                  <p class="c-panel-content-text-sp">
                     臨時休業のお知らせ
                   </p>
                 </a>
@@ -1027,20 +1026,20 @@
       <!-- ブランド -->
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
-          <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+          <a href="index.html">
+            <p class="l-footer__brand-name">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
-          <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+          <a href="contact/index.html" class="c-btn--light-blue">
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -1052,7 +1051,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1061,17 +1060,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="information/index.html">お知らせ</a></li>
+            <li><a href="column/index.html">ゾネスタイムズ</a></li>
+            <li><a href="storelist/index.html">店舗一覧</a></li>
+            <li><a href="reservation/index.html">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="l-footer__nav-link--highlight">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/index.html">料金案内</a></li>
+            <li><a href="admission/index.html" class="l-footer__nav-link--highlight">入会手続きのご案内</a></li>
+            <li><a href="payment/index.html" class="l-footer__nav-link--highlight">お支払いについて</a></li>
+            <li><a href="faq/index.html">よくあるご質問</a></li>
+            <li><a href="member/index.html">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -1081,7 +1080,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1090,17 +1089,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/index.html">女性専用24時間ジム</a></li>
+              <li><a href="personal/index.html">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/index.html">Dr.Amazones</a></li>
+              <li><a href="sportip/index.html">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1110,7 +1109,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1126,7 +1125,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1136,19 +1135,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1159,7 +1158,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1169,14 +1168,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -1194,15 +1193,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/index.html">サイトマップ</a></li>
+        <li><a href="rules/index.html">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -1214,13 +1213,13 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->

@@ -47,6 +47,21 @@
   text-wrap: wrap;
 }
 
+.c-recruit-banner__section .c-section-header__label,
+.c-recruit-banner__section .c-section-header__text {
+  color: var(--text-white);
+}
+
+.c-recruit-info__content-title {
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  color: var(--text-white);
+}
+.c-recruit-info__content-desc {
+  line-height: 2;
+  color: var(--text-white);
+}
+
 .c-recruit-banner__track {
   display: flex;
   flex-direction: column;
@@ -273,16 +288,18 @@
   margin-bottom: 0.375rem;
   font-weight: 400;
   width: 90%;
+  color: var(--text-white);
 }
 
 .p-banner-subtitle {
   font-size: var(--fs-xl);
-  line-height: 1.5rem;
+  line-height: 1;
   color: var(--base-lightBlue);
   letter-spacing: 0.02em;
   margin-bottom: 1.5rem;
   font-weight: 300;
   padding-left: 0.75rem;
+  font-family: var(--font-outfit);
 }
 /* ラップトップ / 小型デスクトップ */
 @media screen and (max-width: 1440px) {

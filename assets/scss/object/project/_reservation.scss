@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow: visible;
   box-sizing: border-box;
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
@@ -39,7 +39,11 @@
   font-weight: 500;
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
-  line-height: 2rem;
+  line-height: 2;
+}
+
+.p-reservation-step__highlight {
+  color: var(--text-red);
 }
 
 .p-reservation-step__card-icon {
@@ -64,6 +68,7 @@
   font-size: var(--fs-xl);
   font-weight: 600;
   color: var(--text-lightBlue);
+  font-family: var(--font-outfit);
 }
 
 .p-reservation-step__card-title > p {
@@ -85,30 +90,8 @@
 
 /* 予約リンク */
 
-.p-reservation-flow__nav {
-  display: flex;
-  align-items: center;
-  padding-top: 3rem;
-  gap: 2rem;
-  cursor: pointer;
+.p-reservation__nav {
   margin-bottom: 10rem;
-}
-
-.p-reservation-flow__nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  font-size: var(--fs-sm2);
-  color: var(--text-black1);
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.p-reservation-flow__nav-item:hover {
-  color: var(--base-lightBlue);
 }
 
 /* ナビゲーション / リンク終了 */
@@ -117,23 +100,9 @@
    開始: セクションタイトル
    ======================================== */
 
-.p-reservation-flow__title-container {
+.p-reservation__title-wrap {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-.p-reservation-flow__subtitle {
-  font-size: var(--fs-md);
-  font-weight: 500;
-}
-
-.p-reservation-flow__title {
-  font-size: 6.259rem;
-  line-height: 1.3;
-  font-weight: 400;
+  margin-top: 5rem;
 }
 
 /* セクションタイトル終了 */
@@ -381,6 +350,7 @@
   font-size: 5.208vw;
   font-weight: 400;
   line-height: 1.2;
+  font-family: var(--font-outfit);
 }
 
 .p-reservation-simulation__content > div {
@@ -429,6 +399,7 @@
   font-size: var(--fs-display);
   font-weight: 400;
   line-height: 1.2;
+  font-family: var(--font-outfit);
 }
 
 .p-reservation-form__content {
@@ -524,11 +495,8 @@
     font-size: var(--fs-7xl);
   }
 
-  .p-reservation-flow__nav {
-    flex-wrap: wrap;
-    gap: 1rem;
+  .p-reservation__nav {
     margin-bottom: 6rem;
-    padding-top: 2rem;
   }
 
   /* シミュレーション / フローステップ終了 */
@@ -676,7 +644,7 @@
     background-position: center;
   }
 
-  .p-reservation-flow__nav {
+  .p-reservation__nav {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
@@ -684,11 +652,11 @@
     margin-bottom: 3rem;
   }
 
-  .p-reservation-flow__nav-item {
+  .p-reservation__nav .c-page-nav__item {
     font-size: var(--fs-sm);
   }
 
-  .p-reservation-flow__title-container {
+  .p-reservation__title-wrap {
     margin-bottom: 1.5rem;
   }
 
@@ -712,7 +680,7 @@
 
   .p-reservation-step__card-title > p {
     font-size: var(--fs-md);
-    line-height: 1.5rem;
+    line-height: 1.333;
   }
 
   .p-reservation-step__card-icon {
@@ -725,7 +693,7 @@
   .p-reservation-step__card-body {
     padding: 1rem 1.25rem;
     font-size: var(--fs-sm2);
-    line-height: 1.8rem;
+    line-height: 1.92;
   }
 
   .p-reservation-step__card-title {
@@ -736,18 +704,27 @@
     align-items: center;
   }
 
-  /* モバイルでボタンテキスト縮小 */
-  .p-reservation-step__btn-wrapper .c-btn--light-blue02 {
-    font-size: var(--fs-xs);
-    padding: 0.75rem 1.5rem;
-  }
-
   /* ボタン＋パーソン行ラッパー */
   .p-reservation-step__btn-wrapper {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 0;
+  }
+
+  /* モバイルでボタンテキストサイズ */
+  .p-reservation-step__btn-wrapper .c-btn--light-blue02 {
+    font-size: var(--fs-base);
+    padding: 0.75rem 1.9rem;
+    width: 100%;
+  }
+
+  .p-reservation-speak__image--01-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
   }
   /* シミュレーション / フローステップ終了 */
 
@@ -778,7 +755,7 @@
   }
 
   /* モバイルでタイトルの元のスピークパーソンを非表示 */
-  .p-reservation-flow__title-container .p-reservation-speak__container--01 {
+  .p-reservation__title-wrap .p-reservation-speak__container--01 {
     display: none;
   }
 

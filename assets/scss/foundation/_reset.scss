@@ -3,7 +3,9 @@ body {
   scroll-behavior: smooth;
   background-color: var(--base-bgBeige);
   font-family: var(--font-zen);
-  line-height: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
   color: var(--text-black1);
 }
 body a {
@@ -17,6 +19,14 @@ ul li::marker {
   color: var(--base-lightBlue);
   width: 10px;
   height: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
 }
 h1,
 h2,

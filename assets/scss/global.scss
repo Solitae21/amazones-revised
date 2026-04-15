@@ -1,11 +1,34 @@
 // ============================================
 //  Amazones グローバルスタイルシート
-//  全ページ共通のスタイル（Foundation + Utility + Component + Layout + Responsive）
+//  全ページ共通のスタイル（Foundation → Layout → Component → Utility → Responsive）
 // ============================================
 
 // Foundation
 @import "foundation/variables";
 @import "foundation/reset";
+
+// Layout
+@import "layout/container";
+@import "layout/header";
+@import "layout/footer";
+
+// Object - Component
+@import "object/component/btn";
+@import "object/component/animation";
+@import "object/component/speech-bubble";
+@import "object/component/ribbon";
+@import "object/component/slider";
+@import "object/component/banner";
+@import "object/component/section";
+@import "object/component/footer-banner";
+@import "object/component/hero";
+@import "object/component/announcement";
+@import "object/component/endnote";
+@import "object/component/cookie";
+@import "object/component/page-nav";
+@import "object/component/section-title";
+@import "object/component/data-table";
+@import "object/component/other-details-banner";
 
 // Object - Utility
 @import "object/utility/color";
@@ -16,23 +39,6 @@
 @import "object/utility/space";
 @import "object/utility/column";
 @import "object/utility/responsive";
-
-// Object - Component / Layout（元の順序を維持）
-@import "object/component/btn";
-@import "object/component/animation";
-@import "object/component/speech-bubble";
-@import "object/component/ribbon";
-@import "layout/container";
-@import "object/component/slider";
-@import "object/component/banner";
-@import "object/component/section";
-@import "layout/header";
-@import "layout/footer";
-@import "object/component/footer-banner";
-@import "object/component/hero";
-@import "object/component/announcement";
-@import "object/component/endnote";
-@import "object/component/cookie";
 
 // グローバル（レスポンシブスタイル）
 @import "global-responsive";

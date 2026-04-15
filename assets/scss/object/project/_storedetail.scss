@@ -20,8 +20,16 @@
 
 .p-storedetail__topic-header h2 {
   font-size: var(--fs-display);
-  line-height: 7.5rem;
+  line-height: 1.2;
   font-weight: 400;
+  font-family: var(--font-outfit);
+}
+
+.p-storedetail__topic-header h3 {
+  font-size: 4.375rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: var(--font-outfit);
 }
 
 .p-storedetail__topic-break {
@@ -70,22 +78,25 @@
    ======================================== */
 .p-storedetail__thumb-grid          { gap: 1rem; }
 .p-storedetail__facilities-card     { flex: unset; }
-.p-storedetail__price-subtitle      { font-size: var(--fs-lg); }
-.p-storedetail__plan-text           { font-size: var(--fs-base); font-weight: 500; }
+.p-storedetail__price-subtitle      { font-size: var(--fs-lg); color: var(--text-lightBlue); line-height: 1.5; }
+.p-storedetail__plan-text           { font-size: var(--fs-base); font-weight: 500; color: var(--text-black1); line-height: 1.5; }
 .p-storedetail__tier-card-body      { padding-top: 15px; padding-bottom: 15px; }
 .p-storedetail__section-no-pb       { padding-bottom: 0; }
-.p-storedetail__divider             { height: 1px; }
+.p-storedetail__divider             { height: 1px; margin: 15px 0; background-color: var(--base-gray); }
 .p-storedetail__content-row         { position: relative; }
 .p-storedetail__content-row--end    { justify-content: flex-end; position: relative; }
 .p-storedetail__voice-col           { gap: 5px; }
+.p-storedetail__voice-headline      { font-weight: 700; font-size: var(--fs-xl); line-height: 2; }
+.p-storedetail__voice-disclaimer    { line-height: 2; }
 .p-storedetail__review-wrap         { padding-bottom: 26px; }
 .p-storedetail__google-blue         { color: #6186ec !important; }
 .p-storedetail__google-red          { color: #cd523f !important; }
 .p-storedetail__google-yellow       { color: #eabe43 !important; }
 .p-storedetail__google-green        { color: #63a45d !important; }
 .p-storedetail__hidden              { display: none; }
-.p-storedetail__faq-stack           { padding-top: 50px; padding-bottom: 50px; }
+.p-storedetail__faq-stack           { padding-top: 100px; padding-bottom: 100px; }
 .p-storedetail__faq-section-header  { gap: 26px; margin-top: 50px; margin-bottom: 50px; }
+.p-storedetail__faq-section-header h2 { font-weight: 700; font-size: var(--fs-xl); }
 .p-storedetail__scroll-top-icon     { transform: scaleX(-1) rotate(-90deg); }
 .p-storedetail__price-header        { display: flex; align-items: center; gap: 70px; padding-bottom: 100px; }
 
@@ -98,33 +109,12 @@
 
 /* リンク */
 
-.p-storedetail__links-nav {
-  display: flex;
-  align-items: center;
-  padding-top: 3rem;
+.p-storedetail__nav {
   gap: 3rem;
-  cursor: pointer;
   margin-bottom: 7rem;
 }
 
-.p-storedetail__links-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  font-size: var(--fs-sm2);
-  color: var(--text-black1);
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.p-storedetail__links-item:hover {
-  color: var(--base-lightBlue);
-}
-
-.p-storedetail__links-divider {
+.p-storedetail__nav-divider {
   display: none;
   border: none;
   border-top: 1px solid var(--base-borderLight);
@@ -156,7 +146,7 @@
 .p-storedetail__opening-header p {
   font-size: var(--fs-xl);
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 1.333;
 }
 
 .p-storedetail__opening-header span {
@@ -222,6 +212,24 @@
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.p-storedetail__gray-container h3 {
+  color: var(--text-white);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+}
+
+.p-storedetail__facilities-tag {
+  color: var(--text-white);
+}
+
+.p-storedetail__opening-accent {
+  color: var(--text-lightBlue);
+}
+
+.p-storedetail__plan-desc {
+  line-height: 2;
 }
 
 .p-storedetail__cutout {
@@ -310,14 +318,27 @@
   align-items: center;
   gap: 1rem;
   line-height: 1.4;
+  color: var(--text-white);
+  text-align: center;
+}
+
+.p-storedetail__price-image-lead {
+  font-weight: 600;
+}
+
+.p-storedetail__price-image-title {
+  color: var(--text-lightBlue);
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .p-storedetail__price-image-left {
-  background-image: url("../img/storedetail/img_storedetail_price_titleImg01.webp");
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg01.png");
 }
 
 .p-storedetail__price-image-right {
-  background-image: url("../img/storedetail/img_storedetail_price_titleImg02.webp");
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
 }
 
 /* 選ばれる理由 */
@@ -351,7 +372,7 @@
   width: 87.5rem;
   height: 37.5rem;
   overflow: hidden;
-  background-image: url("../img/common/img_gym06.webp");
+  background-image: url("../img/common/img_gym06.png");
   background-size: cover;
   background-position: 10% 60%;
   position: relative;
@@ -369,7 +390,7 @@
   width: 87.5rem;
   height: 37.5rem;
   overflow: hidden;
-  background-image: url("../img/common/img_gym07.webp");
+  background-image: url("../img/common/img_gym07.png");
   background-size: cover;
   background-position: 10% 60%;
   position: relative;
@@ -379,7 +400,7 @@
   width: 87.5rem;
   height: 37.5rem;
   overflow: hidden;
-  background-image: url("../img/common/img_gym_people04.webp");
+  background-image: url("../img/common/img_gym_people04.png");
   background-size: cover;
   background-position: 50% 30%;
   position: relative;
@@ -427,7 +448,7 @@
   overflow: hidden;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/common/img_gym05.webp");
+    url("../img/common/img_gym05.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -499,6 +520,7 @@
   font-weight: 800;
   color: white;
   line-height: 1;
+  font-family: var(--font-outfit);
   text-shadow:
     -6px -6px 0 var(--text-black1),
     6px -6px 0 var(--text-black1),
@@ -560,7 +582,9 @@
   padding: 1rem 2rem;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20px;
 }
+
 
 /* 無料体験スピーク */
 .p-storedetail__freetrial-speak-container01 {
@@ -1003,7 +1027,7 @@
   align-items: center;
 }
 
-.service-content {
+.c-service__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1188,8 +1212,7 @@
   }
 
   /* Links nav */
-  .p-storedetail__links-nav {
-    gap: 1rem;
+  .p-storedetail__nav {
     margin-bottom: 3rem;
   }
 
@@ -1234,14 +1257,14 @@
   .p-storedetail__price-image-left {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg01_sp.webp");
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
     background-position: left center;
   }
 
   .p-storedetail__price-image-right {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg02_sp.webp");
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
     background-position: 35% center;
   }
 
@@ -1381,7 +1404,7 @@
     display: flex;
     flex-direction: column;
   }
-  .service-content {
+  .c-service__content {
     flex: 1;
   }
   .c-service__img {
@@ -1562,16 +1585,14 @@
    ======================================== */
 @media (max-width: 767px) {
   /* ── Links Navigation ── */
-  .p-storedetail__links-nav {
-    flex-wrap: wrap;
-    gap: 1rem;
+  .p-storedetail__nav {
     padding-top: 1.5rem;
     margin-bottom: 2rem;
   }
-  .p-storedetail__links-item {
+  .p-storedetail__nav .c-page-nav__item {
     flex: 0 0 auto;
   }
-  .p-storedetail__links-divider {
+  .p-storedetail__nav-divider {
     display: block;
   }
 
@@ -1743,14 +1764,14 @@
   .p-storedetail__price-image-left {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg01_sp.webp");
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
     background-position: 75% center;
   }
 
   .p-storedetail__price-image-right {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg02_sp.webp");
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
     background-position: 35% center;
   }
 
@@ -1946,7 +1967,7 @@
     display: flex;
     flex-direction: column;
   }
-  .service-content {
+  .c-service__content {
     flex: 1;
   }
   .c-service__img {
@@ -2009,6 +2030,11 @@
   .p-storedetail__whychooseus-title-desc--sp {
     margin-bottom: 2.5rem;
     line-height: 2;
+  }
+
+  .p-storedetail__faq-stack {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

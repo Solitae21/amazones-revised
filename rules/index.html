@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <base href="/amazones-test/">
+    <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）の会員規約について掲載しています。"
@@ -12,11 +12,10 @@
       ご利用規約 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
     <link href="assets/css/rules.css" rel="stylesheet" type="text/css">
 
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
   </head>
   <body>
@@ -26,7 +25,7 @@
         class="l-header-wrapper"
       >
         <div class="l-header__brand">
-          <a href="./">
+          <a href="index.html">
             <img
               src="assets/img/common/icon_logo.svg"
               alt="アマゾネス"
@@ -35,58 +34,58 @@
               class="amazones-header-logo"
             >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+          <a href="index.html" class="l-header__brand-text"
             >アマゾネス</a
           >
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+          <p class="l-header__brand-tagline">
             WOMEN ONLY24h GYM
           </p>
         </div>
 
         <div class="l-header__actions">
           <a
-            href="storelist/"
+            href="storelist/index.html"
             class="l-header__btn"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+              <img src="assets/img/common/icon_search.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
           </a>
 
           <a
-            href="reservation/"
+            href="reservation/index.html"
             class="l-header__btn l-header__btn--reservation"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+              <img src="assets/img/common/icon_24.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
@@ -104,10 +103,10 @@
           >
             <img
               src="assets/img/common/icon_menu.svg"
-              alt="アイコン"
+              alt=""
               class="desktop-menu-icon"
             >
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -119,7 +118,7 @@
             <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
             <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
           </svg>
-          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+          <p class="l-header-floating-menu__close-label">CLOSE</p>
         </div>
           </div>
 
@@ -128,7 +127,7 @@
             class="l-header-floating-menu__content u-cursor-pointer"
           >
             <p
-              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+              class="text-vertical menu-vertical-text l-header-floating-menu__copyright"
             >
               ©2026 Wellness Land Co., Ltd.
             </p>
@@ -140,22 +139,22 @@
             <!-- 会社について -->
             <div class="l-nav-menu-popup__section">
               <div class="l-footer__page-link">
-                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <p>About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                 <div class="l-footer__link-line"></div>
               </div>
               <div class="l-nav-menu-popup__links">
-                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
-                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
-                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
-                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
-                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+                <a href="index.html">トップページ</a>
+                <a href="information/index.html">お知らせ</a>
+                <a href="column/index.html">ゾネスタイムズ</a>
+                <a href="storelist/index.html">店舗一覧</a>
+                <a href="reservation/index.html">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="l-nav-menu-popup__link--highlight">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/index.html">料金案内</a>
+                <a href="admission/index.html" class="l-nav-menu-popup__link--highlight">入会手続きのご案内</a>
+                <a href="payment/index.html" class="l-nav-menu-popup__link--highlight">お支払いについて</a>
+                <a href="faq/index.html">よくあるご質問</a>
+                <a href="member/index.html">会員様からいただいた声</a>
               </div>
             </div>
 
@@ -163,25 +162,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <p>Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
-                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                  <a href="about/index.html">女性専用24時間ジム</a>
+                  <a href="personal/index.html">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/index.html">Dr.Amazones</a>
+                  <a href="sportip/index.html">AI姿勢診断・改善</a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <p>Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -190,25 +189,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <p>Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <p>Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -218,21 +217,21 @@
           <!-- 下部行 -->
           <div class="l-nav-menu-popup__bottom" style="gap: 20px">
             <div class="l-nav-menu-popup__bottom-btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <div class="l-nav-menu-popup__bottom-links">
-              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+              <a href="sitemap/index.html">サイトマップ</a>
+              <a href="rules/index.html">ご利用規約</a>
+              <a href="#">個人情報保護方針</a>
+              <a href="#">WEBサイトのご利用に当たって</a>
             </div>
           </div>
         </div>
@@ -244,26 +243,26 @@
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
-                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
-                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
-                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
-                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="index.html" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/index.html" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/index.html" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/index.html" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/index.html" class="l-sp-nav__link">無料体験・見学予約</a></li>
                 <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
-                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
-                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
-                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
-                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
-                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+                <li><a href="price/index.html" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/index.html" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/index.html" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/index.html" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/index.html" class="l-sp-nav__link">会員様からいただいた声</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
-                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
-                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
-                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+                <li><a href="about/index.html" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/index.html" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/index.html" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
@@ -290,19 +289,19 @@
           </nav>
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <ul class="l-sp-nav__utility">
               <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
-              <li><a href="sitemap/">サイトマップ</a></li>
-              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="sitemap/index.html">サイトマップ</a></li>
+              <li><a href="rules/index.html">ご利用規約</a></li>
               <li><a href="#">個人情報保護方針</a></li>
               <li><a href="#">WEBサイトのご利用に当たって</a></li>
             </ul>
@@ -320,7 +319,7 @@
           <div class="p-banner-inner">
             <img
               src="assets/img/common/img_gym02.webp"
-              alt="予約バナー"
+              alt=""
               class="p-banner-img"
             >
 
@@ -329,11 +328,11 @@
 
           <!-- バナーテキスト -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title u-font-zen u-text-white">ご利用規約</h1>
-            <p class="p-banner-subtitle u-font-outfit u-mt-18">Rules</p>
+            <h1 class="p-banner-title">ご利用規約</h1>
+            <p class="p-banner-subtitle u-mt-18">Rules</p>
             <!-- パンくずリスト -->
             <nav class="c-breadcrumb p-breadcrumb">
-              <a href="./" class="c-breadcrumb-home">
+              <a href="index.html" class="c-breadcrumb-home">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -349,14 +348,14 @@
                 </svg>
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="#" class="u-text-white u-fs-14 banner-a-link">ご利用規約</a>
+              <a href="rules/index.html" class="c-breadcrumb-link">ご利用規約</a>
             </nav>
           </div>
         </div>
         <!-- リボン装飾 01-->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
-          alt="リボン装飾"
+          alt=""
           class="ribbon-banner c-clip-grow-right"
         >
       </section>
@@ -365,70 +364,70 @@
       <section class="p-rules">
         <div class="p-rules__container">
           <!-- ルール1 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">01</b>適用範囲
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">01</b>適用範囲
+            </h3>
+            <p>
               本規約は、「女性専用 24 時間ジム Amazones」「男性専用 24 時間ジム
               Hercules」として運営するスポーツクラブ（以下「当クラブ」という。）の利用に関し適用されるものとします。
             </p>
-          </section>
+          </div>
 
           <!-- ルール2 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">02</b>会員制度
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">02</b>会員制度
+            </h3>
+            <p>
               当クラブは会員制とします。当クラブに入会される方は、本規約を事前に確認し、承諾しているものとします。
             </p>
-          </section>
+          </div>
 
           <!-- ルール3 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">03</b>入会資格
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">03</b>入会資格
+            </h3>
+            <div>
               <p>
                 次の各号のいずれかに該当する者は当クラブの会員になることはできません。
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b
+                  <b class="p-rules__list-number">1. </b
                   >本規約および当クラブの諸規則を遵守できない者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">2. </b
+                  <b class="p-rules__list-number">2. </b
                   >本申込を行う者が記載した会員と相違ないことを確認できない者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">3. </b
+                  <b class="p-rules__list-number">3. </b
                   >本申込を行う者が記載した会員と相違ないことを確認できない者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b
+                  <b class="p-rules__list-number">4. </b
                   >医師等により運動を禁じられている者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">5. </b
+                  <b class="p-rules__list-number">5. </b
                   >伝染病、その他、他人に伝染または感染する恐れのある疾病を有している者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">6. </b
+                  <b class="p-rules__list-number">6. </b
                   >その他本部および加盟店が会員としてふさわしくないと判断した者
                 </li>
               </ol>
             </div>
-          </section>
+          </div>
 
           <!-- ルール4 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">04</b>入退館
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">04</b>入退館
+            </h3>
+            <div>
               <p>
                 当クラブは会員に対し入退館キーを登録します。会員がクラブ諸施設に入る際には、入退館キーを使用するものとします。
               </p>
@@ -437,14 +436,14 @@
               </p>
               <p>会員資格停止時は入退館キーの使用ができなくなります。</p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール5 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">05</b>諸規定の遵守
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">05</b>諸規定の遵守
+            </h3>
+            <div>
               <p>
                 会員は本規約並びに施設内利用規則、その他施設の定める諸規則をすべて遵守しなければなりません。
               </p>
@@ -465,21 +464,21 @@
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b
+                  <b class="p-rules__list-number">1. </b
                   >リベット（びょう）がついているパンツ・ショートパンツ
                 </li>
-                <li><b class="u-text-lightBlue">2. </b>ゴム草履・ゴム長靴</li>
-                <li><b class="u-text-lightBlue">3. </b>裸足</li>
+                <li><b class="p-rules__list-number">2. </b>ゴム草履・ゴム長靴</li>
+                <li><b class="p-rules__list-number">3. </b>裸足</li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b
+                  <b class="p-rules__list-number">4. </b
                   >かかとがない・ヒールが高い・滑りやすい履物
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">5. </b
+                  <b class="p-rules__list-number">5. </b
                   >スパイクシューズ等施設利用にあたり器具を傷つける可能性のある履物
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">6. </b
+                  <b class="p-rules__list-number">6. </b
                   >その他、当クラブがふさわしくないと判断した服装・履物
                 </li>
               </ol>
@@ -487,57 +486,61 @@
                 会員資格停止時はバーコードリーダーでの入室ができなくなる場合がございます。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール6 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">06</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">06</b
               >入場の禁止および退場
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <div>
               <p>
                 当クラブは、以下の各号に該当する方の入場の禁止または退場を命じることができます。
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b
+                  <b class="p-rules__list-number">1. </b
                   >本規約および当クラブの諸規則を遵守しない者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">2. </b
+                  <b class="p-rules__list-number">2. </b
                   >暴力団関係者または反社会的勢力関係者と本部および加盟店が判断した者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">3. </b
+                  <b class="p-rules__list-number">3. </b
                   >医師等により運動を禁じられている者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b
+                  <b class="p-rules__list-number">4. </b
                   >伝染病、その他、他人に伝染または感染する恐れのある疾病を有している者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">5. </b
+                  <b class="p-rules__list-number">5. </b
                   >大声・奇声を発したり、不適切な言動で他の人間に迷惑をかける者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">6. </b
+                  <b class="p-rules__list-number">6. </b
                   >飲酒等により正常の施設利用ができないと認められた者
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">7. </b
+                  <b class="p-rules__list-number">7. </b
                   >著しく不潔な身体または服装により他の人間に迷惑を及ぼす者
+                </li>
+                <li>
+                  <b class="p-rules__list-number">8. </b
+                  >当クラブが会員として不適当と判断した者
                 </li>
               </ol>
             </div>
-          </section>
+          </div>
 
           <!-- ルール7 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">07</b>退会
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">07</b>退会
+            </h3>
+            <div>
               <p>
                 会員が自己都合により当クラブを退会する場合は、退会希望月のクレジットカードでお支払の方は前月19日まで、口座振替でお支払の方は前月9日までにまでに来店し、書面による所定の退会届により手続きを行った上で、翌月末をもって退会することができます。（電話等による申し出は受け付けられません）
               </p>
@@ -560,14 +563,14 @@
                 キャンペーンでお申し込みの際、通常会費の発生する在籍2か月目から6か月目（または12か月目）の間に休会会員の移行は可能ですが在籍期間とはみなしません。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール8 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">08</b>諸手続き
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">08</b>諸手続き
+            </h3>
+            <div>
               <p>退会、コース変更の手続きは希望月の前月19日までとなります。</p>
               <p>
                 会員が入会申込書に記載した内容に変更があったときは、速やかに変更手続をしなければなりません。
@@ -576,44 +579,44 @@
                 当クラブより会員に通知する場合は、会員から届け出のあった最新の連絡先に行うものとし、会員から届け出のあった最新の連絡先に通知が発信されたときは、通知未達等発信後の責を負いません。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール9 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">09</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">09</b
               >会員資格の停止および除名
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <div>
               <p>
                 本部・加盟店は、会員が次の各号に該当するときは、当クラブへの入館を一時停止し、または当該会員を当クラブから除名することができます。
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b>第6条の内容に違反したとき
+                  <b class="p-rules__list-number">1. </b>第6条の内容に違反したとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">2. </b
+                  <b class="p-rules__list-number">2. </b
                   >会員・当クラブ従業員に対する迷惑行為および当クラブ内における宗教活動・営業行為・その他当クラブの目的に反する行為により、当クラブの秩序を乱し、または当クラブの名誉・品位を著しく傷つけたとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">3. </b
+                  <b class="p-rules__list-number">3. </b
                   >規約その他、本部・加盟店の定めた諸規則に違反したとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b
+                  <b class="p-rules__list-number">4. </b
                   >会費その他の債務を滞納し、本部・加盟店からの催告に応じないとき。
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">5. </b
+                  <b class="p-rules__list-number">5. </b
                   >入会に際して加盟店に虚偽の申告をした、または第4条に違反していることを故意に申告しなかったと判明したとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">6. </b
+                  <b class="p-rules__list-number">6. </b
                   >当クラブの施設・什器を故意または過失により破損したとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">7. </b
+                  <b class="p-rules__list-number">7. </b
                   >その他、会員としてふさわしくない言動があったと本部・加盟店が認めたとき
                 </li>
               </ol>
@@ -636,146 +639,155 @@
                 当クラブへの入館停止中の会員に対しては、本部・加盟店は、停止期間中の会費について、前納分あるいは会費その他諸費用等の既払分を返還することはいたしません。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール10 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">10</b>資格喪失
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">10</b>資格喪失
+            </h3>
+            <div>
               <p>会員は次の場合にその資格を喪失します。</p>
               <ol class="p-rules__container__ol">
-                <li><b class="u-text-lightBlue">1. </b>退会</li>
-                <li><b class="u-text-lightBlue">2. </b>死亡</li>
-                <li><b class="u-text-lightBlue">3. </b>除名</li>
+                <li><b class="p-rules__list-number">1. </b>退会</li>
+                <li><b class="p-rules__list-number">2. </b>死亡</li>
+                <li><b class="p-rules__list-number">3. </b>除名</li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b
+                  <b class="p-rules__list-number">4. </b
                   >運営上重大な理由により当クラブを閉鎖したとき
                 </li>
               </ol>
             </div>
-          </section>
+          </div>
 
           <!-- ルール11 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">11</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">11</b
               >会員資格の譲渡禁止等
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <p>
               当クラブの会員資格は本人限りとし、第三者への譲渡・売買・貸与・名義変更・質権の設定その他の担保に供する等の行為、もしくは相続その他の包括継承はできません。
             </p>
-          </section>
+          </div>
 
           <!-- ルール12 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">12</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">12</b
               >会費・手数料および利用料
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <div>
               <p>
                 会費のお支払い方法は、クレジットカード・口座引き落としになります。
               </p>
               <p>
-                入会月の退会はできません。いかなる理由がありましても翌月の返金はいたしません。一括払いでご入会のお客様は1年契約未満退館で退会をされても返金はいたしません。
+                入会月の退会はできません。いかなる理由がありましても翌月の返金はいたしません。
+              </p>
+              <p>
+                一括払いでご入会のお客様は1年契約未満退館で退会をされても返金はいたしません。
+              </p>
+              <p>
+                会員には、実際の施設利用の有無にかかわらず、退会届の提出があるまで毎月の会費をお支払いただきます。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール13 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">13</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">13</b
               >会費・手数料および利用料等の改定
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <p>
               各店舗は、別に定める会費・手数料または利用料等の改定を行うことができます。規約の改定を行なう場合、1か月前までに会員に告知するものとします。
             </p>
-          </section>
+          </div>
 
           <!-- ルール14 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">14</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">14</b
               >営業日および営業時間
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <p>
               クラブの営業日および営業時間については、別に定めます。
             </p>
-          </section>
+          </div>
 
           <!-- ルール15 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">15</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">15</b
               >施設の利用制限
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <p>
               当クラブは、必要と認めた場合に、施設の全部または一部の利用を制限することがあります。その場合、1週間前までにその旨を告示します。
             </p>
-          </section>
+            <p>
+              ただし、気象災害等によって緊急にその必要が生じた場合はこの限りではありません。
+            </p>
+          </div>
 
           <!-- ルール16 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">16</b>休業
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">16</b>休業
+            </h3>
+            <div>
               <p>
                 当クラブは次の理由により施設の全部または一部を休業することがあります。
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b
+                  <b class="p-rules__list-number">1. </b
                   >気象・災害等により会員にその災害が及ぶと当クラブが判断し、営業を困難と認めたとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">2. </b
+                  <b class="p-rules__list-number">2. </b
                   >施設の点検・補修または改修をするとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">3. </b
+                  <b class="p-rules__list-number">3. </b
                   >法令の制定・改廃・行政指導・社会経済情勢の著しい変化、その他止むを得ざる事由が発生したとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b
+                  <b class="p-rules__list-number">4. </b
                   >その他、当クラブが休業を必要と認めるとき
                 </li>
               </ol>
             </div>
-          </section>
+          </div>
 
           <!-- ルール17 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">17</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">17</b
               >施設の閉鎖・変更
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <div>
               <p>
                 当クラブは、次の理由により施設の全部または一部を閉鎖または変更することがあります。
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b
+                  <b class="p-rules__list-number">1. </b
                   >気象・災害等により会員にその災害が及ぶと当クラブが判断し、営業を不可能と認めたとき
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">2. </b
+                  <b class="p-rules__list-number">2. </b
                   >法令の制定・改廃・行政指導・社会経済情勢の著しい変化・その他加盟店の経営上止むを得ざる事由が発生したとき
                 </li>
               </ol>
             </div>
-          </section>
+          </div>
 
           <!-- ルール18 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">18</b>賠償責任
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">18</b>賠償責任
+            </h3>
+            <div>
               <p>
                 当クラブ内で発生した紛失・盗難・傷害その他事故について当クラブは一切の責任を負いません。
               </p>
@@ -783,61 +795,64 @@
                 会員は、自己の責に帰すべき原因により、施設または第三者に損害を与えた場合は、速やかにその賠償責任を果たさなければなりません。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール19 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">19</b>解散
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">19</b>解散
+            </h3>
+            <div>
               <p>
                 当クラブは止むを得ざる事由が発生した場合には、3か月前の予告をすることにより、施設を解散することができます。
               </p>
               <p>
                 解散の事由が天災・地変・公権力の命令・強制その他の不可抗力である場合には、予告期間を短縮することができます。
               </p>
+              <p>
+                当クラブの解散の場合、会員は解散についての損害賠償等の請求をすることはできません。
+              </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール20 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">20</b>通知予告
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">20</b>通知予告
+            </h3>
+            <p>
               本規約および当クラブの諸事情に関する通知または予告は、当クラブ所定の場所に提示する方法により行います。
             </p>
-          </section>
+          </div>
 
           <!-- ルール21 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">21</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">21</b
               >本規約その他の諸規則の改定
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <p>
               当クラブは、本規約・細則・利用規定・その他運営・管理に関する事項を改定することができます。また、その効力はすべての会員に適用されます。
             </p>
-          </section>
+          </div>
 
           <!-- ルール22 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">22</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">22</b
               >適用法および管轄裁判所
-            </p>
-            <p class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <p>
               この会員規約に関する準拠法は、日本法とします。会員と当クラブの間で訴訟の必要が生じた場合、大阪地方裁判所を当該訴訟の第一審専属的合意管轄裁判所とします。
             </p>
-          </section>
+          </div>
 
           <!-- ルール23 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">23</b>正本
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">23</b>正本
+            </h3>
+            <div>
               <p>
                 当クラブは、本規約を外国語に翻訳し日本語と外国語との対訳形式で本規約を発行することができるものとします。
               </p>
@@ -845,77 +860,82 @@
                 ただし、外国語との対訳形式による規約において、日本語による規約と外国語による規約に不一致がある場合は、日本語版を正本とします。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール24 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">24</b
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">24</b
               >提携クリニックについて
-            </p>
-            <div class="u-fw-500 u-fs-16 u-lh-200">
+            </h3>
+            <div>
               <p>
                 本メディカルダイエットプランにおいて利用者が支払う費用は、提携医療機関が利用者に対して請求する診療関連費用を中心に構成されます。
               </p>
+              <br>
               <p>
                 提携医療機関が利用者から徴収する費用には、以下の内容が含まれます。
               </p>
               <ol class="p-rules__container__ol">
                 <li>
-                  <b class="u-text-lightBlue">1. </b
+                  <b class="p-rules__list-number">1. </b
                   >提携医療機関によるオンライン診療に係る診療報酬（医薬品等の費用を含みます）
                 </li>
-                <li><b class="u-text-lightBlue">2. </b>医薬品等の配送料</li>
+                <li><b class="p-rules__list-number">2. </b>医薬品等の配送料</li>
                 <li>
-                  <b class="u-text-lightBlue">3. </b
+                  <b class="p-rules__list-number">3. </b
                   >本サービスに付随するシステム利用料
                 </li>
                 <li>
-                  <b class="u-text-lightBlue">4. </b>スポーツクラブの利用費用
+                  <b class="p-rules__list-number">4. </b>スポーツクラブの利用費用
                 </li>
               </ol>
+              <br>
               <p>
                 当社は、提携医療機関より診療報酬の弁済に関する代理受領の委託を受け、提携医療機関に代わって利用者に対する請求および代金回収業務を行う場合があります。
               </p>
               <p>
                 ただし、当社自らが医療行為を行うものではなく、また医薬品の販売主体となるものでもありません。
               </p>
+              <br>
               <p>
                 医療行為および診療内容に関する一切の責任は、提携医療機関が負うものとします。
               </p>
+              <br>
               <p>本サービスにおける診療は、原則として自由診療となります。</p>
               <p>
                 自由診療に該当する診療費用や事前に確定可能な予約料等については、提携医療機関または本サイト等において原則として事前に明示されます。
               </p>
+              <br>
               <p>
                 なお、保険診療を対象とする医療については、患者の症状や診療内容等により費用が異なるため、通常の対面診療と同様に診療前に金額を確定することができない場合があります。
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- ルール25 -->
-          <section class="c-reveal p-rules__container__item">
-            <p class="p-rules__container__label u-fw-700 u-fs-24 u-text-lightBlue">
-              <b class="u-font-outfit u-fw-600 u-fs-24 u-text-black1">25</b>お問い合わせ
-            </p>
+          <div class="c-reveal p-rules__container__item">
+            <h3 class="p-rules__container__label">
+              <b class="p-rules__container__number">25</b>お問い合わせ
+            </h3>
             <address
-              class="c-badge-gray u-fw-500 u-fs-16 u-lh-200"
+              class="c-badge-gray"
             >
               <p>株式会社 Wellness Land（ウェルネスランド）</p>
               <p>
-                <b class="u-text-lightBlue">[所在地] </b
+                <b class="p-rules__list-number">[所在地] </b
                 >大阪府大阪市浪速区桜川1-3-2
               </p>
               <p>
-                <b class="u-text-lightBlue">[電話番号] </b
+                <b class="p-rules__list-number">[電話番号] </b
                 >06-4400-9876（11:00-20:00 水・日除く）
               </p>
               <p>
-                <b class="u-text-lightBlue">[Email] </b
+                <b class="p-rules__list-number">[Email] </b
                 ><a href="mailto:contact@amazones.fit">contact@amazones.fit</a>
               </p>
             </address>
-          </section>
+          </div>
         </div>
       </section>
     </main>
@@ -930,20 +950,20 @@
       <!-- ブランド -->
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
-          <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+          <a href="index.html">
+            <p class="l-footer__brand-name">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
-          <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+          <a href="contact/index.html" class="c-btn--light-blue">
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -955,7 +975,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -964,17 +984,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="information/index.html">お知らせ</a></li>
+            <li><a href="column/index.html">ゾネスタイムズ</a></li>
+            <li><a href="storelist/index.html">店舗一覧</a></li>
+            <li><a href="reservation/index.html">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="l-footer__nav-link--highlight">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/index.html">料金案内</a></li>
+            <li><a href="admission/index.html" class="l-footer__nav-link--highlight">入会手続きのご案内</a></li>
+            <li><a href="payment/index.html" class="l-footer__nav-link--highlight">お支払いについて</a></li>
+            <li><a href="faq/index.html">よくあるご質問</a></li>
+            <li><a href="member/index.html">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -984,7 +1004,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -993,17 +1013,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/index.html">女性専用24時間ジム</a></li>
+              <li><a href="personal/index.html">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/index.html">Dr.Amazones</a></li>
+              <li><a href="sportip/index.html">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1013,7 +1033,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1029,7 +1049,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1039,19 +1059,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1062,7 +1082,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1072,14 +1092,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -1097,15 +1117,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/index.html">サイトマップ</a></li>
+        <li><a href="rules/index.html">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -1117,13 +1137,13 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->

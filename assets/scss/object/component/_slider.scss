@@ -32,6 +32,7 @@
   position: relative;
   margin-top: -5px;
   z-index: 0;
+  background: var(--base-grayBlue);
 }
 
 .c-text-slider .slide-track {
@@ -52,6 +53,10 @@
 
 .c-text-slider__slide-text {
   text-wrap: nowrap;
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: var(--fs-3xl);
+  color: var(--text-white);
 }
 
 @media screen and (max-width: 767px) {
@@ -110,7 +115,7 @@
   z-index: 2;
 }
 .training-machine-slider__track > * {
-  padding-right: 0px;
+  padding-right: 1px !important;
 }
 .c-topic-slider__track > *:first-child {
   width: 250px;
@@ -133,6 +138,10 @@
 }
 .c-topic-slider__track .slide {
   width: 400px;
+  transition:.3s;
+}
+.c-topic-slider__track .slide:hover{
+  opacity: .7;
 }
 
 .c-topic-slider__track::before {
@@ -253,7 +262,7 @@
     display: none;
   }
   .c-topic-slider__track > * {
-    padding-left: 20px;
+    padding-left: 1px;
   }
   .c-topic-slider__track > *:last-child {
     padding-right: 20px;

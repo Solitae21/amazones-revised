@@ -6,13 +6,22 @@
   flex-direction: column; /* flex-col */
   gap: 18px; /* gap-18px */
 }
+.c-section-header__label {
+  font-size: var(--fs-md);
+}
+.c-section-header__text {
+  font-size: var(--fs-display);
+  line-height: normal;
+  font-family: var(--font-outfit);
+  font-weight: 400;
+}
 @media screen and (max-width: 767px) {
   .c-section-header__wrapper {
     gap: 10px;
     z-index: 10;
     position: relative;
   }
-  .section-sub-text {
+  .c-section-header__label {
     font-size: var(--fs-base);
     z-index: 10;
   }

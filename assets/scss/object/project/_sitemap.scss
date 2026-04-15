@@ -33,7 +33,11 @@
   margin-bottom: 30px;
 }
 .p-sitemap-label p {
-  line-height: 30px;
+  line-height: 1.875;
+}
+.p-sitemap-label h2 {
+  font-weight: 700;
+  font-size: var(--fs-xl);
 }
 .p-sitemap-ul {
   padding-left: 20px;
@@ -111,6 +115,10 @@
 
 .p-sitemap-page__banner-list{
   flex-direction:row;
+  width: 100%;
+}
+.p-sitemap-page__banner-list .c-other-details-banner-item {
+  flex: 1;
 }
 .p-sitemap-page .c-shop__items-wrapper{
   flex-direction:row;
@@ -166,79 +174,20 @@
 .p-sitemap-page .c-shop__items-wrapper{
   flex-direction:column;
 }
-
-}
-
-
-
-/* 再利用可能 */
-.c-other-details-banner-item {
-  background-color: var(--base-white);
-  padding-right: 30px;
-  padding-bottom: 40px;
-}
-.c-other-details-banner {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 16px;
-  background-image: url("../img/admission/bg_admission_otherDetails.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.c-other-details-banner-p {
-  padding-left: 40px;
-}
-.c-other-details-banner-container {
-  width: 100%;
-  max-width: 1440px;
-}
-
-@media screen and (max-width: 1400px) {
-  .c-other-details-banner-item {
-    min-height: 260px;
-  }
-}
-
-
-@media screen and (max-width: 1050px) {
-  .c-other-details-banner-container {
-    flex-wrap: wrap;
-  }
-  .c-other-details-banner-item {
-    min-height: 150px;
-  }
-}
-
-
-@media screen and (max-width: 767px) {
-
-  .c-other-details-banner {
-    padding: 50px 16px;
-  }
-  .c-other-details-banner-item {
-    gap: 15px;
-    min-height: auto;
-    padding-bottom: 20px;
-  }
-  .c-other-details-banner-item .fs-24 {
+  .p-sitemap__banner-title {
     font-size: var(--fs-base);
   }
-  .c-other-details-banner-item__title img {
-    width: 75px;
-  }
-  .c-other-details-banner-p {
-    padding-left: 20px;
-  }
-  .c-other-details-banner-item__header .c-other-details-banner-item__title {
-    gap: 15px;
-  }
-  .c-other-details-banner-container {
-    gap: 20px;
-  }
 
-  .c-other-details-banner__list {
-    gap: 20px;
-  }
 }
+
+
+
+.p-sitemap__banner-title {
+  font-weight: 700;
+  font-size: var(--fs-xl);
+}
+
+.p-sitemap__banner-desc {
+  line-height: 2;
+}
+

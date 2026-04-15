@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <base href="/amazones-test/">
+    <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）の月会費ポイント還元 + 特典・優待を紹介しています。"
@@ -12,17 +12,16 @@
      月会費ポイント還元 + 特典・優待 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
+    <link href="assets/css/protein.css?v=20260414" rel="stylesheet" type="text/css">
     <link
-      href="assets/css/point_redemption.css"
+      href="assets/css/point_redemption.css?v=20260414"
       rel="stylesheet"
       type="text/css"
     >
 
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
-    <script src="assets/js/top.js" defer></script>
   </head>
   <body>
     <!--ヘッダー-->
@@ -40,10 +39,10 @@
               class="amazones-header-logo"
             >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+          <a href="./" class="l-header__brand-text"
             >アマゾネス</a
           >
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+          <p class="l-header__brand-tagline">
             WOMEN ONLY24h GYM
           </p>
         </div>
@@ -60,8 +59,8 @@
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
@@ -82,10 +81,10 @@
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
@@ -112,7 +111,7 @@
               alt="アイコン"
               class="desktop-menu-icon"
             >
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -124,7 +123,7 @@
             <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
             <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
           </svg>
-          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+          <p class="l-header-floating-menu__close-label">CLOSE</p>
         </div>
           </div>
 
@@ -133,7 +132,7 @@
             class="l-header-floating-menu__content u-cursor-pointer"
           >
             <p
-              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+              class="text-vertical menu-vertical-text l-header-floating-menu__copyright"
             >
               ©2026 Wellness Land Co., Ltd.
             </p>
@@ -145,22 +144,22 @@
             <!-- 会社について -->
             <div class="l-nav-menu-popup__section">
               <div class="l-footer__page-link">
-                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <p>About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                 <div class="l-footer__link-line"></div>
               </div>
               <div class="l-nav-menu-popup__links">
-                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
-                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
-                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
-                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
-                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+                <a href="./">トップページ</a>
+                <a href="information/">お知らせ</a>
+                <a href="column/">ゾネスタイムズ</a>
+                <a href="storelist/">店舗一覧</a>
+                <a href="reservation/">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/">料金案内</a>
+                <a href="admission/" class="u-text-lightBlue">入会手続きのご案内</a>
+                <a href="payment/" class="u-text-lightBlue">お支払いについて</a>
+                <a href="faq/">よくあるご質問</a>
+                <a href="member/">会員様からいただいた声</a>
               </div>
             </div>
 
@@ -168,25 +167,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <p>Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
-                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                  <a href="about/">女性専用24時間ジム</a>
+                  <a href="personal/">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/">Dr.Amazones</a>
+                  <a href="sportip/">AI姿勢診断・改善</a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <p>Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
                 </div>
               </div>
             </div>
@@ -195,25 +194,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <p>Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <p>Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
                 </div>
               </div>
             </div>
@@ -224,20 +223,20 @@
           <div class="l-nav-menu-popup__bottom" style="gap: 20px">
             <div class="l-nav-menu-popup__bottom-btns">
               <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+                <p>お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+                <p>マイページ</p>
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン">
               </a>
             </div>
             <div class="l-nav-menu-popup__bottom-links">
-              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+              <a href="sitemap/">サイトマップ</a>
+              <a href="rules/">ご利用規約</a>
+              <a href="#">個人情報保護方針</a>
+              <a href="#">WEBサイトのご利用に当たって</a>
             </div>
           </div>
         </div>
@@ -296,11 +295,11 @@
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
               <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+                <p>お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+                <p>マイページ</p>
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン">
               </a>
             </div>
@@ -334,7 +333,7 @@
 
           <!-- バナーテキスト -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title u-font-zen u-text-white">
+            <h1 class="p-banner-title u-text-white">
               月会費ポイント還元 + 特典・優待
             </h1>
             <p class="p-banner-subtitle u-font-outfit u-mt-18">Point Redemption</p>
@@ -381,11 +380,11 @@
             >
               <div class="c-flex-gap-30">
                 <!-- テキストブロック -->
-                <div class="p-protein__campaign-block u-font-zen">
+                <div class="p-protein__campaign-block">
                   <div class="p-protein__campaign-header">
                     <p class="c-reveal">
                       月会費がショップで使えるポイントに変わる<span
-                        >「月会費ポイント還元」+「特典・優待</span
+                        >「月会費ポイント還元」+「特典・優待」</span
                       >
                     </p>
                   </div>
@@ -393,7 +392,7 @@
                   <div class="u-sm-block">
                     <img src="assets/img/top/img_topic3.webp" width="100%" class="p-point__content01-img">
                   </div>
-                  <div class="c-reveal u-font-zen c-flex-col-gap-4 u-fw-500">
+                  <div class="c-reveal c-flex-col-gap-4">
                     <p>
                       女性専用24時間ジムAmazones（アマゾネス）では、日頃のご利用への感謝を込めて、月会費に応じて当社のオンラインショップで使えるポイントを還元するサービスを開始しました。
                     </p>
@@ -401,7 +400,7 @@
                       トレーニング用品やサプリメントなど、「キレイと健康」に役立つ商品がポイントでお得に手に入ります！
                     </p>
                     <p>
-                      また会員様については特典として特別会員のランクをご用意しています
+                      また会員様については特典として特別会員のランクをご用意しています。
                     </p>
                     <p>
                       割引クーポンの付与やポイントアップキャンペーンなども実施予定なので、ぜひご利用ください。
@@ -424,11 +423,11 @@
               <hgroup
                 class="c-reveal c-section-header__wrapper"
               >
-                <p class="section-sub-text u-fs-18 u-fw-500 u-text-black1">
+                <p class="c-section-header__label">
                   キャンペーン概要
                 </p>
                 <h2
-                  class="c-section-header__text u-fs-100 u-lh-normal u-font-outfit u-fw-400"
+                  class="c-section-header__text"
                 >
                   Summary
                 </h2>
@@ -444,11 +443,11 @@
                       class="c-reveal--scale p-point__item_summary"
                     >
                       <p
-                        class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label"
+                        class="p-point__item_summary_label"
                       >
                         対象
                       </p>
-                      <p class="u-fw-500 u-fs-16 p-point__item-text">
+                      <p class="p-point__item-text">
                         女性専用24時間ジムAmazones（アマゾネス）会員限定
                       </p>
                     </li>
@@ -456,11 +455,11 @@
                       class="c-reveal--scale p-point__item_summary"
                     >
                       <p
-                        class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label"
+                        class="p-point__item_summary_label"
                       >
                         付与のタイミング
                       </p>
-                      <p class="u-fw-500 u-fs-16 p-point__item-text">
+                      <p class="p-point__item-text">
                         月会費支払い完了後、翌月の月末までに反映されます。
                       </p>
                     </li>
@@ -468,21 +467,21 @@
                       class="c-reveal--scale p-point__item_summary"
                     >
                       <p
-                        class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label"
+                        class="p-point__item_summary_label"
                       >
                         ポイント利用可能商品
                       </p>
-                      <p class="u-fw-500 u-fs-16 p-point__item-text">全商品使用可能</p>
+                      <p class="p-point__item-text">全商品使用可能</p>
                     </li>
                     <li
                       class="c-reveal--scale p-point__item_summary"
                     >
                       <p
-                        class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label"
+                        class="p-point__item_summary_label"
                       >
                         項目タイトル
                       </p>
-                      <p class="u-fw-500 u-fs-16 p-point__item-text">
+                      <p class="p-point__item-text">
                         テキストが入りますテキストが入ります
                       </p>
                     </li>
@@ -499,9 +498,9 @@
                         class="c-card-white-content"
                       >
                         <p
-                          class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label"
+                          class="p-point__item_summary_label"
                         >
-                          割引内容（料金例）
+                          月額会費ポイント付与率
                         </p>
                         <div class="u-w-full p-point__table-wrapper">
                           <table class="p-point__table">
@@ -557,7 +556,7 @@
                   class="c-reveal--scale p-point__item_summary point__item_summary-warn p-point__item_summary-warn"
                 >
                   <p
-                    class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label p-point__item_summary_label-red"
+                    class="p-point__item_summary_label p-point__item_summary_label-red"
                   >
                     <img
                       src="assets/img/point-redemption/icon_warn.svg"
@@ -567,7 +566,7 @@
                     >
                     ご注意ください
                   </p>
-                  <ul class="u-fw-500 u-fs-16">
+                  <ul class="">
                     <li class="p-point__warn-item">
                       月会費（オプションを含む）のお支払いが確認できない場合や未払いがある場合は、ポイントは付与されません。また、月会費以外のお支払いにはポイントは付与されません。
                     </li>
@@ -602,9 +601,9 @@
         <div
           class="c-reveal c-section-header__wrapper c-topic-section-header"
         >
-          <p class="section-sub-text u-fs-18 u-fw-500 u-text-black1">オススメ商品</p>
+          <p class="c-section-header__label">オススメ商品</p>
           <h2
-            class="c-section-header__text u-fs-100 u-lh-normal u-font-outfit u-text-black1 u-fw-400"
+            class="c-section-header__text"
           >
             Recommended
           </h2>
@@ -628,7 +627,7 @@
                   <a
                     href="https://shop.amazones.fit/product/list?cat=brd053&fpfl=0&pno=1"
                     target="_blank"
-                    class="c-btn--red u-fs-16 u-fw-700 p-recommended__btn"
+                    class="c-btn--red p-recommended__btn"
                   >
                     ご購入はこちら
                     <img src="assets/img/common/icon_arrow_white.svg">
@@ -647,7 +646,7 @@
                   <a
                     href="https://shop.amazones.fit/product/detail/26"
                     target="_blank"
-                    class="c-btn--red u-fs-16 u-fw-700 p-recommended__btn"
+                    class="c-btn--red p-recommended__btn"
                   >
                     ご購入はこちら
                     <img src="assets/img/common/icon_arrow_white.svg">
@@ -666,7 +665,7 @@
                   <a
                     href="https://shop.amazones.fit/product/detail/688"
                     target="_blank"
-                    class="c-btn--red u-fs-16 u-fw-700 p-recommended__btn"
+                    class="c-btn--red p-recommended__btn"
                   >
                     ご購入はこちら
                     <img src="assets/img/common/icon_arrow_white.svg">
@@ -685,7 +684,7 @@
                   <a
                     href="https://shop.amazones.fit/product/list?cat=brd000&fpfl=0&pno=1"
                     target="_blank"
-                    class="c-btn--red u-fs-16 u-fw-700 p-recommended__btn"
+                    class="c-btn--red p-recommended__btn"
                   >
                     ご購入はこちら
                     <img src="assets/img/common/icon_arrow_white.svg">
@@ -719,20 +718,25 @@
 
       <!--おもてなしセクション-->
       <section class="p-hospitality">
+        <img
+          src="assets/img/common/img_ribbon_white01.svg"
+          alt="リボン装飾"
+          class="p-hospitality__ribbon"
+        >
         <div class="p-hospitality__container">
           <hgroup class="c-reveal c-section-header__wrapper">
-            <p class="section-sub-text u-fs-18 u-fw-500 u-text-black1">
+            <p class="c-section-header__label">
               特典・優待について
             </p>
             <h2
-              class="c-section-header__text u-fs-100 u-lh-normal u-font-outfit u-text-black1 u-fw-400"
+              class="c-section-header__text"
             >
               Hospitality
             </h2>
           </hgroup>
 
           <div class="c-flex-col-start-62">
-            <p class="c-reveal u-fs-16 u-fw-500 u-lh-200">
+            <p class="c-reveal p-point__hospitality-desc">
               AMAZONES ONLINE
               SHOPで一般会員よりもポイント還元率が高く、お得なお買い物が可能です。<br>
               ゴールド会員にランクアップした場合のポイント還元率は一般会員（ノーマル）と比較して10倍となっております。
@@ -749,32 +753,32 @@
                     alt="Amazones会員ランク"
                     class="p-hospitality__img"
                   >
-                  <p class="u-fs-24 u-fw-700 p-hospitality__title">Amazones会員ランク</p>
+                  <p class="p-hospitality__title">Amazones会員ランク</p>
                 </div>
                 <ul class="p-hospitality__item_wrapper">
                   <li>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label"
+                        class="p-hospitality__item__label"
                       >
                         ゴールドランク
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
-                        ポイント還元率　<b class="u-text-lightPink u-fw-700 u-fs-16"
+                      <p class="fw-16">
+                        ポイント還元率　<b class="p-hospitality__rate"
                           >10%</b
                         >
                       </p>
                     </div>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label"
+                        class="p-hospitality__item__label"
                       >
-                        ゴールドランク
+                        ランクダウン↓条件
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         当日から過去180日の合計購入金額が　<br>
                         150,000円未満（149,999円以下）<br>
-                        <b class="u-text-lightPink u-fw-700 u-fs-16"
+                        <b class="p-hospitality__rate"
                           >シルバーランクへダウン↓</b
                         >
                       </p>
@@ -783,26 +787,26 @@
                   <li>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label"
+                        class="p-hospitality__item__label"
                       >
                         シルバーランク
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
-                        ポイント還元率　<b class="u-text-lightPink u-fw-700 u-fs-16"
+                      <p class="fw-16">
+                        ポイント還元率　<b class="p-hospitality__rate"
                           >5%</b
                         >
                       </p>
                     </div>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label"
+                        class="p-hospitality__item__label"
                       >
                         ランクアップ↑条件
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         当日から過去180日の合計購入金額が　<br>
                         150,000円以上<br>
-                        <b class="u-text-lightPink u-fw-700 u-fs-16"
+                        <b class="p-hospitality__rate"
                           >ゴールドランクへアップ↑</b
                         >
                       </p>
@@ -811,27 +815,27 @@
                   <li>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label"
+                        class="p-hospitality__item__label"
                       >
                         ノーマルランク
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         ポイント還元率<b
-                          class="u-text-lightPink u-ml-20 u-fw-700 u-fs-16"
+                          class="p-hospitality__rate u-ml-20"
                           >3%</b
                         >
                       </p>
                     </div>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label"
+                        class="p-hospitality__item__label"
                       >
                         ランクアップ↑条件
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         当日から過去180日の合計購入金額が　<br>
                         50,000円以上<br>
-                        <b class="u-text-lightPink u-fw-700 u-fs-16"
+                        <b class="p-hospitality__rate"
                           >シルバーランクへアップ↑</b
                         >
                       </p>
@@ -850,33 +854,33 @@
                     alt="一般会員ランク"
                     class="p-hospitality__img"
                   >
-                  <p class="u-fs-24 u-fw-700 p-hospitality__title">一般会員ランク</p>
+                  <p class="p-hospitality__title">一般会員ランク</p>
                 </div>
                 <ul class="p-hospitality__item_wrapper">
                   <li>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label hospitality-label2"
+                        class="p-hospitality__item__label hospitality-label2"
                       >
                         ゴールドランク
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         ポイント還元率<b
-                          class="u-text-lightPink u-ml-20 u-fw-700 u-fs-16"
+                          class="p-hospitality__rate u-ml-20"
                           >5%</b
                         >
                       </p>
                     </div>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label hospitality-label2"
+                        class="p-hospitality__item__label hospitality-label2"
                       >
-                        ゴールドランク
+                        ランクダウン↓条件
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         当日から過去180日の合計購入金額が　<br>
                         150,000円未満（149,999円以下）<br>
-                        <b class="u-text-lightPink u-fw-700 u-fs-16"
+                        <b class="p-hospitality__rate"
                           >シルバーランクへダウン↓</b
                         >
                       </p>
@@ -885,27 +889,27 @@
                   <li>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label hospitality-label2"
+                        class="p-hospitality__item__label hospitality-label2"
                       >
                         シルバーランク
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         ポイント還元率<b
-                          class="u-text-lightPink u-ml-20 u-fw-700 u-fs-16"
+                          class="p-hospitality__rate u-ml-20"
                           >3%</b
                         >
                       </p>
                     </div>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label hospitality-label2"
+                        class="p-hospitality__item__label hospitality-label2"
                       >
                         ランクアップ↑条件
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         当日から過去180日の合計購入金額が　<br>
                         150,000円以上<br>
-                        <b class="u-text-lightPink u-fw-700 u-fs-16"
+                        <b class="p-hospitality__rate"
                           >ゴールドランクへアップ↑</b
                         >
                       </p>
@@ -914,27 +918,27 @@
                   <li>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label hospitality-label2"
+                        class="p-hospitality__item__label hospitality-label2"
                       >
                         ノーマルランク
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         ポイント還元率<b
-                          class="u-text-lightPink u-ml-20 u-fw-700 u-fs-16"
+                          class="p-hospitality__rate u-ml-20"
                           >1%</b
                         >
                       </p>
                     </div>
                     <div class="p-hospitality__item">
                       <p
-                        class="u-text-white u-fs-16 u-fw-700 p-hospitality__item__label hospitality-label2"
+                        class="p-hospitality__item__label hospitality-label2"
                       >
                         ランクアップ↑条件
                       </p>
-                      <p class="fw-16 u-fw-500 u-lh-200">
+                      <p class="fw-16">
                         当日から過去180日の合計購入金額が　<br>
                         50,000円以上<br>
-                        <b class="u-text-lightPink u-fw-700 u-fs-16"
+                        <b class="p-hospitality__rate"
                           >シルバーランクへアップ↑</b
                         >
                       </p>
@@ -950,7 +954,7 @@
             class="c-reveal--scale p-point__item_summary point__item_summary-warn p-point__item_summary-warn"
           >
             <p
-              class="u-fs-16 u-fw-700 u-text-white p-point__item_summary_label p-point__item_summary_label-red"
+              class="p-point__item_summary_label p-point__item_summary_label-red"
             >
               <img
                 src="assets/img/point-redemption/icon_warn.svg"
@@ -960,10 +964,9 @@
               >
               ご注意ください
             </p>
-            <ul class="u-fw-500 u-fs-16">
+            <ul class="">
               <li class="p-point__warn-item">
-                月会費（オプションを含む）のお支払いが確認できな契約金支払い時から換算ではなく、施設利用可能日からの換算となります。
-                い場合や未払いがある場合は、ポイントは付与されません。また、月会費以外のお支払いにはポイントは付与されません。
+                契約金支払い時から換算ではなく、施設利用可能日からの換算となります。
               </li>
               <li class="p-point__warn-item">
                 店頭での物品購入（ジムの会員契約での決済は除く）は対象外となりますのでご注意ください。
@@ -996,7 +999,7 @@
           >
           <div class="online-shop-desc">
             <img
-              src="assets/img/top/img_triangle.webp"
+              src="assets/img/top/img_triangle.svg"
               class="shop-triangle"
             >
             <h2 class="u-font-outfit u-fs-60">Amazones Online Shop</h2>
@@ -1008,62 +1011,68 @@
             </div>
 
             <a href="#" class="c-btn--light-blue l-footer__blue-btn">
-              <p class="u-text-white u-fs-16 u-font-outfit">View More</p>
+              <p>View More</p>
               <img src="assets/img/common/icon_videos.svg" alt="アイコン">
             </a>
           </div>
         </div>
       </section> -->
 
-      <section class="p-online-shop">
-        <!--トップ Dr.アマゾネス-->
-        <div
-          class="c-dr-amazones__container"
+      <section class="u-relative p-point__onlineshop-section">
+        <img
+          src="assets/img/point-redemption/img_online_shop.webp"
+          alt="オンラインショップ"
+          width="auto"
+          height="100%"
         >
-          <picture>
-            <source
-              srcset="../assets/img/point-redemption/img_online_shop_sp.webp"
-              media="(max-width:767px)"
-            >
-            <img
-              src="assets/img/point-redemption/img_online_shop.webp"
-              alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
-              class="drAmazones-pic"
-            >
-          </picture>
+        <!-- テキストコンテナ -->
+        <div class="p-protein__onlineshop-text-container">
+          <!-- パターン切り抜き -->
+          <img
+            src="assets/img/sportip/img_sportip_camouflage_cutout.webp"
+            alt="切り抜きパターン"
+            class="p-protein__img-pattern--2"
+          >
 
-          <div class="c-dr-amazones__section">
-            <img
-              src="assets/img/top/img_triangle.webp"
-              alt="三角形のアイコン"
-              class="triangle-icon"
-            >
-            <div class="c-section__stack-50">
-              <!-- <div class="c-flex-col-gap-15" style="gap:20px">
-                  <p class="c-reveal u-fs-18 u-fw-500">ドクターアマゾネス</p>
-                  <img
-                    src="assets/img/top/img_drAmazonesClinic.svg"
-                    alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
-                    class = 'reveal dr-amazones-label'
-                  >
-                </div> -->
-              <h2 class="c-reveal u-font-outfit u-fs-60 u-mt-20">
-                Amazones Online Shop
-              </h2>
-              <div class="c-reveal c-dr-amazones__body">
-                <p class="u-fw-700 u-fs-20 u-lh-200">
-                  女性の健康と美を支えるショップサイト
-                </p>
-                <p class="u-fw-500 u-fs-16 u-lh-200">
-                  女性の輝く未来をつくりたい」というスローガンのもと、<br>
-                  フィットネスを通じて女性の健康と美をサポートしています。
-                </p>
-              </div>
+          <div class="c-section__stack-40 c-reveal">
+            <h2 class="p-protein__onlineshop-title">
+              Amazones Online Shop
+            </h2>
+            <p class="p-protein__onlineshop-subtitle">
+              女性の健康と美を支えるショップサイト
+            </p>
+            <div class="c-flex-col-gap-4">
+              <p class="p-protein__onlineshop-text">
+                「女性の輝く未来をつくりたい」というスローガンのもと、
+              </p>
+              <p class="p-protein__onlineshop-text">
+                フィットネスを通じて女性の健康と美をサポートしています。
+              </p>
             </div>
-
-            <a href="https://shop.amazones.fit/" target="_blank" class="c-btn--light-blue u-mt-40 dr-amazones-btn">
-              <p class="u-text-white u-fs-16 u-font-outfit">View More</p>
-              <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+            <a
+              href="https://shop.amazones.fit/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                class="c-btn--light-blue u-cursor-pointer"
+              >
+                View More
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    id="シェイプ 1359"
+                    fill-rule="evenodd"
+                    fill="currentColor"
+                    d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
+                  />
+                </svg>
+              </button>
             </a>
           </div>
         </div>
@@ -1081,19 +1090,19 @@
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
           <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+            <p class="u-text-right">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
           <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -1105,7 +1114,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1114,17 +1123,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="">トップページ</a></li>
+            <li><a href="information/">お知らせ</a></li>
+            <li><a href="column/">ゾネスタイムズ</a></li>
+            <li><a href="storelist/">店舗一覧</a></li>
+            <li><a href="reservation/">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/">料金案内</a></li>
+            <li><a href="admission/" class="u-text-lightBlue">入会手続きのご案内</a></li>
+            <li><a href="payment/" class="u-text-lightBlue">お支払いについて</a></li>
+            <li><a href="faq/" class="u-text-lightBlue">よくあるご質問</a></li>
+            <li><a href="member/">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -1134,7 +1143,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1143,17 +1152,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/">女性専用24時間ジム</a></li>
+              <li><a href="personal/">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/">Dr.Amazones</a></li>
+              <li><a href="sportip/">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1163,7 +1172,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1179,7 +1188,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1189,19 +1198,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1212,7 +1221,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1222,14 +1231,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -1247,15 +1256,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/">サイトマップ</a></li>
+        <li><a href="rules/">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -1267,13 +1276,13 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->

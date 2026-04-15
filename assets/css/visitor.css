@@ -19,27 +19,6 @@
   padding-bottom: 7rem;
 }
 
-.p-visitor__title-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-.p-visitor__subtitle {
-  font-size: 1.125rem;
-  font-weight: 500;
-  font-family: var(--font-zen);
-}
-
-.p-visitor__title {
-  font-size: 6.259rem;
-  line-height: 1.3;
-  font-weight: 400;
-  margin: 0;
-  font-family: var(--font-outfit);
-}
-
 /* セクションタイトル終了 */
 /* ========================================
    開始: キャンペーンブロック
@@ -60,7 +39,7 @@
 .p-visitor__campaign-header h2 {
   font-size: 1.25rem;
   font-weight: 500;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 .p-visitor__campaign-header span {
@@ -115,13 +94,13 @@
 .p-visitor__about-card,
 .p-visitor__about-card--alt {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* gap: 1rem; */
   background-color: white;
   flex: 1 1 0%;
+  overflow: hidden;
 }
 
 .p-visitor__about-card--alt {
@@ -137,7 +116,7 @@
 
 .p-visitor__about-card-body,
 .p-visitor__about-card-body--alt {
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 2.5rem 3rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -147,13 +126,13 @@
 
 .p-visitor__about-card-body p {
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 2;
   font-family: var(--font-zen);
 }
 
 .p-visitor__about-card-body--alt p {
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 2;
   font-family: var(--font-zen);
 }
 
@@ -178,11 +157,19 @@
   gap: 0.5rem;
 }
 
+.p-visitor__note {
+  white-space: nowrap;
+}
+
+.c-announcement__btn svg {
+  flex-shrink: 0;
+}
+
 /* 概要グループ */
 .p-visitor__about-groups {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 
 /* 概要グループ */
@@ -190,6 +177,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+
+.p-visitor__about-group:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 /* 概要行 */
@@ -203,7 +197,6 @@
   display: flex;
   gap: 0.75rem;
   align-items: center;
-  padding: 12px 0;
   line-height: 2;
 }
 
@@ -224,12 +217,13 @@
 
 .p-visitor__checklist-item {
   color: var(--base-darkText);
-  line-height: 1.6;
+  line-height: 2;
   font-family: var(--font-zen);
 }
 
 .p-visitor__checklist-item span {
   color: var(--text-lightBlue);
+  font-size: 10px;
 }
 
 /* チェックリスト終了 */
@@ -308,9 +302,7 @@
 }
 
 /* ご利用方法セクションの白テキスト */
-.p-visitor__howto-section .p-visitor__title-container,
-.p-visitor__howto-section .p-visitor__subtitle,
-.p-visitor__howto-section .p-visitor__title {
+.p-visitor__howto-section .c-section-title {
   color: white;
 }
 
@@ -378,7 +370,7 @@
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  line-height: 2.5rem;
+  line-height: 2.5;
   /* max-width: 18rem; */
   text-align: justify;
   font-family: var(--font-zen);
@@ -569,7 +561,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  .p-visitor__title-container {
+  .p-visitor__title-wrap {
     margin-bottom: 1.5rem;
   }
   /* セクションタイトル終了 */
@@ -581,15 +573,29 @@
   .p-visitor__campaign-img {
     max-height: 260px;
     object-fit: contain;
+    order: -1;
+    width: 100%;
   }
   .p-visitor__campaign-header h2 {
-    font-size: 1.25rem;
+    font-size: var(--fs-lg);
+  }
+  .p-visitor__campaign-desc {
+    line-height: 2;
   }
   /* キャンペーンブロック終了 */
   /* 開始: 概要 / カード */
   .p-visitor__about-card-body,
   .p-visitor__about-card-body--alt {
     padding: 1.25rem;
+  }
+  .p-visitor__note {
+    white-space: normal;
+  }
+  .c-announcement__title-container h2 {
+    line-height: 1.6;
+  }
+  .c-announcement__section .c-btn--light-blue {
+    margin-bottom: 2rem;
   }
   /* スピークパーソン — モバイルでサイズ微調整 */
   .p-visitor__speak-person--left,
@@ -606,7 +612,7 @@
     font-size: 1.5rem;
   }
   .p-visitor__howto-step-desc {
-    line-height: 2rem;
+    line-height: 2;
   }
   .p-visitor__howto-content {
     padding-top: 40px;

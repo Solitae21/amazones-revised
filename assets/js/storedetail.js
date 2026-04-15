@@ -1,18 +1,4 @@
 // ─────────────────────────────────────────────
-//  ナビスムーススクロール
-// ─────────────────────────────────────────────
-document.querySelectorAll('.p-storedetail__links-nav a').forEach(link => {
-  link.addEventListener('click', e => {
-    const href = link.getAttribute('href');
-    if (!href || href === '#') return;
-    const target = document.querySelector(href);
-    if (!target) return;
-    e.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-
-// ─────────────────────────────────────────────
 //  フォトギャラリースライダー
 //  （スクリプトはdefer読み込みのためDOMは準備済み — DOMContentLoaded不要）
 // ─────────────────────────────────────────────
@@ -90,29 +76,11 @@ document.querySelectorAll('.p-storedetail__links-nav a').forEach(link => {
   setActiveThumb(0, false);
 }());
 
-// サービスセクション — モバイルスライダー
-(function () {
-  var container = document.querySelector('.c-service__container');
-  var btnPrev = document.querySelector('.p-service__nav--prev');
-  var btnNext = document.querySelector('.p-service__nav--next');
-  if (!container || !btnPrev || !btnNext) return;
-
-  var cards = container.querySelectorAll('.c-service__wrapper');
-  var total = cards.length;
-  var current = 0;
-
-  function isMobile() { return window.innerWidth <= 1024; }
-
-  function goTo(index) {
-    if (!isMobile()) return;
-    current = (index + total) % total;
-    container.style.transform = 'translateX(-' + current * 100 + '%)';
-  }
-
-  btnPrev.addEventListener('click', function () { goTo(current - 1); });
-  btnNext.addEventListener('click', function () { goTo(current + 1); });
-
-  window.addEventListener('resize', function () {
-    if (!isMobile()) { container.style.transform = ''; current = 0; }
-  });
-}());
+// サービスセクション — モバイルスライダー（global.jsのinitMobileCarouselを使用）
+initMobileCarousel({
+  trackSelector: '.c-service__container',
+  prevSelector: '.p-service__nav--prev',
+  nextSelector: '.p-service__nav--next',
+  cardSelector: '.c-service__wrapper',
+  breakpoint: 1024
+});

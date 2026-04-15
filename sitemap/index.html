@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <base href="/amazones-test/">
+    <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）のWEBサイトのサイトマップを掲載しています。"
@@ -12,11 +12,10 @@
       サイトマップ | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
     <link href="assets/css/sitemap.css" rel="stylesheet" type="text/css">
 
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
   </head>
   <body>
@@ -26,7 +25,7 @@
         class="l-header-wrapper"
       >
         <div class="l-header__brand">
-          <a href="./">
+          <a href="index.html">
             <img
               src="assets/img/common/icon_logo.svg"
               alt="アマゾネス"
@@ -35,58 +34,58 @@
               class="amazones-header-logo"
             >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+          <a href="index.html" class="l-header__brand-text"
             >アマゾネス</a
           >
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+          <p class="l-header__brand-tagline">
             WOMEN ONLY24h GYM
           </p>
         </div>
 
         <div class="l-header__actions">
           <a
-            href="storelist/"
+            href="storelist/index.html"
             class="l-header__btn"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+              <img src="assets/img/common/icon_search.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
           </a>
 
           <a
-            href="reservation/"
+            href="reservation/index.html"
             class="l-header__btn l-header__btn--reservation"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+              <img src="assets/img/common/icon_24.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
@@ -104,10 +103,10 @@
           >
             <img
               src="assets/img/common/icon_menu.svg"
-              alt="アイコン"
+              alt=""
               class="desktop-menu-icon"
             >
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -119,7 +118,7 @@
             <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
             <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round">
           </svg>
-          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+          <p class="l-header-floating-menu__close-label">CLOSE</p>
         </div>
           </div>
 
@@ -128,7 +127,7 @@
             class="l-header-floating-menu__content u-cursor-pointer"
           >
             <p
-              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+              class="text-vertical menu-vertical-text l-header-floating-menu__copyright"
             >
               ©2026 Wellness Land Co., Ltd.
             </p>
@@ -140,22 +139,22 @@
             <!-- 会社について -->
             <div class="l-nav-menu-popup__section">
               <div class="l-footer__page-link">
-                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <p>About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                 <div class="l-footer__link-line"></div>
               </div>
               <div class="l-nav-menu-popup__links">
-                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
-                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
-                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
-                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
-                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+                <a href="index.html">トップページ</a>
+                <a href="information/index.html">お知らせ</a>
+                <a href="column/index.html">ゾネスタイムズ</a>
+                <a href="storelist/index.html">店舗一覧</a>
+                <a href="reservation/index.html">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="l-nav-menu-popup__link--highlight">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/index.html">料金案内</a>
+                <a href="admission/index.html" class="l-nav-menu-popup__link--highlight">入会手続きのご案内</a>
+                <a href="payment/index.html" class="l-nav-menu-popup__link--highlight">お支払いについて</a>
+                <a href="faq/index.html">よくあるご質問</a>
+                <a href="member/index.html">会員様からいただいた声</a>
               </div>
             </div>
 
@@ -163,25 +162,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <p>Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
-                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                  <a href="about/index.html">女性専用24時間ジム</a>
+                  <a href="personal/index.html">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/index.html">Dr.Amazones</a>
+                  <a href="sportip/index.html">AI姿勢診断・改善</a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <p>Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -190,25 +189,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <p>Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <p>Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -218,21 +217,21 @@
           <!-- 下部行 -->
           <div class="l-nav-menu-popup__bottom" style="gap: 20px">
             <div class="l-nav-menu-popup__bottom-btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <div class="l-nav-menu-popup__bottom-links">
-              <a href="about/" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+              <a href="about/index.html" class="l-footer__icon-link">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+              <a href="sitemap/index.html">サイトマップ</a>
+              <a href="rules/index.html">ご利用規約</a>
+              <a href="#">個人情報保護方針</a>
+              <a href="#">WEBサイトのご利用に当たって</a>
             </div>
           </div>
         </div>
@@ -244,26 +243,26 @@
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
-                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
-                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
-                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
-                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="index.html" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/index.html" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/index.html" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/index.html" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/index.html" class="l-sp-nav__link">無料体験・見学予約</a></li>
                 <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
-                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
-                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
-                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
-                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
-                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+                <li><a href="price/index.html" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/index.html" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/index.html" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/index.html" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/index.html" class="l-sp-nav__link">会員様からいただいた声</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
-                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
-                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
-                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+                <li><a href="about/index.html" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/index.html" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/index.html" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
@@ -290,19 +289,19 @@
           </nav>
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <ul class="l-sp-nav__utility">
               <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
-              <li><a href="sitemap/">サイトマップ</a></li>
-              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="sitemap/index.html">サイトマップ</a></li>
+              <li><a href="rules/index.html">ご利用規約</a></li>
               <li><a href="#">個人情報保護方針</a></li>
               <li><a href="#">WEBサイトのご利用に当たって</a></li>
             </ul>
@@ -320,7 +319,7 @@
           <div class="p-banner-inner">
             <img
               src="assets/img/common/img_gym02.webp"
-              alt="予約バナー"
+              alt=""
               class="p-banner-img"
             >
 
@@ -329,11 +328,11 @@
 
           <!-- バナーテキスト -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title u-font-zen u-text-white">サイトマップ</h1>
-            <p class="p-banner-subtitle u-font-outfit u-mt-18">Sitemap</p>
+            <h1 class="p-banner-title">サイトマップ</h1>
+            <p class="p-banner-subtitle u-mt-18">Sitemap</p>
             <!-- パンくずリスト -->
             <nav class="c-breadcrumb p-breadcrumb">
-              <a href="./" class="c-breadcrumb-home">
+              <a href="index.html" class="c-breadcrumb-home">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -349,8 +348,8 @@
                 </svg>
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="#" class="u-text-white u-fs-14 banner-a-link"
-                >無料体験・見学予約</a
+              <a href="sitemap/index.html" class="c-breadcrumb-link"
+                >サイトマップ</a
               >
             </nav>
           </div>
@@ -358,7 +357,7 @@
         <!-- リボン装飾 01-->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
-          alt="リボン装飾"
+          alt=""
           class="ribbon-banner c-clip-grow-right"
         >
       </section>
@@ -374,16 +373,16 @@
                   src="assets/img/sitemap/icon_sitemap_icon1.svg"
                   alt="Amazonesについて"
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazonesについて</h2>
+                <h2>Amazonesについて</h2>
               </div>
 
               <ul class="p-sitemap-ul">
-                <li><a href="./" class="p-sitemap-ul__link">トップページ</a></li>
-                <li><a href="information/" class="p-sitemap-ul__link">お知らせ</a></li>
-                <li><a href="column/" class="p-sitemap-ul__link">ゾネスタイムズ</a></li>
+                <li><a href="index.html" class="p-sitemap-ul__link">トップページ</a></li>
+                <li><a href="information/index.html" class="p-sitemap-ul__link">お知らせ</a></li>
+                <li><a href="column/index.html" class="p-sitemap-ul__link">ゾネスタイムズ</a></li>
                 <li>
                   <div class="p-sitemap-nested-link">
-                    <a href="../reservation' class="u-fw-500 u-fs-16 p-sitemap-ul__link">無料体験・見学予約</a>
+                    <a href="reservation/index.html" class="p-sitemap-ul__link">無料体験・見学予約</a>
                     <a href="reservation#reservation-flow" class="p-sitemap-ul-sub-link p-sitemap-ul__link"
                       >ご予約から無料体験・見学までの流れ</a
                     >
@@ -391,23 +390,26 @@
                 </li>
                 <li>
                   <div class="p-sitemap-nested-link">
-                    <a href="../member' class="u-fw-500 u-fs-16 p-sitemap-ul__link">入会手続きのご案内</a>
-                    <a href="payment/" class="p-sitemap-ul-sub-link p-sitemap-ul__link"
+                    <a href="price/index.html" class="p-sitemap-ul__link">料金案内</a>
+                    <a href="admission/index.html" class="p-sitemap-ul-sub-link p-sitemap-ul__link"
+                      >入会手続きのご案内</a
+                    >
+                    <a href="payment/index.html" class="p-sitemap-ul-sub-link p-sitemap-ul__link"
                       >お支払い方法について</a
                     >
                   </div>
                 </li>
-                <li><a href="faq/" class="p-sitemap-ul__link">よくあるご質問</a></li>
-                <li><a href="member/" class="p-sitemap-ul__link">会員様からいただいた声</a></li>
+                <li><a href="faq/index.html" class="p-sitemap-ul__link">よくあるご質問</a></li>
+                <li><a href="member/index.html" class="p-sitemap-ul__link">会員様からいただいた声</a></li>
                 <li>
-                  <a href="#" class="u-fw-500 u-fs-15 l-footer__icon-link p-sitemap-ul__link"
+                  <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link p-sitemap-ul__link"
                     >運営会社について<img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                   ></a>
                 </li>
-                <li><a href="sitemap/" class="p-sitemap-ul__link">サイトマップ</a></li>
-                <li><a href="rules/" class="p-sitemap-ul__link">ご利用規約</a></li>
+                <li><a href="sitemap/index.html" class="p-sitemap-ul__link">サイトマップ</a></li>
+                <li><a href="rules/index.html" class="p-sitemap-ul__link">ご利用規約</a></li>
                 <li><a href="#" class="p-sitemap-ul__link">個人情報保護方針</a></li>
                 <li><a href="#" class="p-sitemap-ul__link">WEBサイトのご利用に当たって</a></li>
               </ul>
@@ -416,17 +418,17 @@
             <div class="p-sitemap-content-item">
               <div class="p-sitemap-label">
                 <img
-                  src="assets/img/sitemap/icon_sitemap_icon2.webp"
+                  src="assets/img/sitemap/icon_sitemap_icon2.svg"
                   alt="Amazonesのサービス"
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazonesのサービス</h2>
+                <h2>Amazonesのサービス</h2>
               </div>
 
               <ul class="p-sitemap-ul">
-                <li><a href="./" class="p-sitemap-ul__link">女性専用24時間ジム</a></li>
-                <li><a href="personal/" class="p-sitemap-ul__link">Amazonesのパーソナルトレーニング</a></li>
-                <li><a href="medical/" class="p-sitemap-ul__link">Dr.Amazones</a></li>
-                <li><a href="#" class="p-sitemap-ul__link">AI姿勢診断・改善</a></li>
+                <li><a href="about/index.html" class="p-sitemap-ul__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/index.html" class="p-sitemap-ul__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/index.html" class="p-sitemap-ul__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="p-sitemap-ul__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
           </div>
@@ -439,12 +441,12 @@
                   src="assets/img/sitemap/icon_sitemap_icon3.svg"
                   alt="Amazones店舗一覧"
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazones店舗一覧</h2>
+                <h2>Amazones店舗一覧</h2>
               </div>
               <ul class="p-sitemap-ul">
                 <li>
                   <div class="p-sitemap-nested-link">
-                    <a href="../storelist' class="u-fw-500 u-fs-16 p-sitemap-ul__link">店舗一覧</a>
+                    <a href="storelist/index.html" class="p-sitemap-ul__link">店舗一覧</a>
                     <a href="#" class="p-sitemap-ul-sub-link p-sitemap-ul__link">難波本店</a>
                     <a href="#" class="p-sitemap-ul-sub-link p-sitemap-ul__link">和歌山駅前店</a>
                     <a href="#" class="p-sitemap-ul-sub-link p-sitemap-ul__link">岡山野田店</a>
@@ -482,16 +484,16 @@
               <div class="p-sitemap-label">
                 <img
                   src="assets/img/sitemap/icon_sitemap_icon5.svg"
-                  alt="Amazones以外の店舗"
+                  alt=""
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazones以外の店舗</h2>
+                <h2>Amazonesのトピックス</h2>
               </div>
 
               <ul class="p-sitemap-ul">
-                <li><a href="#" class="p-sitemap-ul__link">家族割キャンペーン</a></li>
-                <li><a href="#" class="p-sitemap-ul__link">ビジター特別割引キャンペーン</a></li>
-                <li><a href="#" class="p-sitemap-ul__link">月会費ポイント還元 + 特典・優待</a></li>
-                <li><a href="#" class="p-sitemap-ul__link">AMAZONES PROTEIN</a></li>
+                <li><a href="family/index.html" class="p-sitemap-ul__link">家族割キャンペーン</a></li>
+                <li><a href="visitor/index.html" class="p-sitemap-ul__link">ビジター特別割引キャンペーン</a></li>
+                <li><a href="point_redemption/index.html" class="p-sitemap-ul__link">月会費ポイント還元 + 特典・優待</a></li>
+                <li><a href="protein/index.html" class="p-sitemap-ul__link">AMAZONES PROTEIN</a></li>
               </ul>
             </div>
 
@@ -499,34 +501,34 @@
               <div class="p-sitemap-label">
                 <img
                   src="assets/img/sitemap/icon_sitemap_icon4.svg"
-                  alt="Amazonesのトピックス"
+                  alt=""
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazonesのトピックス</h2>
+                <h2>Amazones以外の店舗</h2>
               </div>
 
               <ul class="p-sitemap-ul">
                 <li>
-                  <a href="#" class="u-fw-500 u-fs-15 l-footer__icon-link p-sitemap-ul__link"
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link p-sitemap-ul__link"
                     >完全個室PRIVATE GYM Highness
                     <img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                   ></a>
                 </li>
                 <li>
-                  <a href="#" class="u-fw-500 u-fs-15 l-footer__icon-link p-sitemap-ul__link"
-                    >24時間ジム Amazones & Hercules
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link p-sitemap-ul__link"
+                    >24時間ジム Amazones &amp; Hercules
                     <img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                   ></a>
                 </li>
                 <li>
-                  <a href="#" class="u-fw-500 u-fs-15 l-footer__icon-link p-sitemap-ul__link"
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link p-sitemap-ul__link"
                     >AMAZONES ONLINE SHOP
                     <img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                   ></a>
                 </li>
               </ul>
@@ -538,16 +540,16 @@
                   src="assets/img/sitemap/icon_sitemap_icon6.svg"
                   alt="Amazonesの採用情報"
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazonesの採用情報</h2>
+                <h2>Amazonesの採用情報</h2>
               </div>
 
               <ul class="p-sitemap-ul">
                 <li>
-                  <a href="#" class="u-fw-500 u-fs-15 l-footer__icon-link p-sitemap-ul__link"
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link p-sitemap-ul__link"
                     >採用情報
                     <img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                   ></a>
                 </li>
               </ul>
@@ -559,12 +561,12 @@
                   src="assets/img/sitemap/icon_sitemap_icon7.svg"
                   alt="Amazonesに関連するSNS"
                 >
-                <h2 class="u-fw-700 u-fs-24">Amazonesに関連するSNS</=>
+                <h2>Amazonesに関連するSNS</h2>
               </div>
 
               <ul class="p-sitemap-ul">
                 <li>
-                  <a href="#" class="l-footer__icon-link u-fw-500 u-fs-15 p-sitemap-ul__link">
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link p-sitemap-ul__link">
                     <img
                       src="assets/img/common/icon_youtube.svg"
                       alt="Amazones｜公式YouTube"
@@ -573,12 +575,12 @@
                     Amazones｜公式YouTube
                     <img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                     >
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="l-footer__icon-link u-fw-500 u-fs-15 p-sitemap-ul__link">
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link p-sitemap-ul__link">
                     <img
                       src="assets/img/common/icon_instragram.svg"
                       alt="Amazones｜公式Instagram"
@@ -587,7 +589,7 @@
                     Amazones｜公式Instagram
                     <img
                       src="assets/img/common/icon_recruitment.svg"
-                      alt="アイコン"
+                      alt=""
                     >
                   </a>
                 </li>
@@ -611,13 +613,13 @@
                       src="assets/img/sitemap/icon_message.svg"
                       alt="お問い合わせ"
                     >
-                    <p class="u-fw-700 u-fs-24">お問い合わせ</p>
+                    <p class="p-sitemap__banner-title">お問い合わせ</p>
                   </div>
-                  <a href="../contact' class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <a href="contact/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
-                <p class="u-fw-500 u-fs-16 c-other-details-banner-p u-lh-200">
+                <p class="c-other-details-banner-p p-sitemap__banner-desc">
                 各ページの掲載内容についてご不明点はお気軽にお尋ねください
                 </p>
               </li>
@@ -630,15 +632,15 @@
                     <img
                       class="c-other-details-banner-item__title-img"
                       src="assets/img/sitemap/icon_user.svg"
-                      alt="お問い合わせ"
+                      alt="マイページ"
                     >
-                    <p class="u-fw-700 u-fs-24">マイページ</p>
+                    <p class="p-sitemap__banner-title">マイページ</p>
                   </div>
-                  <a href="../reservation' class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <a href="reservation/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
-                <p class="u-fw-500 u-fs-16 c-other-details-banner-p u-lh-200">
+                <p class="c-other-details-banner-p p-sitemap__banner-desc">
                   パーソナルトレーニングはこちらのページからご予約ください。
                 </p>
               </li>
@@ -662,20 +664,20 @@
       <!-- ブランド -->
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
-          <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+          <a href="index.html">
+            <p class="l-footer__brand-name">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
-          <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+          <a href="contact/index.html" class="c-btn--light-blue">
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -687,7 +689,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -696,17 +698,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="information/index.html">お知らせ</a></li>
+            <li><a href="column/index.html">ゾネスタイムズ</a></li>
+            <li><a href="storelist/index.html">店舗一覧</a></li>
+            <li><a href="reservation/index.html">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="l-footer__nav-link--highlight">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/index.html">料金案内</a></li>
+            <li><a href="admission/index.html" class="l-footer__nav-link--highlight">入会手続きのご案内</a></li>
+            <li><a href="payment/index.html" class="l-footer__nav-link--highlight">お支払いについて</a></li>
+            <li><a href="faq/index.html">よくあるご質問</a></li>
+            <li><a href="member/index.html">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -716,7 +718,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -725,17 +727,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/index.html">女性専用24時間ジム</a></li>
+              <li><a href="personal/index.html">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/index.html">Dr.Amazones</a></li>
+              <li><a href="sportip/index.html">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -745,7 +747,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -761,7 +763,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -771,19 +773,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -794,7 +796,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -804,14 +806,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -829,15 +831,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/index.html">サイトマップ</a></li>
+        <li><a href="rules/index.html">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -849,13 +851,13 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->

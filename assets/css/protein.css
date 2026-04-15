@@ -27,7 +27,7 @@
 .p-protein__campaign-header p {
   font-size: var(--fs-xl);
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 2;
 }
 
 .p-protein__campaign-header span {
@@ -44,6 +44,24 @@
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.p-protein__opening-gray-container h3 {
+  color: var(--text-white);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+}
+
+.p-protein__opening-accent {
+  color: var(--text-lightBlue);
+}
+
+.p-protein__bullet {
+  font-size: 10px;
+}
+
+.p-protein__opening-desc {
+  line-height: 1.5em;
 }
 
 .p-protein__opening-cutout {
@@ -69,6 +87,7 @@
   font-size: var(--fs-display);
   line-height: 7.5rem;
   font-weight: 400;
+  font-family: var(--font-outfit);
 }
 
 /* セクションタイトル終了 */
@@ -96,6 +115,17 @@
   flex: 1;
 }
 
+.p-protein__point-card h4 {
+  font-family: var(--font-outfit);
+  color: var(--text-lightBlue);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+.p-protein__point-card p {
+  white-space: nowrap;
+}
+
 /* ポイントスライダーラッパー */
 .p-protein__points-slider {
   position: relative;
@@ -121,11 +151,33 @@
   justify-content: center;
 }
 
+.p-protein__card-header--light-blue h4 {
+  color: var(--text-white);
+}
+
+.p-protein__recommend-text {
+  font-weight: 600;
+}
+
 .p-protein__card-body {
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
   display: flex;
   gap: 3rem;
+}
+
+/* 親を全幅にして % 配置の基準にする */
+.p-protein__flavor-list .u-relative {
+  width: 100%;
+}
+
+.p-protein__flavor-img {
+  max-width: 65%;
+}
+
+.p-protein__row--end .p-protein__flavor-img {
+  margin-left: auto;
+  display: block;
 }
 
 .p-protein__text-container,
@@ -134,12 +186,13 @@
   flex-direction: column;
   gap: 2rem;
   background-color: white;
-  padding: 4rem;
+  padding: 3rem;
   box-sizing: border-box;
   position: absolute;
-  width: 47dvw;
-  top: 4dvw;
-  right: -43dvw;
+  width: fit-content;
+  min-width: 45%;
+  top: 3rem;
+  right: 0;
 }
 
 .p-protein__text-container--left {
@@ -147,12 +200,13 @@
   flex-direction: column;
   gap: 2rem;
   background-color: white;
-  padding: 4rem;
+  padding: 3rem;
   box-sizing: border-box;
   position: absolute;
-  width: 47dvw;
-  top: 4dvw;
-  left: -41dvw;
+  width: fit-content;
+  min-width: 45%;
+  top: 3rem;
+  left: 0;
 }
 
 .p-protein__img-pattern,
@@ -211,6 +265,14 @@
   gap: 1rem;
 }
 
+.p-protein__quality-header p {
+  font-size: var(--fs-xl);
+  line-height: 1.5em;
+  color: var(--text-lightBlue);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .p-protein__quality-sub {
   display: flex;
   width: 100%;
@@ -218,11 +280,23 @@
   padding: 10px 30px;
 }
 
+.p-protein__quality-sub p {
+  line-height: 1.5em;
+  color: var(--text-white);
+  font-weight: 700;
+}
+
 .p-protein__quality-body {
   display: flex;
   flex-direction: column;
   padding: 30px;
   gap: 1rem;
+  line-height: 2;
+}
+
+.p-protein__quality-accent {
+  color: var(--text-lightBlue);
+  white-space: nowrap;
 }
 
 .p-protein__quality-line {
@@ -235,6 +309,39 @@
   color: white;
   padding: 0.9rem 1.5rem;
   width: fit-content;
+}
+
+.p-protein__flavor-header p {
+  font-weight: 700;
+}
+
+.p-protein__flavor-label {
+  color: var(--text-lightBlue);
+  font-weight: 600;
+}
+
+.p-protein__flavor-title--red {
+  color: var(--text-red);
+}
+
+.p-protein__flavor-title--peach {
+  color: var(--text-peach);
+}
+
+.p-protein__flavor-title--brown {
+  color: var(--text-brown);
+}
+
+.p-protein__flavor-stars--red {
+  color: var(--text-red);
+}
+
+.p-protein__flavor-stars--peach {
+  color: var(--text-peach);
+}
+
+.p-protein__flavor-stars--brown {
+  color: var(--text-brown);
 }
 
 .p-protein__flavor-nutrition {
@@ -256,11 +363,14 @@
   gap: 30px;
 }
 
+.p-protein__flavor-inner h2 {
+  font-family: var(--font-outfit);
+  font-weight: 700;
+}
+
 .p-protein__flavor-ratings {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  margin-right: 60px;
 }
 
 /* 水平線 */
@@ -397,6 +507,11 @@
 
 .p-protein__subheading {
   font-size: var(--fs-lg);
+  line-height: 1.8;
+}
+
+.p-protein__section-title-row .l-nav-menu-popup__section {
+  gap: 0;
 }
 
 .p-protein__about-grid {
@@ -429,6 +544,18 @@
   padding: 50px 0;
 }
 
+/* PC版: FAQ を初期オープン */
+@media (min-width: 768px) {
+  .p-protein__faq-list .c-faq__container__toggle ~ .c-faq__accordion-inner {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 20px 0;
+    border-top-width: 1px;
+  }
+  .p-protein__faq-list .c-faq__container__toggle ~ .c-faq__accordion-header .c-faq__accordion-toggle::after {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
 .p-protein__buynow-subtitle {
   display: flex;
   gap: 0.75rem;
@@ -439,6 +566,46 @@
 .p-protein__buynow-heading {
   padding-bottom: 10px;
   font-size: var(--fs-lg);
+  line-height: 1.5em;
+}
+
+.p-protein__buynow-flavor {
+  font-family: var(--font-outfit);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+.p-protein__buynow-flavor--red {
+  color: var(--text-red);
+}
+
+.p-protein__buynow-flavor--peach {
+  color: var(--text-peach);
+}
+
+.p-protein__buynow-flavor--brown {
+  color: var(--text-brown);
+}
+
+.p-protein__buynow-name {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+}
+
+.p-protein__onlineshop-title {
+  font-family: var(--font-outfit);
+  font-weight: 400;
+  font-size: var(--fs-6xl);
+  line-height: 1em;
+}
+
+.p-protein__onlineshop-subtitle {
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.p-protein__onlineshop-text {
+  line-height: 1.5em;
 }
 
 .p-protein__scroll-top-icon {
@@ -459,7 +626,7 @@
      開始: プロテインフレーバーカード
      ======================================== */
   .p-protein__flavor-img {
-    max-width: 45vw;
+    max-width: 55%;
   }
   /* Speak image — reduce from desktop 40rem/25rem */
   .p-protein__speak-image {
@@ -473,33 +640,27 @@
     top: 1rem;
     left: 12rem;
   }
-  /* Text container — tighten padding */
+  /* Text container — tighter padding */
   .p-protein__text-container,
   .p-protein__text-container--left,
   .p-protein__onlineshop-text-container {
-    width: 60dvw;
-    padding: 3rem;
+    padding: 2rem;
   }
-  .p-protein__text-container {
-    right: -55dvw;
-  }
-  .p-protein__text-container--left {
-    left: -55dvw;
-  }
-  /* Inner row — reduce gap and margin so columns don't overflow */
   .p-protein__flavor-row {
     gap: 1.5rem;
   }
-  .p-protein__text-container .p-protein__flavor-ratings,
-  .p-protein__text-container--left .p-protein__flavor-ratings {
-    margin-right: 1rem;
+  /* テキストが画像より下にはみ出す分のスペース確保 */
+  div:has(> .p-protein__text-container),
+  div:has(> .p-protein__text-container--left) {
+    padding-bottom: 10rem;
   }
-  /* Reserve vertical space so the overflowing text card doesn't overlap the next flavor section */
+  /* プロテインフレーバーカード終了 */
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
   div:has(> .p-protein__text-container),
   div:has(> .p-protein__text-container--left) {
     padding-bottom: 15rem;
   }
-  /* プロテインフレーバーカード終了 */
 }
 /* ========================================
    メディア: max-width 1024px
@@ -590,6 +751,7 @@
   /* FLAVOR IMAGES — full width stacked (matches mobile) */
   .p-protein__flavor-img {
     width: 100%;
+    max-width: 100%;
     height: 538px;
     object-fit: cover;
     object-position: center top;
@@ -667,7 +829,8 @@
   }
   /* Each flavor block outer wrapper — remove bottom margin */
   .w-100.flex.mb-100,
-  .w-100.flex.justify-end.mb-100 {
+  .w-100.flex.justify-end.mb-100,
+  .p-protein__flavor-list .c-row-mb-100 {
     margin-bottom: 0;
   }
   /* Flavor title */
@@ -723,11 +886,27 @@
   /* ========================================
      開始: オンラインショップ
      ======================================== */
-  /* ONLINE SHOP text container */
+  /* ONLINE SHOP — stack image + text */
+  section.u-relative:has(.p-protein__onlineshop-text-container) {
+    display: flex;
+    flex-direction: column;
+  }
+  section.u-relative:has(.p-protein__onlineshop-text-container) {
+    margin-top: 3rem;
+  }
+  section.u-relative:has(.p-protein__onlineshop-text-container) > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+  }
   .p-protein__onlineshop-text-container {
-    width: 54dvw;
-    right: 0;
+    position: relative;
+    width: 100%;
     padding: 2.5rem;
+    box-sizing: border-box;
+    top: auto;
+    right: auto;
   }
   /* ── BUY NOW SECTION ── */
   /* Title row — stack */
@@ -749,14 +928,12 @@
     gap: 1.5rem;
   }
   /* Individual buy now cards — reduce padding */
-  div:has(> h5.font-outfit.fs-24.fw-600.text-red),
-  div:has(> h5.font-outfit.fs-24.fw-600.text-peach),
-  div:has(> h5.font-outfit.fs-24.fw-600.text-brown) {
+  div:has(> .p-protein__buynow-flavor) {
     padding: 2rem 1.5rem;
     gap: 1rem;
   }
   /* Flavor name size in buy now cards */
-  .c-section--light-blue .font-zen.fs-30.fw-700 {
+  .p-protein__buynow-name {
     font-size: var(--fs-lg);
   }
   /* Product images in buy now */
@@ -765,15 +942,16 @@
     height: 160px;
   }
   /* Stack the background image + text panel */
-  section.relative:has(.p-protein__onlineshop-text-container) {
+  section.u-relative:has(.p-protein__onlineshop-text-container) {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
   }
-  section.relative:has(.p-protein__onlineshop-text-container) > img {
+  section.u-relative:has(.p-protein__onlineshop-text-container) > img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
-    object-position: center;
+    object-position: center 40%;
   }
   .p-protein__onlineshop-text-container {
     position: relative;
@@ -785,7 +963,7 @@
     right: auto;
     overflow: hidden;
   }
-  .p-protein__onlineshop-text-container .fs-60 {
+  .p-protein__onlineshop-title {
     font-size: var(--fs-xl2);
   }
   .p-protein__onlineshop-text-container .c-section__stack-40 {
@@ -847,7 +1025,7 @@
     padding: 1rem;
   }
   .p-protein__quality-header p {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-lg);
   }
   .p-protein__quality-sub {
     padding: 0.5rem 1rem;
@@ -900,7 +1078,8 @@
   }
   /* Each flavor block outer wrapper — reduce bottom margin */
   .w-100.flex.mb-100,
-  .w-100.flex.justify-end.mb-100 {
+  .w-100.flex.justify-end.mb-100,
+  .p-protein__flavor-list .c-row-mb-100 {
     margin-bottom: 0;
   }
   /* The inner .relative container holding image + text overlay:
@@ -915,6 +1094,7 @@
   /* Flavor images — full width, fixed height, protrudes into card top */
   .p-protein__flavor-img {
     width: 100%;
+    max-width: 100%;
     height: 320px;
     object-fit: cover;
     object-position: center top;

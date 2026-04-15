@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-   <base href="/amazones-test/">
+   <base href="/amazones-local-dir/">
     <meta
       name="description"
       content="女性専用24時間ジムAmazones（アマゾネス）の料金について掲載しています。"
@@ -12,15 +12,13 @@
       料金案内 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- グローバルCSS -->
-    <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/global.css?v=20260406" rel="stylesheet" type="text/css">
 
     <!--料金CSS-->
     <link href="assets/css/price.css" rel="stylesheet" type="text/css">
 
     <!-- スクリプト -->
-    <script src="assets/js/common.js" defer></script>
     <script src="assets/js/global.js" defer></script>
-    <script src="assets/js/price.js" defer></script>
   </head>
 
   <body>
@@ -30,7 +28,7 @@
         class="l-header-wrapper"
       >
         <div class="l-header__brand">
-          <a href="./">
+          <a href="index.html">
             <img
               src="assets/img/common/icon_logo.svg"
               alt="アマゾネス"
@@ -39,58 +37,58 @@
               class="amazones-header-logo"
             >
           </a>
-          <a href="./" class="header-text u-text-black1 u-fw-500 u-fs-14"
+          <a href="index.html" class="l-header__brand-text"
             >アマゾネス</a
           >
-          <p class="header-text u-font-outfit u-text-black1 u-fw-500 u-fs-13">
+          <p class="l-header__brand-tagline">
             WOMEN ONLY24h GYM
           </p>
         </div>
 
         <div class="l-header__actions">
           <a
-            href="storelist/"
+            href="storelist/index.html"
             class="l-header__btn"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_search.svg" alt="アイコン">
+              <img src="assets/img/common/icon_search.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700">全店相互利用可能</p>
-                <p class="u-text-white u-fs-14 u-fw-700">近くの店舗を探す</p>
+                <p>全店相互利用可能</p>
+                <p>近くの店舗を探す</p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
           </a>
 
           <a
-            href="reservation/"
+            href="reservation/index.html"
             class="l-header__btn l-header__btn--reservation"
           >
             <div
               class="icon-wrapper"
             >
-              <img src="assets/img/common/icon_24.svg" alt="アイコン">
+              <img src="assets/img/common/icon_24.svg" alt="">
             </div>
             <div class="l-header__btn__content">
               <div class="l-header__btn__text">
-                <p class="u-text-white u-fs-14 u-fw-700 u-text-center">
+                <p>
                   24時間WEB予約可能
                 </p>
-                <p class="u-text-white u-fs-15 u-fw-700 u-text-center">
+                <p class="l-header__btn__sub-label">
                   体験予約はこちら
                 </p>
               </div>
               <img
                 src="assets/img/common/icon_arrow.svg"
-                alt="アイコン"
+                alt=""
                 class="arrow-img"
               >
             </div>
@@ -108,10 +106,10 @@
           >
             <img
               src="assets/img/common/icon_menu.svg"
-              alt="アイコン"
+              alt=""
               class="desktop-menu-icon"
             >
-            <p class="u-font-outfit u-fs-14 u-fw-500 u-text-white">MENU</p>
+            <p class="l-header-floating-menu__menu-label">MENU</p>
 
             <button type="button" class="l-header__hamburger" aria-label="メニュー">
               <span class="mh-bar l-header__hamburger-bar"></span>
@@ -123,7 +121,7 @@
             <line x1="1" y1="1" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
             <line x1="19" y1="1" x2="1" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
           </svg>
-          <p class="u-font-outfit u-fs-12 u-fw-500 u-text-white">CLOSE</p>
+          <p class="l-header-floating-menu__close-label">CLOSE</p>
         </div>
           </div>
 
@@ -132,7 +130,7 @@
             class="l-header-floating-menu__content u-cursor-pointer"
           >
             <p
-              class="text-vertical menu-vertical-text u-text-white u-fs-12 u-font-outfit u-fw-500"
+              class="text-vertical menu-vertical-text l-header-floating-menu__copyright"
             >
               ©2026 Wellness Land Co., Ltd.
             </p>
@@ -144,22 +142,22 @@
             <!-- 会社について -->
             <div class="l-nav-menu-popup__section">
               <div class="l-footer__page-link">
-                <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+                <p>About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                 <div class="l-footer__link-line"></div>
               </div>
               <div class="l-nav-menu-popup__links">
-                <a href="./" class="u-fw-500 u-fs-15">トップページ</a>
-                <a href="information/" class="u-fw-500 u-fs-15">お知らせ</a>
-                <a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a>
-                <a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a>
-                <a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a>
-                <a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a>
-                <a href="price/" class="u-fw-500 u-fs-15">料金案内</a>
-                <a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a>
-                <a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a>
-                <a href="faq/" class="u-fw-500 u-fs-15">よくあるご質問</a>
-                <a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a>
+                <a href="index.html">トップページ</a>
+                <a href="information/index.html">お知らせ</a>
+                <a href="column/index.html">ゾネスタイムズ</a>
+                <a href="storelist/index.html">店舗一覧</a>
+                <a href="reservation/index.html">無料体験・見学予約</a>
+                <a href="reservation#reservation-flow" class="l-nav-menu-popup__link--highlight">ご予約から無料体験・見学までの流れ</a>
+                <a href="price/index.html">料金案内</a>
+                <a href="admission/index.html" class="l-nav-menu-popup__link--highlight">入会手続きのご案内</a>
+                <a href="payment/index.html" class="l-nav-menu-popup__link--highlight">お支払いについて</a>
+                <a href="faq/index.html">よくあるご質問</a>
+                <a href="member/index.html">会員様からいただいた声</a>
               </div>
             </div>
 
@@ -167,25 +165,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+                  <p>Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a>
-                  <a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a>
-                  <a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a>
-                  <a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a>
+                  <a href="about/index.html">女性専用24時間ジム</a>
+                  <a href="personal/index.html">Amazonesのパーソナルトレーニング</a>
+                  <a href="medical/index.html">Dr.Amazones</a>
+                  <a href="sportip/index.html">AI姿勢診断・改善</a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+                  <p>Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -194,25 +192,25 @@
             <div class="l-nav-menu-popup__group">
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+                  <p>Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
               <div class="l-nav-menu-popup__section">
                 <div class="l-footer__page-link">
-                  <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+                  <p>Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="">
                   <div class="l-footer__link-line"></div>
                 </div>
                 <div class="l-nav-menu-popup__links">
-                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
+                  <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5" >Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+                  <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link"><img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5" >Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -222,21 +220,21 @@
           <!-- 下部行 -->
           <div class="l-nav-menu-popup__bottom l-nav-menu-popup__bottom--gap">
             <div class="l-nav-menu-popup__bottom-btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <div class="l-nav-menu-popup__bottom-links">
-              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン"></a>
-              <a href="sitemap/" class="u-fw-500 u-fs-14">サイトマップ</a>
-              <a href="rules/" class="u-fw-500 u-fs-14">ご利用規約</a>
-              <a href="#" class="u-fw-500 u-fs-14">個人情報保護方針</a>
-              <a href="#" class="u-fw-500 u-fs-14">WEBサイトのご利用に当たって</a>
+              <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt=""></a>
+              <a href="sitemap/index.html">サイトマップ</a>
+              <a href="rules/index.html">ご利用規約</a>
+              <a href="#">個人情報保護方針</a>
+              <a href="#">WEBサイトのご利用に当たって</a>
             </div>
           </div>
         </div>
@@ -248,26 +246,26 @@
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">About Us</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="./" class="l-sp-nav__link">トップページ</a></li>
-                <li><a href="information/" class="l-sp-nav__link">お知らせ</a></li>
-                <li><a href="column/" class="l-sp-nav__link">ゾネスタイムズ</a></li>
-                <li><a href="storelist/" class="l-sp-nav__link">店舗一覧</a></li>
-                <li><a href="reservation/" class="l-sp-nav__link">無料体験・見学予約</a></li>
+                <li><a href="index.html" class="l-sp-nav__link">トップページ</a></li>
+                <li><a href="information/index.html" class="l-sp-nav__link">お知らせ</a></li>
+                <li><a href="column/index.html" class="l-sp-nav__link">ゾネスタイムズ</a></li>
+                <li><a href="storelist/index.html" class="l-sp-nav__link">店舗一覧</a></li>
+                <li><a href="reservation/index.html" class="l-sp-nav__link">無料体験・見学予約</a></li>
                 <li><a href="reservation#reservation-flow" class="l-sp-nav__link">ご予約から無料体験・見学までの流れ</a></li>
-                <li><a href="price/" class="l-sp-nav__link">料金案内</a></li>
-                <li><a href="admission/" class="l-sp-nav__link">入会手続きのご案内</a></li>
-                <li><a href="payment/" class="l-sp-nav__link">お支払いについて</a></li>
-                <li><a href="faq/" class="l-sp-nav__link">よくあるご質問</a></li>
-                <li><a href="member/" class="l-sp-nav__link">会員様からいただいた声</a></li>
+                <li><a href="price/index.html" class="l-sp-nav__link">料金案内</a></li>
+                <li><a href="admission/index.html" class="l-sp-nav__link">入会手続きのご案内</a></li>
+                <li><a href="payment/index.html" class="l-sp-nav__link">お支払いについて</a></li>
+                <li><a href="faq/index.html" class="l-sp-nav__link">よくあるご質問</a></li>
+                <li><a href="member/index.html" class="l-sp-nav__link">会員様からいただいた声</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
               <button type="button" class="l-sp-nav__head js-sp-nav-toggle"><span class="l-sp-nav__title">Service</span><span class="l-sp-nav__plus">＋</span></button>
               <ul class="l-sp-nav__list">
-                <li><a href="about/" class="l-sp-nav__link">女性専用24時間ジム</a></li>
-                <li><a href="personal/" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
-                <li><a href="medical/" class="l-sp-nav__link">Dr.Amazones</a></li>
-                <li><a href="sportip/" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
+                <li><a href="about/index.html" class="l-sp-nav__link">女性専用24時間ジム</a></li>
+                <li><a href="personal/index.html" class="l-sp-nav__link">Amazonesのパーソナルトレーニング</a></li>
+                <li><a href="medical/index.html" class="l-sp-nav__link">Dr.Amazones</a></li>
+                <li><a href="sportip/index.html" class="l-sp-nav__link">AI姿勢診断・改善</a></li>
               </ul>
             </div>
             <div class="l-sp-nav__section">
@@ -294,19 +292,19 @@
           </nav>
           <div class="l-sp-nav__sub">
             <div class="l-sp-nav__btns">
-              <a href="contact/" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+              <a href="contact/index.html" class="c-btn--light-blue l-footer__blue-btn">
+                <p>お問い合わせ</p>
+                <img src="assets/img/common/icon_arrow.svg" alt="">
               </a>
               <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue l-footer__blue-btn">
-                <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン">
+                <p>マイページ</p>
+                <img src="assets/img/common/icon_videos.svg" alt="">
               </a>
             </div>
             <ul class="l-sp-nav__utility">
               <li><a href="https://wellnessland.co.jp/" target="_blank">運営会社について</a></li>
-              <li><a href="sitemap/">サイトマップ</a></li>
-              <li><a href="rules/">ご利用規約</a></li>
+              <li><a href="sitemap/index.html">サイトマップ</a></li>
+              <li><a href="rules/index.html">ご利用規約</a></li>
               <li><a href="#">個人情報保護方針</a></li>
               <li><a href="#">WEBサイトのご利用に当たって</a></li>
             </ul>
@@ -324,7 +322,7 @@
           <div class="p-banner-inner">
             <img
               src="assets/img/common/img_gym02.webp"
-              alt="予約バナー"
+              alt=""
               class="p-banner-img"
             >
 
@@ -333,11 +331,11 @@
 
           <!-- バナーテキスト -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title u-font-zen u-text-white c-reveal">料金案内</h1>
-            <p class="p-banner-subtitle u-font-outfit c-reveal">Price</p>
+            <h1 class="p-banner-title c-reveal">料金案内</h1>
+            <p class="p-banner-subtitle c-reveal">Price</p>
             <!-- パンくずリスト -->
             <nav class="c-breadcrumb p-breadcrumb c-reveal">
-              <a href="./" class="c-breadcrumb-home">
+              <a href="index.html" class="c-breadcrumb-home">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -353,14 +351,14 @@
                 </svg>
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="#" class="u-text-white u-fs-14 banner-a-link">料金案内</a>
+              <a href="price/index.html" class="c-breadcrumb-link">料金案内</a>
             </nav>
           </div>
         </div>
         <!-- リボン装飾 01-->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
-          alt="リボン装飾"
+          alt=""
           class="ribbon-banner c-clip-grow-right"
         >
       </section>
@@ -368,78 +366,30 @@
       <!-- 月額プラン -->
       <section class="c-section--white">
         <!-- リンク -->
-        <nav class="p-price__links-nav c-maxWidth">
-          <a href="#monthly-plan">
-            <div class="p-price__links-item">
-              <span>月額プラン</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+        <nav class="c-page-nav p-price__nav c-maxWidth">
+          <a href="#monthly-plan" class="c-page-nav__item">
+            <span>月額プラン</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
-          <a href="#special-plan">
-            <div class="p-price__links-item">
-              <span>人数限定プラン</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+          <a href="#special-plan" class="c-page-nav__item">
+            <span>人数限定プラン</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
-          <a href="#initial-cost">
-            <div class="p-price__links-item">
-              <span>初期費用</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+          <a href="#initial-cost" class="c-page-nav__item">
+            <span>初期費用</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
-          <a href="#option-service">
-            <div class="p-price__links-item">
-              <span>オプションサービス</span>
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 13 8"
-                width="13"
-                height="8"
-              >
-                <path
-                  id="長方形 6 のコピー 6"
-                  fill="#81d8d0"
-                  d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-                />
-              </svg>
-            </div>
+          <a href="#option-service" class="c-page-nav__item">
+            <span>オプションサービス</span>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" aria-hidden="true">
+              <path fill="#81d8d0" d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z" />
+            </svg>
           </a>
         </nav>
 
@@ -447,11 +397,11 @@
         <div id="monthly-plan" class="p-price__content c-maxWidth">
           <!-- タイトル -->
           <div class="p-price__title-row">
-            <div class="p-price__title-container c-reveal">
-              <p class="p-price__subtitle u-font-zen">月額プラン</p>
-              <h2 class="p-price__title u-font-outfit">Monthly Plan</h2>
+            <div class="c-section-title p-price__title-wrap c-reveal">
+              <p class="c-section-title__label">月額プラン</p>
+              <h2 class="c-section-title__text p-price__title">Monthly Plan</h2>
             </div>
-            <div class="u-font-zen u-fw-500 u-lh-200 c-reveal--scale">
+            <div class="p-price__title-desc c-reveal--scale">
               <p>
                 スタンダード会員の月会費が永年割引きになるキャンペーンもございます。
               </p>
@@ -469,50 +419,47 @@
 
               <!-- 料金リスト -->
               <div class="p-price__text-container">
-                <!-- 項目1 -->
-                <div class="p-price__item-row u-font-zen">
-                  <p class="p-price__item-row__name">スタンダード会員</p>
-                  <p class="p-price__item-row__value">月額 9,900円</p>
-                </div>
-                <!-- 項目2 -->
-                <div class="p-price__item-row u-font-zen">
-                  <p class="p-price__item-row__name">
-                    学生会員
-                    <span>（大学・専門学生含む / 学生期間のみ適用）</span>
-                  </p>
-                  <p class="p-price__item-row__value">月額 7,700円</p>
-                </div>
-                <!-- 項目3 -->
-                <div class="p-price__item-row u-font-zen">
-                  <p class="p-price__item-row__name">
-                    シニア会員
-                    <span>（満60歳以上より適用）</span>
-                  </p>
-                  <p class="p-price__item-row__value">月額 7,700円</p>
-                </div>
-                <!-- 項目4 -->
-                <div class="p-price__item-row u-font-zen">
-                  <p class="p-price__item-row__name">
-                    おさんぽ会員
-                    <span>（ルームランナーのみ使用可能なプラン）</span>
-                  </p>
-                  <p class="p-price__item-row__value">月額 5,500円</p>
-                </div>
-                <!-- 項目5 -->
-                <div class="p-price__item-row u-font-zen">
-                  <p class="p-price__item-row__name">休憩・休会会員</p>
-                  <p class="p-price__item-row__value">月額 2,200円</p>
-                </div>
+                <table class="c-data-table p-price__table">
+                  <tr>
+                    <th>スタンダード会員</th>
+                    <td>月額 9,900円</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      学生会員
+                      <span>（大学・専門学生含む / 学生期間のみ適用）</span>
+                    </th>
+                    <td>月額 7,700円</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      シニア会員
+                      <span>（満60歳以上より適用）</span>
+                    </th>
+                    <td>月額 7,700円</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      おさんぽ会員
+                      <span>（ルームランナーのみ使用可能なプラン）</span>
+                    </th>
+                    <td>月額 5,500円</td>
+                  </tr>
+                  <tr>
+                    <th>休憩・休会会員</th>
+                    <td>月額 2,200円</td>
+                  </tr>
+                </table>
               </div>
             </div>
             <div class="p-price__speak-image u-flex-1">
               <img
-                src="assets/img/price/img_price_speak_bubble01.webp"
+                src="assets/img/price/img_price_speak_bubble01.svg"
                 alt="お客様の声 人物画像"
                 class="p-price__speak-bubble--01 c-speech-bubble"
               >
               <img
-                src="assets/img/price/img_price_speak_person01.webp"
+                src="assets/img/price/img_price_speak_person01.png"
                 alt="お客様の声 人物画像"
                 class="p-price__speak-person--01 c-animation-jump"
               >
@@ -526,11 +473,11 @@
         <div class="p-price__special-plan c-maxWidth">
           <!-- タイトル -->
           <div class="p-price__title-row">
-            <div class="p-price__title-container c-reveal">
-              <p class="p-price__subtitle u-font-zen">人数限定プラン</p>
-              <h2 class="p-price__title u-font-outfit">Special Plan</h2>
+            <div class="c-section-title p-price__title-wrap c-reveal">
+              <p class="c-section-title__label">人数限定プラン</p>
+              <h2 class="c-section-title__text p-price__title">Special Plan</h2>
             </div>
-            <div class="u-font-zen u-fw-500 u-lh-200 c-reveal--scale">
+            <div class="p-price__title-desc c-reveal--scale">
               <p>
                 スタンダード会員の月会費が永年割引きになるキャンペーンもございます。
               </p>
@@ -557,10 +504,10 @@
                     >
                   </div>
                   <!-- サブタイトル -->
-                  <p class="p-price__tier-subtitle u-font-zen">
+                  <p class="p-price__tier-subtitle">
                     運動習慣を身に付けたい方に最適
                   </p>
-                  <p class="p-price__tier-tagline u-font-zen">
+                  <p class="p-price__tier-tagline">
                     当ジム人気No.1の安心プラン！
                   </p>
                 </div>
@@ -570,7 +517,7 @@
                 </div>
                 <div class="p-price__tier-body c-reveal--scale">
                   <!-- 説明 -->
-                  <p class="p-price__tier-desc u-font-zen">
+                  <p class="p-price__tier-desc">
                     ある程度結果を出したい方や、初心者で運動習慣のレベルを少しだけアップさせたい方のためのプラン
                   </p>
                   <!-- 特徴 -->
@@ -584,8 +531,8 @@
                           height="40"
                         >
                       </div>
-                      <p class="u-font-zen">24時間ジム</p>
-                      <p class="u-font-zen">利用可能</p>
+                      <p class="">24時間ジム</p>
+                      <p class="">利用可能</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -594,8 +541,8 @@
                           alt="筋肉アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">徹底無料</p>
-                      <p class="u-font-zen">サポート全4回</p>
+                      <p class="">徹底無料</p>
+                      <p class="">サポート全4回</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -604,8 +551,8 @@
                           alt="エナジードリンクアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">プロテイン</p>
-                      <p class="u-font-zen">飲み放題</p>
+                      <p class="">プロテイン</p>
+                      <p class="">飲み放題</p>
                     </div>
                     <!-- 行2 -->
                     <div class="p-price__tier-feature">
@@ -615,8 +562,8 @@
                           alt="水筒アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">水素水</p>
-                      <p class="u-font-zen">飲み放題</p>
+                      <p class="">水素水</p>
+                      <p class="">飲み放題</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -625,8 +572,8 @@
                           alt="Tシャツアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">レンタル</p>
-                      <p class="u-font-zen">セット</p>
+                      <p class="">レンタル</p>
+                      <p class="">セット</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -635,9 +582,9 @@
                           alt="ウエイトリフティングアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">パーソナル</p>
-                      <p class="u-font-zen">トレーニング</p>
-                      <p class="u-font-zen">月4回</p>
+                      <p class="">パーソナル</p>
+                      <p class="">トレーニング</p>
+                      <p class="">月4回</p>
                     </div>
                   </div>
                 </div>
@@ -660,10 +607,10 @@
                       >
                     </div>
                     <!-- サブタイトル -->
-                    <p class="p-price__tier-subtitle u-font-zen">
+                    <p class="p-price__tier-subtitle">
                       身体を変えたい方に最適
                     </p>
-                    <p class="p-price__tier-tagline u-font-zen">
+                    <p class="p-price__tier-tagline">
                       通い放題でこの月額は破格！
                     </p>
                   </div>
@@ -673,7 +620,7 @@
                   </div>
                   <div class="p-price__tier-body c-reveal--scale">
                     <!-- 説明 -->
-                    <p class="p-price__tier-desc u-font-zen">
+                    <p class="p-price__tier-desc">
                       ライトより結果を出したい方や、初心者でも運動習慣のレベルをそれなりにアップさせたい方のためのプラン
                     </p>
                     <!-- 特徴 -->
@@ -687,8 +634,8 @@
                             height="40"
                           >
                         </div>
-                        <p class="u-font-zen">24時間ジム</p>
-                        <p class="u-font-zen">利用可能</p>
+                        <p class="">24時間ジム</p>
+                        <p class="">利用可能</p>
                       </div>
                       <div class="p-price__tier-feature">
                         <div class="p-price__tier-feature-icon">
@@ -697,8 +644,8 @@
                             alt="筋肉アイコン"
                           >
                         </div>
-                        <p class="u-font-zen">徹底無料</p>
-                        <p class="u-font-zen">サポート全4回</p>
+                        <p class="">徹底無料</p>
+                        <p class="">サポート全4回</p>
                       </div>
                       <div class="p-price__tier-feature">
                         <div class="p-price__tier-feature-icon">
@@ -707,8 +654,8 @@
                             alt="エナジードリンクアイコン"
                           >
                         </div>
-                        <p class="u-font-zen">プロテイン</p>
-                        <p class="u-font-zen">飲み放題</p>
+                        <p class="">プロテイン</p>
+                        <p class="">飲み放題</p>
                       </div>
                       <!-- 行2 -->
                       <div class="p-price__tier-feature">
@@ -718,8 +665,8 @@
                             alt="水筒アイコン"
                           >
                         </div>
-                        <p class="u-font-zen">水素水</p>
-                        <p class="u-font-zen">飲み放題</p>
+                        <p class="">水素水</p>
+                        <p class="">飲み放題</p>
                       </div>
                       <div class="p-price__tier-feature">
                         <div class="p-price__tier-feature-icon">
@@ -728,8 +675,8 @@
                             alt="Tシャツアイコン"
                           >
                         </div>
-                        <p class="u-font-zen">レンタル</p>
-                        <p class="u-font-zen">セット</p>
+                        <p class="">レンタル</p>
+                        <p class="">セット</p>
                       </div>
                       <div class="p-price__tier-feature">
                         <div class="p-price__tier-feature-icon">
@@ -738,9 +685,9 @@
                             alt="ウエイトリフティングアイコン"
                           >
                         </div>
-                        <p class="u-font-zen">パーソナル</p>
-                        <p class="u-font-zen">トレーニング</p>
-                        <p class="u-font-zen">通い放題</p>
+                        <p class="">パーソナル</p>
+                        <p class="">トレーニング</p>
+                        <p class="">通い放題</p>
                       </div>
 
                       <!-- 行3 -->
@@ -751,8 +698,8 @@
                             alt="体重計アイコン"
                           >
                         </div>
-                        <p class="u-font-zen">月次</p>
-                        <p class="u-font-zen">撮影・測定</p>
+                        <p class="">月次</p>
+                        <p class="">撮影・測定</p>
                       </div>
                     </div>
                   </div>
@@ -760,13 +707,13 @@
 
                 <!-- 追加注記 -->
                 <div class="p-price__tier-extra-note">
-                  <p class="u-font-zen">
+                  <p class="">
                     ※モニタープランは月額33,000円で利用可能ですが、撮影・測定データを
                   </p>
-                  <p class="u-font-zen">
+                  <p class="">
                     当ジムの広告等で利用させていただく場合がございます。
                   </p>
-                  <p class="u-font-zen">
+                  <p class="">
                     詳細は各店舗のスタッフへお尋ねください。
                   </p>
                 </div>
@@ -789,10 +736,10 @@
                     >
                   </div>
                   <!-- サブタイトル -->
-                  <p class="p-price__tier-subtitle u-font-zen">
+                  <p class="p-price__tier-subtitle">
                     お手軽にしっかり通いたい方に最適
                   </p>
-                  <p class="p-price__tier-tagline u-font-zen">
+                  <p class="p-price__tier-tagline">
                     手ぶらで空いた時間に通える！
                   </p>
                 </div>
@@ -802,7 +749,7 @@
                 </div>
                 <div class="p-price__tier-body c-reveal--scale">
                   <!-- 説明 -->
-                  <p class="p-price__tier-desc u-font-zen">
+                  <p class="p-price__tier-desc">
                     レンタルセットと水素水&プロテイン飲み放題付きで、手ぶらで来てしっかりトレーニングできるお手軽プラン
                   </p>
                   <!-- 特徴 -->
@@ -816,8 +763,8 @@
                           height="40"
                         >
                       </div>
-                      <p class="u-font-zen">24時間ジム</p>
-                      <p class="u-font-zen">利用可能</p>
+                      <p class="">24時間ジム</p>
+                      <p class="">利用可能</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -826,8 +773,8 @@
                           alt="筋肉アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">徹底無料</p>
-                      <p class="u-font-zen">サポート全4回</p>
+                      <p class="">徹底無料</p>
+                      <p class="">サポート全4回</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -836,8 +783,8 @@
                           alt="エナジードリンクアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">プロテイン</p>
-                      <p class="u-font-zen">飲み放題</p>
+                      <p class="">プロテイン</p>
+                      <p class="">飲み放題</p>
                     </div>
                     <!-- 行2 -->
                     <div class="p-price__tier-feature">
@@ -847,8 +794,8 @@
                           alt="水筒アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">水素水</p>
-                      <p class="u-font-zen">飲み放題</p>
+                      <p class="">水素水</p>
+                      <p class="">飲み放題</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -857,8 +804,8 @@
                           alt="Tシャツアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">レンタル</p>
-                      <p class="u-font-zen">セット</p>
+                      <p class="">レンタル</p>
+                      <p class="">セット</p>
                     </div>
                   </div>
                 </div>
@@ -883,7 +830,7 @@
                     >
                   </div>
                   <!-- サブタイトル -->
-                  <p class="p-price__tier-subtitle u-font-zen">
+                  <p class="p-price__tier-subtitle">
                     これからトレーニングを始める方に最適
                   </p>
                 </div>
@@ -893,7 +840,7 @@
                 </div>
                 <div class="p-price__tier-body c-reveal--scale">
                   <!-- 説明 -->
-                  <p class="p-price__tier-desc u-font-zen">
+                  <p class="p-price__tier-desc">
                     毎月2回までのパーソナル付きで普段のトレーニングのスキルアップや
                     <span class="u-block">トレーニング習慣をつけていただくのにピッタリのプラン</span>
                   </p>
@@ -910,8 +857,8 @@
                           height="40"
                         >
                       </div>
-                      <p class="u-font-zen">24時間ジム</p>
-                      <p class="u-font-zen">利用可能</p>
+                      <p class="">24時間ジム</p>
+                      <p class="">利用可能</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -920,8 +867,8 @@
                           alt="筋肉アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">徹底無料</p>
-                      <p class="u-font-zen">サポート全4回</p>
+                      <p class="">徹底無料</p>
+                      <p class="">サポート全4回</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -930,9 +877,9 @@
                           alt="ウエイトリフティングアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">パーソナル</p>
-                      <p class="u-font-zen">トレーニング</p>
-                      <p class="u-font-zen">月2回</p>
+                      <p class="">パーソナル</p>
+                      <p class="">トレーニング</p>
+                      <p class="">月2回</p>
                     </div>
                   </div>
                 </div>
@@ -954,7 +901,7 @@
                     >
                   </div>
                   <!-- サブタイトル -->
-                  <p class="p-price__tier-subtitle u-font-zen">
+                  <p class="p-price__tier-subtitle">
                     最速で結果を求める方に最適
                   </p>
                 </div>
@@ -964,7 +911,7 @@
                 </div>
                 <div class="p-price__tier-body c-reveal--scale">
                   <!-- 説明 -->
-                  <p class="p-price__tier-desc u-font-zen">
+                  <p class="p-price__tier-desc">
                     確実に結果を出したい方や理想のボディを手に入れたい方
                     <span class="u-block">運動習慣のレベルをかなりアップさせたい方のためのパーフェクトプラン</span>
                   </p>
@@ -981,8 +928,8 @@
                           height="40"
                         >
                       </div>
-                      <p class="u-font-zen">24時間ジム</p>
-                      <p class="u-font-zen">利用可能</p>
+                      <p class="">24時間ジム</p>
+                      <p class="">利用可能</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -991,8 +938,8 @@
                           alt="筋肉アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">徹底無料</p>
-                      <p class="u-font-zen">サポート全4回</p>
+                      <p class="">徹底無料</p>
+                      <p class="">サポート全4回</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -1001,8 +948,8 @@
                           alt="エナジードリンクアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">プロテイン</p>
-                      <p class="u-font-zen">飲み放題</p>
+                      <p class="">プロテイン</p>
+                      <p class="">飲み放題</p>
                     </div>
                     <!-- 行2 -->
                     <div class="p-price__tier-feature">
@@ -1012,8 +959,8 @@
                           alt="水筒アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">水素水</p>
-                      <p class="u-font-zen">飲み放題</p>
+                      <p class="">水素水</p>
+                      <p class="">飲み放題</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -1022,8 +969,8 @@
                           alt="Tシャツアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">レンタル</p>
-                      <p class="u-font-zen">セット</p>
+                      <p class="">レンタル</p>
+                      <p class="">セット</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -1032,9 +979,9 @@
                           alt="ウエイトリフティングアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">パーソナル</p>
-                      <p class="u-font-zen">トレーニング</p>
-                      <p class="u-font-zen">通い放題</p>
+                      <p class="">パーソナル</p>
+                      <p class="">トレーニング</p>
+                      <p class="">通い放題</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -1043,8 +990,8 @@
                           alt="体重計アイコン"
                         >
                       </div>
-                      <p class="u-font-zen">月次</p>
-                      <p class="u-font-zen">撮影・測定</p>
+                      <p class="">月次</p>
+                      <p class="">撮影・測定</p>
                     </div>
                     <div class="p-price__tier-feature">
                       <div class="p-price__tier-feature-icon">
@@ -1053,7 +1000,7 @@
                           alt="食事プレートアイコン"
                         >
                       </div>
-                      <p class="u-font-zen">食事管理</p>
+                      <p class="">食事管理</p>
                     </div>
                   </div>
                 </div>
@@ -1091,11 +1038,11 @@
             <div id="initial-cost">
               <!-- タイトル -->
               <div class="p-price__title-row">
-                <div class="p-price__title-container c-reveal">
-                  <p class="p-price__subtitle u-font-zen">初期費用</p>
-                  <h2 class="p-price__title u-font-outfit">Initial Cost</h2>
+                <div class="c-section-title p-price__title-wrap c-reveal">
+                  <p class="c-section-title__label">初期費用</p>
+                  <h2 class="c-section-title__text p-price__title">Initial Cost</h2>
                 </div>
-                <div class="u-font-zen u-fw-500 u-lh-200 c-reveal--scale">
+                <div class="p-price__title-desc c-reveal--scale">
                   <p>
                     入会金・事務手数料が割引きになるキャンペーンもございます。
                   </p>
@@ -1124,19 +1071,21 @@
               <div class="p-price__col-row c-reveal--scale">
                 <!-- リスト01-->
                 <div class="p-price__text-container u-flex-1">
-                  <!-- 項目1 -->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">入会金・事務手数料</p>
-                    <p class="p-price__item-row__value">11,000円</p>
-                  </div>
+                  <table class="c-data-table p-price__table">
+                    <tr>
+                      <th>入会金・事務手数料</th>
+                      <td>11,000円</td>
+                    </tr>
+                  </table>
                 </div>
                 <!-- リスト02-->
                 <div class="p-price__text-container u-flex-1">
-                  <!-- 項目1 -->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">セキュリティ登録料</p>
-                    <p class="p-price__item-row__value">5,500円</p>
-                  </div>
+                  <table class="c-data-table p-price__table">
+                    <tr>
+                      <th>セキュリティ登録料</th>
+                      <td>5,500円</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1144,11 +1093,11 @@
             <div id="option-service">
               <!-- タイトル -->
               <div class="p-price__title-row">
-                <div class="p-price__title-container c-reveal">
-                  <p class="p-price__subtitle u-font-zen">オプションサービス</p>
-                  <h2 class="p-price__title u-font-outfit">Option</h2>
+                <div class="c-section-title p-price__title-wrap c-reveal">
+                  <p class="c-section-title__label">オプションサービス</p>
+                  <h2 class="c-section-title__text p-price__title">Option</h2>
                 </div>
-                <div class="u-font-zen u-fw-500 u-lh-200 c-reveal--scale">
+                <div class="p-price__title-desc c-reveal--scale">
                   <p>
                     様々なオプションや店舗独自のサービスをご用意しております。
                   </p>
@@ -1159,63 +1108,57 @@
               <div class="p-price__flex-list c-reveal--scale">
                 <!-- リスト01-->
                 <div class="p-price__text-container u-flex-1">
-                  <!-- 項目1 -->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">
-                      パーソナルトレーニング <span>（1回 / 30分）</span>
-                    </p>
-                    <p class="p-price__item-row__value">4,400円</p>
-                  </div>
-                  <!-- 項目2 -->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">
-                      パーソナルトレーニング<span>（4回 / 30日消化）</span>
-                    </p>
-                    <p class="p-price__item-row__value">13,200円</p>
-                  </div>
-                  <!-- 項目3-->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">プロテイン 飲み放題</p>
-                    <p class="p-price__item-row__value">月額 3,300円</p>
-                  </div>
-                  <!-- 項目4-->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">水素水 飲み放題</p>
-                    <p class="p-price__item-row__value">月額 1,100円</p>
-                  </div>
+                  <table class="c-data-table p-price__table">
+                    <tr>
+                      <th>
+                        パーソナルトレーニング <span>（1回 / 30分）</span>
+                      </th>
+                      <td>4,400円</td>
+                    </tr>
+                    <tr>
+                      <th>
+                        パーソナルトレーニング<span>（4回 / 30日消化）</span>
+                      </th>
+                      <td>13,200円</td>
+                    </tr>
+                    <tr>
+                      <th>プロテイン 飲み放題</th>
+                      <td>月額 3,300円</td>
+                    </tr>
+                    <tr>
+                      <th>水素水 飲み放題</th>
+                      <td>月額 1,100円</td>
+                    </tr>
+                  </table>
                 </div>
                 <!-- リスト02-->
                 <div class="p-price__text-container u-flex-1">
-                  <!-- 項目1 -->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">
-                      レンタルセット <span>（ウェア・シューズ・タオル）</span>
-                    </p>
-                    <p class="p-price__item-row__value">月額 2,750円</p>
-                  </div>
-                  <!-- 項目2 -->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">
-                      レンタルセットプラス<span
-                        >（ウェア・シューズ・タオル・ロッカー）</span
-                      >
-                    </p>
-                    <p class="p-price__item-row__value">月額 3,300円</p>
-                  </div>
-                  <!-- 項目3-->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">
-                      専用ロッカー <span>（ウェア・シューズ・タオル）</span>
-                    </p>
-                    <p class="p-price__item-row__value">月額 1,100円</p>
-                  </div>
-                  <!-- 項目4-->
-                  <div class="p-price__item-row u-font-zen">
-                    <p class="p-price__item-row__name">
-                      ビジター利用 <span>（1度のご利用は3時間まで）</span>
-                    </p>
-                    <p class="p-price__item-row__value">2,200円</p>
-                  </div>
+                  <table class="c-data-table p-price__table">
+                    <tr>
+                      <th>
+                        レンタルセット <span>（ウェア・シューズ・タオル）</span>
+                      </th>
+                      <td>月額 2,750円</td>
+                    </tr>
+                    <tr>
+                      <th>
+                        レンタルセットプラス<span>（ウェア・シューズ・タオル・ロッカー）</span>
+                      </th>
+                      <td>月額 3,300円</td>
+                    </tr>
+                    <tr>
+                      <th>
+                        専用ロッカー <span>（ウェア・シューズ・タオル）</span>
+                      </th>
+                      <td>月額 1,100円</td>
+                    </tr>
+                    <tr>
+                      <th>
+                        ビジター利用 <span>（1度のご利用は3時間まで）</span>
+                      </th>
+                      <td>2,200円</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1228,18 +1171,18 @@
         <!-- コンテンツ -->
         <div class="c-announcement c-maxWidth">
           <div class="c-announcement__title-container c-reveal">
-            <h2 class="u-font-zen">まずはお気軽に無料体験・見学へ</h2>
-            <h2 class="u-font-outfit">GO!</h2>
+            <h2 class="">まずはお気軽に無料体験・見学へ</h2>
+            <h2>GO!</h2>
           </div>
           <div class="c-announcement__body c-reveal">
-            <p class="u-font-zen">
+            <p class="">
               女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。
             </p>
-            <p class="u-font-zen">
+            <p class="">
               トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
             </p>
           </div>
-          <a href="/reservation">
+          <a href="reservation/index.html">
           <button type="button" class="c-btn--light-blue">
             <p class="c-announcement__btn u-cursor-pointer">
               <img
@@ -1275,7 +1218,7 @@
           <div class="p-price__speak-container--02">
             <div class="p-price__speak-image--02">
               <img
-                src="assets/img/price/img_price_speak_bubble02.webp"
+                src="assets/img/price/img_price_speak_bubble02.svg"
                 alt="お客様の声 人物画像"
                 class="p-price__speak-bubble--02 c-speech-bubble"
               >
@@ -1290,7 +1233,7 @@
           <div class="p-price__speak-container--03">
             <div class="p-price__speak-image--03">
               <img
-                src="assets/img/price/img_price_speak_bubble03.webp"
+                src="assets/img/price/img_price_speak_bubble03.svg"
                 alt="お客様の声 人物画像"
                 class="p-price__speak-bubble--03 c-speech-bubble"
               >
@@ -1309,72 +1252,72 @@
         <div class="c-text-slider">
           <div class="slide-track">
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
             <div class="slide">
-              <p class="u-font-outfit u-fw-300 u-fs-36 u-text-white c-text-slider__slide-text">
+              <p class="c-text-slider__slide-text">
                 For a free trial or tour enquiry, please here.
               </p>
             </div>
@@ -1406,14 +1349,14 @@
                   </svg>
                 </div>
                 <div class="c-end-note__card-header">
-                  <h3 class="u-font-zen">入会手続きのご案内</h3>
-                  <a href="/amazones-test/information" class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <h3 class="">入会手続きのご案内</h3>
+                  <a href="information/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
               </div>
               <div class="c-end-note__card-body">
-                <p class="u-font-zen">
+                <p class="">
                   店頭入会および、WEB入会について掲載しております。
                 </p>
               </div>
@@ -1437,14 +1380,14 @@
                   </svg>
                 </div>
                 <div class="c-end-note__card-header">
-                  <h3 class="u-font-zen">お支払いについて</h3>
-                  <a href="/amazones-test/payment" class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <h3 class="">お支払いについて</h3>
+                  <a href="payment/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
               </div>
               <div class="c-end-note__card-body">
-                <p class="u-font-zen">
+                <p class="">
                   女性専用 24 時間ジム
                   Amazones（アマゾネス）の月会費のお支払い方法や、日割り計算などを掲載しています。　　
                 </p>
@@ -1473,17 +1416,17 @@
                   </svg>
                 </div>
                 <div class="c-end-note__card-header">
-                  <h3 class="u-font-zen">よくあるご質問</h3>
-                  <a href="/amazones-test/faq" class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <h3 class="">よくあるご質問</h3>
+                  <a href="faq/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
               </div>
               <div class="c-end-note__card-body">
-                <p class="u-font-zen">
+                <p class="">
                   よくあるお問い合わせ内容をまとめて掲載しております。
                 </p>
-                <p class="u-font-zen">
+                <p class="">
                   掲載のないご質問につきましては、<span>お問い合わせフォーム</span>からご質問ください。
                 </p>
               </div>
@@ -1508,14 +1451,14 @@
                   </svg>
                 </div>
                 <div class="c-end-note__card-header">
-                  <h3 class="u-font-zen">ご利用規約</h3>
-                  <a href="/amazones-test/rules" class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <h3 class="">ご利用規約</h3>
+                  <a href="rules/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
               </div>
               <div class="c-end-note__card-body">
-                <p class="u-font-zen">
+                <p class="">
                   女性専用24時間ジム
                   Amazones（アマゾネス）として運営する、スポーツクラブの利用に関し適用されるご利用規約です。
                 </p>
@@ -1543,14 +1486,14 @@
                   </svg>
                 </div>
                 <div class="c-end-note__card-header">
-                  <h3 class="u-font-zen">お問い合わせ</h3>
-                  <a href="/amazones-test/contact" class="c-btn--green-wrapper">
-                    <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
+                  <h3 class="">お問い合わせ</h3>
+                  <a href="contact/index.html" class="c-btn--green-wrapper">
+                    <img src="assets/img/common/icon_arrow.svg" alt="">
                   </a>
                 </div>
               </div>
               <div class="c-end-note__card-body">
-                <p class="u-font-zen">
+                <p class="">
                   各種料金について、ご不明点はお気軽にお尋ねください。
                 </p>
               </div>
@@ -1574,8 +1517,8 @@
                   </svg>
                 </div>
                 <div class="c-end-note__card-header">
-                  <h3 class="u-font-zen">マイページ</h3>
-                  <a href="/amazones-test/reservation" target="_blank" rel="noreferrer">
+                  <h3 class="">マイページ</h3>
+                  <a href="reservation/index.html" target="_blank" rel="noreferrer">
                     
                   <div class="c-btn-icon--light-blue">
                     <svg
@@ -1597,7 +1540,7 @@
                 </div>
               </div>
               <div class="c-end-note__card-body">
-                <p class="u-font-zen">
+                <p class="">
                   パーソナルトレーニングはこちらのページからご予約ください。
                 </p>
               </div>
@@ -1617,20 +1560,20 @@
       <!-- ブランド -->
       <aside class="l-footer__brand">
         <figure class="l-footer__brand-logo">
-          <a href="./">
-            <p class="u-font-outfit u-fw-500 u-text-right">アマゾネス</p>
+          <a href="index.html">
+            <p class="l-footer__brand-name">アマゾネス</p>
             <img src="assets/img/common/icon_logo.svg" alt="アマゾネス">
-            <p class="u-font-outfit u-fw-500">WOMEN ONLY 24h GYM</p>
+            <p>WOMEN ONLY 24h GYM</p>
           </a>
         </figure>
 
         <nav class="l-footer__cta-links" aria-label="クイックリンク">
-          <a href="contact/" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">お問い合わせ</p>
+          <a href="contact/index.html" class="c-btn--light-blue">
+            <p>お問い合わせ</p>
             <img src="assets/img/common/icon_arrow.svg" alt="">
           </a>
           <a href="https://highness.hacomono.jp/mypage/" target="_blank" class="c-btn--light-blue">
-            <p class="u-text-white u-fs-16 u-font-outfit">マイページ</p>
+            <p>マイページ</p>
             <img src="assets/img/common/icon_videos.svg" alt="">
           </a>
         </nav>
@@ -1642,7 +1585,7 @@
         <!-- 会社について -->
         <nav class="l-footer__nav-section" aria-label="About Us">
          <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-    <p class="u-font-outfit u-fs-18 u-fw-500">About Us</p>
+    <p>About Us</p>
     <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1651,17 +1594,17 @@
     <span class="l-footer__link-line"></span>
   </button>
           <ul class="l-footer__nav-list">
-            <li><a href="" class="u-fw-500 u-fs-15">トップページ</a></li>
-            <li><a href="information/" class="u-fw-500 u-fs-15">お知らせ</a></li>
-            <li><a href="column/" class="u-fw-500 u-fs-15">ゾネスタイムズ</a></li>
-            <li><a href="storelist/" class="u-fw-500 u-fs-15">店舗一覧</a></li>
-            <li><a href="reservation/" class="u-fw-500 u-fs-15">無料体験・見学予約</a></li>
-            <li><a href="reservation#reservation-flow" class="u-fw-500 u-fs-15 u-text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
-            <li><a href="price/" class="u-fw-500 u-fs-15">料金案内</a></li>
-            <li><a href="admission/" class="u-fw-500 u-fs-15 u-text-lightBlue">入会手続きのご案内</a></li>
-            <li><a href="payment/" class="u-fw-500 u-fs-15 u-text-lightBlue">お支払いについて</a></li>
-            <li><a href="faq/" class="u-fw-500 u-fs-15 u-text-lightBlue">よくあるご質問</a></li>
-            <li><a href="member/" class="u-fw-500 u-fs-15">会員様からいただいた声</a></li>
+            <li><a href="">トップページ</a></li>
+            <li><a href="information/index.html">お知らせ</a></li>
+            <li><a href="column/index.html">ゾネスタイムズ</a></li>
+            <li><a href="storelist/index.html">店舗一覧</a></li>
+            <li><a href="reservation/index.html">無料体験・見学予約</a></li>
+            <li><a href="reservation#reservation-flow" class="l-footer__nav-link--highlight">ご予約から無料体験・見学までの流れ</a></li>
+            <li><a href="price/index.html">料金案内</a></li>
+            <li><a href="admission/index.html" class="l-footer__nav-link--highlight">入会手続きのご案内</a></li>
+            <li><a href="payment/index.html" class="l-footer__nav-link--highlight">お支払いについて</a></li>
+            <li><a href="faq/index.html">よくあるご質問</a></li>
+            <li><a href="member/index.html">会員様からいただいた声</a></li>
           </ul>
         </nav>
 
@@ -1671,7 +1614,7 @@
           <!-- サービス -->
           <nav class="l-footer__nav-section" aria-label="Service">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Service</p>
+              <p>Service</p>
             <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1680,17 +1623,17 @@
     <span class="l-footer__link-line"></span>
             </button>
             <ul class="l-footer__nav-list">
-              <li><a href="about/" class="u-fw-500 u-fs-15">女性専用24時間ジム</a></li>
-              <li><a href="personal/" class="u-fw-500 u-fs-15">Amazonesのパーソナルトレーニング</a></li>
-              <li><a href="medical/" class="u-fw-500 u-fs-15">Dr.Amazones</a></li>
-              <li><a href="sportip/" class="u-fw-500 u-fs-15">AI姿勢診断・改善</a></li>
+              <li><a href="about/index.html">女性専用24時間ジム</a></li>
+              <li><a href="personal/index.html">Amazonesのパーソナルトレーニング</a></li>
+              <li><a href="medical/index.html">Dr.Amazones</a></li>
+              <li><a href="sportip/index.html">AI姿勢診断・改善</a></li>
             </ul>
           </nav>
 
           <!-- 採用情報 -->
           <nav class="l-footer__nav-section" aria-label="Recruitment">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Recruitment</p>
+              <p>Recruitment</p>
              <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1700,7 +1643,7 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://recruit.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   採用情報
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1716,7 +1659,7 @@
           <!-- 他店舗 -->
           <nav class="l-footer__nav-section" aria-label="Other Shops">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Other Shops</p>
+              <p>Other Shops</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1726,19 +1669,19 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hqf.osaka/" target="_blank" class="l-footer__icon-link">
                   完全個室PRIVATE GYM Highness
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://hercules.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   24時間ジム Amazones &amp; Herculest
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://shop.amazones.fit/" target="_blank" class="l-footer__icon-link">
                   AMAZONES ONLINE SHOP
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
@@ -1749,7 +1692,7 @@
           <!-- SNS -->
           <nav class="l-footer__nav-section" aria-label="SNS">
             <button type="button" class="l-footer__page-link u-relative" aria-expanded="false">
-              <p class="u-font-outfit u-fs-18 u-fw-500">Sns</p>
+              <p>Sns</p>
               <img src="assets/img/common/icon_arrow_blue.svg" alt="" class="l-footer__page-link__arrow-icon">
     <span class="l-footer__page-link__arrow-sign" aria-hidden="true">
       <img src="assets/img/common/icon_toggle_open.svg" class="l-footer__page-link__sign-open">
@@ -1759,14 +1702,14 @@
             </button>
             <ul class="l-footer__nav-list">
               <li>
-                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.youtube.com/channel/UCvpQu600VT18YsgIj-2BpiQ" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_youtube.svg" alt="" class="u-mr-5">
                   Amazones｜公式YouTube
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+                <a href="https://www.instagram.com/ama_zones_24h/" target="_blank" class="l-footer__icon-link">
                   <img src="assets/img/common/icon_instragram.svg" alt="" class="u-mr-5">
                   Amazones｜公式Instagram
                   <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
@@ -1784,15 +1727,15 @@
     <section class="l-footer__bottom">
       <ul class="l-footer__legal-links">
         <li>
-          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link u-fw-500 u-fs-15">
+          <a href="https://wellnessland.co.jp/" target="_blank" class="l-footer__icon-link">
             運営会社について
             <img src="assets/img/common/icon_recruitment.svg" alt="外部リンク">
           </a>
         </li>
-        <li><a href="sitemap/" class="u-fw-500 u-fs-15">サイトマップ</a></li>
-        <li><a href="rules/" class="u-fw-500 u-fs-15">ご利用規約</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">個人情報保護方針</a></li>
-        <li><a href="#" class="u-fw-500 u-fs-15">WEBサイトのご利用に当たって</a></li>
+        <li><a href="sitemap/index.html">サイトマップ</a></li>
+        <li><a href="rules/index.html">ご利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">WEBサイトのご利用に当たって</a></li>
       </ul>
 
       <button type="button" class="c-btn--light-blue l-scroll-up" aria-label="ページトップへ戻る">
@@ -1804,13 +1747,13 @@
 
 
     <aside class="c-cookie-notice">
-      <p class="u-fw-400 u-fs-14 u-text-white u-lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
+      <p class="c-cookie-notice__text">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
       <div class="c-cookie-notice__buttons">
         <button type="button" class="l-footer__btn">OK</button>
         <button type="button" class="l-footer__btn">プライバシーポリシー</button>
       </div>
-      <p class = 'font-outfit fs-12 text-white c-cookie-notice__sub'>©2026 Wellness Land Co., Ltd. </p>
+      <p class="c-cookie-notice__sub">©2026 Wellness Land Co., Ltd. </p>
     </aside>
 </footer>
 <!--/フッター-->
