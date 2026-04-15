@@ -3,6 +3,7 @@
 ============================================ */
 .l-header {
   width: calc(100% - 100px);
+  height: 104px;
   background-color: var(--base-white);
   position: sticky;
   top: 0;
@@ -18,8 +19,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px; /* gap-10px */
-  padding-top: 14px; /* py-14 */
-  padding-bottom: 14px; /* py-14 */
+  padding-top: 10px; /* py-10 */
+  padding-bottom: 10px; /* py-10 */
   padding-left: 21px; /* pl-21 */
   padding-right: 25px; /* pr-25 */
   border-radius: 50px; /* radius-50 */
@@ -550,6 +551,9 @@
   }
   .amazones-header-logo {
     width: 70px;
+    height: auto;
+  }
+  .l-header {
     height: auto;
   }
   .l-header-wrapper {
