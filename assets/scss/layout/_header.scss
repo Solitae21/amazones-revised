@@ -70,6 +70,10 @@
   font-size: 14px;
   color: var(--text-white);
   display: block !important;
+  order: 2;
+}
+.l-header-floating-menu.active .l-header-floating-menu__menu-label {
+  display: none !important;
 }
 .l-header-floating-menu__close-label {
   font-family: var(--font-outfit);
@@ -482,8 +486,9 @@
     justify-content: center;
     height: 100%;
   }
-  .l-header-floating-menu__btn p {
-    display: none;
+  .l-header-floating-menu__btn p,
+  .l-header-floating-menu__menu-label {
+    display: none !important;
   }
   .l-header__btn:not(.l-header__sp-btn) {
     display: none;
