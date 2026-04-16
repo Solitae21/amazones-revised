@@ -264,6 +264,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding-bottom: 25px;
   background-color: transparent;
   border-top: none;
@@ -279,7 +280,6 @@
   width: 50px;
   height: 2px;
   background: var(--base-lightBlue);
-  display:none;
 }
 
 .l-footer__page-link img {
