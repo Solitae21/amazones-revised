@@ -4111,9 +4111,6 @@ a {
   .c-banner__speechbubble2 {
     display: none;
   }
-  .c-topic-sticker {
-    display: none;
-  }
   .c-cookie-notice {
     flex-direction: column;
     align-items: flex-start;
@@ -6128,5 +6125,3 @@ a {
 .l-nav-menu-popup__bottom--gap {
   gap: 20px;
 }
-
-/*# sourceMappingURL=global.css.map */
