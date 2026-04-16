@@ -11,6 +11,7 @@
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: 0% -20%;
+  padding-top: 4rem;
   padding-bottom: 7rem;
 }
 
@@ -44,6 +45,16 @@
 
 .p-reservation-flow-step__highlight {
   color: var(--text-red);
+}
+
+.p-reservation-flow-step__highlight--light-blue {
+  color: var(--text-lightBlue);
+}
+
+.p-reservation-flow-step__divider {
+  height: 1px;
+  margin: 15px 0;
+  background-color: var(--base-gray);
 }
 
 .p-reservation-flow-step__card-icon {
@@ -135,7 +146,7 @@
 
 .p-reservation-flow-speak__bubble--01 {
   position: absolute;
-  top: 1rem;
+  top: 0;
   left: -10rem;
   width: auto;
   height: auto;
