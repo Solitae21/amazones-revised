@@ -87,21 +87,7 @@
   color: var(--text-black1);
 }
 
-/* ボタン padding: <a>要素はbutton要素のUAスタイルの最低高さを持たないため補正 */
-.p-reservation-flow-step__btn-wrapper .c-btn--light-blue02 {
-  padding: 0.875rem 1.5rem;
-}
-
 /* フローステップ終了 */
-/* ========================================
-   開始: ナビゲーション / リンク
-   ======================================== */
-/* 予約リンク */
-.p-reservation-flow__nav {
-  margin-bottom: 10rem;
-}
-
-/* ナビゲーション / リンク終了 */
 /* ========================================
    開始: セクションタイトル
    ======================================== */
@@ -115,17 +101,12 @@
    開始: ヒーロー / 吹き出し
    ======================================== */
 /* スピークパーソン */
-/* モバイル専用複製（ボタン横）— デスクトップ/タブレットでは非表示 */
-.p-reservation-flow-speak__image--01-btn {
-  display: none;
-}
-
 /* 01 */
 .p-reservation-flow-speak__container--01 {
   position: absolute;
   right: 5%;
-  top: -35%;
-  z-index: 3;
+  top: -2rem;
+  z-index: 5;
 }
 
 .p-reservation-flow-speak__image--01 {
@@ -232,16 +213,13 @@
   .p-reservation-flow-flow__title {
     font-size: var(--fs-7xl);
   }
-  .p-reservation-flow__nav {
-    margin-bottom: 6rem;
-  }
   /* フローステップ終了 */
   /* ----------------------------------------
      開始: ヒーロー / 吹き出し
      ---------------------------------------- */
   .p-reservation-flow-speak__container--01 {
     right: 5%;
-    top: -35%;
+    top: 0rem;
   }
   .p-reservation-flow-speak__person--01 {
     height: 15rem;
@@ -302,20 +280,12 @@
      開始: フローステップ
      ---------------------------------------- */
   .p-reservation-flow-flow {
+    padding-top: 3rem;
     padding-bottom: 4rem;
     background-position: center;
   }
-  .p-reservation-flow__nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 1.5rem 1.25rem 0;
-    margin-bottom: 3rem;
-  }
-  .p-reservation-flow__nav .c-page-nav__item {
-    font-size: var(--fs-sm);
-  }
   .p-reservation-flow__title-wrap {
+    margin-top: 0;
     margin-bottom: 1.5rem;
   }
   .p-reservation-flow-flow__subtitle {
@@ -354,63 +324,22 @@
     flex-wrap: wrap;
     align-items: center;
   }
-  /* ボタン＋パーソン行ラッパー */
-  .p-reservation-flow-step__btn-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 0;
-  }
-  /* モバイルでボタンテキストサイズ */
-  .p-reservation-flow-step__btn-wrapper .c-btn--light-blue02 {
-    font-size: var(--fs-base);
-    padding: 0.75rem 1.9rem;
-    width: 100%;
-  }
-  .p-reservation-flow-speak__image--01-btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 20%;
-  }
   /* フローステップ終了 */
   /* ----------------------------------------
      開始: ヒーロー / 吹き出し
      ---------------------------------------- */
-  /* モバイルでタイトルの元のスピークパーソンを非表示 */
-  .p-reservation-flow__title-wrap .p-reservation-flow-speak__container--01 {
-    display: none;
-  }
-  /* モバイル複製パーソン（ボタン横） */
-  .p-reservation-flow-speak__image--01-btn {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-  }
-  .p-reservation-flow-speak__person--01-btn {
-    height: 13rem;
-    width: auto;
-    object-fit: contain;
-  }
-  .p-reservation-flow-speak__bubble--01-btn {
-    position: absolute;
-    width: 6rem;
-    height: auto;
-    margin-bottom: 0.25rem;
-    left: -7rem;
-  }
   .p-reservation-flow-speak__container--01 {
-    display: block;
     position: relative;
     right: auto;
     top: auto;
-    align-self: center;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
   }
   .p-reservation-flow-speak__person--01 {
-    height: 15rem;
+    height: 12rem;
   }
   .p-reservation-flow-speak__bubble--01 {
     top: 0.5rem;
