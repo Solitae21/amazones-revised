@@ -1185,9 +1185,10 @@ a.c-service__wrapper:hover {
     text-align: center;
   }
   .p-top__voice-btn {
-    position: absolute;
-    right: 30px;
-    bottom: 50px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0;
   }
 }
 /* ============================================

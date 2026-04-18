@@ -372,6 +372,9 @@ function initSliders() {
 
     if (!track) return;
 
+    /* モバイル: JSスライダーをスキップ、CSSネイティブスクロールに任せる */
+    if (window.innerWidth <= 767) return;
+
     /* ──────────────────────────────────────────
        1. overflow-hidden ラッパーを作成
     ────────────────────────────────────────── */
